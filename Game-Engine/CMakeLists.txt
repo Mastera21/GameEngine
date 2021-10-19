@@ -40,6 +40,12 @@ add_executable(
 		 ${_BASE_DIR}/sdl/SDLLoader.h
 		 ${_BASE_DIR}/sdl/SDLLoader.cpp
 		 
+		 #For utils folder
+		 ${_BASE_DIR}/utils/drawing/Point.h
+		 ${_BASE_DIR}/utils/drawing/Point.cpp
+		 ${_BASE_DIR}/utils/drawing/Rectangle.h
+		 ${_BASE_DIR}/utils/drawing/Rectangle.cpp
+		 
 		 
 		 
 		 

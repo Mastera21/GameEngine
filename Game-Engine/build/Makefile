@@ -204,6 +204,60 @@ sdl/SDLLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s
 .PHONY : sdl/SDLLoader.cpp.s
 
+utils/drawing/Point.o: utils/drawing/Point.cpp.o
+
+.PHONY : utils/drawing/Point.o
+
+# target to build an object file
+utils/drawing/Point.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
+.PHONY : utils/drawing/Point.cpp.o
+
+utils/drawing/Point.i: utils/drawing/Point.cpp.i
+
+.PHONY : utils/drawing/Point.i
+
+# target to preprocess a source file
+utils/drawing/Point.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.i
+.PHONY : utils/drawing/Point.cpp.i
+
+utils/drawing/Point.s: utils/drawing/Point.cpp.s
+
+.PHONY : utils/drawing/Point.s
+
+# target to generate assembly for a file
+utils/drawing/Point.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.s
+.PHONY : utils/drawing/Point.cpp.s
+
+utils/drawing/Rectangle.o: utils/drawing/Rectangle.cpp.o
+
+.PHONY : utils/drawing/Rectangle.o
+
+# target to build an object file
+utils/drawing/Rectangle.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
+.PHONY : utils/drawing/Rectangle.cpp.o
+
+utils/drawing/Rectangle.i: utils/drawing/Rectangle.cpp.i
+
+.PHONY : utils/drawing/Rectangle.i
+
+# target to preprocess a source file
+utils/drawing/Rectangle.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.i
+.PHONY : utils/drawing/Rectangle.cpp.i
+
+utils/drawing/Rectangle.s: utils/drawing/Rectangle.cpp.s
+
+.PHONY : utils/drawing/Rectangle.s
+
+# target to generate assembly for a file
+utils/drawing/Rectangle.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s
+.PHONY : utils/drawing/Rectangle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +276,12 @@ help:
 	@echo "... sdl/SDLLoader.o"
 	@echo "... sdl/SDLLoader.i"
 	@echo "... sdl/SDLLoader.s"
+	@echo "... utils/drawing/Point.o"
+	@echo "... utils/drawing/Point.i"
+	@echo "... utils/drawing/Point.s"
+	@echo "... utils/drawing/Rectangle.o"
+	@echo "... utils/drawing/Rectangle.i"
+	@echo "... utils/drawing/Rectangle.s"
 .PHONY : help
 
 

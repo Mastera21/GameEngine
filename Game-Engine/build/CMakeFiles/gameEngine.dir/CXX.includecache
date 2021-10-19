@@ -10,6 +10,10 @@
 cstdint
 -
 
+..//utils/drawing/Point.h
+cstdint
+-
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
 ../application/Application.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
@@ -53,6 +57,24 @@ SDL_mixer.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.h
 cstdint
 -
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
+Point.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h
+cstdint
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp
+Rectangle.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.h
+cstdint
+-
+utils/drawing/Point.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/utils/drawing/Point.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

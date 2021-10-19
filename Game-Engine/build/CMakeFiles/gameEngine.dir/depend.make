@@ -102,3 +102,10 @@ CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/close_code.h
 
+CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: ../utils/drawing/Point.cpp
+CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: ../utils/drawing/Point.h
+
+CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o: ../utils/drawing/Rectangle.cpp
+CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o: ../utils/drawing/Rectangle.h
+

@@ -102,3 +102,10 @@ CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
  /usr/include/SDL2/SDL_video.h
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
+CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
+ ..//utils/drawing/Point.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.h
