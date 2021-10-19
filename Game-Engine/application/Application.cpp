@@ -7,6 +7,7 @@
 
 //Other libraries headers
 #include "SDL.h"
+#include "sdl/SDLLoader.h"
 
 //Own components headers
 
@@ -75,6 +76,11 @@ void Application::deinit(){
 }
 
 void Application::run(){
+
+	if(EXIT_SUCCESS != SDLLoader::init()){
+		std::cerr<<"SDLLoader::init() faild. "<<SDL_GetError()<<"\n";
+	}
+
 	if(EXIT_SUCCESS != init()){
 		std::cerr<<"init() faild. "<<SDL_GetError()<<"\n";
 	}

@@ -36,6 +36,10 @@ add_executable(
 		 ${_BASE_DIR}/application/Application.h
 		 ${_BASE_DIR}/application/Application.cpp
 		 
+		 #For sdl folder
+		 ${_BASE_DIR}/sdl/SDLLoader.h
+		 ${_BASE_DIR}/sdl/SDLLoader.cpp
+		 
 		 
 		 
 		 

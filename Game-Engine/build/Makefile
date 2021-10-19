@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sdl/SDLLoader.o: sdl/SDLLoader.cpp.o
+
+.PHONY : sdl/SDLLoader.o
+
+# target to build an object file
+sdl/SDLLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
+.PHONY : sdl/SDLLoader.cpp.o
+
+sdl/SDLLoader.i: sdl/SDLLoader.cpp.i
+
+.PHONY : sdl/SDLLoader.i
+
+# target to preprocess a source file
+sdl/SDLLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i
+.PHONY : sdl/SDLLoader.cpp.i
+
+sdl/SDLLoader.s: sdl/SDLLoader.cpp.s
+
+.PHONY : sdl/SDLLoader.s
+
+# target to generate assembly for a file
+sdl/SDLLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s
+.PHONY : sdl/SDLLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sdl/SDLLoader.o"
+	@echo "... sdl/SDLLoader.i"
+	@echo "... sdl/SDLLoader.s"
 .PHONY : help
 
 
