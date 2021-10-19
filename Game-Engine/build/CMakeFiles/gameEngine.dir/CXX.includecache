@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
+../application/Application.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
+stdint.h
+-
+SDL.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/SDL.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
 cstdint
 -
 cstdlib
@@ -15,10 +23,10 @@ iostream
 -
 string
 -
-stdint.h
--
-SDL.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/SDL.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
+application/Application.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h
