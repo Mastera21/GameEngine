@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/application/Application.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/main.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o"

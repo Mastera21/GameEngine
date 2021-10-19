@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sdl/MonitorWindow.o: sdl/MonitorWindow.cpp.o
+
+.PHONY : sdl/MonitorWindow.o
+
+# target to build an object file
+sdl/MonitorWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
+.PHONY : sdl/MonitorWindow.cpp.o
+
+sdl/MonitorWindow.i: sdl/MonitorWindow.cpp.i
+
+.PHONY : sdl/MonitorWindow.i
+
+# target to preprocess a source file
+sdl/MonitorWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i
+.PHONY : sdl/MonitorWindow.cpp.i
+
+sdl/MonitorWindow.s: sdl/MonitorWindow.cpp.s
+
+.PHONY : sdl/MonitorWindow.s
+
+# target to generate assembly for a file
+sdl/MonitorWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s
+.PHONY : sdl/MonitorWindow.cpp.s
+
 sdl/SDLLoader.o: sdl/SDLLoader.cpp.o
 
 .PHONY : sdl/SDLLoader.o
@@ -273,6 +300,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sdl/MonitorWindow.o"
+	@echo "... sdl/MonitorWindow.i"
+	@echo "... sdl/MonitorWindow.s"
 	@echo "... sdl/SDLLoader.o"
 	@echo "... sdl/SDLLoader.i"
 	@echo "... sdl/SDLLoader.s"

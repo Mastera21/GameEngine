@@ -37,8 +37,12 @@ add_executable(
 		 ${_BASE_DIR}/application/Application.cpp
 		 
 		 #For sdl folder
+		 ${_BASE_DIR}/sdl/MonitorWindow.h
+		 ${_BASE_DIR}/sdl/MonitorWindow.cpp
 		 ${_BASE_DIR}/sdl/SDLLoader.h
 		 ${_BASE_DIR}/sdl/SDLLoader.cpp
+		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
+		 
 		 
 		 #For utils folder
 		 ${_BASE_DIR}/utils/drawing/Point.h

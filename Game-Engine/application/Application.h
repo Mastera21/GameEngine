@@ -13,6 +13,8 @@
 
 
 //Own components headers
+#include "sdl/config/MonitorWindowCfg.h"
+#include "sdl/MonitorWindow.h"
 
 
 //Forward declarations
@@ -29,10 +31,11 @@ private:
 	SDL_Surface* _screenSurface = nullptr;
 	SDL_Surface* _image = nullptr;
 
+
 	int32_t loadResources();
-	int32_t init();
-	void draw();
-	void deinit();
+	int32_t init(MonitorWindow& window);
+	void draw(MonitorWindow& window);
+	void deinit(MonitorWindow& window);
 };
 
 #endif /* APPLICATION_APPLICATION_H_ */

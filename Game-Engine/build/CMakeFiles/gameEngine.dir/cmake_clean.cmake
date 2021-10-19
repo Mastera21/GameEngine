@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/application/Application.cpp.o"
+  "CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o"

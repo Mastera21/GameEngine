@@ -6,13 +6,35 @@
 
 #IncludeRegexTransform: 
 
+..//sdl/MonitorWindow.h
+cstdint
+-
+sdl/config/MonitorWindowCfg.h
+../sdl/sdl/config/MonitorWindowCfg.h
+utils/drawing/Rectangle.h
+../sdl/utils/drawing/Rectangle.h
+
 ..//sdl/SDLLoader.h
 cstdint
 -
 
+..//sdl/config/MonitorWindowCfg.h
+cstdint
+-
+string
+-
+utils/drawing/Point.h
+../sdl/config/utils/drawing/Point.h
+
 ..//utils/drawing/Point.h
 cstdint
 -
+
+..//utils/drawing/Rectangle.h
+cstdint
+-
+utils/drawing/Point.h
+../utils/drawing/utils/drawing/Point.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
 ../application/Application.h
@@ -33,10 +55,32 @@ iostream
 -
 string
 -
+sdl/config/MonitorWindowCfg.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/sdl/config/MonitorWindowCfg.h
+sdl/MonitorWindow.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/sdl/MonitorWindow.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 application/Application.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp
+MonitorWindow.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.h
+stdint.h
+-
+iostream
+-
+SDL_video.h
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.h
+cstdint
+-
+sdl/config/MonitorWindowCfg.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/sdl/config/MonitorWindowCfg.h
+utils/drawing/Rectangle.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/utils/drawing/Rectangle.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp
 SDLLoader.h

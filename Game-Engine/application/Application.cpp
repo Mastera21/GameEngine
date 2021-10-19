@@ -7,67 +7,43 @@
 
 //Other libraries headers
 #include "SDL.h"
-#include "sdl/SDLLoader.h"
 
 //Own components headers
+#include "sdl/SDLLoader.h"
 
 int32_t Application::loadResources(){
 	std::string filePath = "../assets/hello.bmp";
 	_image = SDL_LoadBMP(filePath.c_str());
 
 	if(_image == nullptr){
-		std::cerr<<"SDL_LoadBMP() faild. "<<SDL_GetError()<<"\n";
+		std::cerr<<"SDL_LoadBMP() failed. "<<SDL_GetError()<<"\n";
 		return EXIT_FAILURE;
 	}
 
 	return EXIT_SUCCESS;
 }
-int32_t Application::init(){
-	if(EXIT_SUCCESS != SDL_Init(SDL_INIT_VIDEO)){
-		std::cerr<<"SDL_Init() faild. "<<SDL_GetError()<<"\n";
-		return EXIT_FAILURE;
-	}
+int32_t Application::init(MonitorWindow& window){
 
-	const std::string windowName = "Engine";
-	const int32_t windowX = 0;
-	const int32_t windowY = 0;
-	const int32_t windowWidth = 640;
-	const int32_t windowHeight = 480;
+	//TODO
 
-	_window = SDL_CreateWindow(windowName.c_str(), windowX, windowY, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
-
-	if(_window == nullptr){
-		std::cerr<<"SDL_CreateWindow() faild. "<<SDL_GetError()<<"\n";
-		return EXIT_FAILURE;
-	}
-
-	_screenSurface = SDL_GetWindowSurface(_window);
-
-	if(_screenSurface == nullptr){
-		std::cerr<<"SDL_GetWindowSurface() faild. "<<SDL_GetError()<<"\n";
-		return EXIT_FAILURE;
-	}
 
 	if(EXIT_SUCCESS != loadResources()){
-		std::cerr<<"loadResources() faild. "<<SDL_GetError()<<"\n";
+		std::cerr<<"loadResources() failed. "<<SDL_GetError()<<"\n";
 		return EXIT_FAILURE;
 	}
 
 	return EXIT_SUCCESS;
 }
-void Application::draw(){
+void Application::draw(MonitorWindow& window){
 	SDL_BlitSurface(_image,nullptr,_screenSurface, nullptr);
 
-	if(EXIT_SUCCESS != SDL_UpdateWindowSurface(_window)){
-		std::cerr<<"SDL_UpdateWindowSurface() faild. "<<SDL_GetError()<<"\n";
-	}
+	window.updateWindowSurface();
+
 	SDL_Delay(3000);
 }
-void Application::deinit(){
-	if(_window != nullptr){
-		SDL_DestroyWindow(_window);
-		_window = nullptr;
-	}
+void Application::deinit(MonitorWindow& window){
+	window.deinit();
+
 	if(_screenSurface != nullptr){
 		SDL_FreeSurface(_screenSurface);
 		_screenSurface = nullptr;
@@ -75,16 +51,26 @@ void Application::deinit(){
 	SDL_Quit();
 }
 
+int32_t runApplication(){
+	MonitorWindow window;
+	SDL_Surface* image = nullptr;
+
+	if(EXIT_SUCCESS != init(window,image)){
+		std::cerr<<"init() failed. "<<SDL_GetError()<<"\n";
+	}
+
+	draw(window);
+	deinit(window);
+	return EXIT_SUCCESS;
+
+}
+
 void Application::run(){
-
 	if(EXIT_SUCCESS != SDLLoader::init()){
-		std::cerr<<"SDLLoader::init() faild. "<<SDL_GetError()<<"\n";
+		std::cerr<<"SDLLoader::init() failed. "<<SDL_GetError()<<"\n";
 	}
 
-	if(EXIT_SUCCESS != init()){
-		std::cerr<<"init() faild. "<<SDL_GetError()<<"\n";
+	if(EXIT_SUCCESS != runApplication()){
+			std::cerr<<"runApplication() failed. "<<SDL_GetError()<<"\n";
 	}
-
-	draw();
-	deinit();
 }
