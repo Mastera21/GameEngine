@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/svetoslav/eclipse-workspace/Game-Engine/main.cpp
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 cstdint
 -
 cstdlib
@@ -16,7 +16,7 @@ iostream
 string
 -
 SDL.h
-/home/svetoslav/eclipse-workspace/Game-Engine/SDL.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/SDL.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/svetoslav/eclipse-workspace/Game-Engine/main.cpp" "/home/svetoslav/eclipse-workspace/Game-Engine/build/CMakeFiles/gameEngine.dir/main.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

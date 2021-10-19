@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/svetoslav/eclipse-workspace/Game-Engine -I/usr/include/SDL2 
+CXX_INCLUDES = -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine -I/usr/include/SDL2 
 
