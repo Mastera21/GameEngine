@@ -1,0 +1,3 @@
+/home/svetoslav/eclipse-workspace/Game-Engine/build/CMakeFiles/rebuild_cache.dir
+/home/svetoslav/eclipse-workspace/Game-Engine/build/CMakeFiles/gameEngine.dir
+/home/svetoslav/eclipse-workspace/Game-Engine/build/CMakeFiles/edit_cache.dir
