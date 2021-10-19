@@ -19,11 +19,11 @@ enum WindowFlags{
 };
 
 struct MonitorWindowCofg{
-	const std::string displayMode = "Engine";
+	std::string windowName;
 	Point windowPos = Point::UNDEFINED;
-	const int32_t width = 640;
-	const int32_t height = 480;
-	WindowFlags flag = WINDOW_SHOWN;
+	int32_t windowWidth = 0;
+	int32_t windowHeight = 0;
+	WindowFlags windowFlags = WINDOW_SHOWN;
 };
 
 #endif /* SDL_CONFIG_MONITORWINDOWCFG_H_ */

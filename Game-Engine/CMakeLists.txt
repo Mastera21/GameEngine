@@ -33,7 +33,13 @@ set(_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(
 	${PROJECT_NAME} 
 	
+		 #For engine folder
+		 ${_BASE_DIR}/engine/Engine.h
+		 ${_BASE_DIR}/engine/Engine.cpp
+	
 		 #For sdl folder
+		 ${_BASE_DIR}/sdl/Event.h
+		 ${_BASE_DIR}/sdl/Event.cpp
 		 ${_BASE_DIR}/sdl/MonitorWindow.h
 		 ${_BASE_DIR}/sdl/MonitorWindow.cpp
 		 ${_BASE_DIR}/sdl/SDLLoader.h

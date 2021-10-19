@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gameEngine.dir/engine/Engine.cpp.o"
+  "CMakeFiles/gameEngine.dir/sdl/Event.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o"

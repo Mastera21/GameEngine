@@ -123,6 +123,33 @@ gameEngine/fast:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/build
 .PHONY : gameEngine/fast
 
+engine/Engine.o: engine/Engine.cpp.o
+
+.PHONY : engine/Engine.o
+
+# target to build an object file
+engine/Engine.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
+.PHONY : engine/Engine.cpp.o
+
+engine/Engine.i: engine/Engine.cpp.i
+
+.PHONY : engine/Engine.i
+
+# target to preprocess a source file
+engine/Engine.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/Engine.cpp.i
+.PHONY : engine/Engine.cpp.i
+
+engine/Engine.s: engine/Engine.cpp.s
+
+.PHONY : engine/Engine.s
+
+# target to generate assembly for a file
+engine/Engine.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/Engine.cpp.s
+.PHONY : engine/Engine.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +176,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+sdl/Event.o: sdl/Event.cpp.o
+
+.PHONY : sdl/Event.o
+
+# target to build an object file
+sdl/Event.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
+.PHONY : sdl/Event.cpp.o
+
+sdl/Event.i: sdl/Event.cpp.i
+
+.PHONY : sdl/Event.i
+
+# target to preprocess a source file
+sdl/Event.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.i
+.PHONY : sdl/Event.cpp.i
+
+sdl/Event.s: sdl/Event.cpp.s
+
+.PHONY : sdl/Event.s
+
+# target to generate assembly for a file
+sdl/Event.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.s
+.PHONY : sdl/Event.cpp.s
 
 sdl/MonitorWindow.o: sdl/MonitorWindow.cpp.o
 
@@ -294,9 +348,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gameEngine"
 	@echo "... edit_cache"
+	@echo "... engine/Engine.o"
+	@echo "... engine/Engine.i"
+	@echo "... engine/Engine.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sdl/Event.o"
+	@echo "... sdl/Event.i"
+	@echo "... sdl/Event.s"
 	@echo "... sdl/MonitorWindow.o"
 	@echo "... sdl/MonitorWindow.i"
 	@echo "... sdl/MonitorWindow.s"
