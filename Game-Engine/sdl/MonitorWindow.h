@@ -5,39 +5,52 @@
 
 //C++ system headers
 #include <cstdint>
+#include <string>
+
 //Other libraries headers
 
 //Own components headers
-#include "sdl/config/MonitorWindowCfg.h"
+#include "utils/drawing/Point.h"
 #include "utils/drawing/Rectangle.h"
 
 //Forward declarations
 struct SDL_Window;
-struct SDL_Surface;
+
+struct MonitorWindowCfg {
+  //Window modes:
+  //SDL_WINDOW_SHOWN - for windowed version
+  //SDL_WINDOW_FULLSCREEN_DESKTOP - for fullscreen
+  int32_t displayMode { 0 };
+  int32_t windowWidth { 0 };
+  int32_t windowHeight { 0 };
+  Point windowPos = Point::UNDEFINED;
+  std::string windowName;
+};
 
 class MonitorWindow {
 public:
-	MonitorWindow();
-	virtual ~MonitorWindow();
+  MonitorWindow() = default;
 
-	MonitorWindow(const MonitorWindow& other) = delete; //delete of copy constructor
-	MonitorWindow(MonitorWindow&& other) = delete; //delete of move constructor
+  //forbid the copy and move constructors
+  MonitorWindow(const MonitorWindow &other) = delete;
+  MonitorWindow(MonitorWindow &&other) = delete;
 
-	MonitorWindow operator=(const MonitorWindow& other) = delete; // delete of copy and move operators
-	MonitorWindow& operator=(MonitorWindow&& othre) = delete;
+  //forbid the copy and move assignment operators
+  MonitorWindow& operator=(const MonitorWindow &other) = delete;
+  MonitorWindow& operator=(MonitorWindow &&other) = delete;
 
-	int32_t init(const MonitorWindowCofg& cfg);
+  ~MonitorWindow();
 
-	void deinit();
-	void updateWindowSurface();
+  int32_t init(const MonitorWindowCfg &cfg);
 
-	//TODO Remove me later
-	SDL_Surface* getWindowSurface();
+  void deinit();
+
+  SDL_Window *getWindow() const;
 
 private:
-
-	SDL_Window* _window = nullptr;
-	Rectangle _windowRect;
+  //The actual window
+  SDL_Window *_window = nullptr;
+  Rectangle _windowRect = Rectangle::UNDEFINED;
 };
 
 #endif /* SDL_MONITORWINDOW_H_ */

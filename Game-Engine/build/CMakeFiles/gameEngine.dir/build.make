@@ -57,33 +57,9 @@ include CMakeFiles/gameEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gameEngine.dir/flags.make
 
-CMakeFiles/gameEngine.dir/application/Application.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gameEngine.dir/application/Application.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/application/Application.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
-
-CMakeFiles/gameEngine.dir/application/Application.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/application/Application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp > CMakeFiles/gameEngine.dir/application/Application.cpp.i
-
-CMakeFiles/gameEngine.dir/application/Application.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/application/Application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp -o CMakeFiles/gameEngine.dir/application/Application.cpp.s
-
-CMakeFiles/gameEngine.dir/application/Application.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/application/Application.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/application/Application.cpp.o.provides: CMakeFiles/gameEngine.dir/application/Application.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/application/Application.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/application/Application.cpp.o.provides.build: CMakeFiles/gameEngine.dir/application/Application.cpp.o
-
-
 CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: CMakeFiles/gameEngine.dir/flags.make
 CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: ../sdl/MonitorWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp
 
 CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i: cmake_force
@@ -107,7 +83,7 @@ CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.provides.build: CMakeFiles/gam
 
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: CMakeFiles/gameEngine.dir/flags.make
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: ../sdl/SDLLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp
 
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i: cmake_force
@@ -127,6 +103,30 @@ CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides: CMakeFiles/gameEngine.di
 .PHONY : CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides
 
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
+
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: CMakeFiles/gameEngine.dir/flags.make
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp > CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp -o CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires:
+
+.PHONY : CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides.build
+.PHONY : CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides
+
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
 
 
 CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: CMakeFiles/gameEngine.dir/flags.make
@@ -203,9 +203,9 @@ CMakeFiles/gameEngine.dir/main.cpp.o.provides.build: CMakeFiles/gameEngine.dir/m
 
 # Object files for target gameEngine
 gameEngine_OBJECTS = \
-"CMakeFiles/gameEngine.dir/application/Application.cpp.o" \
 "CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o" \
 "CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o" \
+"CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o" \
 "CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o" \
 "CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o" \
 "CMakeFiles/gameEngine.dir/main.cpp.o"
@@ -213,9 +213,9 @@ gameEngine_OBJECTS = \
 # External object files for target gameEngine
 gameEngine_EXTERNAL_OBJECTS =
 
-gameEngine: CMakeFiles/gameEngine.dir/application/Application.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
+gameEngine: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/main.cpp.o
@@ -234,9 +234,9 @@ CMakeFiles/gameEngine.dir/build: gameEngine
 
 .PHONY : CMakeFiles/gameEngine.dir/build
 
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/application/Application.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.requires
+CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/main.cpp.o.requires

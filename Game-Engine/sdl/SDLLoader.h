@@ -8,21 +8,18 @@
 
 //Other libraries headers
 
-
 //Own components headers
-
 
 //Forward declarations
 
 class SDLLoader {
-	//We are using this class like interface only for functions nothing else.
 public:
-	SDLLoader();
-	virtual ~SDLLoader();
+  //forbid the default constructor
+  SDLLoader() = delete;
 
-	static int32_t init();
-	static void deinit();
+  static int32_t init();
 
+  static void deinit();
 };
 
 #endif /* SDL_SDLLOADER_H_ */

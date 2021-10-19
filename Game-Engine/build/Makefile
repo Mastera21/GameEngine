@@ -123,33 +123,6 @@ gameEngine/fast:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/build
 .PHONY : gameEngine/fast
 
-application/Application.o: application/Application.cpp.o
-
-.PHONY : application/Application.o
-
-# target to build an object file
-application/Application.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.o
-.PHONY : application/Application.cpp.o
-
-application/Application.i: application/Application.cpp.i
-
-.PHONY : application/Application.i
-
-# target to preprocess a source file
-application/Application.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.i
-.PHONY : application/Application.cpp.i
-
-application/Application.s: application/Application.cpp.s
-
-.PHONY : application/Application.s
-
-# target to generate assembly for a file
-application/Application.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.s
-.PHONY : application/Application.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -231,6 +204,33 @@ sdl/SDLLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s
 .PHONY : sdl/SDLLoader.cpp.s
 
+sdl/Texture.o: sdl/Texture.cpp.o
+
+.PHONY : sdl/Texture.o
+
+# target to build an object file
+sdl/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
+.PHONY : sdl/Texture.cpp.o
+
+sdl/Texture.i: sdl/Texture.cpp.i
+
+.PHONY : sdl/Texture.i
+
+# target to preprocess a source file
+sdl/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i
+.PHONY : sdl/Texture.cpp.i
+
+sdl/Texture.s: sdl/Texture.cpp.s
+
+.PHONY : sdl/Texture.s
+
+# target to generate assembly for a file
+sdl/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s
+.PHONY : sdl/Texture.cpp.s
+
 utils/drawing/Point.o: utils/drawing/Point.cpp.o
 
 .PHONY : utils/drawing/Point.o
@@ -294,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gameEngine"
 	@echo "... edit_cache"
-	@echo "... application/Application.o"
-	@echo "... application/Application.i"
-	@echo "... application/Application.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -306,6 +303,9 @@ help:
 	@echo "... sdl/SDLLoader.o"
 	@echo "... sdl/SDLLoader.i"
 	@echo "... sdl/SDLLoader.s"
+	@echo "... sdl/Texture.o"
+	@echo "... sdl/Texture.i"
+	@echo "... sdl/Texture.s"
 	@echo "... utils/drawing/Point.o"
 	@echo "... utils/drawing/Point.i"
 	@echo "... utils/drawing/Point.s"

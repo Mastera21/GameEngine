@@ -19,7 +19,7 @@ enum WindowFlags{
 };
 
 struct MonitorWindowCofg{
-	const std::string windowName = "Engine";
+	const std::string displayMode = "Engine";
 	Point windowPos = Point::UNDEFINED;
 	const int32_t width = 640;
 	const int32_t height = 480;

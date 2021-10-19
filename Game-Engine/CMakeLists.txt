@@ -32,15 +32,14 @@ set(_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 #You have to include every file here
 add_executable(
 	${PROJECT_NAME} 
-		#For application folder
-		 ${_BASE_DIR}/application/Application.h
-		 ${_BASE_DIR}/application/Application.cpp
-		 
+	
 		 #For sdl folder
 		 ${_BASE_DIR}/sdl/MonitorWindow.h
 		 ${_BASE_DIR}/sdl/MonitorWindow.cpp
 		 ${_BASE_DIR}/sdl/SDLLoader.h
 		 ${_BASE_DIR}/sdl/SDLLoader.cpp
+		 ${_BASE_DIR}/sdl/Texture.h
+		 ${_BASE_DIR}/sdl/Texture.cpp
 		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
 		 
 		 

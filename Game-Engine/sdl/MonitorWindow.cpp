@@ -1,57 +1,55 @@
-#include "MonitorWindow.h"
+//Corresponding header
+#include "sdl/MonitorWindow.h"
 
 //C system headers
 
 //C++ system headers
-#include <stdint.h>
 #include <iostream>
+
 //Other libraries headers
 #include <SDL_video.h>
 
 //Own components headers
 
-
-int32_t MonitorWindow::init(const MonitorWindowCofg& cfg){
-	Point filanPos;
-	if(cfg.windowPos == Point::UNDEFINED){
-		filanPos.x = SDL_WINDOWPOS_UNDEFINED;
-		filanPos.y = SDL_WINDOWPOS_UNDEFINED;
-	}else {
-		filanPos = cfg.windowPos;
-	}
-
-	_window = SDL_CreateWindow(cfg.windowName.c_str(), cfg.windowPos.x, cfg.windowPos.y, cfg.width, cfg.height, cfg.flag);
-
-	if(_window == nullptr){
-		std::cerr<<"SDL_CreateWindow() failed. "<<SDL_GetError()<<"\n";
-		return EXIT_FAILURE;
-	}
-
-	return EXIT_SUCCESS;
+MonitorWindow::~MonitorWindow() {
+  deinit();
 }
 
-void MonitorWindow::deinit(){
-	if(_window != nullptr){
-		SDL_DestroyWindow(_window);
-		_window = nullptr;
-	}
-}
-SDL_Surface* MonitorWindow::getWindowSurface(){
-	SDL_Surface* _surface = SDL_GetWindowSurface(_window);
+int32_t MonitorWindow::init(const MonitorWindowCfg &cfg) {
+  Point initWindowPos = cfg.windowPos;
 
-	if(_surface == nullptr){
-		std::cerr<<"SDL_GetWindowSurface() failed. "<<SDL_GetError()<<"\n";
-		return nullptr;
-	}
-	return _surface;
-}
-MonitorWindow::~MonitorWindow(){
-	deinit();
+  if (Point::UNDEFINED == cfg.windowPos) {
+    initWindowPos.x = SDL_WINDOWPOS_UNDEFINED;
+    initWindowPos.y = SDL_WINDOWPOS_UNDEFINED;
+  }
+
+  _windowRect.w = cfg.windowWidth;
+  _windowRect.h = cfg.windowHeight;
+
+  //Create window
+  _window = SDL_CreateWindow(cfg.windowName.c_str(), initWindowPos.x,
+      initWindowPos.y, _windowRect.w, _windowRect.h, cfg.displayMode);
+
+  if (nullptr == _window) {
+    std::cerr << "Window could not be created! SDL Error: " << SDL_GetError()
+              << std::endl;
+    return EXIT_FAILURE;
+  }
+
+  //obtain real window coordinates after creation
+  SDL_GetWindowPosition(_window, &_windowRect.x, &_windowRect.y);
+
+  return EXIT_SUCCESS;
 }
 
-void MonitorWindow::updateWindowSurface(){
-	if(EXIT_SUCCESS != SDL_UpdateWindowSurface(_window)){
-		std::cerr<<"SDL_UpdateWindowSurface(_window) failed. "<<SDL_GetError()<<"\n";
-	}
+void MonitorWindow::deinit() {
+  if (_window) //sanity check
+  {
+    SDL_DestroyWindow(_window);
+    _window = nullptr;
+  }
 }
 
+SDL_Window* MonitorWindow::getWindow() const {
+  return _window;
+}
