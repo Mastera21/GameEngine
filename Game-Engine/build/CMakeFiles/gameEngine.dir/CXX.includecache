@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+..//engine/Engine.h
+cstdint
+-
+sdl/Event.h
+../engine/sdl/Event.h
+sdl/MonitorWindow.h
+../engine/sdl/MonitorWindow.h
+sdl/Renderer.h
+../engine/sdl/Renderer.h
+game/Game.h
+../engine/game/Game.h
+
+..//engine/EngineConfigLoader.h
+engine/config/EngineConfig.h
+../engine/engine/config/EngineConfig.h
+
 ..//engine/config/EngineConfig.h
 cstdint
 -
@@ -88,6 +104,24 @@ cstdint
 chrono
 -
 
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
+Application.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
+cstdint
+-
+iostream
+-
+engine/EngineConfigLoader.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/engine/EngineConfigLoader.h
+sdl/SDLLoader.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/sdl/SDLLoader.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
+cstdint
+-
+engine/Engine.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/engine/Engine.h
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.cpp
 Engine.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
@@ -147,14 +181,10 @@ game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 cstdint
 -
-iostream
+cstdlib
 -
-engine/Engine.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
-engine/EngineConfigLoader.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
-sdl/SDLLoader.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.h
+application/Application.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.cpp
 Event.h
@@ -220,10 +250,6 @@ SDL_image.h
 SDL_ttf.h
 -
 SDL_mixer.h
--
-
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.h
-cstdint
 -
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp

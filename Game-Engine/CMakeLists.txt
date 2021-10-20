@@ -33,6 +33,11 @@ set(_BASE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(
 	${PROJECT_NAME} 
 	
+		 #For application folder
+		 ${_BASE_DIR}/application/Application.h
+		 ${_BASE_DIR}/application/Application.cpp
+
+	
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
 		 ${_BASE_DIR}/engine/Engine.cpp

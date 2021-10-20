@@ -123,6 +123,33 @@ gameEngine/fast:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/build
 .PHONY : gameEngine/fast
 
+application/Application.o: application/Application.cpp.o
+
+.PHONY : application/Application.o
+
+# target to build an object file
+application/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.o
+.PHONY : application/Application.cpp.o
+
+application/Application.i: application/Application.cpp.i
+
+.PHONY : application/Application.i
+
+# target to preprocess a source file
+application/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.i
+.PHONY : application/Application.cpp.i
+
+application/Application.s: application/Application.cpp.s
+
+.PHONY : application/Application.s
+
+# target to generate assembly for a file
+application/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/application/Application.cpp.s
+.PHONY : application/Application.cpp.s
+
 engine/Engine.o: engine/Engine.cpp.o
 
 .PHONY : engine/Engine.o
@@ -483,6 +510,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gameEngine"
 	@echo "... edit_cache"
+	@echo "... application/Application.o"
+	@echo "... application/Application.i"
+	@echo "... application/Application.s"
 	@echo "... engine/Engine.o"
 	@echo "... engine/Engine.i"
 	@echo "... engine/Engine.s"
