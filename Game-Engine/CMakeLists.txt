@@ -36,6 +36,15 @@ add_executable(
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
 		 ${_BASE_DIR}/engine/Engine.cpp
+		 ${_BASE_DIR}/engine/EngineConfigLoader.h
+		 ${_BASE_DIR}/engine/EngineConfigLoader.cpp
+		 ${_BASE_DIR}/engine/config/EngineConfig.h
+		 
+		 #For game folder
+		 ${_BASE_DIR}/game/Game.h
+		 ${_BASE_DIR}/game/Game.cpp
+		 ${_BASE_DIR}/game/config/GameCfg.h
+		 
 	
 		 #For sdl folder
 		 ${_BASE_DIR}/sdl/Event.h
@@ -46,6 +55,8 @@ add_executable(
 		 ${_BASE_DIR}/sdl/SDLLoader.cpp
 		 ${_BASE_DIR}/sdl/Texture.h
 		 ${_BASE_DIR}/sdl/Texture.cpp
+		 ${_BASE_DIR}/sdl/Renderer.h
+		 ${_BASE_DIR}/sdl/Renderer.cpp
 		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
 		 
 		 
@@ -54,6 +65,16 @@ add_executable(
 		 ${_BASE_DIR}/utils/drawing/Point.cpp
 		 ${_BASE_DIR}/utils/drawing/Rectangle.h
 		 ${_BASE_DIR}/utils/drawing/Rectangle.cpp
+		 
+		 
+		 #For utils/thread folder
+		 ${_BASE_DIR}/utils/thread/ThreadUtils.h
+		 ${_BASE_DIR}/utils/thread/ThreadUtils.cpp
+		 
+		 
+		 #For utils/time folder
+		 ${_BASE_DIR}/utils/time/Time.h
+		 ${_BASE_DIR}/utils/time/Time.cpp
 		 
 		 
 		 

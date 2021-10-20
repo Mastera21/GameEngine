@@ -11,25 +11,63 @@
 
 //Own components headers
 
-int32_t Texture::loadSurfaceFromFile(const char *path,
-                                     SDL_Surface *&outSurface) {
-  freeSurface(outSurface);
 
-  //Load image at specified path
-  outSurface = IMG_Load(path);
-  if (nullptr == outSurface) {
-    std::cerr << "Unable to load image " << path << ". SDL_image Error: "
-        << IMG_GetError() << std::endl;
+static SDL_Renderer* gRenderer = nullptr;
 
-    return EXIT_FAILURE;
-  }
+int32_t Texture::createSurfaceFormFile(const std::string& filePath, SDL_Surface*& outSurface){
+	outSurface = IMG_Load(filePath.c_str());
 
-  return EXIT_SUCCESS;
+	if(outSurface == nullptr){
+		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
 }
 
-void Texture::freeSurface(SDL_Surface *&surface) {
-  if (surface) { //sanity check
-    SDL_FreeSurface(surface);
-    surface = nullptr;
-  }
+int32_t Texture::createTextureFormFile(const std::string& filePath, SDL_Texture*& outTexture){
+	SDL_Surface* surface = nullptr;
+
+	if(EXIT_SUCCESS != createSurfaceFormFile(filePath, surface)){
+		std::cerr<<"createSurfaceFormFile(filePath, surface) failed for filePath: "<< filePath << "\n";
+		return EXIT_FAILURE;
+	}
+
+	if(EXIT_SUCCESS != createTextureFormSurface(surface, outTexture)){
+		std::cerr<<"createTextureFormSurface(surface,outTexture) failed for filePath: "<< filePath << "\n";
+		return EXIT_FAILURE;
+	}
+
+	return EXIT_SUCCESS;
+
+}
+
+int32_t Texture::createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Texture*& outTexture){
+	outTexture = SDL_CreateTextureFromSurface(gRenderer, inOutSurface);
+
+	if(outTexture == nullptr){
+		std::cerr<<"SDL_CreateTextureFromSurface() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+
+	freeSurface(inOutSurface);
+
+	return EXIT_SUCCESS;
+}
+
+void Texture::freeSurface(SDL_Surface*& outSurface){
+	if(outSurface != nullptr){
+		SDL_FreeSurface(outSurface);
+		outSurface = nullptr;
+	}
+}
+
+void Texture::freeTexture(SDL_Texture*& outTexture){
+	if(outTexture != nullptr){
+		SDL_DestroyTexture(outTexture);
+		outTexture = nullptr;
+	}
+}
+
+void Texture::setRenderer(SDL_Renderer* renderer){
+	gRenderer = renderer;
 }

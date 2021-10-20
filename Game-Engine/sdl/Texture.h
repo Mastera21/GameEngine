@@ -5,6 +5,7 @@
 
 //C++ system headers
 #include <cstdint>
+#include <string>
 
 //Other libraries headers
 
@@ -12,15 +13,24 @@
 
 //Forward declarations
 struct SDL_Surface;
+struct SDL_Texture;
+struct SDL_Renderer;
 
 class Texture {
 public:
   Texture() = delete;
 
-  static int32_t loadSurfaceFromFile(const char *path,
-                                     SDL_Surface *&outSurface);
+  static int32_t createSurfaceFormFile(const std::string& filePath, SDL_Surface*& outSurface);
 
-  static void freeSurface(SDL_Surface *&surface);
+  static int32_t createTextureFormFile(const std::string& filePath, SDL_Texture*& outTexture);
+
+  static int32_t createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Texture*& outTexture);
+
+  static void freeSurface(SDL_Surface*& outSurface);
+
+  static void freeTexture(SDL_Texture*& outTexture);
+
+  static void setRenderer(SDL_Renderer* renderer);
 };
 
 #endif /* SDL_TEXTURE_H_ */

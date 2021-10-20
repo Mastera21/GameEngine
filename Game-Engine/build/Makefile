@@ -150,6 +150,60 @@ engine/Engine.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/Engine.cpp.s
 .PHONY : engine/Engine.cpp.s
 
+engine/EngineConfigLoader.o: engine/EngineConfigLoader.cpp.o
+
+.PHONY : engine/EngineConfigLoader.o
+
+# target to build an object file
+engine/EngineConfigLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
+.PHONY : engine/EngineConfigLoader.cpp.o
+
+engine/EngineConfigLoader.i: engine/EngineConfigLoader.cpp.i
+
+.PHONY : engine/EngineConfigLoader.i
+
+# target to preprocess a source file
+engine/EngineConfigLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.i
+.PHONY : engine/EngineConfigLoader.cpp.i
+
+engine/EngineConfigLoader.s: engine/EngineConfigLoader.cpp.s
+
+.PHONY : engine/EngineConfigLoader.s
+
+# target to generate assembly for a file
+engine/EngineConfigLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.s
+.PHONY : engine/EngineConfigLoader.cpp.s
+
+game/Game.o: game/Game.cpp.o
+
+.PHONY : game/Game.o
+
+# target to build an object file
+game/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/Game.cpp.o
+.PHONY : game/Game.cpp.o
+
+game/Game.i: game/Game.cpp.i
+
+.PHONY : game/Game.i
+
+# target to preprocess a source file
+game/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/Game.cpp.i
+.PHONY : game/Game.cpp.i
+
+game/Game.s: game/Game.cpp.s
+
+.PHONY : game/Game.s
+
+# target to generate assembly for a file
+game/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/Game.cpp.s
+.PHONY : game/Game.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -230,6 +284,33 @@ sdl/MonitorWindow.s: sdl/MonitorWindow.cpp.s
 sdl/MonitorWindow.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s
 .PHONY : sdl/MonitorWindow.cpp.s
+
+sdl/Renderer.o: sdl/Renderer.cpp.o
+
+.PHONY : sdl/Renderer.o
+
+# target to build an object file
+sdl/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
+.PHONY : sdl/Renderer.cpp.o
+
+sdl/Renderer.i: sdl/Renderer.cpp.i
+
+.PHONY : sdl/Renderer.i
+
+# target to preprocess a source file
+sdl/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.i
+.PHONY : sdl/Renderer.cpp.i
+
+sdl/Renderer.s: sdl/Renderer.cpp.s
+
+.PHONY : sdl/Renderer.s
+
+# target to generate assembly for a file
+sdl/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.s
+.PHONY : sdl/Renderer.cpp.s
 
 sdl/SDLLoader.o: sdl/SDLLoader.cpp.o
 
@@ -339,6 +420,60 @@ utils/drawing/Rectangle.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s
 .PHONY : utils/drawing/Rectangle.cpp.s
 
+utils/thread/ThreadUtils.o: utils/thread/ThreadUtils.cpp.o
+
+.PHONY : utils/thread/ThreadUtils.o
+
+# target to build an object file
+utils/thread/ThreadUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o
+.PHONY : utils/thread/ThreadUtils.cpp.o
+
+utils/thread/ThreadUtils.i: utils/thread/ThreadUtils.cpp.i
+
+.PHONY : utils/thread/ThreadUtils.i
+
+# target to preprocess a source file
+utils/thread/ThreadUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.i
+.PHONY : utils/thread/ThreadUtils.cpp.i
+
+utils/thread/ThreadUtils.s: utils/thread/ThreadUtils.cpp.s
+
+.PHONY : utils/thread/ThreadUtils.s
+
+# target to generate assembly for a file
+utils/thread/ThreadUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.s
+.PHONY : utils/thread/ThreadUtils.cpp.s
+
+utils/time/Time.o: utils/time/Time.cpp.o
+
+.PHONY : utils/time/Time.o
+
+# target to build an object file
+utils/time/Time.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o
+.PHONY : utils/time/Time.cpp.o
+
+utils/time/Time.i: utils/time/Time.cpp.i
+
+.PHONY : utils/time/Time.i
+
+# target to preprocess a source file
+utils/time/Time.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.i
+.PHONY : utils/time/Time.cpp.i
+
+utils/time/Time.s: utils/time/Time.cpp.s
+
+.PHONY : utils/time/Time.s
+
+# target to generate assembly for a file
+utils/time/Time.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.s
+.PHONY : utils/time/Time.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -351,6 +486,12 @@ help:
 	@echo "... engine/Engine.o"
 	@echo "... engine/Engine.i"
 	@echo "... engine/Engine.s"
+	@echo "... engine/EngineConfigLoader.o"
+	@echo "... engine/EngineConfigLoader.i"
+	@echo "... engine/EngineConfigLoader.s"
+	@echo "... game/Game.o"
+	@echo "... game/Game.i"
+	@echo "... game/Game.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -360,6 +501,9 @@ help:
 	@echo "... sdl/MonitorWindow.o"
 	@echo "... sdl/MonitorWindow.i"
 	@echo "... sdl/MonitorWindow.s"
+	@echo "... sdl/Renderer.o"
+	@echo "... sdl/Renderer.i"
+	@echo "... sdl/Renderer.s"
 	@echo "... sdl/SDLLoader.o"
 	@echo "... sdl/SDLLoader.i"
 	@echo "... sdl/SDLLoader.s"
@@ -372,6 +516,12 @@ help:
 	@echo "... utils/drawing/Rectangle.o"
 	@echo "... utils/drawing/Rectangle.i"
 	@echo "... utils/drawing/Rectangle.s"
+	@echo "... utils/thread/ThreadUtils.o"
+	@echo "... utils/thread/ThreadUtils.i"
+	@echo "... utils/thread/ThreadUtils.s"
+	@echo "... utils/time/Time.o"
+	@echo "... utils/time/Time.i"
+	@echo "... utils/time/Time.s"
 .PHONY : help
 
 

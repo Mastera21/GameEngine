@@ -8,13 +8,16 @@
 
 //Own components headers
 #include "engine/Engine.h"
-//#include "engine/EngineConfigLoader.h"
+#include "engine/EngineConfigLoader.h"
 #include "sdl/SDLLoader.h"
 
 static int32_t runApplication() {
 	Engine app;
 
-	//TODO
+	if(EXIT_SUCCESS != app.init(EngineConfigLoader::loadConfig())){
+		std::cerr<<"EngineConfigLoader::loadConfig() failed" << std::endl;
+		return EXIT_FAILURE;
+	}
 
 	app.start();
 	app.deinit();

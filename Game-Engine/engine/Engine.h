@@ -7,10 +7,11 @@
 #include <cstdint>
 
 //Other libraries headers
-#include "SDL.h"
-
 #include "sdl/Event.h"
 #include "sdl/MonitorWindow.h"
+#include "sdl/Renderer.h"
+#include "game/Game.h"
+
 
 //Forward declarations
 struct EngineConfig;
@@ -24,7 +25,8 @@ public:
 private:
 	MonitorWindow _window;
 	Event _event;
-	SDL_Surface* _screenSurface = nullptr;
+	Renderer _render;
+	Game _game;
 
 	void mainLoop();
 	void drawFrame();

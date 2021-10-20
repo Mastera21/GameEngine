@@ -8,12 +8,12 @@
 
 //Other libraries headers
 #include "sdl/config/MonitorWindowCfg.h"
-
+#include "game/Game.h"
 //Own components headers
 
 struct EngineConfig {
 	MonitorWindowCofg windowCfg;
-
+	GameCfg gameCfg;
 };
 
 
