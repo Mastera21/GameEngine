@@ -77,6 +77,7 @@ bool Engine::processFrame(){
 		}
 		handleEvent();
 	}
+	//-----------------------Drawing -----------------------
 	drawFrame();
 	return false;
 }
