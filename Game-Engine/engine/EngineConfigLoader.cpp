@@ -12,7 +12,7 @@ namespace {
 
 constexpr auto WINDOW_WIDTH = 640;//1080
 constexpr auto WINDOW_HEIGHT = 480;//640
-constexpr auto WINDOW_NAME = "Hardware_Rendering";
+constexpr auto WINDOW_NAME = "GameEngine";
 
 }
 
