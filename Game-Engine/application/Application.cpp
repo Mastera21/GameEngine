@@ -24,7 +24,7 @@ int32_t Application::init(){
 		return EXIT_FAILURE;
 	}
 
-	_engine.start();
+	_engine.main();
 	_engine.deinit();
 
 	SDLLoader::deinit();

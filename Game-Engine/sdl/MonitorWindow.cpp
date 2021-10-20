@@ -4,7 +4,7 @@
 
 #include "SDL_video.h"
 
-int32_t MonitorWindow::init(const MonitorWindowCofg& cfg){
+int32_t sd::MonitorWindow::init(const MonitorWindowCofg& cfg){
 	Point finalPos;
 	if(cfg.windowPos == Point::UNDEFINED){
 		finalPos.x = SDL_WINDOWPOS_UNDEFINED;
@@ -17,29 +17,30 @@ int32_t MonitorWindow::init(const MonitorWindowCofg& cfg){
 
 	if(_window == nullptr){
 		std::cerr<<"SDL_CreateWindow() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
 	}
 
 	return EXIT_SUCCESS;
 }
 
-void MonitorWindow::deinit(){
+void sd::MonitorWindow::deinit(){
 	if(_window != nullptr){
 		SDL_DestroyWindow(_window);
 		_window = nullptr;
 	}
 }
 
-MonitorWindow::~MonitorWindow(){
+sd::MonitorWindow::~MonitorWindow(){
 	deinit();
 }
 
-void MonitorWindow::updateWindowSurface(){
+void sd::MonitorWindow::updateWindowSurface(){
 	if(EXIT_SUCCESS != SDL_UpdateWindowSurface(_window)){
 		std::cerr<<"SDL_UpdateWindowSurface() failed. Reason: "<< SDL_GetError() << "\n";
 	}
 }
 
-SDL_Window* MonitorWindow::getWindow(){
+SDL_Window* sd::MonitorWindow::getWindow(){
 	return _window;
 }
 

@@ -37,6 +37,8 @@ vector
 -
 game/config/GameCfg.h
 ../game/game/config/GameCfg.h
+sdl/Event.h
+../game/sdl/Event.h
 
 ..//game/config/GameCfg.h
 cstdint
@@ -59,6 +61,8 @@ string
 -
 sdl/config/MonitorWindowCfg.h
 ../sdl/sdl/config/MonitorWindowCfg.h
+sdl/Event.h
+../sdl/sdl/Event.h
 
 ..//sdl/Renderer.h
 cstdint
@@ -177,6 +181,8 @@ vector
 -
 game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 cstdint
@@ -219,6 +225,8 @@ string
 -
 sdl/config/MonitorWindowCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/sdl/config/MonitorWindowCfg.h
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp
 Renderer.h

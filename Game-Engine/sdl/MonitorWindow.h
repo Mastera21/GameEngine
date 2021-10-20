@@ -11,10 +11,14 @@
 
 //Own components headers
 #include "sdl/config/MonitorWindowCfg.h"
+#include "sdl/Event.h"
 
 //Forward declarations
 struct SDL_Window;
 struct SDL_Surface;
+
+
+namespace sd{
 
 class MonitorWindow {
 public:
@@ -37,5 +41,6 @@ public:
 private:
 	SDL_Window* _window = nullptr;
 };
+}
 
 #endif /* SDL_MONITORWINDOW_H_ */

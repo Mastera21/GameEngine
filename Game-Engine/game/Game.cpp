@@ -49,7 +49,7 @@ void Game::draw(std::vector<SDL_Texture*>& images){
 	//images.push_back(_imageSurfaces[LAYER_2]);
 }
 
-void Game::handleEvent(const Event& event){
+void Game::handleEvent(const sd::Event& event){
 	if(TouchEvent::KEYBOARD_RELEASE == event.type){
 		_currChosenImage = _imageSurfaces[PRESS_KEYS];
 		return;

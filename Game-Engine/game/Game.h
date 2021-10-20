@@ -12,10 +12,10 @@
 
 //Own components headers
 #include "game/config/GameCfg.h"
+#include "sdl/Event.h"
 
+//Forward declarations
 struct SDL_Texture;
-struct Event;
-
 
 class Game {
 public:
@@ -23,7 +23,7 @@ public:
 	int32_t init(const GameCfg& cfg);
 	void deinit();
 	void draw(std::vector<SDL_Texture* >& images);
-	void handleEvent(const Event& event);
+	void handleEvent(const sd::Event& event);
 
 private:
 

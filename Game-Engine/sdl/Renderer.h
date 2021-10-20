@@ -16,6 +16,8 @@ struct SDL_Renderer;
 struct SDL_Texture;
 struct SDL_Window;
 
+namespace sd{
+
 class Renderer {
 public:
 	Renderer() = default;
@@ -36,5 +38,6 @@ private:
 	SDL_Renderer *_sdlRenderer = nullptr;
 
 };
+}
 
 #endif /* SDL_RENDERER_H_ */

@@ -41,11 +41,8 @@ int32_t Engine::init(const EngineConfig& cfg){
 
 	return EXIT_SUCCESS;
 }
-void Engine::start(){
-	mainLoop();
-}
 
-void Engine::mainLoop(){
+void Engine::main(){
 	Time time;
 
 	while(true){

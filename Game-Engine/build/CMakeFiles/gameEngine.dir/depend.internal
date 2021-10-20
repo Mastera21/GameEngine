@@ -34,8 +34,10 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
+ ..//sdl/Event.h
  ..//sdl/config/MonitorWindowCfg.h
  ..//utils/drawing/Point.h
+ ..//utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
@@ -87,8 +89,10 @@ CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
 CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
+ ..//sdl/Event.h
  ..//sdl/config/MonitorWindowCfg.h
  ..//utils/drawing/Point.h
+ ..//utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.h
  /usr/include/SDL2/SDL_blendmode.h
