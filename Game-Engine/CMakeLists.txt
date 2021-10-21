@@ -70,6 +70,7 @@ add_executable(
 		 ${_BASE_DIR}/utils/drawing/Point.cpp
 		 ${_BASE_DIR}/utils/drawing/Rectangle.h
 		 ${_BASE_DIR}/utils/drawing/Rectangle.cpp
+		 ${_BASE_DIR}/utils/drawing/DrawParams.h
 		 
 		 
 		 #For utils/thread folder

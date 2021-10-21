@@ -115,6 +115,7 @@ CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_blendmode.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_config.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_endian.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_error.h
+CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_hints.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_pixels.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_platform.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_rect.h

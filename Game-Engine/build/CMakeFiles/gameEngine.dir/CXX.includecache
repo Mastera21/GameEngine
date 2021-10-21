@@ -235,6 +235,8 @@ iostream
 -
 SDL_render.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDL_render.h
+SDL_hints.h
+-
 sdl/Texture.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/sdl/Texture.h
 
