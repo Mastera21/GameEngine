@@ -70,3 +70,25 @@ void Texture::freeTexture(SDL_Texture*& outTexture){
 void Texture::setRenderer(SDL_Renderer* renderer){
 	gRenderer = renderer;
 }
+
+int32_t Texture::setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode){
+	if(EXIT_SUCCESS != SDL_SetTextureBlendMode(texture, static_cast<SDL_BlendMode>(blendMode))){
+		std::cerr<<"SDL_SetTextureBlendMode failed: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+
+	return EXIT_SUCCESS;
+}
+
+int32_t Texture::setAlphaTexture(SDL_Texture *texture, int32_t alpha){
+	if(alpha < ZERO_OPACITY || alpha >= FULL_OPACITY){
+		std::cerr<<"Error, invalid alpha value: " << alpha << " provided.\n";
+		return EXIT_FAILURE;
+	}
+
+	if(EXIT_SUCCESS != SDL_SetTextureAlphaMod(texture, static_cast<uint8_t>(alpha))){
+		std::cerr<<"SDL_SetTextureAlphaMod failed: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}

@@ -91,6 +91,8 @@ cstdint
 -
 string
 -
+utils/drawing/DrawParams.h
+../sdl/utils/drawing/DrawParams.h
 
 ..//sdl/config/ImageContainerCfg.h
 cstring

@@ -10,6 +10,7 @@
 //Other libraries headers
 
 //Own components headers
+#include "utils/drawing/DrawParams.h"
 
 //Forward declarations
 struct SDL_Surface;
@@ -25,6 +26,10 @@ public:
 	static int32_t createTextureFormFile(const std::string& filePath, SDL_Texture*& outTexture);
 
 	static int32_t createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Texture*& outTexture);
+
+	int32_t setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode);
+
+	int32_t setAlphaTexture(SDL_Texture *texture, int32_t alpha);
 
 	static void freeSurface(SDL_Surface*& outSurface);
 

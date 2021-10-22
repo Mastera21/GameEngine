@@ -195,6 +195,8 @@ CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/close_code.h
 
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.h
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.cpp
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_assert.h
@@ -244,6 +246,7 @@ CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/close_code.h
 
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/Texture.h
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/config/ImageContainerCfg.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.cpp
