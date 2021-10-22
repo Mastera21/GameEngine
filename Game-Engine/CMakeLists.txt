@@ -36,6 +36,9 @@ add_executable(
 		 #For application folder
 		 ${_BASE_DIR}/application/Application.h
 		 ${_BASE_DIR}/application/Application.cpp
+		 
+		 #For common folder
+		  ${_BASE_DIR}/common/CommonDefines.h
 
 	
 		 #For engine folder
@@ -62,7 +65,14 @@ add_executable(
 		 ${_BASE_DIR}/sdl/Texture.cpp
 		 ${_BASE_DIR}/sdl/Renderer.h
 		 ${_BASE_DIR}/sdl/Renderer.cpp
+		 
 		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
+		 ${_BASE_DIR}/sdl/config/ImageContainerCfg.h
+		 
+		 ${_BASE_DIR}/sdl/containers/ImageContainer.h
+		 ${_BASE_DIR}/sdl/containers/ImageContainer.cpp
+		 
+		 
 		 
 		 
 		 #For utils folder

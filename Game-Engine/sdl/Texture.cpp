@@ -8,10 +8,9 @@
 
 //Other libraries headers
 #include <SDL_image.h>
+#include <SDL_render.h>
 
 //Own components headers
-
-
 static SDL_Renderer* gRenderer = nullptr;
 
 int32_t Texture::createSurfaceFormFile(const std::string& filePath, SDL_Surface*& outSurface){

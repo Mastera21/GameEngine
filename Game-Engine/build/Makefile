@@ -393,6 +393,33 @@ sdl/Texture.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s
 .PHONY : sdl/Texture.cpp.s
 
+sdl/containers/ImageContainer.o: sdl/containers/ImageContainer.cpp.o
+
+.PHONY : sdl/containers/ImageContainer.o
+
+# target to build an object file
+sdl/containers/ImageContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
+.PHONY : sdl/containers/ImageContainer.cpp.o
+
+sdl/containers/ImageContainer.i: sdl/containers/ImageContainer.cpp.i
+
+.PHONY : sdl/containers/ImageContainer.i
+
+# target to preprocess a source file
+sdl/containers/ImageContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.i
+.PHONY : sdl/containers/ImageContainer.cpp.i
+
+sdl/containers/ImageContainer.s: sdl/containers/ImageContainer.cpp.s
+
+.PHONY : sdl/containers/ImageContainer.s
+
+# target to generate assembly for a file
+sdl/containers/ImageContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s
+.PHONY : sdl/containers/ImageContainer.cpp.s
+
 utils/drawing/Point.o: utils/drawing/Point.cpp.o
 
 .PHONY : utils/drawing/Point.o
@@ -540,6 +567,9 @@ help:
 	@echo "... sdl/Texture.o"
 	@echo "... sdl/Texture.i"
 	@echo "... sdl/Texture.s"
+	@echo "... sdl/containers/ImageContainer.o"
+	@echo "... sdl/containers/ImageContainer.i"
+	@echo "... sdl/containers/ImageContainer.s"
 	@echo "... utils/drawing/Point.o"
 	@echo "... utils/drawing/Point.i"
 	@echo "... utils/drawing/Point.s"

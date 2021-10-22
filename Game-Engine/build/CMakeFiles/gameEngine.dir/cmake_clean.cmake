@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o"
   "CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o"
+  "CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o"

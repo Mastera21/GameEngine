@@ -28,18 +28,31 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
+	if(EXIT_SUCCESS != _imgContainer.init(cfg.imageContainerCfg)){
+		std::cerr<<"_imgContainer.init() failed" << std::endl;
+		return EXIT_FAILURE;
+	}
+
+
 	if(EXIT_SUCCESS != _event.init()){
 		std::cerr<<"_event.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _game.init(cfg.gameCfg)){
+	if(EXIT_SUCCESS != _game.init(cfg.gameCfg, &_imgContainer)){
 		std::cerr<<"_game.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
 
-
 	return EXIT_SUCCESS;
+}
+
+void Engine::deinit(){
+	_game.deinit();
+	_event.deinit();
+	_imgContainer.deinit();
+	_render.deinit();
+	_window.deinit();
 }
 
 void Engine::main(){
@@ -58,12 +71,14 @@ void Engine::main(){
 }
 void Engine::drawFrame(){
 	_render.clearScreen();
-	std::vector<SDL_Texture*> images;
+	std::vector<DrawParams> images;
 	_game.draw(images);
-
-	for(auto& i : images){
-		_render.renderTexture(i);
+	SDL_Texture* texture = nullptr;
+	for(const DrawParams& i : images){
+		texture = _imgContainer.getImageTexture(i.rsrcId);
+		_render.renderTexture(texture, i);
 	}
+
 	_render.finishFrame();
 
 }
@@ -91,9 +106,3 @@ void Engine::limitFPS(int64_t elapsedTimeMicroSeconds){
 	}
 }
 
-void Engine::deinit(){
-	_game.deinit();
-	_event.deinit();
-	_render.deinit();
-	_window.deinit();
-}

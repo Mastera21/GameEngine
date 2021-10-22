@@ -11,6 +11,7 @@
 #include "sdl/MonitorWindow.h"
 #include "sdl/Renderer.h"
 #include "game/Game.h"
+#include "sdl/containers/ImageContainer.h"
 
 //Forward declarations
 struct EngineConfig;
@@ -24,7 +25,8 @@ public:
 private:
 	sd::MonitorWindow _window;
 	sd::Event _event;
-	sd::Renderer _render;
+	Renderer _render;
+	ImageContainer _imgContainer;
 	Game _game;
 
 	void drawFrame();

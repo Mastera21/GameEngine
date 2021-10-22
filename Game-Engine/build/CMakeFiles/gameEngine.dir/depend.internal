@@ -11,8 +11,12 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//sdl/MonitorWindow.h
  ..//sdl/Renderer.h
  ..//sdl/SDLLoader.h
+ ..//sdl/config/ImageContainerCfg.h
  ..//sdl/config/MonitorWindowCfg.h
+ ..//sdl/containers/ImageContainer.h
+ ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
+ ..//utils/drawing/Rectangle.h
  ..//utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
@@ -23,28 +27,35 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//sdl/Event.h
  ..//sdl/MonitorWindow.h
  ..//sdl/Renderer.h
+ ..//sdl/config/ImageContainerCfg.h
  ..//sdl/config/MonitorWindowCfg.h
+ ..//sdl/containers/ImageContainer.h
+ ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
+ ..//utils/drawing/Rectangle.h
  ..//utils/input/EventDefines.h
  ..//utils/thread/ThreadUtils.h
  ..//utils/time/Time.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
+ ..//common/CommonDefines.h
  ..//engine/config/EngineConfig.h
- ..//game/Game.h
  ..//game/config/GameCfg.h
- ..//sdl/Event.h
+ ..//sdl/config/ImageContainerCfg.h
  ..//sdl/config/MonitorWindowCfg.h
  ..//utils/drawing/Point.h
- ..//utils/input/EventDefines.h
+ ..//utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
  ..//sdl/Event.h
- ..//sdl/Texture.h
+ ..//sdl/config/ImageContainerCfg.h
+ ..//sdl/containers/ImageContainer.h
+ ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
+ ..//utils/drawing/Rectangle.h
  ..//utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
@@ -55,8 +66,12 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//sdl/Event.h
  ..//sdl/MonitorWindow.h
  ..//sdl/Renderer.h
+ ..//sdl/config/ImageContainerCfg.h
  ..//sdl/config/MonitorWindowCfg.h
+ ..//sdl/containers/ImageContainer.h
+ ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
+ ..//utils/drawing/Rectangle.h
  ..//utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
@@ -110,6 +125,8 @@ CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
  /usr/include/SDL2/close_code.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
  ..//sdl/Texture.h
+ ..//utils/drawing/DrawParams.h
+ ..//utils/drawing/Point.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.h
  /usr/include/SDL2/SDL_blendmode.h
@@ -225,6 +242,13 @@ CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
  /usr/include/SDL2/SDL_video.h
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
+ ..//sdl/Texture.h
+ ..//sdl/config/ImageContainerCfg.h
+ ..//utils/drawing/Point.h
+ ..//utils/drawing/Rectangle.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h

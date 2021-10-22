@@ -13,6 +13,8 @@
 
 //Forward declarations
 
+inline constexpr auto INVALID_RSRC_ID = -1;
+
 struct DrawParams {
   //Top left position of texture
   Point pos = Point::UNDEFINED;
@@ -22,7 +24,7 @@ struct DrawParams {
   int32_t height = 0;
 
   //unique resourceId
-  int32_t rsrcId = -1;
+  int32_t rsrcId = INVALID_RSRC_ID;
 };
 
 

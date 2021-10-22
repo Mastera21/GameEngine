@@ -10,8 +10,12 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/Event.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/MonitorWindow.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/Renderer.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/SDLLoader.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/ImageContainerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/MonitorWindowCfg.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Application.cpp
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Application.h
@@ -22,28 +26,35 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/Event.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/MonitorWindow.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/Renderer.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/ImageContainerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/MonitorWindowCfg.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/thread/ThreadUtils.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/time/Time.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/Engine.cpp
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/Engine.h
 
+CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../common/CommonDefines.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/config/EngineConfig.h
-CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../game/config/GameCfg.h
-CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../sdl/Event.h
+CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../sdl/config/ImageContainerCfg.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../sdl/config/MonitorWindowCfg.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../utils/drawing/Point.h
-CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../utils/input/EventDefines.h
+CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.cpp
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/Event.h
-CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/Texture.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/config/ImageContainerCfg.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
@@ -54,8 +65,12 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/Event.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/MonitorWindow.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/Renderer.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/ImageContainerCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/MonitorWindowCfg.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../application/Application.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../main.cpp
@@ -109,6 +124,8 @@ CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: /usr/include/SDL2/begin_code.
 CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: /usr/include/SDL2/close_code.h
 
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../sdl/Texture.h
+CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../sdl/Renderer.cpp
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../sdl/Renderer.h
 CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: /usr/include/SDL2/SDL_blendmode.h
@@ -224,6 +241,13 @@ CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_version.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/close_code.h
+
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/Texture.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/config/ImageContainerCfg.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.cpp
+CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.h
 
 CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: ../utils/drawing/Point.cpp
 CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: ../utils/drawing/Point.h

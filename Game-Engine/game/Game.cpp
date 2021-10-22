@@ -10,66 +10,61 @@
 //Other libraries headers
 
 //Own components headers
-#include "sdl/Texture.h"
 #include "sdl/Event.h"
+#include "sdl/containers/ImageContainer.h"
 
-int32_t Game::loadResources(const std::unordered_map<GameImages,std::string>& res){
-	for(const auto& i : res){
-		const auto resId = i.first;
-		const auto& location = i.second;
+int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _imgContainerInterface){
 
-		if(EXIT_SUCCESS != Texture::createTextureFormFile(location, _imageSurfaces[resId])){
-				std::cerr<<"Texture::createSurfaceFormFile() failed" << location << std::endl;
-				return EXIT_FAILURE;
-		}
-	}
-
-	return EXIT_SUCCESS;
-}
-
-int32_t Game::init(const GameCfg& cfg){
-	if(EXIT_SUCCESS != loadResources(cfg.imagesPaths)){
-		std::cerr<<"loadResources() failed" << std::endl;
+	if(_imgContainerInterface == nullptr){
+		std::cerr<<"Error, nullptr provided for _imgContainerInterface\n";
 		return EXIT_FAILURE;
 	}
 
-	_currChosenImage = _imageSurfaces[PRESS_KEYS];
+	_imgContainer = _imgContainerInterface;
+
+	layer2Image.rsrcId = cfg.layer2Rsrcid;
+
+	Rectangle rect = _imgContainer->getImageFrame(layer2Image.rsrcId);
+	layer2Image.width = rect.w;
+	layer2Image.height = rect.h;
+	layer2Image.pos = Point::ZERO;
+
+	pressKeyImage.rsrcId = cfg.pressKeysRsrcId;
+	rect = _imgContainer->getImageFrame(pressKeyImage.rsrcId);
+	pressKeyImage.width = rect.w;
+	pressKeyImage.height = rect.h;
+	pressKeyImage.pos = Point::ZERO;
+	pressKeyImage.pos.y += 20;
 
 	return EXIT_SUCCESS;
 }
 
 void Game::deinit(){
-	for(int64_t i = 0; i < COUNT; ++i){
-		Texture::freeTexture(_imageSurfaces[i]);
-	}
+
 }
 
-void Game::draw(std::vector<SDL_Texture*>& images){
-	images.push_back(_currChosenImage);
-	//images.push_back(_imageSurfaces[LAYER_2]);
+void Game::draw(std::vector<DrawParams>& images){
+	images.push_back(pressKeyImage);
+	images.push_back(layer2Image);
 }
 
-void Game::handleEvent(const sd::Event& event){
-	if(TouchEvent::KEYBOARD_RELEASE == event.type){
-		_currChosenImage = _imageSurfaces[PRESS_KEYS];
-		return;
-	}
+void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}
 
 	switch(event.key){
 		case Keyboard::KEY_UP:
-			_currChosenImage = _imageSurfaces[UP];
+			pressKeyImage.pos.y -= 10;
 			break;
 		case Keyboard::KEY_DOWN:
-			_currChosenImage = _imageSurfaces[DOWN];
+			pressKeyImage.pos.y += 10;
 			break;
 		case Keyboard::KEY_LEFT:
-			_currChosenImage = _imageSurfaces[LEFT];
+			pressKeyImage.pos.x -= 10;
 			break;
 		case Keyboard::KEY_RIGHT:
-			_currChosenImage = _imageSurfaces[RIGHT];
+			pressKeyImage.pos.x += 10;
 			break;
 		default:
 			break;

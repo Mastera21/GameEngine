@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+..//common/CommonDefines.h
+iostream
+-
+
 ..//engine/Engine.h
 cstdint
 -
@@ -17,6 +21,8 @@ sdl/Renderer.h
 ../engine/sdl/Renderer.h
 game/Game.h
 ../engine/game/Game.h
+sdl/containers/ImageContainer.h
+../engine/sdl/containers/ImageContainer.h
 
 ..//engine/EngineConfigLoader.h
 engine/config/EngineConfig.h
@@ -27,8 +33,10 @@ cstdint
 -
 sdl/config/MonitorWindowCfg.h
 ../engine/config/sdl/config/MonitorWindowCfg.h
-game/Game.h
-../engine/config/game/Game.h
+sdl/config/ImageContainerCfg.h
+../engine/config/sdl/config/ImageContainerCfg.h
+game/config/GameCfg.h
+../engine/config/game/config/GameCfg.h
 
 ..//game/Game.h
 cstdint
@@ -37,6 +45,8 @@ vector
 -
 game/config/GameCfg.h
 ../game/game/config/GameCfg.h
+utils/drawing/DrawParams.h
+../game/utils/drawing/DrawParams.h
 sdl/Event.h
 ../game/sdl/Event.h
 
@@ -69,6 +79,8 @@ cstdint
 -
 vector
 -
+utils/drawing/DrawParams.h
+../sdl/utils/drawing/DrawParams.h
 
 ..//sdl/SDLLoader.h
 cstdint
@@ -80,6 +92,14 @@ cstdint
 string
 -
 
+..//sdl/config/ImageContainerCfg.h
+cstring
+-
+unordered_map
+-
+utils/drawing/Rectangle.h
+../sdl/config/utils/drawing/Rectangle.h
+
 ..//sdl/config/MonitorWindowCfg.h
 cstdint
 -
@@ -88,9 +108,31 @@ string
 utils/drawing/Point.h
 ../sdl/config/utils/drawing/Point.h
 
+..//sdl/containers/ImageContainer.h
+cstring
+-
+unordered_map
+-
+utils/drawing/Rectangle.h
+../sdl/containers/utils/drawing/Rectangle.h
+sdl/config/ImageContainerCfg.h
+../sdl/containers/sdl/config/ImageContainerCfg.h
+
+..//utils/drawing/DrawParams.h
+cstdint
+-
+utils/drawing/Point.h
+../utils/drawing/utils/drawing/Point.h
+
 ..//utils/drawing/Point.h
 cstdint
 -
+
+..//utils/drawing/Rectangle.h
+cstdint
+-
+utils/drawing/Point.h
+../utils/drawing/utils/drawing/Point.h
 
 ..//utils/input/EventDefines.h
 cstdint
@@ -153,10 +195,14 @@ sdl/Renderer.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/Renderer.h
 game/Game.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/game/Game.h
+sdl/containers/ImageContainer.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/containers/ImageContainer.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
 EngineConfigLoader.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
+common/CommonDefines.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/common/CommonDefines.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 engine/config/EngineConfig.h
@@ -169,10 +215,10 @@ string
 -
 iostream
 -
-sdl/Texture.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Texture.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
+sdl/containers/ImageContainer.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/containers/ImageContainer.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
 cstdint
@@ -181,6 +227,8 @@ vector
 -
 game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h
+utils/drawing/DrawParams.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/drawing/DrawParams.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 
@@ -245,6 +293,8 @@ cstdint
 -
 vector
 -
+utils/drawing/DrawParams.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/utils/drawing/DrawParams.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp
 sdl/SDLLoader.h
@@ -269,6 +319,26 @@ iostream
 -
 SDL_image.h
 -
+SDL_render.h
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp
+ImageContainer.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
+iostream
+-
+sdl/Texture.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/sdl/Texture.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
+cstring
+-
+unordered_map
+-
+utils/drawing/Rectangle.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/utils/drawing/Rectangle.h
+sdl/config/ImageContainerCfg.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/sdl/config/ImageContainerCfg.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
 Point.h

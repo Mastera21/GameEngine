@@ -12,25 +12,27 @@
 
 //Own components headers
 #include "game/config/GameCfg.h"
+#include "utils/drawing/DrawParams.h"
 #include "sdl/Event.h"
 
 //Forward declarations
-struct SDL_Texture;
+struct ImageContainer;
 
 class Game {
 public:
 
-	int32_t init(const GameCfg& cfg);
+	int32_t init(const GameCfg cfg, const ImageContainer* _imgContainerInterface);
 	void deinit();
-	void draw(std::vector<SDL_Texture* >& images);
+	void draw(std::vector<DrawParams>& images);
 	void handleEvent(const sd::Event& event);
 
 private:
 
-	SDL_Texture *_currChosenImage = nullptr;
-	SDL_Texture *_imageSurfaces[COUNT] {};
+	DrawParams pressKeyImage;//first image
+	DrawParams layer2Image;//second image
 
-	int32_t loadResources(const std::unordered_map<GameImages,std::string>& res);
+	//TODO Remove me !!!
+	const ImageContainer* _imgContainer = nullptr;
 
 };
 

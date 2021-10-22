@@ -12,12 +12,9 @@
 
 //Own components headers
 
-enum GameImages {
-	 UP, DOWN, LEFT, RIGHT, PRESS_KEYS, LAYER_2, COUNT
-};
-
 struct GameCfg{
-	std::unordered_map<GameImages,std::string> imagesPaths;
+	int32_t pressKeysRsrcId;
+	int32_t layer2Rsrcid;
 
 };
 
