@@ -40,7 +40,10 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 }
 
 void Game::deinit(){
-
+	if(_imgContainer != nullptr){
+		delete _imgContainer;
+		_imgContainer = nullptr;
+	}
 }
 
 void Game::draw(std::vector<DrawParams>& images){
@@ -52,7 +55,7 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}
-
+	//Refact keys
 	switch(event.key){
 		case Keyboard::KEY_UP:
 			pressKeyImage.pos.y -= 10;
