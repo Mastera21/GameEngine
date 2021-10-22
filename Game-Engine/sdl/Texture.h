@@ -27,9 +27,9 @@ public:
 
 	static int32_t createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Texture*& outTexture);
 
-	int32_t setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode);
+	static int32_t setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode);
 
-	int32_t setAlphaTexture(SDL_Texture *texture, int32_t alpha);
+	static int32_t setAlphaTexture(SDL_Texture *texture, int32_t alpha);
 
 	static void freeSurface(SDL_Surface*& outSurface);
 

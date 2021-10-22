@@ -54,6 +54,10 @@ void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams)
 	const SDL_Rect destRect = {.x = drawParams.pos.x, .y = drawParams.pos.y,
 							   .w = drawParams.width, .h = drawParams.height};
 
+	if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)){
+		std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
+	}
+
 	if(EXIT_SUCCESS != SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect)){
 		std::cerr<<"SDL_RenderCopy() failed. Reason: "<< SDL_GetError() << "\n";
 	}

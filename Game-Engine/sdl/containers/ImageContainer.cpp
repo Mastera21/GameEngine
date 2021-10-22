@@ -8,6 +8,8 @@
 
 //Own components headers
 #include "sdl/Texture.h"
+//TODO remove me
+#include "utils/drawing/DrawParams.h"
 
 int32_t ImageContainer::init(const ImageContainerCfg& cfg){
 	for(const auto& pair : cfg.imageConfigs){
@@ -52,8 +54,15 @@ Rectangle ImageContainer::getImageFrame(int32_t rsrcId) const{
 int32_t ImageContainer::loadSingleResource(const ImageCfg& resCfg,int32_t rsrcId){
 
 	SDL_Texture* texture = nullptr;
+
 	if(EXIT_SUCCESS != Texture::createTextureFormFile(resCfg.location, texture)){
 		std::cerr<<"Texture::createTextureFormFile() failed" << resCfg.location << "\n";
+		return EXIT_FAILURE;
+	}
+
+	//TODO remove me
+	if(EXIT_SUCCESS != Texture::setBlendModeTexture(texture, BlendMode::BLEND)){
+		std::cerr<<"Texture::setBlendModeTexture() failed for file: " << resCfg.location << "\n";
 		return EXIT_FAILURE;
 	}
 

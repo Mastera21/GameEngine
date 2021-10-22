@@ -81,7 +81,7 @@ int32_t Texture::setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode){
 }
 
 int32_t Texture::setAlphaTexture(SDL_Texture *texture, int32_t alpha){
-	if(alpha < ZERO_OPACITY || alpha >= FULL_OPACITY){
+	if(ZERO_OPACITY > alpha || alpha > FULL_OPACITY){
 		std::cerr<<"Error, invalid alpha value: " << alpha << " provided.\n";
 		return EXIT_FAILURE;
 	}

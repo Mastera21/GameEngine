@@ -82,6 +82,13 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 		case Keyboard::KEY_R:
 			pressKeyImage.height += 10;
 			break;
+
+		case Keyboard::KEY_T:
+			pressKeyImage.opacity -= 10;
+			break;
+		case Keyboard::KEY_Y:
+			pressKeyImage.opacity += 10;
+			break;
 		default:
 			break;
 	}

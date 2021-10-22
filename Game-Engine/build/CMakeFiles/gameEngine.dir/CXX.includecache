@@ -331,6 +331,8 @@ iostream
 -
 sdl/Texture.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/sdl/Texture.h
+utils/drawing/DrawParams.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/utils/drawing/DrawParams.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
 cstring
