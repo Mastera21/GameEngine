@@ -66,6 +66,19 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 		case Keyboard::KEY_RIGHT:
 			pressKeyImage.pos.x += 10;
 			break;
+
+		case Keyboard::KEY_Q:
+			pressKeyImage.width -= 10;
+			break;
+		case Keyboard::KEY_W:
+			pressKeyImage.width += 10;
+			break;
+		case Keyboard::KEY_E:
+			pressKeyImage.height -= 10;
+			break;
+		case Keyboard::KEY_R:
+			pressKeyImage.height += 10;
+			break;
 		default:
 			break;
 	}
