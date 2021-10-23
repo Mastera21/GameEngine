@@ -50,27 +50,66 @@ void TextContainer::createText(const std::string& text, const Color &color, int3
 		std::cerr<<"Texture::createTextFromText() failed for text: "<< text << "\n";
 		return;
 	}
+
+	occupyFreeSlotIndex(outTextId,textTexture);
 }
 
 void TextContainer::reloadText(const std::string& text, const Color &color, int32_t fontId,
                          int32_t textId, int32_t &outTextWidth,
                          int32_t &outTextHeight){
-	//TODO
+
+	auto it = _fonts.find(fontId);
+	if(it == _fonts.end()){
+		std::cerr<<"Error, fontId " << fontId<< "could not be found. Will not reload text: " << text<<"\n";
+		return;
+	}
+
+	freeSlotIndex(textId);
+
+	TTF_Font* font = it->second;
+	SDL_Texture* textTexture = nullptr;
+	if(EXIT_SUCCESS != Texture::createTextFromText(text, color, font, textTexture, outTextWidth, outTextHeight)){
+		std::cerr<<"Texture::createTextFromText() failed for text: "<< text << "\n";
+		return;
+	}
+
+	_textures[textId] = textTexture;
 }
 
 void TextContainer::unloadText(int32_t textId){
-	//TODO
+	if(0 > textId || textId >= static_cast<int32_t>(_textures.size())){
+		std::cerr<<"Error, trying to unload non-existing textId: "<< textId <<"\n";
+		return;
+	}
+	freeSlotIndex(textId);
 }
 
 SDL_Texture* TextContainer::getTextTexture(int32_t textId) const{
-	//TODO
+	if(0 > textId || textId >= static_cast<int32_t>(_textures.size())){
+		std::cerr<<"Error, trying to get non-existing textId: "<< textId <<"\n";
+		return nullptr;
+	}
 
-	return nullptr;
+	return _textures[textId];
 }
 
-void TextContainer::occupyFreeSlotIndex(int32_t& outIdx){
-	//TODO
+void TextContainer::occupyFreeSlotIndex(int32_t& outIdx, SDL_Texture* texture){
+	const int32_t size = static_cast<int32_t>(_textures.size());
+
+	bool foundIndex = false;
+	for(int32_t i = 0; i < size; ++i){
+		if(_textures[i] == nullptr){//Free index found
+			outIdx = i;
+			_textures[i] = texture;
+			return;
+		}
+	}
+	if(!foundIndex){
+		_textures.push_back(texture);
+		outIdx = size;
+	}
+
 }
 void TextContainer::freeSlotIndex(int32_t index){
-	//TODO
+	Texture::freeTexture(_textures[index]);
 }

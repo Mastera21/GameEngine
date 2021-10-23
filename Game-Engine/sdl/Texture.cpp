@@ -65,7 +65,7 @@ int32_t Texture::createTextFromText(const std::string& text, const Color &color,
 							int32_t &outTextWidth,
 							int32_t &outTextHeight){
 
-	const SDL_Color* sdlColor = reinterpret_cast<SDL_Color*>(&color.rgba);
+	const SDL_Color* sdlColor = reinterpret_cast<const SDL_Color*>(&color.rgba);
 
 	SDL_Surface* textSurface = TTF_RenderText_Blended(font,text.c_str(),*sdlColor);
 

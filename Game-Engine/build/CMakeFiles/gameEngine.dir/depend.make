@@ -15,7 +15,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/MonitorWi
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Rectangle.h
@@ -35,7 +34,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/MonitorWindowCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Rectangle.h
@@ -77,7 +75,6 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/MonitorWindowCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Rectangle.h
@@ -205,6 +202,7 @@ CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: /usr/include/SDL2/close_code.h
 
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.h
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.cpp
@@ -249,6 +247,7 @@ CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_system.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_thread.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_timer.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_touch.h
+CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_ttf.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_version.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: /usr/include/SDL2/begin_code.h
@@ -262,8 +261,11 @@ CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../utils/drawing/
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.cpp
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.h
 
+CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/Texture.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../utils/drawing/Color.h
+CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/containers/TextContainer.cpp
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/containers/TextContainer.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: /usr/include/SDL2/SDL.h
