@@ -11,8 +11,8 @@
 
 namespace {
 
-constexpr auto WINDOW_WIDTH = 640;//1080
-constexpr auto WINDOW_HEIGHT = 480;//640
+constexpr auto WINDOW_WIDTH = 1080;//1080
+constexpr auto WINDOW_HEIGHT = 640;//640
 constexpr auto WINDOW_NAME = "GameEngine";
 
 constexpr auto PRESS_KEYS_WIDTH = 640;
@@ -49,12 +49,12 @@ static void populateGameConfig(GameCfg& cfg){
 static void populateImageContainerConfig(ImageContainerCfg& cfg){
 
 	ImageCfg imageCfg;
-	imageCfg.location = getFilePath("assets/press_keys.png");
+	imageCfg.location = getFilePath("assets/p/press_keys.png");
 	imageCfg.width = PRESS_KEYS_WIDTH;
 	imageCfg.height = PRESS_KEYS_HEIGHT;
 	cfg.imageConfigs.insert(std::make_pair(TextureId::PRESS_KEYS, imageCfg));
 
-	imageCfg.location = getFilePath("assets/layer_2.png");
+	imageCfg.location = getFilePath("assets/p/layer_2.png");
 	imageCfg.width = LAYER_2_IMAGE_WIDTH;
 	imageCfg.height = LAYER_2_IMAGE_HEIGHT;
 	cfg.imageConfigs.insert(std::make_pair(TextureId::LAYER_2, imageCfg));
