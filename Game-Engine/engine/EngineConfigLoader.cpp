@@ -44,12 +44,13 @@ static void populateMonitorConfig(MonitorWindowCofg& cfg){
 static void populateGameConfig(GameCfg& cfg){
 	cfg.layer2Rsrcid = TextureId::LAYER_2;
 	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
+	cfg.textFontId = FontId::ANGELINE_VINTAGE;
 }
 
 static void populateTextContainerConfig(TextContainerCfg& cfg){
 	FontCfg fontCfg;
 	fontCfg.location = getFilePath("assets/f/AngelineVintage.ttf");
-	fontCfg.fontSize = 50;
+	fontCfg.fontSize = 80;
 	cfg.fontConfigs.insert(std::make_pair(FontId::ANGELINE_VINTAGE, fontCfg));
 }
 

@@ -44,7 +44,7 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _game.init(cfg.gameCfg, &_imgContainer)){
+	if(EXIT_SUCCESS != _game.init(cfg.gameCfg, &_imgContainer,&_textContainer)){
 		std::cerr<<"_game.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
@@ -83,7 +83,15 @@ void Engine::drawFrame(){
 	//This is for images.
 	SDL_Texture* texture = nullptr;
 	for(const DrawParams& i : images){
-		texture = _imgContainer.getImageTexture(i.rsrcId);
+		if(WidgetType::IMAGE == i.widgetType){
+			texture = _imgContainer.getImageTexture(i.rsrcId);
+		}else if(WidgetType::TEXT == i.widgetType){
+			texture = _textContainer.getTextTexture(i.textId);
+		}else{
+			std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(i.widgetType)
+						<<" for rsrcId: "<<i.rsrcId<<"\n";
+			continue;
+		}
 		_render.renderTexture(texture, i);
 	}
 

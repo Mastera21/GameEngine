@@ -57,7 +57,10 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
  ..//sdl/Event.h
  ..//sdl/config/ImageContainerCfg.h
+ ..//sdl/config/TextContainerCfg.h
  ..//sdl/containers/ImageContainer.h
+ ..//sdl/containers/TextContainer.h
+ ..//utils/drawing/Color.h
  ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
  ..//utils/drawing/Rectangle.h

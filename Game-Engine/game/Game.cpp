@@ -12,8 +12,12 @@
 //Own components headers
 #include "sdl/Event.h"
 #include "sdl/containers/ImageContainer.h"
+#include "sdl/containers/TextContainer.h"
+#include "utils/drawing/Color.h"
 
-int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _imgContainerInterface){
+
+int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _imgContainerInterface,
+															TextContainer* _textContainerInterface){
 
 	if(_imgContainerInterface == nullptr){
 		std::cerr<<"Error, nullptr provided for _imgContainerInterface\n";
@@ -21,6 +25,14 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	}
 
 	_imgContainer = _imgContainerInterface;
+
+	if(_textContainerInterface == nullptr){
+		std::cerr<<"Error, nullptr provided for _textContainerInterface\n";
+		return EXIT_FAILURE;
+	}
+
+	_textContainer = _textContainerInterface;
+
 
 	layer2Image.rsrcId = cfg.layer2Rsrcid;
 
@@ -37,16 +49,20 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	pressKeyImage.pos = Point::ZERO;
 	pressKeyImage.widgetType = WidgetType::IMAGE;
 
+	_textContainer->createText("Hllo, C++ dudes", Colors::ORANGE, cfg.textFontId, helloText.textId, helloText.width, helloText.height);
+	helloText.pos = Point::ZERO;
+	helloText.widgetType = WidgetType::TEXT;
 	return EXIT_SUCCESS;
 }
 
 void Game::deinit(){
-
+	_textContainer->unloadText(helloText.textId);
 }
 
 void Game::draw(std::vector<DrawParams>& images){
-	images.push_back(pressKeyImage);
-	images.push_back(layer2Image);
+	//images.push_back(pressKeyImage);
+	//images.push_back(layer2Image);
+	images.push_back(helloText);
 }
 
 void Game::handleEvent([[maybe_unused]]const sd::Event& event){

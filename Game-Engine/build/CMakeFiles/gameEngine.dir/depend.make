@@ -56,7 +56,10 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/Event.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/config/ImageContainerCfg.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/containers/TextContainer.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/drawing/Rectangle.h

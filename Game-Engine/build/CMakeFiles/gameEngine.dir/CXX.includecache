@@ -247,6 +247,10 @@ sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 sdl/containers/ImageContainer.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/containers/ImageContainer.h
+sdl/containers/TextContainer.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/containers/TextContainer.h
+utils/drawing/Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/drawing/Color.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
 cstdint
