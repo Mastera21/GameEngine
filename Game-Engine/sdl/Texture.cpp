@@ -7,11 +7,17 @@
 #include <iostream>
 
 //Other libraries headers
+#include <SDL_surface.h>
 #include <SDL_image.h>
 #include <SDL_render.h>
+#include <SDL_ttf.h>
+
+//Own includes
+#include "utils//drawing/Color.h"
 
 //Own components headers
 static SDL_Renderer* gRenderer = nullptr;
+
 
 int32_t Texture::createSurfaceFormFile(const std::string& filePath, SDL_Surface*& outSurface){
 	outSurface = IMG_Load(filePath.c_str());
@@ -49,6 +55,32 @@ int32_t Texture::createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Textur
 	}
 
 	freeSurface(inOutSurface);
+
+	return EXIT_SUCCESS;
+}
+
+int32_t Texture::createTextFromText(const std::string& text, const Color &color,
+							TTF_Font* font,
+							SDL_Texture*& outTexture,
+							int32_t &outTextWidth,
+							int32_t &outTextHeight){
+
+	const SDL_Color* sdlColor = reinterpret_cast<SDL_Color*>(&color.rgba);
+
+	SDL_Surface* textSurface = TTF_RenderText_Blended(font,text.c_str(),*sdlColor);
+
+	if(textSurface == nullptr){
+		std::cerr<<"TTF_RenderText_Blended() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+
+	outTextWidth = textSurface->w;
+	outTextHeight = textSurface->h;
+
+	if(EXIT_SUCCESS != Texture::createTextureFormSurface(textSurface, outTexture)){
+		std::cerr<<"Texture::createTextureFormSurface() failed for text. Reason: "<< text <<"\n";
+		return EXIT_FAILURE;
+	}
 
 	return EXIT_SUCCESS;
 }

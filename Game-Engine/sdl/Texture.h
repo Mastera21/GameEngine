@@ -16,6 +16,8 @@
 struct SDL_Surface;
 struct SDL_Texture;
 struct SDL_Renderer;
+struct Color;
+typedef struct _TTF_Font TTF_Font;
 
 class Texture {
 public:
@@ -26,6 +28,12 @@ public:
 	static int32_t createTextureFormFile(const std::string& filePath, SDL_Texture*& outTexture);
 
 	static int32_t createTextureFormSurface(SDL_Surface*& inOutSurface, SDL_Texture*& outTexture);
+
+	static int32_t createTextFromText(const std::string& text, const Color &color,
+							TTF_Font* font,
+							SDL_Texture*& outTexture,
+							int32_t &outTextWidth,
+							int32_t &outTextHeight);
 
 	static int32_t setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode);
 
