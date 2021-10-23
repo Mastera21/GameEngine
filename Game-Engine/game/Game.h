@@ -29,6 +29,7 @@ public:
 private:
 
 	DrawParams pressKeyImage;//first image
+	DrawParams pressKeyImage2;//duplicate from first image
 	DrawParams layer2Image;//second image
 
 	//TODO Remove me !!!

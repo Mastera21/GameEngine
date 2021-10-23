@@ -54,11 +54,21 @@ void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams)
 	const SDL_Rect destRect = {.x = drawParams.pos.x, .y = drawParams.pos.y,
 							   .w = drawParams.width, .h = drawParams.height};
 
-	if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)){
-		std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
+	int32_t err = EXIT_SUCCESS;
+	if(FULL_OPACITY == drawParams.opacity){
+		err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+	}else{
+		if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)){
+			std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
+		}
+		err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
+
+		if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, FULL_OPACITY)){
+			std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
+		}
 	}
 
-	if(EXIT_SUCCESS != SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect)){
-		std::cerr<<"SDL_RenderCopy() failed. Reason: "<< SDL_GetError() << "\n";
+	if(EXIT_SUCCESS != err){
+		std::cerr<<"SDL_RenderCopy() failed for drawParams.rsrcId: "<< drawParams.rsrcId <<". Reason: "<< SDL_GetError() << "\n";
 	}
 }

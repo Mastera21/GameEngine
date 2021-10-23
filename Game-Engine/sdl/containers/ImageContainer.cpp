@@ -17,7 +17,7 @@ int32_t ImageContainer::init(const ImageContainerCfg& cfg){
 		const auto rsrcId = pair.first;
 
 		if(EXIT_SUCCESS != loadSingleResource(elem, rsrcId)){
-			std::cerr<<"Texture::createTextureFormFile() failed" << elem.location << "\n";
+			std::cerr<<"loadSingleResource() failed" << elem.location << "\n";
 			return EXIT_FAILURE;
 		}
 	}
