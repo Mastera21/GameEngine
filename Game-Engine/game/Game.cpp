@@ -28,17 +28,14 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	layer2Image.width = rect.w;
 	layer2Image.height = rect.h;
 	layer2Image.pos = Point::ZERO;
+	layer2Image.widgetType = WidgetType::IMAGE;
 
 	pressKeyImage.rsrcId = cfg.pressKeysRsrcId;
 	rect = _imgContainer->getImageFrame(pressKeyImage.rsrcId);
 	pressKeyImage.width = rect.w;
 	pressKeyImage.height = rect.h;
 	pressKeyImage.pos = Point::ZERO;
-
-
-	pressKeyImage2 = pressKeyImage;
-	pressKeyImage.pos.x += 200;
-
+	pressKeyImage.widgetType = WidgetType::IMAGE;
 
 	return EXIT_SUCCESS;
 }
@@ -48,9 +45,8 @@ void Game::deinit(){
 }
 
 void Game::draw(std::vector<DrawParams>& images){
-	images.push_back(pressKeyImage2);
 	images.push_back(pressKeyImage);
-	//images.push_back(layer2Image);
+	images.push_back(layer2Image);
 }
 
 void Game::handleEvent([[maybe_unused]]const sd::Event& event){

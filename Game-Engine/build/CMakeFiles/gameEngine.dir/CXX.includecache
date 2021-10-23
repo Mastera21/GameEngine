@@ -120,6 +120,10 @@ utils/drawing/Rectangle.h
 sdl/config/ImageContainerCfg.h
 ../sdl/containers/sdl/config/ImageContainerCfg.h
 
+..//utils/drawing/Color.h
+cstdint
+-
+
 ..//utils/drawing/DrawParams.h
 cstdint
 -
@@ -177,14 +181,18 @@ iostream
 -
 cstring
 -
-iostream
--
+SDL_ttf.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/SDL_ttf.h
 engine/config/EngineConfig.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/engine/config/EngineConfig.h
 utils/time/Time.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/time/Time.h
 utils/thread/ThreadUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/thread/ThreadUtils.h
+utils/drawing/Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/drawing/Color.h
+sdl/Texture.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/Texture.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
 cstdint
@@ -343,6 +351,14 @@ utils/drawing/Rectangle.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/utils/drawing/Rectangle.h
 sdl/config/ImageContainerCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/sdl/config/ImageContainerCfg.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp
+Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.h
+cstdint
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
 Point.h

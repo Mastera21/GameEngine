@@ -33,6 +33,8 @@ private:
 	bool processFrame();
 	void handleEvent();
 	void limitFPS(int64_t elapsedTimeMicroSeconds);
+
+	void loadText();
 };
 
 #endif /* ENGINE_ENGINE_H_ */

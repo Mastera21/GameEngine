@@ -27,9 +27,11 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//sdl/Event.h
  ..//sdl/MonitorWindow.h
  ..//sdl/Renderer.h
+ ..//sdl/Texture.h
  ..//sdl/config/ImageContainerCfg.h
  ..//sdl/config/MonitorWindowCfg.h
  ..//sdl/containers/ImageContainer.h
+ ..//utils/drawing/Color.h
  ..//utils/drawing/DrawParams.h
  ..//utils/drawing/Point.h
  ..//utils/drawing/Rectangle.h
@@ -38,6 +40,51 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//utils/time/Time.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
+ /usr/include/SDL2/SDL.h
+ /usr/include/SDL2/SDL_assert.h
+ /usr/include/SDL2/SDL_atomic.h
+ /usr/include/SDL2/SDL_audio.h
+ /usr/include/SDL2/SDL_blendmode.h
+ /usr/include/SDL2/SDL_clipboard.h
+ /usr/include/SDL2/SDL_config.h
+ /usr/include/SDL2/SDL_cpuinfo.h
+ /usr/include/SDL2/SDL_endian.h
+ /usr/include/SDL2/SDL_error.h
+ /usr/include/SDL2/SDL_events.h
+ /usr/include/SDL2/SDL_filesystem.h
+ /usr/include/SDL2/SDL_gamecontroller.h
+ /usr/include/SDL2/SDL_gesture.h
+ /usr/include/SDL2/SDL_haptic.h
+ /usr/include/SDL2/SDL_hints.h
+ /usr/include/SDL2/SDL_joystick.h
+ /usr/include/SDL2/SDL_keyboard.h
+ /usr/include/SDL2/SDL_keycode.h
+ /usr/include/SDL2/SDL_loadso.h
+ /usr/include/SDL2/SDL_log.h
+ /usr/include/SDL2/SDL_main.h
+ /usr/include/SDL2/SDL_messagebox.h
+ /usr/include/SDL2/SDL_mouse.h
+ /usr/include/SDL2/SDL_mutex.h
+ /usr/include/SDL2/SDL_pixels.h
+ /usr/include/SDL2/SDL_platform.h
+ /usr/include/SDL2/SDL_power.h
+ /usr/include/SDL2/SDL_quit.h
+ /usr/include/SDL2/SDL_rect.h
+ /usr/include/SDL2/SDL_render.h
+ /usr/include/SDL2/SDL_rwops.h
+ /usr/include/SDL2/SDL_scancode.h
+ /usr/include/SDL2/SDL_shape.h
+ /usr/include/SDL2/SDL_stdinc.h
+ /usr/include/SDL2/SDL_surface.h
+ /usr/include/SDL2/SDL_system.h
+ /usr/include/SDL2/SDL_thread.h
+ /usr/include/SDL2/SDL_timer.h
+ /usr/include/SDL2/SDL_touch.h
+ /usr/include/SDL2/SDL_ttf.h
+ /usr/include/SDL2/SDL_version.h
+ /usr/include/SDL2/SDL_video.h
+ /usr/include/SDL2/begin_code.h
+ /usr/include/SDL2/close_code.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//common/CommonDefines.h
  ..//engine/config/EngineConfig.h
@@ -252,6 +299,9 @@ CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
  ..//utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
+CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h

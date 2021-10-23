@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o"
+  "CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o"
   "CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o"
   "CMakeFiles/gameEngine.dir/main.cpp.o"
