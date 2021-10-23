@@ -68,9 +68,12 @@ add_executable(
 		 
 		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
 		 ${_BASE_DIR}/sdl/config/ImageContainerCfg.h
+		  ${_BASE_DIR}/sdl/config/TextContainerCfg.h
 		 
 		 ${_BASE_DIR}/sdl/containers/ImageContainer.h
 		 ${_BASE_DIR}/sdl/containers/ImageContainer.cpp
+		 ${_BASE_DIR}/sdl/containers/TextContainer.h
+		 ${_BASE_DIR}/sdl/containers/TextContainer.cpp
 		 
 		 
 		 

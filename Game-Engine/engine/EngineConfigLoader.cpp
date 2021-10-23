@@ -46,8 +46,14 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
 }
 
-static void populateImageContainerConfig(ImageContainerCfg& cfg){
+static void populateTextContainerConfig(TextContainerCfg& cfg){
+	FontCfg fontCfg;
+	fontCfg.location = getFilePath("assets/f/AngelineVintage.ttf");
+	fontCfg.fontSize = 50;
+	cfg.fontConfigs.insert(std::make_pair(FontId::ANGELINE_VINTAGE, fontCfg));
+}
 
+static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	ImageCfg imageCfg;
 	imageCfg.location = getFilePath("assets/p/press_keys.png");
 	imageCfg.width = PRESS_KEYS_WIDTH;
@@ -66,6 +72,7 @@ EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
 	populateMonitorConfig(cfg.windowCfg);
 	populateImageContainerConfig(cfg.imageContainerCfg);
+	populateTextContainerConfig(cfg.textContainerCfg);
 	populateGameConfig(cfg.gameCfg);
 	return cfg;
 }

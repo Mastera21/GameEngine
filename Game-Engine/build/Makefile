@@ -420,6 +420,33 @@ sdl/containers/ImageContainer.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s
 .PHONY : sdl/containers/ImageContainer.cpp.s
 
+sdl/containers/TextContainer.o: sdl/containers/TextContainer.cpp.o
+
+.PHONY : sdl/containers/TextContainer.o
+
+# target to build an object file
+sdl/containers/TextContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o
+.PHONY : sdl/containers/TextContainer.cpp.o
+
+sdl/containers/TextContainer.i: sdl/containers/TextContainer.cpp.i
+
+.PHONY : sdl/containers/TextContainer.i
+
+# target to preprocess a source file
+sdl/containers/TextContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.i
+.PHONY : sdl/containers/TextContainer.cpp.i
+
+sdl/containers/TextContainer.s: sdl/containers/TextContainer.cpp.s
+
+.PHONY : sdl/containers/TextContainer.s
+
+# target to generate assembly for a file
+sdl/containers/TextContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.s
+.PHONY : sdl/containers/TextContainer.cpp.s
+
 utils/drawing/Color.o: utils/drawing/Color.cpp.o
 
 .PHONY : utils/drawing/Color.o
@@ -597,6 +624,9 @@ help:
 	@echo "... sdl/containers/ImageContainer.o"
 	@echo "... sdl/containers/ImageContainer.i"
 	@echo "... sdl/containers/ImageContainer.s"
+	@echo "... sdl/containers/TextContainer.o"
+	@echo "... sdl/containers/TextContainer.i"
+	@echo "... sdl/containers/TextContainer.s"
 	@echo "... utils/drawing/Color.o"
 	@echo "... utils/drawing/Color.i"
 	@echo "... utils/drawing/Color.s"

@@ -12,6 +12,7 @@
 #include "sdl/Renderer.h"
 #include "game/Game.h"
 #include "sdl/containers/ImageContainer.h"
+#include "sdl/containers/TextContainer.h"
 
 //Forward declarations
 struct EngineConfig;
@@ -27,14 +28,13 @@ private:
 	sd::Event _event;
 	Renderer _render;
 	ImageContainer _imgContainer;
+	TextContainer _textContainer;
 	Game _game;
 
 	void drawFrame();
 	bool processFrame();
 	void handleEvent();
 	void limitFPS(int64_t elapsedTimeMicroSeconds);
-
-	void loadText();
 };
 
 #endif /* ENGINE_ENGINE_H_ */

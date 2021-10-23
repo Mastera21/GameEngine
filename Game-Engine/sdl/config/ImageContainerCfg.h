@@ -9,8 +9,6 @@
 //Other libraries headers
 
 //Own components headers
-#include "utils/drawing/Rectangle.h"
-
 
 //Forward declarations
 

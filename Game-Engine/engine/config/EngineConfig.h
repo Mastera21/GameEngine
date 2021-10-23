@@ -9,12 +9,14 @@
 //Other libraries headers
 #include "sdl/config/MonitorWindowCfg.h"
 #include "sdl/config/ImageContainerCfg.h"
+#include "sdl/config/TextContainerCfg.h"
 #include "game/config/GameCfg.h"
 //Own components headers
 
 struct EngineConfig {
 	MonitorWindowCofg windowCfg;
 	ImageContainerCfg imageContainerCfg;
+	TextContainerCfg textContainerCfg;
 	GameCfg gameCfg;
 };
 
