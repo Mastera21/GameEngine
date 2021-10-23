@@ -8,7 +8,7 @@
 //Own components headers
 #include "application/Application.h"
 
-int32_t main([[maybe_unused]] int argc, [[maybe_unused]] char *args[]) {
+int32_t main([[maybe_unused]] int argc, [[maybe_unused]] char** args) {
 
 	Application app;
 	app.run();
