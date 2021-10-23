@@ -15,6 +15,8 @@
 #include "sdl/containers/TextContainer.h"
 #include "utils/drawing/Color.h"
 
+//TODO Remove me later.
+static int32_t gFontId;
 
 int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _imgContainerInterface,
 															TextContainer* _textContainerInterface){
@@ -25,6 +27,8 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	}
 
 	_imgContainer = _imgContainerInterface;
+
+	gFontId = cfg.textFontId;
 
 	if(_textContainerInterface == nullptr){
 		std::cerr<<"Error, nullptr provided for _textContainerInterface\n";
@@ -49,7 +53,7 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	pressKeyImage.pos = Point::ZERO;
 	pressKeyImage.widgetType = WidgetType::IMAGE;
 
-	_textContainer->createText("Hllo, C++ dudes", Colors::ORANGE, cfg.textFontId, helloText.textId, helloText.width, helloText.height);
+	_textContainer->createText("Hello, C++ dudes", Colors::ORANGE, cfg.textFontId, helloText.textId, helloText.width, helloText.height);
 	helloText.pos = Point::ZERO;
 	helloText.widgetType = WidgetType::TEXT;
 	return EXIT_SUCCESS;
@@ -102,6 +106,11 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 			break;
 		case Keyboard::KEY_Y:
 			pressKeyImage.opacity += 10;
+			break;
+
+		case Keyboard::KEY_B:
+			_textContainer->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
+
 			break;
 		default:
 			break;
