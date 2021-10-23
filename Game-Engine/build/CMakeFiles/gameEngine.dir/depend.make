@@ -15,6 +15,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/MonitorWi
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/containers/TextContainer.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/drawing/Rectangle.h
@@ -34,6 +35,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/MonitorWindowCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/containers/TextContainer.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/drawing/Rectangle.h
@@ -75,6 +77,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/MonitorWindowCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/containers/TextContainer.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/drawing/Rectangle.h
@@ -260,6 +263,7 @@ CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers
 CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.h
 
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/config/TextContainerCfg.h
+CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/containers/TextContainer.cpp
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/containers/TextContainer.h
 CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: /usr/include/SDL2/SDL.h

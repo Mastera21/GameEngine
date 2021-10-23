@@ -135,8 +135,16 @@ vector
 -
 unordered_map
 -
+string
+-
 sdl/config/TextContainerCfg.h
 ../sdl/containers/sdl/config/TextContainerCfg.h
+utils/drawing/Color.h
+../sdl/containers/utils/drawing/Color.h
+
+..//utils/drawing/Color.h
+cstdint
+-
 
 ..//utils/drawing/DrawParams.h
 cstdint
@@ -379,8 +387,12 @@ vector
 -
 unordered_map
 -
+string
+-
 sdl/config/TextContainerCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/sdl/config/TextContainerCfg.h
+utils/drawing/Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/utils/drawing/Color.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp
 Color.h
