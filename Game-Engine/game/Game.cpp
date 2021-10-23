@@ -56,6 +56,21 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	_textContainer->createText("Hello, C++ dudes", Colors::ORANGE, cfg.textFontId, helloText.textId, helloText.width, helloText.height);
 	helloText.pos = Point::ZERO;
 	helloText.widgetType = WidgetType::TEXT;
+
+	_textContainer->createText("Press M to hide text", Colors::ORANGE, cfg.textFontId, pressText.textId, pressText.width, pressText.height);
+	pressText.pos = Point::ZERO;
+	pressText.pos.x += 150;
+	pressText.pos.y += 300;
+	pressText.widgetType = WidgetType::TEXT;
+
+
+	_textContainer->createText("Press N to show text", Colors::RED, cfg.textFontId, hideText.textId, hideText.width, hideText.height);
+	hideText.pos = Point::ZERO;
+	hideText.pos.x += 300;
+	hideText.pos.y += 300;
+	hideText.widgetType = WidgetType::TEXT;
+
+
 	return EXIT_SUCCESS;
 }
 
@@ -67,6 +82,14 @@ void Game::draw(std::vector<DrawParams>& images){
 	//images.push_back(pressKeyImage);
 	//images.push_back(layer2Image);
 	images.push_back(helloText);
+
+	if(isPressTextHidden){
+		images.push_back(hideText);
+	}else{
+		images.push_back(pressText);
+	}
+
+
 }
 
 void Game::handleEvent([[maybe_unused]]const sd::Event& event){
@@ -110,7 +133,13 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 
 		case Keyboard::KEY_B:
 			_textContainer->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
+			break;
 
+		case Keyboard::KEY_M:
+			isPressTextHidden = true;
+			break;
+		case Keyboard::KEY_N:
+			isPressTextHidden = false;
 			break;
 		default:
 			break;

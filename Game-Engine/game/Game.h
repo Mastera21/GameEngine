@@ -33,6 +33,11 @@ private:
 	DrawParams layer2Image;//second image
 	DrawParams helloText;
 
+	DrawParams pressText;
+	DrawParams hideText;
+
+	bool isPressTextHidden = false;
+
 	//TODO Remove me !!!
 	const ImageContainer* _imgContainer = nullptr;
 	TextContainer* _textContainer = nullptr;
