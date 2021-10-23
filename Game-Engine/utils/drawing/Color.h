@@ -19,7 +19,6 @@ struct RGBA {
   uint8_t b { 0 };
   uint8_t a { 255 };
 };
-namespace sd{
 
 class Color {
 public:
@@ -46,7 +45,5 @@ extern const Color ORANGE;
 extern const Color PURPLE;
 extern const Color FULL_TRANSPARENT;
 } //namespace Colors
-
-}//namespace sd
 
 #endif /* UTILS_DRAWING_COLOR_H_ */
