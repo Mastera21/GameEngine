@@ -96,7 +96,6 @@ SDL_Texture* TextContainer::getTextTexture(int32_t textId) const{
 void TextContainer::occupyFreeSlotIndex(int32_t& outIdx, SDL_Texture* texture){
 	const int32_t size = static_cast<int32_t>(_textures.size());
 
-	bool foundIndex = false;
 	for(int32_t i = 0; i < size; ++i){
 		if(_textures[i] == nullptr){//Free index found
 			outIdx = i;
@@ -104,11 +103,9 @@ void TextContainer::occupyFreeSlotIndex(int32_t& outIdx, SDL_Texture* texture){
 			return;
 		}
 	}
-	if(!foundIndex){
-		_textures.push_back(texture);
-		outIdx = size;
-	}
 
+	_textures.push_back(texture);
+	outIdx = size;
 }
 void TextContainer::freeSlotIndex(int32_t index){
 	Texture::freeTexture(_textures[index]);
