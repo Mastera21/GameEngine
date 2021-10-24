@@ -153,297 +153,9 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o.provides: CMakeFiles/gameEngine.dir/ga
 CMakeFiles/gameEngine.dir/game/Game.cpp.o.provides.build: CMakeFiles/gameEngine.dir/game/Game.cpp.o
 
 
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o: ../sdl/Event.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gameEngine.dir/sdl/Event.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/Event.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.cpp
-
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/Event.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.cpp > CMakeFiles/gameEngine.dir/sdl/Event.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/Event.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.cpp -o CMakeFiles/gameEngine.dir/sdl/Event.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o: ../sdl/MonitorWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp > CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp -o CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o: ../sdl/SDLLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp > CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp -o CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o: ../sdl/Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp > CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp -o CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o: ../sdl/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp > CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp -o CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o: ../sdl/containers/ImageContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp > CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp -o CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
-
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o: ../sdl/containers/TextContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/TextContainer.cpp
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/TextContainer.cpp > CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.i
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/TextContainer.cpp -o CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.s
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.provides: CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.provides.build: CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o
-
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o: ../utils/drawing/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp > CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.i
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp -o CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.s
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.provides: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.provides.build: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
-
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o: ../utils/drawing/Rectangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp > CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.i
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp -o CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.provides: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.provides.build: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
-
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o: ../utils/drawing/Color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp > CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.i
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp -o CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.s
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.provides: CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.provides.build: CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o
-
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o: ../utils/thread/ThreadUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/thread/ThreadUtils.cpp
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/thread/ThreadUtils.cpp > CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.i
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/thread/ThreadUtils.cpp -o CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.s
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.provides: CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.provides.build: CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o
-
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o: CMakeFiles/gameEngine.dir/flags.make
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o: ../utils/time/Time.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/time/Time.cpp
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/utils/time/Time.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/time/Time.cpp > CMakeFiles/gameEngine.dir/utils/time/Time.cpp.i
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/utils/time/Time.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/time/Time.cpp -o CMakeFiles/gameEngine.dir/utils/time/Time.cpp.s
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.requires:
-
-.PHONY : CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.requires
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.provides: CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.requires
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.provides.build
-.PHONY : CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.provides
-
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.provides.build: CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o
-
-
 CMakeFiles/gameEngine.dir/main.cpp.o: CMakeFiles/gameEngine.dir/flags.make
 CMakeFiles/gameEngine.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gameEngine.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gameEngine.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/main.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 
 CMakeFiles/gameEngine.dir/main.cpp.i: cmake_force
@@ -471,18 +183,6 @@ gameEngine_OBJECTS = \
 "CMakeFiles/gameEngine.dir/engine/Engine.cpp.o" \
 "CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o" \
 "CMakeFiles/gameEngine.dir/game/Game.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/Event.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o" \
-"CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o" \
-"CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o" \
-"CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o" \
-"CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o" \
-"CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o" \
-"CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o" \
 "CMakeFiles/gameEngine.dir/main.cpp.o"
 
 # External object files for target gameEngine
@@ -492,27 +192,17 @@ gameEngine: CMakeFiles/gameEngine.dir/application/Application.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/Game.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o
-gameEngine: CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/main.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/build.make
+gameEngine: sdl/libsdl.a
+gameEngine: utils/libutils.a
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2.so
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 gameEngine: CMakeFiles/gameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable gameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable gameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -524,18 +214,6 @@ CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/application/Applic
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/engine/Engine.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/game/Game.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/Event.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o.requires
-CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o.requires
 CMakeFiles/gameEngine.dir/requires: CMakeFiles/gameEngine.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/gameEngine.dir/requires

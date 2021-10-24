@@ -1,3 +1,9 @@
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/rebuild_cache.dir
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/edit_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/rebuild_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/edit_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/rebuild_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/sdl.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/edit_cache.dir

@@ -123,6 +123,32 @@ gameEngine/fast:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/build
 .PHONY : gameEngine/fast
 
+#=============================================================================
+# Target rules for targets named utils
+
+# Build rule for target.
+utils: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 utils
+.PHONY : utils
+
+# fast build rule for target.
+utils/fast:
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+.PHONY : utils/fast
+
+#=============================================================================
+# Target rules for targets named sdl
+
+# Build rule for target.
+sdl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdl
+.PHONY : sdl
+
+# fast build rule for target.
+sdl/fast:
+	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/build
+.PHONY : sdl/fast
+
 application/Application.o: application/Application.cpp.o
 
 .PHONY : application/Application.o
@@ -258,330 +284,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sdl/Event.o: sdl/Event.cpp.o
-
-.PHONY : sdl/Event.o
-
-# target to build an object file
-sdl/Event.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
-.PHONY : sdl/Event.cpp.o
-
-sdl/Event.i: sdl/Event.cpp.i
-
-.PHONY : sdl/Event.i
-
-# target to preprocess a source file
-sdl/Event.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.i
-.PHONY : sdl/Event.cpp.i
-
-sdl/Event.s: sdl/Event.cpp.s
-
-.PHONY : sdl/Event.s
-
-# target to generate assembly for a file
-sdl/Event.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Event.cpp.s
-.PHONY : sdl/Event.cpp.s
-
-sdl/MonitorWindow.o: sdl/MonitorWindow.cpp.o
-
-.PHONY : sdl/MonitorWindow.o
-
-# target to build an object file
-sdl/MonitorWindow.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
-.PHONY : sdl/MonitorWindow.cpp.o
-
-sdl/MonitorWindow.i: sdl/MonitorWindow.cpp.i
-
-.PHONY : sdl/MonitorWindow.i
-
-# target to preprocess a source file
-sdl/MonitorWindow.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.i
-.PHONY : sdl/MonitorWindow.cpp.i
-
-sdl/MonitorWindow.s: sdl/MonitorWindow.cpp.s
-
-.PHONY : sdl/MonitorWindow.s
-
-# target to generate assembly for a file
-sdl/MonitorWindow.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.s
-.PHONY : sdl/MonitorWindow.cpp.s
-
-sdl/Renderer.o: sdl/Renderer.cpp.o
-
-.PHONY : sdl/Renderer.o
-
-# target to build an object file
-sdl/Renderer.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
-.PHONY : sdl/Renderer.cpp.o
-
-sdl/Renderer.i: sdl/Renderer.cpp.i
-
-.PHONY : sdl/Renderer.i
-
-# target to preprocess a source file
-sdl/Renderer.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.i
-.PHONY : sdl/Renderer.cpp.i
-
-sdl/Renderer.s: sdl/Renderer.cpp.s
-
-.PHONY : sdl/Renderer.s
-
-# target to generate assembly for a file
-sdl/Renderer.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.s
-.PHONY : sdl/Renderer.cpp.s
-
-sdl/SDLLoader.o: sdl/SDLLoader.cpp.o
-
-.PHONY : sdl/SDLLoader.o
-
-# target to build an object file
-sdl/SDLLoader.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
-.PHONY : sdl/SDLLoader.cpp.o
-
-sdl/SDLLoader.i: sdl/SDLLoader.cpp.i
-
-.PHONY : sdl/SDLLoader.i
-
-# target to preprocess a source file
-sdl/SDLLoader.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.i
-.PHONY : sdl/SDLLoader.cpp.i
-
-sdl/SDLLoader.s: sdl/SDLLoader.cpp.s
-
-.PHONY : sdl/SDLLoader.s
-
-# target to generate assembly for a file
-sdl/SDLLoader.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.s
-.PHONY : sdl/SDLLoader.cpp.s
-
-sdl/Texture.o: sdl/Texture.cpp.o
-
-.PHONY : sdl/Texture.o
-
-# target to build an object file
-sdl/Texture.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
-.PHONY : sdl/Texture.cpp.o
-
-sdl/Texture.i: sdl/Texture.cpp.i
-
-.PHONY : sdl/Texture.i
-
-# target to preprocess a source file
-sdl/Texture.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.i
-.PHONY : sdl/Texture.cpp.i
-
-sdl/Texture.s: sdl/Texture.cpp.s
-
-.PHONY : sdl/Texture.s
-
-# target to generate assembly for a file
-sdl/Texture.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/Texture.cpp.s
-.PHONY : sdl/Texture.cpp.s
-
-sdl/containers/ImageContainer.o: sdl/containers/ImageContainer.cpp.o
-
-.PHONY : sdl/containers/ImageContainer.o
-
-# target to build an object file
-sdl/containers/ImageContainer.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
-.PHONY : sdl/containers/ImageContainer.cpp.o
-
-sdl/containers/ImageContainer.i: sdl/containers/ImageContainer.cpp.i
-
-.PHONY : sdl/containers/ImageContainer.i
-
-# target to preprocess a source file
-sdl/containers/ImageContainer.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.i
-.PHONY : sdl/containers/ImageContainer.cpp.i
-
-sdl/containers/ImageContainer.s: sdl/containers/ImageContainer.cpp.s
-
-.PHONY : sdl/containers/ImageContainer.s
-
-# target to generate assembly for a file
-sdl/containers/ImageContainer.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.s
-.PHONY : sdl/containers/ImageContainer.cpp.s
-
-sdl/containers/TextContainer.o: sdl/containers/TextContainer.cpp.o
-
-.PHONY : sdl/containers/TextContainer.o
-
-# target to build an object file
-sdl/containers/TextContainer.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o
-.PHONY : sdl/containers/TextContainer.cpp.o
-
-sdl/containers/TextContainer.i: sdl/containers/TextContainer.cpp.i
-
-.PHONY : sdl/containers/TextContainer.i
-
-# target to preprocess a source file
-sdl/containers/TextContainer.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.i
-.PHONY : sdl/containers/TextContainer.cpp.i
-
-sdl/containers/TextContainer.s: sdl/containers/TextContainer.cpp.s
-
-.PHONY : sdl/containers/TextContainer.s
-
-# target to generate assembly for a file
-sdl/containers/TextContainer.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.s
-.PHONY : sdl/containers/TextContainer.cpp.s
-
-utils/drawing/Color.o: utils/drawing/Color.cpp.o
-
-.PHONY : utils/drawing/Color.o
-
-# target to build an object file
-utils/drawing/Color.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o
-.PHONY : utils/drawing/Color.cpp.o
-
-utils/drawing/Color.i: utils/drawing/Color.cpp.i
-
-.PHONY : utils/drawing/Color.i
-
-# target to preprocess a source file
-utils/drawing/Color.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.i
-.PHONY : utils/drawing/Color.cpp.i
-
-utils/drawing/Color.s: utils/drawing/Color.cpp.s
-
-.PHONY : utils/drawing/Color.s
-
-# target to generate assembly for a file
-utils/drawing/Color.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.s
-.PHONY : utils/drawing/Color.cpp.s
-
-utils/drawing/Point.o: utils/drawing/Point.cpp.o
-
-.PHONY : utils/drawing/Point.o
-
-# target to build an object file
-utils/drawing/Point.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
-.PHONY : utils/drawing/Point.cpp.o
-
-utils/drawing/Point.i: utils/drawing/Point.cpp.i
-
-.PHONY : utils/drawing/Point.i
-
-# target to preprocess a source file
-utils/drawing/Point.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.i
-.PHONY : utils/drawing/Point.cpp.i
-
-utils/drawing/Point.s: utils/drawing/Point.cpp.s
-
-.PHONY : utils/drawing/Point.s
-
-# target to generate assembly for a file
-utils/drawing/Point.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.s
-.PHONY : utils/drawing/Point.cpp.s
-
-utils/drawing/Rectangle.o: utils/drawing/Rectangle.cpp.o
-
-.PHONY : utils/drawing/Rectangle.o
-
-# target to build an object file
-utils/drawing/Rectangle.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
-.PHONY : utils/drawing/Rectangle.cpp.o
-
-utils/drawing/Rectangle.i: utils/drawing/Rectangle.cpp.i
-
-.PHONY : utils/drawing/Rectangle.i
-
-# target to preprocess a source file
-utils/drawing/Rectangle.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.i
-.PHONY : utils/drawing/Rectangle.cpp.i
-
-utils/drawing/Rectangle.s: utils/drawing/Rectangle.cpp.s
-
-.PHONY : utils/drawing/Rectangle.s
-
-# target to generate assembly for a file
-utils/drawing/Rectangle.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.s
-.PHONY : utils/drawing/Rectangle.cpp.s
-
-utils/thread/ThreadUtils.o: utils/thread/ThreadUtils.cpp.o
-
-.PHONY : utils/thread/ThreadUtils.o
-
-# target to build an object file
-utils/thread/ThreadUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o
-.PHONY : utils/thread/ThreadUtils.cpp.o
-
-utils/thread/ThreadUtils.i: utils/thread/ThreadUtils.cpp.i
-
-.PHONY : utils/thread/ThreadUtils.i
-
-# target to preprocess a source file
-utils/thread/ThreadUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.i
-.PHONY : utils/thread/ThreadUtils.cpp.i
-
-utils/thread/ThreadUtils.s: utils/thread/ThreadUtils.cpp.s
-
-.PHONY : utils/thread/ThreadUtils.s
-
-# target to generate assembly for a file
-utils/thread/ThreadUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.s
-.PHONY : utils/thread/ThreadUtils.cpp.s
-
-utils/time/Time.o: utils/time/Time.cpp.o
-
-.PHONY : utils/time/Time.o
-
-# target to build an object file
-utils/time/Time.cpp.o:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o
-.PHONY : utils/time/Time.cpp.o
-
-utils/time/Time.i: utils/time/Time.cpp.i
-
-.PHONY : utils/time/Time.i
-
-# target to preprocess a source file
-utils/time/Time.cpp.i:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.i
-.PHONY : utils/time/Time.cpp.i
-
-utils/time/Time.s: utils/time/Time.cpp.s
-
-.PHONY : utils/time/Time.s
-
-# target to generate assembly for a file
-utils/time/Time.cpp.s:
-	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/utils/time/Time.cpp.s
-.PHONY : utils/time/Time.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -591,6 +293,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gameEngine"
 	@echo "... edit_cache"
+	@echo "... utils"
+	@echo "... sdl"
 	@echo "... application/Application.o"
 	@echo "... application/Application.i"
 	@echo "... application/Application.s"
@@ -606,42 +310,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sdl/Event.o"
-	@echo "... sdl/Event.i"
-	@echo "... sdl/Event.s"
-	@echo "... sdl/MonitorWindow.o"
-	@echo "... sdl/MonitorWindow.i"
-	@echo "... sdl/MonitorWindow.s"
-	@echo "... sdl/Renderer.o"
-	@echo "... sdl/Renderer.i"
-	@echo "... sdl/Renderer.s"
-	@echo "... sdl/SDLLoader.o"
-	@echo "... sdl/SDLLoader.i"
-	@echo "... sdl/SDLLoader.s"
-	@echo "... sdl/Texture.o"
-	@echo "... sdl/Texture.i"
-	@echo "... sdl/Texture.s"
-	@echo "... sdl/containers/ImageContainer.o"
-	@echo "... sdl/containers/ImageContainer.i"
-	@echo "... sdl/containers/ImageContainer.s"
-	@echo "... sdl/containers/TextContainer.o"
-	@echo "... sdl/containers/TextContainer.i"
-	@echo "... sdl/containers/TextContainer.s"
-	@echo "... utils/drawing/Color.o"
-	@echo "... utils/drawing/Color.i"
-	@echo "... utils/drawing/Color.s"
-	@echo "... utils/drawing/Point.o"
-	@echo "... utils/drawing/Point.i"
-	@echo "... utils/drawing/Point.s"
-	@echo "... utils/drawing/Rectangle.o"
-	@echo "... utils/drawing/Rectangle.i"
-	@echo "... utils/drawing/Rectangle.s"
-	@echo "... utils/thread/ThreadUtils.o"
-	@echo "... utils/thread/ThreadUtils.i"
-	@echo "... utils/thread/ThreadUtils.s"
-	@echo "... utils/time/Time.o"
-	@echo "... utils/time/Time.i"
-	@echo "... utils/time/Time.s"
 .PHONY : help
 
 

@@ -40,7 +40,6 @@ add_executable(
 		 #For common folder
 		  ${_BASE_DIR}/common/CommonDefines.h
 
-	
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
 		 ${_BASE_DIR}/engine/Engine.cpp
@@ -52,55 +51,7 @@ add_executable(
 		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
 		 ${_BASE_DIR}/game/config/GameCfg.h
-		 
-	
-		 #For sdl folder
-		 ${_BASE_DIR}/sdl/Event.h
-		 ${_BASE_DIR}/sdl/Event.cpp
-		 ${_BASE_DIR}/sdl/MonitorWindow.h
-		 ${_BASE_DIR}/sdl/MonitorWindow.cpp
-		 ${_BASE_DIR}/sdl/SDLLoader.h
-		 ${_BASE_DIR}/sdl/SDLLoader.cpp
-		 ${_BASE_DIR}/sdl/Texture.h
-		 ${_BASE_DIR}/sdl/Texture.cpp
-		 ${_BASE_DIR}/sdl/Renderer.h
-		 ${_BASE_DIR}/sdl/Renderer.cpp
-		 
-		 ${_BASE_DIR}/sdl/config/MonitorWindowCfg.h
-		 ${_BASE_DIR}/sdl/config/ImageContainerCfg.h
-		  ${_BASE_DIR}/sdl/config/TextContainerCfg.h
-		 
-		 ${_BASE_DIR}/sdl/containers/ImageContainer.h
-		 ${_BASE_DIR}/sdl/containers/ImageContainer.cpp
-		 ${_BASE_DIR}/sdl/containers/TextContainer.h
-		 ${_BASE_DIR}/sdl/containers/TextContainer.cpp
-		 
-		 
-		 
-		 
-		 #For utils folder
-		 ${_BASE_DIR}/utils/drawing/Point.h
-		 ${_BASE_DIR}/utils/drawing/Point.cpp
-		 ${_BASE_DIR}/utils/drawing/Rectangle.h
-		 ${_BASE_DIR}/utils/drawing/Rectangle.cpp
-		 ${_BASE_DIR}/utils/drawing/DrawParams.h
-		 ${_BASE_DIR}/utils/drawing/Color.h
-		 ${_BASE_DIR}/utils/drawing/Color.cpp
-		 
-		 
-		 #For utils/thread folder
-		 ${_BASE_DIR}/utils/thread/ThreadUtils.h
-		 ${_BASE_DIR}/utils/thread/ThreadUtils.cpp
-		 
-		 
-		 #For utils/time folder
-		 ${_BASE_DIR}/utils/time/Time.h
-		 ${_BASE_DIR}/utils/time/Time.cpp
-		 
-		 
-		 
-		 
-		 
+		 	 
 		${_BASE_DIR}/main.cpp)
 
 set_target_cpp_standard(${PROJECT_NAME} 17)
@@ -110,19 +61,13 @@ target_include_directories(
 ${PROJECT_NAME} 
 	PRIVATE 
 		${_BASE_DIR}
-		${SDL2_INCLUDE_DIR} 
-		${SDL2_IMAGE_INCLUDE_DIR} 
-		${SDL2_TTF_INCLUDE_DIR}
-		${SDL2_MIXER_INCLUDE_DIR}
 )
 
 target_link_libraries(
 ${PROJECT_NAME} 
 	PRIVATE 
-		${SDL2_LIBRARY} 
-		${SDL2_IMAGE_LIBRARY} 
-		${SDL2_TTF_LIBRARY}
-		${SDL2_MIXER_LIBRARY}
+		#Adding file name on lib "sdl"
+		sdl
 )
 
 if(CMAKE_BUILD_TYPE MATCHES RELEASE)
@@ -134,7 +79,9 @@ if(CMAKE_BUILD_TYPE MATCHES RELEASE)
 	)
 endif()
 
-
+#Adding own lib 
+add_subdirectory(utils)
+add_subdirectory(sdl)
 
 
 

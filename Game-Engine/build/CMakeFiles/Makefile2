@@ -63,10 +63,11 @@ CMAKE_BINARY_DIR = /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build
 # Target rules for target CMakeFiles/gameEngine.dir
 
 # All Build rule for target.
-CMakeFiles/gameEngine.dir/all:
+CMakeFiles/gameEngine.dir/all: utils/CMakeFiles/utils.dir/all
+CMakeFiles/gameEngine.dir/all: sdl/CMakeFiles/sdl.dir/all
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/depend
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target gameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target gameEngine"
 .PHONY : CMakeFiles/gameEngine.dir/all
 
 # Include target in all.
@@ -76,7 +77,7 @@ all: CMakeFiles/gameEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/gameEngine.dir/rule
@@ -93,6 +94,116 @@ CMakeFiles/gameEngine.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/gameEngine.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory utils
+
+# Convenience name for "all" pass in the directory.
+utils/all: utils/CMakeFiles/utils.dir/all
+
+.PHONY : utils/all
+
+# Convenience name for "clean" pass in the directory.
+utils/clean: utils/CMakeFiles/utils.dir/clean
+
+.PHONY : utils/clean
+
+# Convenience name for "preinstall" pass in the directory.
+utils/preinstall:
+
+.PHONY : utils/preinstall
+
+#=============================================================================
+# Target rules for target utils/CMakeFiles/utils.dir
+
+# All Build rule for target.
+utils/CMakeFiles/utils.dir/all:
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/depend
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target utils"
+.PHONY : utils/CMakeFiles/utils.dir/all
+
+# Include target in all.
+all: utils/CMakeFiles/utils.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+utils/CMakeFiles/utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 0
+.PHONY : utils/CMakeFiles/utils.dir/rule
+
+# Convenience name for target.
+utils: utils/CMakeFiles/utils.dir/rule
+
+.PHONY : utils
+
+# clean rule for target.
+utils/CMakeFiles/utils.dir/clean:
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/clean
+.PHONY : utils/CMakeFiles/utils.dir/clean
+
+# clean rule for target.
+clean: utils/CMakeFiles/utils.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory sdl
+
+# Convenience name for "all" pass in the directory.
+sdl/all: sdl/CMakeFiles/sdl.dir/all
+
+.PHONY : sdl/all
+
+# Convenience name for "clean" pass in the directory.
+sdl/clean: sdl/CMakeFiles/sdl.dir/clean
+
+.PHONY : sdl/clean
+
+# Convenience name for "preinstall" pass in the directory.
+sdl/preinstall:
+
+.PHONY : sdl/preinstall
+
+#=============================================================================
+# Target rules for target sdl/CMakeFiles/sdl.dir
+
+# All Build rule for target.
+sdl/CMakeFiles/sdl.dir/all: utils/CMakeFiles/utils.dir/all
+	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/depend
+	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target sdl"
+.PHONY : sdl/CMakeFiles/sdl.dir/all
+
+# Include target in all.
+all: sdl/CMakeFiles/sdl.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sdl/CMakeFiles/sdl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 sdl/CMakeFiles/sdl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 0
+.PHONY : sdl/CMakeFiles/sdl.dir/rule
+
+# Convenience name for target.
+sdl: sdl/CMakeFiles/sdl.dir/rule
+
+.PHONY : sdl
+
+# clean rule for target.
+sdl/CMakeFiles/sdl.dir/clean:
+	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/clean
+.PHONY : sdl/CMakeFiles/sdl.dir/clean
+
+# clean rule for target.
+clean: sdl/CMakeFiles/sdl.dir/clean
 
 .PHONY : clean
 

@@ -7,329 +7,81 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
- ..//sdl/Event.h
- ..//sdl/MonitorWindow.h
- ..//sdl/Renderer.h
- ..//sdl/SDLLoader.h
- ..//sdl/config/ImageContainerCfg.h
- ..//sdl/config/MonitorWindowCfg.h
- ..//sdl/config/TextContainerCfg.h
- ..//sdl/containers/ImageContainer.h
- ..//sdl/containers/TextContainer.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- ..//utils/drawing/Rectangle.h
- ..//utils/input/EventDefines.h
+ ../sdl/include/sdl/Event.h
+ ../sdl/include/sdl/MonitorWindow.h
+ ../sdl/include/sdl/Renderer.h
+ ../sdl/include/sdl/SDLLoader.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/MonitorWindowCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
- ..//sdl/Event.h
- ..//sdl/MonitorWindow.h
- ..//sdl/Renderer.h
- ..//sdl/Texture.h
- ..//sdl/config/ImageContainerCfg.h
- ..//sdl/config/MonitorWindowCfg.h
- ..//sdl/config/TextContainerCfg.h
- ..//sdl/containers/ImageContainer.h
- ..//sdl/containers/TextContainer.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- ..//utils/drawing/Rectangle.h
- ..//utils/input/EventDefines.h
- ..//utils/thread/ThreadUtils.h
- ..//utils/time/Time.h
+ ../sdl/include/sdl/Event.h
+ ../sdl/include/sdl/MonitorWindow.h
+ ../sdl/include/sdl/Renderer.h
+ ../sdl/include/sdl/Texture.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/MonitorWindowCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
+ ../utils/include/utils/thread/ThreadUtils.h
+ ../utils/include/utils/time/Time.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/Engine.h
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//common/CommonDefines.h
  ..//engine/config/EngineConfig.h
  ..//game/config/GameCfg.h
- ..//sdl/config/ImageContainerCfg.h
- ..//sdl/config/MonitorWindowCfg.h
- ..//sdl/config/TextContainerCfg.h
- ..//utils/drawing/Point.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/MonitorWindowCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../utils/include/utils/drawing/Point.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
- ..//sdl/Event.h
- ..//sdl/config/ImageContainerCfg.h
- ..//sdl/config/TextContainerCfg.h
- ..//sdl/containers/ImageContainer.h
- ..//sdl/containers/TextContainer.h
- ..//utils/drawing/Color.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- ..//utils/drawing/Rectangle.h
- ..//utils/input/EventDefines.h
+ ../sdl/include/sdl/Event.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/Color.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
- ..//sdl/Event.h
- ..//sdl/MonitorWindow.h
- ..//sdl/Renderer.h
- ..//sdl/config/ImageContainerCfg.h
- ..//sdl/config/MonitorWindowCfg.h
- ..//sdl/config/TextContainerCfg.h
- ..//sdl/containers/ImageContainer.h
- ..//sdl/containers/TextContainer.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- ..//utils/drawing/Rectangle.h
- ..//utils/input/EventDefines.h
+ ../sdl/include/sdl/Event.h
+ ../sdl/include/sdl/MonitorWindow.h
+ ../sdl/include/sdl/Renderer.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/MonitorWindowCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/application/Application.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
-CMakeFiles/gameEngine.dir/sdl/Event.cpp.o
- ..//utils/drawing/Point.h
- ..//utils/input/EventDefines.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Event.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_events.h
- /usr/include/SDL2/SDL_gamecontroller.h
- /usr/include/SDL2/SDL_gesture.h
- /usr/include/SDL2/SDL_joystick.h
- /usr/include/SDL2/SDL_keyboard.h
- /usr/include/SDL2/SDL_keycode.h
- /usr/include/SDL2/SDL_mouse.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_quit.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_scancode.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_touch.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/sdl/MonitorWindow.cpp.o
- ..//sdl/Event.h
- ..//sdl/config/MonitorWindowCfg.h
- ..//utils/drawing/Point.h
- ..//utils/input/EventDefines.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/MonitorWindow.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/sdl/Renderer.cpp.o
- ..//sdl/Texture.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Renderer.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_hints.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_render.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/sdl/SDLLoader.cpp.o
- ..//sdl/SDLLoader.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/SDLLoader.cpp
- /usr/include/SDL2/SDL.h
- /usr/include/SDL2/SDL_assert.h
- /usr/include/SDL2/SDL_atomic.h
- /usr/include/SDL2/SDL_audio.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_clipboard.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_cpuinfo.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_events.h
- /usr/include/SDL2/SDL_filesystem.h
- /usr/include/SDL2/SDL_gamecontroller.h
- /usr/include/SDL2/SDL_gesture.h
- /usr/include/SDL2/SDL_haptic.h
- /usr/include/SDL2/SDL_hints.h
- /usr/include/SDL2/SDL_image.h
- /usr/include/SDL2/SDL_joystick.h
- /usr/include/SDL2/SDL_keyboard.h
- /usr/include/SDL2/SDL_keycode.h
- /usr/include/SDL2/SDL_loadso.h
- /usr/include/SDL2/SDL_log.h
- /usr/include/SDL2/SDL_main.h
- /usr/include/SDL2/SDL_messagebox.h
- /usr/include/SDL2/SDL_mixer.h
- /usr/include/SDL2/SDL_mouse.h
- /usr/include/SDL2/SDL_mutex.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_power.h
- /usr/include/SDL2/SDL_quit.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_render.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_scancode.h
- /usr/include/SDL2/SDL_shape.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_system.h
- /usr/include/SDL2/SDL_thread.h
- /usr/include/SDL2/SDL_timer.h
- /usr/include/SDL2/SDL_touch.h
- /usr/include/SDL2/SDL_ttf.h
- /usr/include/SDL2/SDL_version.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/sdl/Texture.cpp.o
- ..//sdl/Texture.h
- ..//utils/drawing/Color.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/Texture.cpp
- /usr/include/SDL2/SDL.h
- /usr/include/SDL2/SDL_assert.h
- /usr/include/SDL2/SDL_atomic.h
- /usr/include/SDL2/SDL_audio.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_clipboard.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_cpuinfo.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_events.h
- /usr/include/SDL2/SDL_filesystem.h
- /usr/include/SDL2/SDL_gamecontroller.h
- /usr/include/SDL2/SDL_gesture.h
- /usr/include/SDL2/SDL_haptic.h
- /usr/include/SDL2/SDL_hints.h
- /usr/include/SDL2/SDL_image.h
- /usr/include/SDL2/SDL_joystick.h
- /usr/include/SDL2/SDL_keyboard.h
- /usr/include/SDL2/SDL_keycode.h
- /usr/include/SDL2/SDL_loadso.h
- /usr/include/SDL2/SDL_log.h
- /usr/include/SDL2/SDL_main.h
- /usr/include/SDL2/SDL_messagebox.h
- /usr/include/SDL2/SDL_mouse.h
- /usr/include/SDL2/SDL_mutex.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_power.h
- /usr/include/SDL2/SDL_quit.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_render.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_scancode.h
- /usr/include/SDL2/SDL_shape.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_system.h
- /usr/include/SDL2/SDL_thread.h
- /usr/include/SDL2/SDL_timer.h
- /usr/include/SDL2/SDL_touch.h
- /usr/include/SDL2/SDL_ttf.h
- /usr/include/SDL2/SDL_version.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/sdl/containers/ImageContainer.cpp.o
- ..//sdl/Texture.h
- ..//sdl/config/ImageContainerCfg.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- ..//utils/drawing/Rectangle.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/ImageContainer.h
-CMakeFiles/gameEngine.dir/sdl/containers/TextContainer.cpp.o
- ..//sdl/Texture.h
- ..//sdl/config/TextContainerCfg.h
- ..//utils/drawing/Color.h
- ..//utils/drawing/DrawParams.h
- ..//utils/drawing/Point.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/TextContainer.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/containers/TextContainer.h
- /usr/include/SDL2/SDL.h
- /usr/include/SDL2/SDL_assert.h
- /usr/include/SDL2/SDL_atomic.h
- /usr/include/SDL2/SDL_audio.h
- /usr/include/SDL2/SDL_blendmode.h
- /usr/include/SDL2/SDL_clipboard.h
- /usr/include/SDL2/SDL_config.h
- /usr/include/SDL2/SDL_cpuinfo.h
- /usr/include/SDL2/SDL_endian.h
- /usr/include/SDL2/SDL_error.h
- /usr/include/SDL2/SDL_events.h
- /usr/include/SDL2/SDL_filesystem.h
- /usr/include/SDL2/SDL_gamecontroller.h
- /usr/include/SDL2/SDL_gesture.h
- /usr/include/SDL2/SDL_haptic.h
- /usr/include/SDL2/SDL_hints.h
- /usr/include/SDL2/SDL_joystick.h
- /usr/include/SDL2/SDL_keyboard.h
- /usr/include/SDL2/SDL_keycode.h
- /usr/include/SDL2/SDL_loadso.h
- /usr/include/SDL2/SDL_log.h
- /usr/include/SDL2/SDL_main.h
- /usr/include/SDL2/SDL_messagebox.h
- /usr/include/SDL2/SDL_mouse.h
- /usr/include/SDL2/SDL_mutex.h
- /usr/include/SDL2/SDL_pixels.h
- /usr/include/SDL2/SDL_platform.h
- /usr/include/SDL2/SDL_power.h
- /usr/include/SDL2/SDL_quit.h
- /usr/include/SDL2/SDL_rect.h
- /usr/include/SDL2/SDL_render.h
- /usr/include/SDL2/SDL_rwops.h
- /usr/include/SDL2/SDL_scancode.h
- /usr/include/SDL2/SDL_shape.h
- /usr/include/SDL2/SDL_stdinc.h
- /usr/include/SDL2/SDL_surface.h
- /usr/include/SDL2/SDL_system.h
- /usr/include/SDL2/SDL_thread.h
- /usr/include/SDL2/SDL_timer.h
- /usr/include/SDL2/SDL_touch.h
- /usr/include/SDL2/SDL_ttf.h
- /usr/include/SDL2/SDL_version.h
- /usr/include/SDL2/SDL_video.h
- /usr/include/SDL2/begin_code.h
- /usr/include/SDL2/close_code.h
-CMakeFiles/gameEngine.dir/utils/drawing/Color.cpp.o
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Color.h
-CMakeFiles/gameEngine.dir/utils/drawing/Point.cpp.o
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Point.h
-CMakeFiles/gameEngine.dir/utils/drawing/Rectangle.cpp.o
- ..//utils/drawing/Point.h
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/drawing/Rectangle.h
-CMakeFiles/gameEngine.dir/utils/thread/ThreadUtils.cpp.o
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/thread/ThreadUtils.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/thread/ThreadUtils.h
-CMakeFiles/gameEngine.dir/utils/time/Time.cpp.o
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/time/Time.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/time/Time.h

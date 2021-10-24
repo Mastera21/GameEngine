@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake_helpers/find_modules/FindSDL2_mixer.cmake"
   "../cmake_helpers/find_modules/FindSDL2_ttf.cmake"
   "../cmake_helpers/helpers.cmake"
+  "../sdl/CMakeLists.txt"
+  "../utils/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeGenericSystem.cmake"
@@ -45,9 +47,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "utils/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sdl/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gameEngine.dir/DependInfo.cmake"
+  "utils/CMakeFiles/utils.dir/DependInfo.cmake"
+  "sdl/CMakeFiles/sdl.dir/DependInfo.cmake"
   )
