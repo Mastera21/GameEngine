@@ -40,6 +40,8 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 
 	layer2Image.rsrcId = cfg.layer2Rsrcid;
 
+	//Images
+
 	Rectangle rect = _imgContainer->getImageFrame(layer2Image.rsrcId);
 	layer2Image.width = rect.w;
 	layer2Image.height = rect.h;
@@ -53,49 +55,46 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 	pressKeyImage.pos = Point::ZERO;
 	pressKeyImage.widgetType = WidgetType::IMAGE;
 
-	_textContainer->createText("Hello, C++ dudes", Colors::ORANGE, cfg.textFontId, helloText.textId, helloText.width, helloText.height);
-	helloText.pos = Point::ZERO;
-	helloText.widgetType = WidgetType::TEXT;
+	//Menu and Options
 
-	_textContainer->createText("Press M to hide text", Colors::ORANGE, cfg.textFontId, pressText.textId, pressText.width, pressText.height);
-	pressText.pos = Point::ZERO;
-	pressText.pos.x += 150;
-	pressText.pos.y += 300;
-	pressText.widgetType = WidgetType::TEXT;
+	_textContainer->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
+	mainMenu.pos = Point::ZERO;
+	mainMenu.pos.x += 490;
+	mainMenu.widgetType = WidgetType::TEXT;
 
-
-	_textContainer->createText("Press N to show text", Colors::RED, cfg.textFontId, hideText.textId, hideText.width, hideText.height);
-	hideText.pos = Point::ZERO;
-	hideText.pos.x += 300;
-	hideText.pos.y += 300;
-	hideText.widgetType = WidgetType::TEXT;
+	_textContainer->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
+	optionPage.pos = Point::ZERO;
+	optionPage.pos.x += 490;
+	optionPage.widgetType = WidgetType::TEXT;
 
 
 	return EXIT_SUCCESS;
 }
 
 void Game::deinit(){
-	_textContainer->unloadText(helloText.textId);
+	_textContainer->unloadText(mainMenu.textId);
 }
 
 void Game::draw(std::vector<DrawParams>& images){
 	//images.push_back(pressKeyImage);
 	//images.push_back(layer2Image);
-	images.push_back(helloText);
 
 	if(isPressTextHidden){
-		images.push_back(hideText);
+		//Option Menu
+		images.push_back(optionPage);
 	}else{
-		images.push_back(pressText);
+		//Main Menu
+		images.push_back(mainMenu);
 	}
-
-
 }
 
 void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}
+
+	//------------This is optional !!!----------------------
+
 	//Refact keys
 	switch(event.key){
 		case Keyboard::KEY_UP:
@@ -110,7 +109,6 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 		case Keyboard::KEY_RIGHT:
 			pressKeyImage.pos.x += 10;
 			break;
-
 		case Keyboard::KEY_Q:
 			pressKeyImage.width -= 10;
 			break;
@@ -132,7 +130,7 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 			break;
 
 		case Keyboard::KEY_B:
-			_textContainer->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
+			//_textContainer->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
 			break;
 
 		case Keyboard::KEY_M:

@@ -31,10 +31,9 @@ private:
 
 	DrawParams pressKeyImage;//first image
 	DrawParams layer2Image;//second image
-	DrawParams helloText;
 
-	DrawParams pressText;
-	DrawParams hideText;
+	DrawParams mainMenu;
+	DrawParams optionPage;
 
 	bool isPressTextHidden = false;
 

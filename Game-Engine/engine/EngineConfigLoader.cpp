@@ -40,17 +40,17 @@ static void populateMonitorConfig(MonitorWindowCofg& cfg){
 	cfg.windowFlags = WINDOW_SHOWN;
 }
 
-
 static void populateGameConfig(GameCfg& cfg){
 	cfg.layer2Rsrcid = TextureId::LAYER_2;
 	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
 	cfg.textFontId = FontId::ANGELINE_VINTAGE;
 }
 
+//This is for Menu
 static void populateTextContainerConfig(TextContainerCfg& cfg){
 	FontCfg fontCfg;
 	fontCfg.location = getFilePath("assets/f/AngelineVintage.ttf");
-	fontCfg.fontSize = 80;
+	fontCfg.fontSize = 50;
 	cfg.fontConfigs.insert(std::make_pair(FontId::ANGELINE_VINTAGE, fontCfg));
 }
 
@@ -67,7 +67,6 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	cfg.imageConfigs.insert(std::make_pair(TextureId::LAYER_2, imageCfg));
 
 }
-
 
 EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
