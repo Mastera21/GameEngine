@@ -11,6 +11,7 @@
 
 //Own components headers
 #include "sdl/Texture.h"
+#include "utils/drawing/Color.h"
 
 int32_t Renderer::init(SDL_Window* window){
 
@@ -27,11 +28,12 @@ int32_t Renderer::init(SDL_Window* window){
 		std::cerr<<"SDL_CreateRenderer() failed. Reason: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
-
-	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(_sdlRenderer, 0, 0, 255, SDL_ALPHA_OPAQUE)){
+	//Background colors
+	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(_sdlRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE)){
 		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
+
 	Texture::setRenderer(_sdlRenderer);
 
 	return EXIT_SUCCESS;
@@ -42,6 +44,7 @@ void Renderer::deinit(){
 		_sdlRenderer = nullptr;
 	}
 }
+
 void Renderer::clearScreen(){
 	if(EXIT_SUCCESS != SDL_RenderClear(_sdlRenderer)){
 		std::cerr<<"SDL_RenderClear(_sdlRenderer) failed. Reason: "<< SDL_GetError() << "\n";
