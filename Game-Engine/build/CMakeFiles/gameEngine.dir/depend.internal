@@ -16,7 +16,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h
- ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
@@ -36,7 +35,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h
- ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
@@ -81,7 +79,6 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h
- ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h

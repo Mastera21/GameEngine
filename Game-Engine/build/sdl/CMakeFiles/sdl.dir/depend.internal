@@ -50,6 +50,7 @@ sdl/CMakeFiles/sdl.dir/src/MonitorWindow.cpp.o
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o
  ../sdl/include/sdl/Renderer.h
  ../sdl/include/sdl/Texture.h
+ ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/Renderer.cpp

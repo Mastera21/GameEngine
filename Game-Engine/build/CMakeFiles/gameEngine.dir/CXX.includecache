@@ -25,8 +25,6 @@ sdl/containers/ImageContainer.h
 ../engine/sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../engine/sdl/containers/TextContainer.h
-utils/drawing/Color.h
-../engine/utils/drawing/Color.h
 
 ..//engine/EngineConfigLoader.h
 engine/config/EngineConfig.h
@@ -225,8 +223,6 @@ sdl/containers/ImageContainer.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/containers/TextContainer.h
-utils/drawing/Color.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/drawing/Color.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
 EngineConfigLoader.h

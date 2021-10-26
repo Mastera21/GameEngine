@@ -15,7 +15,7 @@
 struct SDL_Renderer;
 struct SDL_Texture;
 struct SDL_Window;
-
+struct Color;
 
 class Renderer {
 public:
@@ -32,6 +32,8 @@ public:
 	void clearScreen();
 	void finishFrame();
 	void renderTexture(SDL_Texture* texture, const DrawParams& drawParams);
+
+	void setBackgroundColor(const Color& color);
 
 private:
 	SDL_Renderer *_sdlRenderer = nullptr;

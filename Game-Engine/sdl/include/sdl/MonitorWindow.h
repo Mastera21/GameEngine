@@ -17,7 +17,6 @@
 struct SDL_Window;
 struct SDL_Surface;
 
-
 namespace sd{
 
 class MonitorWindow {

@@ -28,11 +28,9 @@ int32_t Renderer::init(SDL_Window* window){
 		std::cerr<<"SDL_CreateRenderer() failed. Reason: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
+
 	//Background colors
-	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(_sdlRenderer, 0, 0, 0, SDL_ALPHA_OPAQUE)){
-		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
-		return EXIT_FAILURE;
-	}
+	setBackgroundColor(Colors::BLACK);
 
 	Texture::setRenderer(_sdlRenderer);
 
@@ -42,6 +40,12 @@ void Renderer::deinit(){
 	if(_sdlRenderer != nullptr){
 		SDL_DestroyRenderer(_sdlRenderer);
 		_sdlRenderer = nullptr;
+	}
+}
+
+void Renderer::setBackgroundColor(const Color& color){
+	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(_sdlRenderer,color.rgba.r,color.rgba.g,color.rgba.b,color.rgba.a)){
+			std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
 	}
 }
 

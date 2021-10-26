@@ -49,6 +49,7 @@ sdl/CMakeFiles/sdl.dir/src/MonitorWindow.cpp.o: /usr/include/SDL2/close_code.h
 
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../sdl/include/sdl/Renderer.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../sdl/include/sdl/Texture.h
+sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/Color.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/Point.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../sdl/src/Renderer.cpp

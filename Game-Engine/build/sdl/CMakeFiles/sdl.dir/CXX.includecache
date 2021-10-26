@@ -137,6 +137,8 @@ SDL_hints.h
 -
 sdl/Texture.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/sdl/Texture.h
+utils/drawing/Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/utils/drawing/Color.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/SDLLoader.cpp
 sdl/SDLLoader.h

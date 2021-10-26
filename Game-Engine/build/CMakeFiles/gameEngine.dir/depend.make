@@ -15,7 +15,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/conf
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../utils/include/utils/drawing/Rectangle.h
@@ -35,7 +34,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/config/Monitor
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../utils/include/utils/drawing/Rectangle.h
@@ -80,7 +78,6 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/config/MonitorWindowCfg
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/config/TextContainerCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/containers/ImageContainer.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/containers/TextContainer.h
-CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Rectangle.h
