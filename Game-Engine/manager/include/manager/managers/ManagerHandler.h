@@ -1,0 +1,10 @@
+#ifndef MANAGER_INCLUDE_MANAGER_MANAGERS_MANAGERHANDLER_H_
+#define MANAGER_INCLUDE_MANAGER_MANAGERS_MANAGERHANDLER_H_
+
+class ManagerHandler {
+public:
+	ManagerHandler();
+	virtual ~ManagerHandler();
+};
+
+#endif /* MANAGER_INCLUDE_MANAGER_MANAGERS_MANAGERHANDLER_H_ */

@@ -105,19 +105,45 @@ manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o.provides: manager/CMak
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
 
 
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: manager/CMakeFiles/manager.dir/flags.make
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/src/managers/ManagerHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp
+
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.i"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp > CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.i
+
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.s"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp -o CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.s
+
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.requires:
+
+.PHONY : manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.requires
+
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.requires
+	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides.build
+.PHONY : manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides
+
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
+
+
 # Object files for target manager
 manager_OBJECTS = \
 "CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o" \
-"CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o"
+"CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o" \
+"CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o"
 
 # External object files for target manager
 manager_EXTERNAL_OBJECTS =
 
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
+manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/build.make
 manager/libmanager.a: manager/CMakeFiles/manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmanager.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmanager.a"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && $(CMAKE_COMMAND) -P CMakeFiles/manager.dir/cmake_clean_target.cmake
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/manager.dir/link.txt --verbose=$(VERBOSE)
 
@@ -128,6 +154,7 @@ manager/CMakeFiles/manager.dir/build: manager/libmanager.a
 
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o.requires
+manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.requires
 
 .PHONY : manager/CMakeFiles/manager.dir/requires
 

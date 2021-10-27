@@ -152,6 +152,33 @@ src/managers/DrawMgr.cpp.s:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.s
 .PHONY : src/managers/DrawMgr.cpp.s
 
+src/managers/ManagerHandler.o: src/managers/ManagerHandler.cpp.o
+
+.PHONY : src/managers/ManagerHandler.o
+
+# target to build an object file
+src/managers/ManagerHandler.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
+.PHONY : src/managers/ManagerHandler.cpp.o
+
+src/managers/ManagerHandler.i: src/managers/ManagerHandler.cpp.i
+
+.PHONY : src/managers/ManagerHandler.i
+
+# target to preprocess a source file
+src/managers/ManagerHandler.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.i
+.PHONY : src/managers/ManagerHandler.cpp.i
+
+src/managers/ManagerHandler.s: src/managers/ManagerHandler.cpp.s
+
+.PHONY : src/managers/ManagerHandler.s
+
+# target to generate assembly for a file
+src/managers/ManagerHandler.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.s
+.PHONY : src/managers/ManagerHandler.cpp.s
+
 src/managers/RsrcMgr.o: src/managers/RsrcMgr.cpp.o
 
 .PHONY : src/managers/RsrcMgr.o
@@ -191,6 +218,9 @@ help:
 	@echo "... src/managers/DrawMgr.o"
 	@echo "... src/managers/DrawMgr.i"
 	@echo "... src/managers/DrawMgr.s"
+	@echo "... src/managers/ManagerHandler.o"
+	@echo "... src/managers/ManagerHandler.i"
+	@echo "... src/managers/ManagerHandler.s"
 	@echo "... src/managers/RsrcMgr.o"
 	@echo "... src/managers/RsrcMgr.i"
 	@echo "... src/managers/RsrcMgr.s"

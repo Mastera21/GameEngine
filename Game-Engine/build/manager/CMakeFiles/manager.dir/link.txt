@@ -1,2 +1,2 @@
-/usr/bin/ar qc libmanager.a  CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
+/usr/bin/ar qc libmanager.a  CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
 /usr/bin/ranlib libmanager.a

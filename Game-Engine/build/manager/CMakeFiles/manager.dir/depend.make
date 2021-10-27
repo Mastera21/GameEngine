@@ -17,6 +17,9 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o: ../utils/include/util
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o: ../manager/src/managers/DrawMgr.cpp
 
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/src/managers/ManagerHandler.cpp
+
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../manager/include/manager/managers/MgrBase.h
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../manager/include/manager/managers/RsrcMgr.h

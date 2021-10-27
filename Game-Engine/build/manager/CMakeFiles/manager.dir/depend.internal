@@ -17,6 +17,9 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
+ ../manager/include/manager/managers/ManagerHandler.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
  ../manager/include/manager/config/RsrcMgrCfg.h
  ../manager/include/manager/managers/MgrBase.h

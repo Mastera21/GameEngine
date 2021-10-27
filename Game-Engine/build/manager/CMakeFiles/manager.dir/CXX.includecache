@@ -30,6 +30,8 @@ sdl/MonitorWindow.h
 sdl/Renderer.h
 ../manager/include/manager/managers/sdl/Renderer.h
 
+../manager/include/manager/managers/ManagerHandler.h
+
 ../manager/include/manager/managers/MgrBase.h
 
 ../manager/include/manager/managers/RsrcMgr.h
@@ -125,6 +127,10 @@ manager/config/DrawMgrCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/DrawMgrCfg.h
 manager/managers/RsrcMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/RsrcMgr.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp
+manager/managers/ManagerHandler.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/ManagerHandler.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp
 manager/managers/RsrcMgr.h
