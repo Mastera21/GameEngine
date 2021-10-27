@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_80482/fast"
-/usr/bin/make -f CMakeFiles/cmTC_80482.dir/build.make CMakeFiles/cmTC_80482.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8f072/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f072.dir/build.make CMakeFiles/cmTC_8f072.dir/build
 make[1]: Entering directory '/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_80482.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_80482.dir/CheckSymbolExists.cxx.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-Linking CXX executable cmTC_80482
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80482.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_80482.dir/CheckSymbolExists.cxx.o  -o cmTC_80482 
-CMakeFiles/cmTC_80482.dir/CheckSymbolExists.cxx.o: In function `main':
+Building CXX object CMakeFiles/cmTC_8f072.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_8f072.dir/CheckSymbolExists.cxx.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_8f072
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f072.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_8f072.dir/CheckSymbolExists.cxx.o  -o cmTC_8f072 
+CMakeFiles/cmTC_8f072.dir/CheckSymbolExists.cxx.o: In function `main':
 CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_80482.dir/build.make:97: recipe for target 'cmTC_80482' failed
-make[1]: *** [cmTC_80482] Error 1
+CMakeFiles/cmTC_8f072.dir/build.make:97: recipe for target 'cmTC_8f072' failed
+make[1]: *** [cmTC_8f072] Error 1
 make[1]: Leaving directory '/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_80482/fast' failed
-make: *** [cmTC_80482/fast] Error 2
+Makefile:126: recipe for target 'cmTC_8f072/fast' failed
+make: *** [cmTC_8f072/fast] Error 2
 
 File /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f504f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f504f.dir/build.make CMakeFiles/cmTC_f504f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d29ba/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d29ba.dir/build.make CMakeFiles/cmTC_d29ba.dir/build
 make[1]: Entering directory '/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f504f.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f504f.dir/CheckFunctionExists.cxx.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_f504f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f504f.dir/link.txt --verbose=1
-/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f504f.dir/CheckFunctionExists.cxx.o  -o cmTC_f504f -lpthreads 
+Building CXX object CMakeFiles/cmTC_d29ba.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d29ba.dir/CheckFunctionExists.cxx.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_d29ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d29ba.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d29ba.dir/CheckFunctionExists.cxx.o  -o cmTC_d29ba -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f504f.dir/build.make:97: recipe for target 'cmTC_f504f' failed
-make[1]: *** [cmTC_f504f] Error 1
+CMakeFiles/cmTC_d29ba.dir/build.make:97: recipe for target 'cmTC_d29ba' failed
+make[1]: *** [cmTC_d29ba] Error 1
 make[1]: Leaving directory '/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f504f/fast' failed
-make: *** [cmTC_f504f/fast] Error 2
+Makefile:126: recipe for target 'cmTC_d29ba/fast' failed
+make: *** [cmTC_d29ba/fast] Error 2
 
 

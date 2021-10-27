@@ -42,15 +42,15 @@ add_executable(
 
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
-		 ${_BASE_DIR}/engine/Engine.cpp
 		 ${_BASE_DIR}/engine/EngineConfigLoader.h
-		 ${_BASE_DIR}/engine/EngineConfigLoader.cpp
 		 ${_BASE_DIR}/engine/config/EngineConfig.h
+		 ${_BASE_DIR}/engine/Engine.cpp
+		 ${_BASE_DIR}/engine/EngineConfigLoader.cpp
 		 
 		 #For game folder
 		 ${_BASE_DIR}/game/Game.h
-		 ${_BASE_DIR}/game/Game.cpp
 		 ${_BASE_DIR}/game/config/GameCfg.h
+		 ${_BASE_DIR}/game/Game.cpp
 		 	 
 		${_BASE_DIR}/main.cpp)
 
