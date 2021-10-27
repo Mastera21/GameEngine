@@ -63,3 +63,17 @@ SDL_Texture* DrawMgr::getTextureinternal(const DrawParams& drawParams) const{
 
 	return nullptr;
 }
+
+void DrawMgr::setWidgetBlendMode(const DrawParams& drawParams, BlendMode blendMode){
+	SDL_Texture* texture = getTextureinternal(drawParams);
+	_render.setWidgetBlendMode(texture, blendMode);
+}
+void DrawMgr::setWidgetOpacity(const DrawParams& drawParams, int32_t opacity){
+	if(drawParams.widgetType == WidgetType::IMAGE){
+		return;
+	}
+
+	SDL_Texture* texture = getTextureinternal(drawParams);
+	_render.setWidgetOpacity(texture, opacity);
+}
+

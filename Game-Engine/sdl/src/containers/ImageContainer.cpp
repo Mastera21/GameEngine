@@ -60,12 +60,6 @@ int32_t ImageContainer::loadSingleResource(const ImageCfg& resCfg,int32_t rsrcId
 		return EXIT_FAILURE;
 	}
 
-	//TODO remove me
-	if(EXIT_SUCCESS != Texture::setBlendModeTexture(texture, BlendMode::BLEND)){
-		std::cerr<<"Texture::setBlendModeTexture() failed for file: " << resCfg.location << "\n";
-		return EXIT_FAILURE;
-	}
-
 	_textures[rsrcId] = texture;
 
 	Rectangle& rect = _textureFrames[rsrcId];

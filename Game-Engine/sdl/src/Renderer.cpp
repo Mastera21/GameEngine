@@ -68,6 +68,17 @@ void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams)
 	}
 }
 
+void Renderer::setWidgetBlendMode(SDL_Texture* texture, BlendMode blendMode){
+	if(EXIT_SUCCESS != Texture::setBlendModeTexture(texture, blendMode)){
+		std::cerr<<"setBlendModeTexture() failed for file: \n";
+	}
+}
+void Renderer::setWidgetOpacity(SDL_Texture* texture, int32_t opacity){
+	 if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)){
+		 std::cerr<<"setAlphaTexture(texture, opacity) failed: \n";
+	 }
+}
+
 void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture){
 	const SDL_Rect destRect = {.x = drawParams.pos.x, .y = drawParams.pos.y,
 							   .w = drawParams.width, .h = drawParams.height};
@@ -93,11 +104,6 @@ void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture){
 void Renderer::drawText(const DrawParams& drawParams, SDL_Texture* texture){
 	const SDL_Rect destRect = {.x = drawParams.pos.x, .y = drawParams.pos.y,
 							   .w = drawParams.width, .h = drawParams.height};
-
-	//TODO Do no set alpha every time.
-	if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, drawParams.opacity)){
-		std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
-	}
 
 	const  int32_t err = SDL_RenderCopy(_sdlRenderer, texture, nullptr, &destRect);
 	if(EXIT_SUCCESS != err){

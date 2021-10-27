@@ -34,6 +34,9 @@ public:
 
 	void addDrawCmd(const DrawParams& drawParams);
 
+	void setWidgetBlendMode(const DrawParams& drawParams, BlendMode blendMode);
+	void setWidgetOpacity(const DrawParams& drawParams, int32_t opacity);
+
 private:
 
 	Renderer _render;
