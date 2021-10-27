@@ -8,6 +8,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ../manager/include/manager/config/DrawMgrCfg.h
+ ../manager/include/manager/config/RsrcMgrCfg.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/SDLLoader.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -26,8 +27,10 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ../manager/include/manager/config/DrawMgrCfg.h
+ ../manager/include/manager/config/RsrcMgrCfg.h
  ../manager/include/manager/managers/DrawMgr.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/RsrcMgr.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/MonitorWindow.h
  ../sdl/include/sdl/Renderer.h
@@ -50,16 +53,26 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/config/GameCfg.h
  ../manager/include/manager/config/DrawMgrCfg.h
+ ../manager/include/manager/config/RsrcMgrCfg.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
  ../sdl/include/sdl/config/MonitorWindowCfg.h
  ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
+ ../manager/include/manager/managers/DrawMgr.h
+ ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/RsrcMgr.h
  ../sdl/include/sdl/Event.h
+ ../sdl/include/sdl/MonitorWindow.h
+ ../sdl/include/sdl/Renderer.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/MonitorWindowCfg.h
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h

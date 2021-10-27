@@ -152,6 +152,33 @@ src/managers/DrawMgr.cpp.s:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.s
 .PHONY : src/managers/DrawMgr.cpp.s
 
+src/managers/RsrcMgr.o: src/managers/RsrcMgr.cpp.o
+
+.PHONY : src/managers/RsrcMgr.o
+
+# target to build an object file
+src/managers/RsrcMgr.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
+.PHONY : src/managers/RsrcMgr.cpp.o
+
+src/managers/RsrcMgr.i: src/managers/RsrcMgr.cpp.i
+
+.PHONY : src/managers/RsrcMgr.i
+
+# target to preprocess a source file
+src/managers/RsrcMgr.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.i
+.PHONY : src/managers/RsrcMgr.cpp.i
+
+src/managers/RsrcMgr.s: src/managers/RsrcMgr.cpp.s
+
+.PHONY : src/managers/RsrcMgr.s
+
+# target to generate assembly for a file
+src/managers/RsrcMgr.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.s
+.PHONY : src/managers/RsrcMgr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... src/managers/DrawMgr.o"
 	@echo "... src/managers/DrawMgr.i"
 	@echo "... src/managers/DrawMgr.s"
+	@echo "... src/managers/RsrcMgr.o"
+	@echo "... src/managers/RsrcMgr.i"
+	@echo "... src/managers/RsrcMgr.s"
 .PHONY : help
 
 

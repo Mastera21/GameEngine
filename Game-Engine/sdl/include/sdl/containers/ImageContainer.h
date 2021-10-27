@@ -17,14 +17,14 @@ struct SDL_Texture;
 
 class ImageContainer {
 public:
-
-	int32_t init(const ImageContainerCfg& cfg);
-	void deinit();
-
-
 	SDL_Texture* getImageTexture(int32_t rsrcId) const;
 
 	Rectangle getImageFrame(int32_t rsrcId) const;
+
+protected:
+
+	int32_t init(const ImageContainerCfg& cfg);
+	void deinit();
 
 private:
 	//the textures we'll be drawing

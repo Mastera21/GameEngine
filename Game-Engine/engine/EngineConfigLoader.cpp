@@ -33,25 +33,6 @@ static std::string getFilePath(const std::string relativePath){
 	return "../" + relativePath;
 #endif
 }
-
-static void populateMonitorConfig(MonitorWindowCofg& cfg){
-	//Setup window;
-	cfg.windowName = WINDOW_NAME;
-	cfg.windowWidth = WINDOW_WIDTH;
-	cfg.windowHeight = WINDOW_HEIGHT;
-	cfg.windowFlags = WINDOW_SHOWN;
-}
-
-static void populateDrawMgrConfig(DrawMgrCfg& cfg){
-	populateMonitorConfig(cfg.windowCfg);
-	cfg.maxFrameRate = MAX_FRAME_RATE;
-}
-static void populateGameConfig(GameCfg& cfg){
-	cfg.layer2Rsrcid = TextureId::LAYER_2;
-	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
-	cfg.textFontId = FontId::ANGELINE_VINTAGE;
-}
-
 //This is for Menu
 static void populateTextContainerConfig(TextContainerCfg& cfg){
 	FontCfg fontCfg;
@@ -74,11 +55,33 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 
 }
 
+static void populateMonitorConfig(MonitorWindowCofg& cfg){
+	//Setup window;
+	cfg.windowName = WINDOW_NAME;
+	cfg.windowWidth = WINDOW_WIDTH;
+	cfg.windowHeight = WINDOW_HEIGHT;
+	cfg.windowFlags = WINDOW_SHOWN;
+}
+
+static void populateRsrcMgrConfig(RsrcMgrCfg& cfg){
+	populateImageContainerConfig(cfg.imageContainerCfg);
+	populateTextContainerConfig(cfg.textContainerCfg);
+}
+
+static void populateDrawMgrConfig(DrawMgrCfg& cfg){
+	populateMonitorConfig(cfg.windowCfg);
+	cfg.maxFrameRate = MAX_FRAME_RATE;
+}
+static void populateGameConfig(GameCfg& cfg){
+	cfg.layer2Rsrcid = TextureId::LAYER_2;
+	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
+	cfg.textFontId = FontId::ANGELINE_VINTAGE;
+}
+
 EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
 	populateDrawMgrConfig(cfg.drawMgrCfg);
-	populateImageContainerConfig(cfg.imageContainerCfg);
-	populateTextContainerConfig(cfg.textContainerCfg);
+	populateRsrcMgrConfig(cfg.rsrcMgrCfg);
 	populateGameConfig(cfg.gameCfg);
 	return cfg;
 }

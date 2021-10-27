@@ -12,6 +12,14 @@ cstdint
 sdl/config/MonitorWindowCfg.h
 ../manager/include/manager/config/sdl/config/MonitorWindowCfg.h
 
+../manager/include/manager/config/RsrcMgrCfg.h
+cstdint
+-
+sdl/containers/ImageContainer.h
+../manager/include/manager/config/sdl/containers/ImageContainer.h
+sdl/containers/TextContainer.h
+../manager/include/manager/config/sdl/containers/TextContainer.h
+
 ../manager/include/manager/managers/DrawMgr.h
 cstdint
 -
@@ -23,6 +31,16 @@ sdl/Renderer.h
 ../manager/include/manager/managers/sdl/Renderer.h
 
 ../manager/include/manager/managers/MgrBase.h
+
+../manager/include/manager/managers/RsrcMgr.h
+cstdint
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
+sdl/containers/ImageContainer.h
+../manager/include/manager/managers/sdl/containers/ImageContainer.h
+sdl/containers/TextContainer.h
+../manager/include/manager/managers/sdl/containers/TextContainer.h
 
 ../sdl/include/sdl/MonitorWindow.h
 cstdint
@@ -40,6 +58,12 @@ vector
 utils/drawing/DrawParams.h
 ../sdl/include/sdl/utils/drawing/DrawParams.h
 
+../sdl/include/sdl/config/ImageContainerCfg.h
+cstring
+-
+unordered_map
+-
+
 ../sdl/include/sdl/config/MonitorWindowCfg.h
 cstdint
 -
@@ -47,6 +71,34 @@ string
 -
 utils/drawing/Point.h
 ../sdl/include/sdl/config/utils/drawing/Point.h
+
+../sdl/include/sdl/config/TextContainerCfg.h
+cstring
+-
+unordered_map
+-
+
+../sdl/include/sdl/containers/ImageContainer.h
+cstring
+-
+unordered_map
+-
+utils/drawing/Rectangle.h
+../sdl/include/sdl/containers/utils/drawing/Rectangle.h
+sdl/config/ImageContainerCfg.h
+../sdl/include/sdl/containers/sdl/config/ImageContainerCfg.h
+
+../sdl/include/sdl/containers/TextContainer.h
+cstdint
+-
+vector
+-
+unordered_map
+-
+string
+-
+sdl/config/TextContainerCfg.h
+../sdl/include/sdl/containers/sdl/config/TextContainerCfg.h
 
 ../utils/include/utils/drawing/DrawParams.h
 cstdint
@@ -58,6 +110,12 @@ utils/drawing/Point.h
 cstdint
 -
 
+../utils/include/utils/drawing/Rectangle.h
+cstdint
+-
+utils/drawing/Point.h
+../utils/include/utils/drawing/utils/drawing/Point.h
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp
 manager/managers/DrawMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/DrawMgr.h
@@ -65,4 +123,12 @@ iostream
 -
 manager/config/DrawMgrCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/DrawMgrCfg.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp
+manager/managers/RsrcMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/RsrcMgr.h
+iostream
+-
+manager/config/RsrcMgrCfg.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/RsrcMgrCfg.h
 

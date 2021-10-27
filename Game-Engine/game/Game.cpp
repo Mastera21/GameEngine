@@ -11,45 +11,24 @@
 
 //Own components headers
 #include "sdl/Event.h"
-#include "sdl/containers/ImageContainer.h"
-#include "sdl/containers/TextContainer.h"
 #include "utils/drawing/Color.h"
 
-//TODO Remove me later.
-static int32_t gFontId;
+#include "manager/managers/DrawMgr.h"
+#include "manager/managers/RsrcMgr.h"
 
-int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _imgContainerInterface,
-															TextContainer* _textContainerInterface){
-
-	if(_imgContainerInterface == nullptr){
-		std::cerr<<"Error, nullptr provided for _imgContainerInterface\n";
-		return EXIT_FAILURE;
-	}
-
-	_imgContainer = _imgContainerInterface;
-
-	gFontId = cfg.textFontId;
-
-	if(_textContainerInterface == nullptr){
-		std::cerr<<"Error, nullptr provided for _textContainerInterface\n";
-		return EXIT_FAILURE;
-	}
-
-	_textContainer = _textContainerInterface;
-
-
-	layer2Image.rsrcId = cfg.layer2Rsrcid;
+int32_t Game::init([[maybe_unused]]const GameCfg cfg){
 
 	//Images
 
-	Rectangle rect = _imgContainer->getImageFrame(layer2Image.rsrcId);
+	layer2Image.rsrcId = cfg.layer2Rsrcid;
+	Rectangle rect = gRsrcMgr->getImageFrame(layer2Image.rsrcId);
 	layer2Image.width = rect.w;
 	layer2Image.height = rect.h;
 	layer2Image.pos = Point::ZERO;
 	layer2Image.widgetType = WidgetType::IMAGE;
 
 	pressKeyImage.rsrcId = cfg.pressKeysRsrcId;
-	rect = _imgContainer->getImageFrame(pressKeyImage.rsrcId);
+	rect = gRsrcMgr->getImageFrame(pressKeyImage.rsrcId);
 	pressKeyImage.width = rect.w;
 	pressKeyImage.height = rect.h;
 	pressKeyImage.pos = Point::ZERO;
@@ -57,12 +36,12 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 
 	//Menu and Options
 
-	_textContainer->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
+	gRsrcMgr->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
 	mainMenu.pos = Point::ZERO;
 	mainMenu.pos.x += 490;
 	mainMenu.widgetType = WidgetType::TEXT;
 
-	_textContainer->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
+	gRsrcMgr->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
 	optionPage.pos = Point::ZERO;
 	optionPage.pos.x += 490;
 	optionPage.widgetType = WidgetType::TEXT;
@@ -72,7 +51,7 @@ int32_t Game::init([[maybe_unused]]const GameCfg cfg, const ImageContainer* _img
 }
 
 void Game::deinit(){
-	_textContainer->unloadText(mainMenu.textId);
+	gRsrcMgr->unloadText(mainMenu.textId);
 }
 
 void Game::draw(std::vector<DrawParams>& images){
@@ -130,7 +109,7 @@ void Game::handleEvent([[maybe_unused]]const sd::Event& event){
 			break;
 
 		case Keyboard::KEY_B:
-			//_textContainer->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
+			//gRsrcMgr->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
 			break;
 
 		case Keyboard::KEY_M:

@@ -12,12 +12,14 @@ add_library(
 	
 		 #For header files
 		 ${_INC_DIR}/config/DrawMgrCfg.h
+		 ${_INC_DIR}/config/RsrcMgrCfg.h
 		 ${_INC_DIR}/managers/MgrBase.h
 		 ${_INC_DIR}/managers/DrawMgr.h
+		 ${_INC_DIR}/managers/RsrcMgr.h
 	
 		 #For src files
 		 ${_SRC_DIR}/managers/DrawMgr.cpp
-	
+		 ${_SRC_DIR}/managers/RsrcMgr.cpp
 )
 		 
 set_target_cpp_standard(${PROJECT_NAME} 17)

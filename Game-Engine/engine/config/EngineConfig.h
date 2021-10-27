@@ -8,15 +8,13 @@
 
 //Other libraries headers
 #include "manager/config/DrawMgrCfg.h"
-#include "sdl/config/ImageContainerCfg.h"
-#include "sdl/config/TextContainerCfg.h"
+#include "manager/config/RsrcMgrCfg.h"
 #include "game/config/GameCfg.h"
 //Own components headers
 
 struct EngineConfig {
 	DrawMgrCfg drawMgrCfg;
-	ImageContainerCfg imageContainerCfg;
-	TextContainerCfg textContainerCfg;
+	RsrcMgrCfg rsrcMgrCfg;
 	GameCfg gameCfg;
 };
 

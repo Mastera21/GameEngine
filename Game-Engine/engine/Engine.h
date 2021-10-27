@@ -23,8 +23,6 @@ public:
 
 private:
 	sd::Event _event;
-	ImageContainer _imgContainer;
-	TextContainer _textContainer;
 	Game _game;
 
 	void drawFrame();

@@ -16,13 +16,11 @@
 #include "sdl/Event.h"
 
 //Forward declarations
-struct ImageContainer;
-struct TextContainer;
 
 class Game {
 public:
 
-	int32_t init(const GameCfg cfg, const ImageContainer* _imgContainerInterface, TextContainer* _textContainerInterface);
+	int32_t init(const GameCfg cfg);
 	void deinit();
 	void draw(std::vector<DrawParams>& images);
 	void handleEvent(const sd::Event& event);
@@ -36,10 +34,6 @@ private:
 	DrawParams optionPage;
 
 	bool isPressTextHidden = false;
-
-	//TODO Remove me !!!
-	const ImageContainer* _imgContainer = nullptr;
-	TextContainer* _textContainer = nullptr;
 
 };
 

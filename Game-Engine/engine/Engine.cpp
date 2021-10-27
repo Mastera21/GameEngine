@@ -13,6 +13,7 @@
 //Own components headers
 #include "engine/config/EngineConfig.h"
 #include "manager/managers/DrawMgr.h"
+#include "manager/managers/RsrcMgr.h"
 #include "utils/time/Time.h"
 #include "utils/thread/ThreadUtils.h"
 #include "sdl/Texture.h"
@@ -31,13 +32,14 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _imgContainer.init(cfg.imageContainerCfg)){
-		std::cerr<<"_imgContainer.init() failed" << std::endl;
+	gRsrcMgr = new RsrcMgr();
+	if(gRsrcMgr == nullptr){
+		std::cerr<<"Error, bad alloc for gRsrcMgr\n";
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _textContainer.init(cfg.textContainerCfg)){
-		std::cerr<<"_textContainer.init() failed" << std::endl;
+	if(EXIT_SUCCESS != gRsrcMgr->init(cfg.rsrcMgrCfg)){
+		std::cerr<<"gRsrcMgr->init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
 
@@ -46,7 +48,7 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _game.init(cfg.gameCfg, &_imgContainer,&_textContainer)){
+	if(EXIT_SUCCESS != _game.init(cfg.gameCfg)){
 		std::cerr<<"_game.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
@@ -57,8 +59,10 @@ int32_t Engine::init(const EngineConfig& cfg){
 void Engine::deinit(){
 	_game.deinit();
 	_event.deinit();
-	_imgContainer.deinit();
-	_textContainer.deinit();
+
+	gRsrcMgr->deinit();
+	delete gRsrcMgr;
+	gRsrcMgr = nullptr;
 
 	gDrawMgr->deinit();
 	delete gDrawMgr;
@@ -89,9 +93,9 @@ void Engine::drawFrame(){
 	SDL_Texture* texture = nullptr;
 	for(const DrawParams& i : images){
 		if(WidgetType::IMAGE == i.widgetType){
-			texture = _imgContainer.getImageTexture(i.rsrcId);
+			texture = gRsrcMgr->getImageTexture(i.rsrcId);
 		}else if(WidgetType::TEXT == i.widgetType){
-			texture = _textContainer.getTextTexture(i.textId);
+			texture = gRsrcMgr->getTextTexture(i.textId);
 		}else{
 			std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(i.widgetType)
 						<<" for rsrcId: "<<i.rsrcId<<"\n";

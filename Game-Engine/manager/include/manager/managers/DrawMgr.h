@@ -44,5 +44,5 @@ private:
 	int64_t _maxFrames { 0 };
 };
 
-extern DrawMgr *gDrawMgr;
+extern DrawMgr* gDrawMgr;
 #endif /* MANAGER_INCLUDE_MANAGER_MANAGERS_DRAWMGR_H_ */
