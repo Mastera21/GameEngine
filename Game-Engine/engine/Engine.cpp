@@ -13,7 +13,6 @@
 //Own components headers
 #include "engine/config/EngineConfig.h"
 #include "manager/managers/DrawMgr.h"
-#include "manager/managers/RsrcMgr.h"
 #include "utils/time/Time.h"
 #include "utils/thread/ThreadUtils.h"
 #include "sdl/Texture.h"
@@ -21,25 +20,8 @@
 
 int32_t Engine::init(const EngineConfig& cfg){
 
-	gDrawMgr = new DrawMgr();
-	if(gDrawMgr == nullptr){
-		std::cerr<<"Error, bad alloc for gDrawMgr\n";
-		return EXIT_FAILURE;
-	}
-
-	if(EXIT_SUCCESS != gDrawMgr->init(cfg.drawMgrCfg)){
-		std::cerr<<"gDrawMgr->init() failed" << std::endl;
-		return EXIT_FAILURE;
-	}
-
-	gRsrcMgr = new RsrcMgr();
-	if(gRsrcMgr == nullptr){
-		std::cerr<<"Error, bad alloc for gRsrcMgr\n";
-		return EXIT_FAILURE;
-	}
-
-	if(EXIT_SUCCESS != gRsrcMgr->init(cfg.rsrcMgrCfg)){
-		std::cerr<<"gRsrcMgr->init() failed" << std::endl;
+	if(EXIT_SUCCESS != _managerHandler.init(cfg.managerHandlerCfg)){
+		std::cerr<<"_managerHandler.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
 
@@ -59,14 +41,7 @@ int32_t Engine::init(const EngineConfig& cfg){
 void Engine::deinit(){
 	_game.deinit();
 	_event.deinit();
-
-	gRsrcMgr->deinit();
-	delete gRsrcMgr;
-	gRsrcMgr = nullptr;
-
-	gDrawMgr->deinit();
-	delete gDrawMgr;
-	gDrawMgr = nullptr;
+	//_managerHandler.deinit();
 }
 
 void Engine::main(){
@@ -81,8 +56,8 @@ void Engine::main(){
 
 		limitFPS(time.getElapsed().toMicroseconds());
 	}
-
 }
+
 void Engine::drawFrame(){
 	gDrawMgr->clearScreen();
 

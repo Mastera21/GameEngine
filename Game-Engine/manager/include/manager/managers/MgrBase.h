@@ -11,6 +11,12 @@
 //Own components headers
 
 //Forward declarations
+enum{
+	DRAW_MGR_IDX,
+	RSRC_MGR_IDX,
+	MANAGERS_COUNT
+};
+
 
 class MgrBase {
 public:

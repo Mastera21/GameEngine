@@ -13,6 +13,7 @@ add_library(
 		 #For header files
 		 ${_INC_DIR}/config/DrawMgrCfg.h
 		 ${_INC_DIR}/config/RsrcMgrCfg.h
+		 ${_INC_DIR}/config/ManagerHandlerCfg.h
 		 ${_INC_DIR}/managers/MgrBase.h
 		 ${_INC_DIR}/managers/DrawMgr.h
 		 ${_INC_DIR}/managers/RsrcMgr.h

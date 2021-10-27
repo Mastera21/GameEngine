@@ -7,14 +7,12 @@
 #include <cstdint>
 
 //Other libraries headers
-#include "manager/config/DrawMgrCfg.h"
-#include "manager/config/RsrcMgrCfg.h"
+#include "manager/config/ManagerHandlerCfg.h"
 #include "game/config/GameCfg.h"
 //Own components headers
 
 struct EngineConfig {
-	DrawMgrCfg drawMgrCfg;
-	RsrcMgrCfg rsrcMgrCfg;
+	ManagerHandlerCfg managerHandlerCfg;
 	GameCfg gameCfg;
 };
 

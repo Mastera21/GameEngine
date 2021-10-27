@@ -17,10 +17,8 @@ sdl/Event.h
 ../engine/sdl/Event.h
 game/Game.h
 ../engine/game/Game.h
-sdl/containers/ImageContainer.h
-../engine/sdl/containers/ImageContainer.h
-sdl/containers/TextContainer.h
-../engine/sdl/containers/TextContainer.h
+manager/managers/ManagerHandler.h
+../engine/manager/managers/ManagerHandler.h
 
 ..//engine/EngineConfigLoader.h
 engine/config/EngineConfig.h
@@ -29,10 +27,8 @@ engine/config/EngineConfig.h
 ..//engine/config/EngineConfig.h
 cstdint
 -
-manager/config/DrawMgrCfg.h
-../engine/config/manager/config/DrawMgrCfg.h
-manager/config/RsrcMgrCfg.h
-../engine/config/manager/config/RsrcMgrCfg.h
+manager/config/ManagerHandlerCfg.h
+../engine/config/manager/config/ManagerHandlerCfg.h
 game/config/GameCfg.h
 ../engine/config/game/config/GameCfg.h
 
@@ -58,6 +54,12 @@ cstdint
 sdl/config/MonitorWindowCfg.h
 ../manager/include/manager/config/sdl/config/MonitorWindowCfg.h
 
+../manager/include/manager/config/ManagerHandlerCfg.h
+manager/config/DrawMgrCfg.h
+../manager/include/manager/config/manager/config/DrawMgrCfg.h
+manager/config/RsrcMgrCfg.h
+../manager/include/manager/config/manager/config/RsrcMgrCfg.h
+
 ../manager/include/manager/config/RsrcMgrCfg.h
 cstdint
 -
@@ -75,6 +77,12 @@ sdl/MonitorWindow.h
 ../manager/include/manager/managers/sdl/MonitorWindow.h
 sdl/Renderer.h
 ../manager/include/manager/managers/sdl/Renderer.h
+
+../manager/include/manager/managers/ManagerHandler.h
+cstdint
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
 
 ../manager/include/manager/managers/MgrBase.h
 
@@ -231,8 +239,6 @@ engine/config/EngineConfig.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/engine/config/EngineConfig.h
 manager/managers/DrawMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/DrawMgr.h
-manager/managers/RsrcMgr.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/RsrcMgr.h
 utils/time/Time.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/time/Time.h
 utils/thread/ThreadUtils.h
@@ -247,10 +253,8 @@ sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/Event.h
 game/Game.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/game/Game.h
-sdl/containers/ImageContainer.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/containers/ImageContainer.h
-sdl/containers/TextContainer.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/containers/TextContainer.h
+manager/managers/ManagerHandler.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/ManagerHandler.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
 EngineConfigLoader.h

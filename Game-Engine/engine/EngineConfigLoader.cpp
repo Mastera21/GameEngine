@@ -72,6 +72,12 @@ static void populateDrawMgrConfig(DrawMgrCfg& cfg){
 	populateMonitorConfig(cfg.windowCfg);
 	cfg.maxFrameRate = MAX_FRAME_RATE;
 }
+
+static void populateMgrHandlerConfig(ManagerHandlerCfg& cfg){
+	populateDrawMgrConfig(cfg.drawMgrCfg);
+	populateRsrcMgrConfig(cfg.rsrcMgrCfg);
+}
+
 static void populateGameConfig(GameCfg& cfg){
 	cfg.layer2Rsrcid = TextureId::LAYER_2;
 	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
@@ -80,8 +86,7 @@ static void populateGameConfig(GameCfg& cfg){
 
 EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
-	populateDrawMgrConfig(cfg.drawMgrCfg);
-	populateRsrcMgrConfig(cfg.rsrcMgrCfg);
+	populateMgrHandlerConfig(cfg.managerHandlerCfg);
 	populateGameConfig(cfg.gameCfg);
 	return cfg;
 }

@@ -9,8 +9,7 @@
 //Other libraries headers
 #include "sdl/Event.h"
 #include "game/Game.h"
-#include "sdl/containers/ImageContainer.h"
-#include "sdl/containers/TextContainer.h"
+#include "manager/managers/ManagerHandler.h"
 
 //Forward declarations
 struct EngineConfig;
@@ -24,6 +23,7 @@ public:
 private:
 	sd::Event _event;
 	Game _game;
+	ManagerHandler _managerHandler;
 
 	void drawFrame();
 	bool processFrame();

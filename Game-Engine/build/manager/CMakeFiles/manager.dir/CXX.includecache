@@ -12,6 +12,12 @@ cstdint
 sdl/config/MonitorWindowCfg.h
 ../manager/include/manager/config/sdl/config/MonitorWindowCfg.h
 
+../manager/include/manager/config/ManagerHandlerCfg.h
+manager/config/DrawMgrCfg.h
+../manager/include/manager/config/manager/config/DrawMgrCfg.h
+manager/config/RsrcMgrCfg.h
+../manager/include/manager/config/manager/config/RsrcMgrCfg.h
+
 ../manager/include/manager/config/RsrcMgrCfg.h
 cstdint
 -
@@ -31,6 +37,10 @@ sdl/Renderer.h
 ../manager/include/manager/managers/sdl/Renderer.h
 
 ../manager/include/manager/managers/ManagerHandler.h
+cstdint
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
 
 ../manager/include/manager/managers/MgrBase.h
 
@@ -131,6 +141,14 @@ manager/managers/RsrcMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp
 manager/managers/ManagerHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/ManagerHandler.h
+iostream
+-
+manager/managers/DrawMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/DrawMgr.h
+manager/managers/RsrcMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/RsrcMgr.h
+manager/config/ManagerHandlerCfg.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/ManagerHandlerCfg.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp
 manager/managers/RsrcMgr.h
