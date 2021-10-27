@@ -8,8 +8,6 @@
 
 //Other libraries headers
 #include "sdl/Event.h"
-#include "sdl/MonitorWindow.h"
-#include "sdl/Renderer.h"
 #include "game/Game.h"
 #include "sdl/containers/ImageContainer.h"
 #include "sdl/containers/TextContainer.h"
@@ -24,9 +22,7 @@ public:
 	void main();
 
 private:
-	sd::MonitorWindow _window;
 	sd::Event _event;
-	Renderer _render;
 	ImageContainer _imgContainer;
 	TextContainer _textContainer;
 	Game _game;

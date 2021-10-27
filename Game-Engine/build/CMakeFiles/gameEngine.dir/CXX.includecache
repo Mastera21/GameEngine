@@ -15,10 +15,6 @@ cstdint
 -
 sdl/Event.h
 ../engine/sdl/Event.h
-sdl/MonitorWindow.h
-../engine/sdl/MonitorWindow.h
-sdl/Renderer.h
-../engine/sdl/Renderer.h
 game/Game.h
 ../engine/game/Game.h
 sdl/containers/ImageContainer.h
@@ -33,8 +29,8 @@ engine/config/EngineConfig.h
 ..//engine/config/EngineConfig.h
 cstdint
 -
-sdl/config/MonitorWindowCfg.h
-../engine/config/sdl/config/MonitorWindowCfg.h
+manager/config/DrawMgrCfg.h
+../engine/config/manager/config/DrawMgrCfg.h
 sdl/config/ImageContainerCfg.h
 ../engine/config/sdl/config/ImageContainerCfg.h
 sdl/config/TextContainerCfg.h
@@ -59,6 +55,24 @@ cstdint
 -
 unordered_map
 -
+
+../manager/include/manager/config/DrawMgrCfg.h
+cstdint
+-
+sdl/config/MonitorWindowCfg.h
+../manager/include/manager/config/sdl/config/MonitorWindowCfg.h
+
+../manager/include/manager/managers/DrawMgr.h
+cstdint
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
+sdl/MonitorWindow.h
+../manager/include/manager/managers/sdl/MonitorWindow.h
+sdl/Renderer.h
+../manager/include/manager/managers/sdl/Renderer.h
+
+../manager/include/manager/managers/MgrBase.h
 
 ../sdl/include/sdl/Event.h
 cstdint
@@ -201,6 +215,8 @@ cstring
 -
 engine/config/EngineConfig.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/engine/config/EngineConfig.h
+manager/managers/DrawMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/DrawMgr.h
 utils/time/Time.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/time/Time.h
 utils/thread/ThreadUtils.h
@@ -213,10 +229,6 @@ cstdint
 -
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/Event.h
-sdl/MonitorWindow.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/MonitorWindow.h
-sdl/Renderer.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/sdl/Renderer.h
 game/Game.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/game/Game.h
 sdl/containers/ImageContainer.h

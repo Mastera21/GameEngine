@@ -149,6 +149,19 @@ sdl/fast:
 	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/build
 .PHONY : sdl/fast
 
+#=============================================================================
+# Target rules for targets named manager
+
+# Build rule for target.
+manager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 manager
+.PHONY : manager
+
+# fast build rule for target.
+manager/fast:
+	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/build
+.PHONY : manager/fast
+
 application/Application.o: application/Application.cpp.o
 
 .PHONY : application/Application.o
@@ -295,6 +308,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... utils"
 	@echo "... sdl"
+	@echo "... manager"
 	@echo "... application/Application.o"
 	@echo "... application/Application.i"
 	@echo "... application/Application.s"

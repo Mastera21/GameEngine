@@ -12,6 +12,7 @@
 
 //Own components headers
 #include "engine/config/EngineConfig.h"
+#include "manager/managers/DrawMgr.h"
 #include "utils/time/Time.h"
 #include "utils/thread/ThreadUtils.h"
 #include "sdl/Texture.h"
@@ -19,13 +20,14 @@
 
 int32_t Engine::init(const EngineConfig& cfg){
 
-	if(EXIT_SUCCESS != _window.init(cfg.windowCfg)){
-		std::cerr<<"window.init() failed" << std::endl;
+	gDrawMgr = new DrawMgr();
+	if(gDrawMgr == nullptr){
+		std::cerr<<"Error, bad alloc for gDrawMgr\n";
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _render.init(_window.getWindow())){
-		std::cerr<<"_render.init() failed" << std::endl;
+	if(EXIT_SUCCESS != gDrawMgr->init(cfg.drawMgrCfg)){
+		std::cerr<<"gDrawMgr->init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
 
@@ -57,8 +59,10 @@ void Engine::deinit(){
 	_event.deinit();
 	_imgContainer.deinit();
 	_textContainer.deinit();
-	_render.deinit();
-	_window.deinit();
+
+	gDrawMgr->deinit();
+	delete gDrawMgr;
+	gDrawMgr = nullptr;
 }
 
 void Engine::main(){
@@ -76,7 +80,8 @@ void Engine::main(){
 
 }
 void Engine::drawFrame(){
-	_render.clearScreen();
+	gDrawMgr->clearScreen();
+
 	std::vector<DrawParams> images;
 	_game.draw(images);
 
@@ -92,10 +97,9 @@ void Engine::drawFrame(){
 						<<" for rsrcId: "<<i.rsrcId<<"\n";
 			continue;
 		}
-		_render.renderTexture(texture, i);
+		gDrawMgr->addDrawCmd(i, texture);
 	}
-
-	_render.finishFrame();
+	gDrawMgr->finishFrame();
 
 }
 bool Engine::processFrame(){

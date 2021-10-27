@@ -7,3 +7,6 @@
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/rebuild_cache.dir
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/sdl.dir
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl/CMakeFiles/edit_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/rebuild_cache.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/edit_cache.dir

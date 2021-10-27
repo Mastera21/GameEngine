@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/include -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/include -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/include 
+CXX_INCLUDES = -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/include -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/include -I/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/include 
 

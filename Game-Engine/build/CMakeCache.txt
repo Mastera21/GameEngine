@@ -188,6 +188,15 @@ gameEngine_BINARY_DIR:STATIC=/home/svetoslav/Documents/GitHub/GameEngine/Game-En
 gameEngine_SOURCE_DIR:STATIC=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine
 
 //Value Computed by CMake
+manager_BINARY_DIR:STATIC=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager
+
+//Dependencies for the target
+manager_LIB_DEPENDS:STATIC=general;sdl;
+
+//Value Computed by CMake
+manager_SOURCE_DIR:STATIC=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager
+
+//Value Computed by CMake
 sdl_BINARY_DIR:STATIC=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/sdl
 
 //Dependencies for the target
@@ -296,7 +305,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -348,7 +357,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_SDL2_TTF:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 SDL2_IMAGE_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2_image.so
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread
 SDL2_MIXER_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 SDL2_TTF_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 

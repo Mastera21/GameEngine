@@ -20,6 +20,8 @@ constexpr auto PRESS_KEYS_HEIGHT = 480;
 
 constexpr auto LAYER_2_IMAGE_WIDTH = 150;
 constexpr auto LAYER_2_IMAGE_HEIGHT = 150;
+
+constexpr auto MAX_FRAME_RATE = 60;
 }
 
 static std::string getFilePath(const std::string relativePath){
@@ -40,6 +42,10 @@ static void populateMonitorConfig(MonitorWindowCofg& cfg){
 	cfg.windowFlags = WINDOW_SHOWN;
 }
 
+static void populateDrawMgrConfig(DrawMgrCfg& cfg){
+	populateMonitorConfig(cfg.windowCfg);
+	cfg.maxFrameRate = MAX_FRAME_RATE;
+}
 static void populateGameConfig(GameCfg& cfg){
 	cfg.layer2Rsrcid = TextureId::LAYER_2;
 	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
@@ -70,7 +76,7 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 
 EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
-	populateMonitorConfig(cfg.windowCfg);
+	populateDrawMgrConfig(cfg.drawMgrCfg);
 	populateImageContainerConfig(cfg.imageContainerCfg);
 	populateTextContainerConfig(cfg.textContainerCfg);
 	populateGameConfig(cfg.gameCfg);

@@ -66,8 +66,8 @@ ${PROJECT_NAME}
 target_link_libraries(
 ${PROJECT_NAME} 
 	PRIVATE 
-		#Adding file name on lib "sdl"
-		sdl
+		#Adding file name on lib "manager"
+		manager
 )
 
 if(CMAKE_BUILD_TYPE MATCHES RELEASE)
@@ -82,6 +82,7 @@ endif()
 #Adding own lib 
 add_subdirectory(utils)
 add_subdirectory(sdl)
+add_subdirectory(manager)
 
 
 

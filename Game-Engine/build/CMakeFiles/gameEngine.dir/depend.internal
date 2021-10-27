@@ -7,9 +7,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
+ ../manager/include/manager/config/DrawMgrCfg.h
  ../sdl/include/sdl/Event.h
- ../sdl/include/sdl/MonitorWindow.h
- ../sdl/include/sdl/Renderer.h
  ../sdl/include/sdl/SDLLoader.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
  ../sdl/include/sdl/config/MonitorWindowCfg.h
@@ -26,6 +25,9 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
+ ../manager/include/manager/config/DrawMgrCfg.h
+ ../manager/include/manager/managers/DrawMgr.h
+ ../manager/include/manager/managers/MgrBase.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/MonitorWindow.h
  ../sdl/include/sdl/Renderer.h
@@ -47,6 +49,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//common/CommonDefines.h
  ..//engine/config/EngineConfig.h
  ..//game/config/GameCfg.h
+ ../manager/include/manager/config/DrawMgrCfg.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
  ../sdl/include/sdl/config/MonitorWindowCfg.h
  ../sdl/include/sdl/config/TextContainerCfg.h
@@ -72,10 +75,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ../sdl/include/sdl/Event.h
- ../sdl/include/sdl/MonitorWindow.h
- ../sdl/include/sdl/Renderer.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
- ../sdl/include/sdl/config/MonitorWindowCfg.h
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h

@@ -7,14 +7,14 @@
 #include <cstdint>
 
 //Other libraries headers
-#include "sdl/config/MonitorWindowCfg.h"
+#include "manager/config/DrawMgrCfg.h"
 #include "sdl/config/ImageContainerCfg.h"
 #include "sdl/config/TextContainerCfg.h"
 #include "game/config/GameCfg.h"
 //Own components headers
 
 struct EngineConfig {
-	MonitorWindowCofg windowCfg;
+	DrawMgrCfg drawMgrCfg;
 	ImageContainerCfg imageContainerCfg;
 	TextContainerCfg textContainerCfg;
 	GameCfg gameCfg;

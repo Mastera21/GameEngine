@@ -194,6 +194,7 @@ gameEngine: CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/Game.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/main.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/build.make
+gameEngine: manager/libmanager.a
 gameEngine: sdl/libsdl.a
 gameEngine: utils/libutils.a
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2main.a
