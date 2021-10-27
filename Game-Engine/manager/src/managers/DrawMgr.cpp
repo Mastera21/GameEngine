@@ -10,6 +10,7 @@
 
 //Own components headers
 #include "manager/config/DrawMgrCfg.h"
+#include "manager/managers/RsrcMgr.h"
 
 DrawMgr *gDrawMgr = nullptr;
 
@@ -44,6 +45,21 @@ void DrawMgr::finishFrame(){
 	_render.finishFrame();
 }
 
-void DrawMgr::addDrawCmd(const DrawParams& drawParams, SDL_Texture* text){
-	_render.renderTexture(text, drawParams);
+void DrawMgr::addDrawCmd(const DrawParams& drawParams){
+	SDL_Texture* texture = getTextureinternal(drawParams);
+	_render.renderTexture(texture, drawParams);
+}
+
+SDL_Texture* DrawMgr::getTextureinternal(const DrawParams& drawParams) const{
+	//This is for images.
+	if(WidgetType::IMAGE == drawParams.widgetType){
+		return gRsrcMgr->getImageTexture(drawParams.textId);
+	}else if(WidgetType::TEXT == drawParams.widgetType){
+		return gRsrcMgr->getTextTexture(drawParams.textId);
+	}else{
+		std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(drawParams.widgetType)
+				<<" for rsrcId: "<<drawParams.textId<<"\n";
+	}
+
+	return nullptr;
 }

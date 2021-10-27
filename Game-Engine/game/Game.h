@@ -6,8 +6,6 @@
 
 //C++ system headers
 #include <cstdint>
-#include <vector>
-
 //Other libraries headers
 
 //Own components headers
@@ -22,7 +20,7 @@ public:
 
 	int32_t init(const GameCfg cfg);
 	void deinit();
-	void draw(std::vector<DrawParams>& images);
+	void draw();
 	void handleEvent(const sd::Event& event);
 
 private:

@@ -86,23 +86,8 @@ void Engine::main(){
 void Engine::drawFrame(){
 	gDrawMgr->clearScreen();
 
-	std::vector<DrawParams> images;
-	_game.draw(images);
+	_game.draw();
 
-	//This is for images.
-	SDL_Texture* texture = nullptr;
-	for(const DrawParams& i : images){
-		if(WidgetType::IMAGE == i.widgetType){
-			texture = gRsrcMgr->getImageTexture(i.rsrcId);
-		}else if(WidgetType::TEXT == i.widgetType){
-			texture = gRsrcMgr->getTextTexture(i.textId);
-		}else{
-			std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(i.widgetType)
-						<<" for rsrcId: "<<i.rsrcId<<"\n";
-			continue;
-		}
-		gDrawMgr->addDrawCmd(i, texture);
-	}
 	gDrawMgr->finishFrame();
 
 }

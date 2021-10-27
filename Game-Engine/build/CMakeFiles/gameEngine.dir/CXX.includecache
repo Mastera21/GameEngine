@@ -39,8 +39,6 @@ game/config/GameCfg.h
 ..//game/Game.h
 cstdint
 -
-vector
--
 game/config/GameCfg.h
 ../game/game/config/GameCfg.h
 utils/drawing/DrawParams.h
@@ -282,8 +280,6 @@ manager/managers/RsrcMgr.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
 cstdint
--
-vector
 -
 game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h

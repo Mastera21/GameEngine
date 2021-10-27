@@ -13,7 +13,6 @@
 #include "sdl/Renderer.h"
 //Forward declarations
 struct DrawMgrCfg;
-struct SDL_Texture;
 
 class DrawMgr: public MgrBase {
 public:
@@ -33,15 +32,17 @@ public:
 
 	void finishFrame();
 
-	void addDrawCmd(const DrawParams& drawParams, SDL_Texture* text);
+	void addDrawCmd(const DrawParams& drawParams);
 
 private:
-	Renderer _render;
 
+	Renderer _render;
 	sd::MonitorWindow _window;
 
 	//Hold maximum frame rate cap
 	int64_t _maxFrames { 0 };
+
+	SDL_Texture* getTextureinternal(const DrawParams& drawParams) const;
 };
 
 extern DrawMgr* gDrawMgr;

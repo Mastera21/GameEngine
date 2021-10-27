@@ -54,16 +54,14 @@ void Game::deinit(){
 	gRsrcMgr->unloadText(mainMenu.textId);
 }
 
-void Game::draw(std::vector<DrawParams>& images){
-	//images.push_back(pressKeyImage);
-	//images.push_back(layer2Image);
+void Game::draw(){
 
 	if(isPressTextHidden){
 		//Option Menu
-		images.push_back(optionPage);
+		gDrawMgr->addDrawCmd(optionPage);
 	}else{
 		//Main Menu
-		images.push_back(mainMenu);
+		gDrawMgr->addDrawCmd(mainMenu);
 	}
 }
 

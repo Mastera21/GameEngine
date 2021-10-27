@@ -123,6 +123,8 @@ iostream
 -
 manager/config/DrawMgrCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/DrawMgrCfg.h
+manager/managers/RsrcMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/RsrcMgr.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp
 manager/managers/RsrcMgr.h
