@@ -47,6 +47,9 @@ struct DrawParams {
   };
 
   WidgetType widgetType = WidgetType::UNKNOWN;
+
+  void reset();
+
 };
 
 

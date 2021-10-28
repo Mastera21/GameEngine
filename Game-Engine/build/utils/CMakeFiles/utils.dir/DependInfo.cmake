@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/Color.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/Point.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/Rectangle.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/thread/ThreadUtils.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o"

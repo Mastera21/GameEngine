@@ -41,7 +41,7 @@ int32_t Engine::init(const EngineConfig& cfg){
 void Engine::deinit(){
 	_game.deinit();
 	_event.deinit();
-	//_managerHandler.deinit();
+	_managerHandler.deinit();
 }
 
 void Engine::main(){

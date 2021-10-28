@@ -129,9 +129,33 @@ utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o.provides: utils/CMakeFiles/ut
 utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o.provides.build: utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o
 
 
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: utils/CMakeFiles/utils.dir/flags.make
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: ../utils/src/drawing/DrawParams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp
+
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp > CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i
+
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp -o CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s
+
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.requires:
+
+.PHONY : utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.requires
+
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.provides: utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.requires
+	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.provides.build
+.PHONY : utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.provides
+
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.provides.build: utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o
+
+
 utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o: utils/CMakeFiles/utils.dir/flags.make
 utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o: ../utils/src/thread/ThreadUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/thread/ThreadUtils.cpp
 
 utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.i: cmake_force
@@ -155,7 +179,7 @@ utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o.provides.build: utils/CM
 
 utils/CMakeFiles/utils.dir/src/time/Time.cpp.o: utils/CMakeFiles/utils.dir/flags.make
 utils/CMakeFiles/utils.dir/src/time/Time.cpp.o: ../utils/src/time/Time.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object utils/CMakeFiles/utils.dir/src/time/Time.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object utils/CMakeFiles/utils.dir/src/time/Time.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/utils.dir/src/time/Time.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/time/Time.cpp
 
 utils/CMakeFiles/utils.dir/src/time/Time.cpp.i: cmake_force
@@ -182,6 +206,7 @@ utils_OBJECTS = \
 "CMakeFiles/utils.dir/src/drawing/Point.cpp.o" \
 "CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o" \
 "CMakeFiles/utils.dir/src/drawing/Color.cpp.o" \
+"CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o" \
 "CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o" \
 "CMakeFiles/utils.dir/src/time/Time.cpp.o"
 
@@ -191,11 +216,12 @@ utils_EXTERNAL_OBJECTS =
 utils/libutils.a: utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o
+utils/libutils.a: utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/src/time/Time.cpp.o
 utils/libutils.a: utils/CMakeFiles/utils.dir/build.make
 utils/libutils.a: utils/CMakeFiles/utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libutils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libutils.a"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean_target.cmake
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=$(VERBOSE)
 
@@ -207,6 +233,7 @@ utils/CMakeFiles/utils.dir/build: utils/libutils.a
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o.requires
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o.requires
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o.requires
+utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o.requires
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o.requires
 utils/CMakeFiles/utils.dir/requires: utils/CMakeFiles/utils.dir/src/time/Time.cpp.o.requires
 

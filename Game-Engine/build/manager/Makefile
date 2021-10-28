@@ -125,6 +125,33 @@ manager/fast:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/build
 .PHONY : manager/fast
 
+src/drawing/Widget.o: src/drawing/Widget.cpp.o
+
+.PHONY : src/drawing/Widget.o
+
+# target to build an object file
+src/drawing/Widget.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o
+.PHONY : src/drawing/Widget.cpp.o
+
+src/drawing/Widget.i: src/drawing/Widget.cpp.i
+
+.PHONY : src/drawing/Widget.i
+
+# target to preprocess a source file
+src/drawing/Widget.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.i
+.PHONY : src/drawing/Widget.cpp.i
+
+src/drawing/Widget.s: src/drawing/Widget.cpp.s
+
+.PHONY : src/drawing/Widget.s
+
+# target to generate assembly for a file
+src/drawing/Widget.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.s
+.PHONY : src/drawing/Widget.cpp.s
+
 src/managers/DrawMgr.o: src/managers/DrawMgr.cpp.o
 
 .PHONY : src/managers/DrawMgr.o
@@ -215,6 +242,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... manager"
 	@echo "... edit_cache"
+	@echo "... src/drawing/Widget.o"
+	@echo "... src/drawing/Widget.i"
+	@echo "... src/drawing/Widget.s"
 	@echo "... src/managers/DrawMgr.o"
 	@echo "... src/managers/DrawMgr.i"
 	@echo "... src/managers/DrawMgr.s"

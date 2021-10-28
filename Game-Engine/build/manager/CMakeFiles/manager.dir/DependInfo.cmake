@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o"

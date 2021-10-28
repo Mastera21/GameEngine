@@ -10,6 +10,12 @@
 cstdint
 -
 
+../utils/include/utils/drawing/DrawParams.h
+cstdint
+-
+utils/drawing/Point.h
+../utils/include/utils/drawing/utils/drawing/Point.h
+
 ../utils/include/utils/drawing/Point.h
 cstdint
 -
@@ -35,6 +41,12 @@ chrono
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/Color.cpp
 utils/drawing/Color.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/utils/drawing/Color.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp
+utils/drawing/DrawParams.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/utils/drawing/DrawParams.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/utils/src/drawing/Point.cpp
 utils/drawing/Point.h

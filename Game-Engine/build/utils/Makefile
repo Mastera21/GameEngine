@@ -152,6 +152,33 @@ src/drawing/Color.cpp.s:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.s
 .PHONY : src/drawing/Color.cpp.s
 
+src/drawing/DrawParams.o: src/drawing/DrawParams.cpp.o
+
+.PHONY : src/drawing/DrawParams.o
+
+# target to build an object file
+src/drawing/DrawParams.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o
+.PHONY : src/drawing/DrawParams.cpp.o
+
+src/drawing/DrawParams.i: src/drawing/DrawParams.cpp.i
+
+.PHONY : src/drawing/DrawParams.i
+
+# target to preprocess a source file
+src/drawing/DrawParams.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.i
+.PHONY : src/drawing/DrawParams.cpp.i
+
+src/drawing/DrawParams.s: src/drawing/DrawParams.cpp.s
+
+.PHONY : src/drawing/DrawParams.s
+
+# target to generate assembly for a file
+src/drawing/DrawParams.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.s
+.PHONY : src/drawing/DrawParams.cpp.s
+
 src/drawing/Point.o: src/drawing/Point.cpp.o
 
 .PHONY : src/drawing/Point.o
@@ -272,6 +299,9 @@ help:
 	@echo "... src/drawing/Color.o"
 	@echo "... src/drawing/Color.i"
 	@echo "... src/drawing/Color.s"
+	@echo "... src/drawing/DrawParams.o"
+	@echo "... src/drawing/DrawParams.i"
+	@echo "... src/drawing/DrawParams.s"
 	@echo "... src/drawing/Point.o"
 	@echo "... src/drawing/Point.i"
 	@echo "... src/drawing/Point.s"

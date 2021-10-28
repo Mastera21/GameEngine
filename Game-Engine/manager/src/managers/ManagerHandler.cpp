@@ -42,14 +42,6 @@ int32_t ManagerHandler::init(const ManagerHandlerCfg& cfg){
 }
 
 void ManagerHandler::deinit(){
-	gRsrcMgr->deinit();
-	delete gRsrcMgr;
-	gRsrcMgr = nullptr;
-
-	gDrawMgr->deinit();
-	delete gDrawMgr;
-	gDrawMgr = nullptr;
-
 	for(int32_t i = MANAGERS_COUNT - 1; i >= 0; --i){
 		_managers[i]->process();
 		_managers[i] = nullptr;
