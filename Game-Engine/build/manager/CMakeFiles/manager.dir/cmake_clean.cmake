@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o"
   "CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o"
   "CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"
+  "CMakeFiles/manager.dir/src/drawing/Image.cpp.o"
+  "CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
   "libmanager.pdb"
   "libmanager.a"
 )

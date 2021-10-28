@@ -125,6 +125,60 @@ manager/fast:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/build
 .PHONY : manager/fast
 
+src/drawing/Image.o: src/drawing/Image.cpp.o
+
+.PHONY : src/drawing/Image.o
+
+# target to build an object file
+src/drawing/Image.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o
+.PHONY : src/drawing/Image.cpp.o
+
+src/drawing/Image.i: src/drawing/Image.cpp.i
+
+.PHONY : src/drawing/Image.i
+
+# target to preprocess a source file
+src/drawing/Image.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.i
+.PHONY : src/drawing/Image.cpp.i
+
+src/drawing/Image.s: src/drawing/Image.cpp.s
+
+.PHONY : src/drawing/Image.s
+
+# target to generate assembly for a file
+src/drawing/Image.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.s
+.PHONY : src/drawing/Image.cpp.s
+
+src/drawing/Text.o: src/drawing/Text.cpp.o
+
+.PHONY : src/drawing/Text.o
+
+# target to build an object file
+src/drawing/Text.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o
+.PHONY : src/drawing/Text.cpp.o
+
+src/drawing/Text.i: src/drawing/Text.cpp.i
+
+.PHONY : src/drawing/Text.i
+
+# target to preprocess a source file
+src/drawing/Text.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.i
+.PHONY : src/drawing/Text.cpp.i
+
+src/drawing/Text.s: src/drawing/Text.cpp.s
+
+.PHONY : src/drawing/Text.s
+
+# target to generate assembly for a file
+src/drawing/Text.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.s
+.PHONY : src/drawing/Text.cpp.s
+
 src/drawing/Widget.o: src/drawing/Widget.cpp.o
 
 .PHONY : src/drawing/Widget.o
@@ -242,6 +296,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... manager"
 	@echo "... edit_cache"
+	@echo "... src/drawing/Image.o"
+	@echo "... src/drawing/Image.i"
+	@echo "... src/drawing/Image.s"
+	@echo "... src/drawing/Text.o"
+	@echo "... src/drawing/Text.i"
+	@echo "... src/drawing/Text.s"
 	@echo "... src/drawing/Widget.o"
 	@echo "... src/drawing/Widget.i"
 	@echo "... src/drawing/Widget.s"

@@ -26,6 +26,18 @@ sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/config/sdl/containers/TextContainer.h
 
+../manager/include/manager/drawing/Image.h
+cstdint
+-
+manager/drawing/Widget.h
+../manager/include/manager/drawing/manager/drawing/Widget.h
+
+../manager/include/manager/drawing/Text.h
+cstdint
+-
+manager/drawing/Widget.h
+../manager/include/manager/drawing/manager/drawing/Widget.h
+
 ../manager/include/manager/drawing/Widget.h
 cstdint
 -
@@ -133,6 +145,18 @@ cstdint
 -
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp
+manager/drawing/Image.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/drawing/Image.h
+iostream
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Text.cpp
+manager/drawing/Text.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/drawing/Text.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp
 manager/drawing/Widget.h
