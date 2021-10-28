@@ -151,6 +151,8 @@ manager/drawing/Image.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/drawing/Image.h
 iostream
 -
+manager/managers/RsrcMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/managers/RsrcMgr.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Text.cpp
 manager/drawing/Text.h

@@ -10,6 +10,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
  ../sdl/include/sdl/Event.h
@@ -32,6 +34,8 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/DrawMgr.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
@@ -70,6 +74,8 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/DrawMgr.h
  ../manager/include/manager/managers/MgrBase.h
  ../manager/include/manager/managers/RsrcMgr.h
@@ -92,6 +98,8 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
  ../sdl/include/sdl/Event.h

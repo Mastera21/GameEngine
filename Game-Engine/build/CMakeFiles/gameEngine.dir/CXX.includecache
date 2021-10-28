@@ -37,8 +37,8 @@ cstdint
 -
 game/config/GameCfg.h
 ../game/game/config/GameCfg.h
-utils/drawing/DrawParams.h
-../game/utils/drawing/DrawParams.h
+manager/drawing/Image.h
+../game/manager/drawing/Image.h
 sdl/Event.h
 ../game/sdl/Event.h
 
@@ -67,6 +67,18 @@ sdl/containers/ImageContainer.h
 ../manager/include/manager/config/sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/config/sdl/containers/TextContainer.h
+
+../manager/include/manager/drawing/Image.h
+cstdint
+-
+manager/drawing/Widget.h
+../manager/include/manager/drawing/manager/drawing/Widget.h
+
+../manager/include/manager/drawing/Widget.h
+cstdint
+-
+utils/drawing/DrawParams.h
+../manager/include/manager/drawing/utils/drawing/DrawParams.h
 
 ../manager/include/manager/managers/DrawMgr.h
 cstdint
@@ -287,8 +299,8 @@ cstdint
 -
 game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h
-utils/drawing/DrawParams.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/drawing/DrawParams.h
+manager/drawing/Image.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Image.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 

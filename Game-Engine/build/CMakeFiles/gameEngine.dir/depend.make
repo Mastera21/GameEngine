@@ -9,6 +9,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/managers/MgrBase.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/Event.h
@@ -31,6 +33,8 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/DrawMgr.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/MgrBase.h
@@ -69,6 +73,8 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/managers/DrawMgr.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/managers/MgrBase.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/managers/RsrcMgr.h
@@ -91,6 +97,8 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/managers/MgrBase.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/Event.h

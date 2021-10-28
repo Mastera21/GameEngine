@@ -3,8 +3,15 @@
 
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/drawing/Image.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/drawing/Widget.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/managers/MgrBase.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/managers/RsrcMgr.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../sdl/include/sdl/config/ImageContainerCfg.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../sdl/include/sdl/config/TextContainerCfg.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../sdl/include/sdl/containers/ImageContainer.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../sdl/include/sdl/containers/TextContainer.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../utils/include/utils/drawing/Point.h
+manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/src/drawing/Image.cpp
 
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o: ../manager/include/manager/drawing/Text.h

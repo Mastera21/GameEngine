@@ -16,17 +16,20 @@ public:
 	void draw();
 
 	//setters & getters
+	int32_t getOpacity() const;
+	Point getPos() const;
+
+	int32_t getWidth() const;
+	int32_t getHeight()const;
 
 	void reset();
 	void setPos(const Point& pos);
 	void setPos(int32_t x, int32_t y);
 	void setOpacity(int32_t opacity);
 
-	int32_t getOpacity() const;
-	Point getPos() const;
-
 	void activateAlphaModulation();
 	void deactivateAlphaModulation();
+
 	void show();
 	void hide();
 
@@ -35,9 +38,13 @@ public:
 	void moveLeft(int32_t x);
 	void moveRight(int32_t x);
 
+	void setWidth(int32_t width);
+	void setHeight(int32_t height);
+
 protected:
 	DrawParams _drawParams;
 
+	bool _isDestroyed = true;
 	bool _isCreated = false;
 	bool _isVisible = true;
 	bool _isAlphaModulationEnabled = false;

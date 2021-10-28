@@ -11,10 +11,12 @@
 #include "manager/drawing/Widget.h"
 //Forward declarations
 
-class Image {
+class Image : public Widget{
 public:
-	Image();
-	virtual ~Image();
+	~Image();
+
+	void create(int32_t rsrcId, const Point& pos = Point::ZERO);
+	void destroy();
 };
 
 #endif /* MANAGER_INCLUDE_MANAGER_DRAWING_IMAGE_H_ */

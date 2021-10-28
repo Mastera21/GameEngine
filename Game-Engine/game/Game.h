@@ -10,7 +10,7 @@
 
 //Own components headers
 #include "game/config/GameCfg.h"
-#include "utils/drawing/DrawParams.h"
+#include "manager/drawing/Image.h"
 #include "sdl/Event.h"
 
 //Forward declarations
@@ -25,8 +25,8 @@ public:
 
 private:
 
-	DrawParams pressKeyImage;//first image
-	DrawParams layer2Image;//second image
+	Image pressKeyImage;//first image
+	Image layer2Image;//second image
 
 	DrawParams mainMenu;
 	DrawParams optionPage;

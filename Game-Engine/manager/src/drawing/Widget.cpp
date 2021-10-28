@@ -18,6 +18,13 @@ Point Widget::getPos() const{
 	return _drawParams.pos;
 }
 
+int32_t Widget::getWidth() const{
+	return _drawParams.width;
+}
+int32_t Widget::getHeight()const{
+	return _drawParams.height;
+}
+
 void Widget::draw(){
 	if(_isVisible){
 		gDrawMgr->addDrawCmd(_drawParams);
@@ -25,6 +32,7 @@ void Widget::draw(){
 }
 
 void Widget::reset(){
+	_isDestroyed = true;
 	_isCreated = false;
 	_isVisible = true;
 	_isAlphaModulationEnabled = false;
@@ -87,5 +95,9 @@ void Widget::moveLeft(int32_t x){
 void Widget::moveRight(int32_t x){
 	_drawParams.pos.x += x;
 }
-
-
+void Widget::setWidth(int32_t width){
+	_drawParams.width = width;
+}
+void Widget::setHeight(int32_t height){
+	_drawParams.height = height;
+}
