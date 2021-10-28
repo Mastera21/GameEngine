@@ -11,6 +11,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
  ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
@@ -21,6 +22,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
@@ -35,6 +37,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
  ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/DrawMgr.h
  ../manager/include/manager/managers/ManagerHandler.h
@@ -48,6 +51,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../sdl/include/sdl/config/TextContainerCfg.h
  ../sdl/include/sdl/containers/ImageContainer.h
  ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
@@ -75,22 +79,12 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
  ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
- ../manager/include/manager/managers/DrawMgr.h
- ../manager/include/manager/managers/MgrBase.h
- ../manager/include/manager/managers/RsrcMgr.h
  ../sdl/include/sdl/Event.h
- ../sdl/include/sdl/MonitorWindow.h
- ../sdl/include/sdl/Renderer.h
- ../sdl/include/sdl/config/ImageContainerCfg.h
- ../sdl/include/sdl/config/MonitorWindowCfg.h
- ../sdl/include/sdl/config/TextContainerCfg.h
- ../sdl/include/sdl/containers/ImageContainer.h
- ../sdl/include/sdl/containers/TextContainer.h
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
- ../utils/include/utils/drawing/Rectangle.h
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
@@ -99,10 +93,12 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
  ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/input/EventDefines.h

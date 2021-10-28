@@ -17,8 +17,16 @@ manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
+ ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/RsrcMgr.h
+ ../sdl/include/sdl/config/ImageContainerCfg.h
+ ../sdl/include/sdl/config/TextContainerCfg.h
+ ../sdl/include/sdl/containers/ImageContainer.h
+ ../sdl/include/sdl/containers/TextContainer.h
+ ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Text.cpp
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o
  ../manager/include/manager/drawing/Widget.h

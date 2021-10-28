@@ -28,6 +28,9 @@ public:
   //forbid default constructor
   Color() = delete;
 
+  bool operator==(const Color& other) const;
+  bool operator!=(const Color& other) const;
+
   RGBA rgba;
 };
 

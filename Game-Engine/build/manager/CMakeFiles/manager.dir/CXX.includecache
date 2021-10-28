@@ -35,8 +35,12 @@ manager/drawing/Widget.h
 ../manager/include/manager/drawing/Text.h
 cstdint
 -
+string
+-
 manager/drawing/Widget.h
 ../manager/include/manager/drawing/manager/drawing/Widget.h
+utils/drawing/Color.h
+../manager/include/manager/drawing/utils/drawing/Color.h
 
 ../manager/include/manager/drawing/Widget.h
 cstdint
@@ -130,6 +134,10 @@ string
 sdl/config/TextContainerCfg.h
 ../sdl/include/sdl/containers/sdl/config/TextContainerCfg.h
 
+../utils/include/utils/drawing/Color.h
+cstdint
+-
+
 ../utils/include/utils/drawing/DrawParams.h
 cstdint
 -
@@ -159,6 +167,8 @@ manager/drawing/Text.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/drawing/Text.h
 iostream
 -
+manager/managers/RsrcMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/manager/managers/RsrcMgr.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp
 manager/drawing/Widget.h

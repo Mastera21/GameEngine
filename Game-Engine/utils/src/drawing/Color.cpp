@@ -8,12 +8,6 @@
 
 //Own components headers
 
-Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue, const uint8_t alpha){
-	rgba.r = red;
-	rgba.g = green;
-	rgba.b = blue;
-	rgba.a = alpha;
-}
 
 namespace Colors {
 const Color RED(255, 0, 0, 255);
@@ -29,3 +23,18 @@ const Color ORANGE(255, 128, 0, 255);
 const Color PURPLE(128, 0, 128, 255);
 const Color FULL_TRANSPARENT(0, 0, 0, 0);
 } //namespace Colors
+
+Color::Color(const uint8_t red, const uint8_t green, const uint8_t blue, const uint8_t alpha){
+	rgba.r = red;
+	rgba.g = green;
+	rgba.b = blue;
+	rgba.a = alpha;
+}
+
+bool Color::operator==(const Color& other) const{
+	return (rgba.r == other.rgba.r) && (rgba.g == other.rgba.g) && (rgba.b == other.rgba.b) && (rgba.a == other.rgba.a);
+}
+bool Color::operator!=(const Color& other) const{
+	return !Color::operator ==(other);
+}
+

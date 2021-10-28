@@ -39,6 +39,8 @@ game/config/GameCfg.h
 ../game/game/config/GameCfg.h
 manager/drawing/Image.h
 ../game/manager/drawing/Image.h
+manager/drawing/Text.h
+../game/manager/drawing/Text.h
 sdl/Event.h
 ../game/sdl/Event.h
 
@@ -74,6 +76,16 @@ cstdint
 manager/drawing/Widget.h
 ../manager/include/manager/drawing/manager/drawing/Widget.h
 
+../manager/include/manager/drawing/Text.h
+cstdint
+-
+string
+-
+manager/drawing/Widget.h
+../manager/include/manager/drawing/manager/drawing/Widget.h
+utils/drawing/Color.h
+../manager/include/manager/drawing/utils/drawing/Color.h
+
 ../manager/include/manager/drawing/Widget.h
 cstdint
 -
@@ -97,16 +109,6 @@ manager/managers/MgrBase.h
 ../manager/include/manager/managers/manager/managers/MgrBase.h
 
 ../manager/include/manager/managers/MgrBase.h
-
-../manager/include/manager/managers/RsrcMgr.h
-cstdint
--
-manager/managers/MgrBase.h
-../manager/include/manager/managers/manager/managers/MgrBase.h
-sdl/containers/ImageContainer.h
-../manager/include/manager/managers/sdl/containers/ImageContainer.h
-sdl/containers/TextContainer.h
-../manager/include/manager/managers/sdl/containers/TextContainer.h
 
 ../sdl/include/sdl/Event.h
 cstdint
@@ -289,10 +291,6 @@ sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 utils/drawing/Color.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/drawing/Color.h
-manager/managers/DrawMgr.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/managers/DrawMgr.h
-manager/managers/RsrcMgr.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/managers/RsrcMgr.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
 cstdint
@@ -301,6 +299,8 @@ game/config/GameCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h
 manager/drawing/Image.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Image.h
+manager/drawing/Text.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Text.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 

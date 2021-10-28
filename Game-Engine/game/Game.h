@@ -11,6 +11,7 @@
 //Own components headers
 #include "game/config/GameCfg.h"
 #include "manager/drawing/Image.h"
+#include "manager/drawing/Text.h"
 #include "sdl/Event.h"
 
 //Forward declarations
@@ -28,8 +29,8 @@ private:
 	Image pressKeyImage;//first image
 	Image layer2Image;//second image
 
-	DrawParams mainMenu;
-	DrawParams optionPage;
+	Text mainMenu;
+	Text optionPage;
 
 	bool isPressTextHidden = false;
 

@@ -13,9 +13,6 @@
 #include "sdl/Event.h"
 #include "utils/drawing/Color.h"
 
-#include "manager/managers/DrawMgr.h"
-#include "manager/managers/RsrcMgr.h"
-
 int32_t Game::init(const GameCfg cfg){
 
 	//Images
@@ -25,22 +22,17 @@ int32_t Game::init(const GameCfg cfg){
 
 	//Menu and Options
 
-	gRsrcMgr->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
-	mainMenu.pos = Point::ZERO;
-	mainMenu.pos.x += 490;
-	mainMenu.widgetType = WidgetType::TEXT;
-
-	gRsrcMgr->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
-	optionPage.pos = Point::ZERO;
-	optionPage.pos.x += 490;
-	optionPage.widgetType = WidgetType::TEXT;
-
+	//gRsrcMgr->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
+	//gRsrcMgr->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
+												   	   	   //Pos
+	mainMenu.create("Menu", cfg.textFontId, Colors::ORANGE, Point(490,0));
+	optionPage.create("Options", cfg.textFontId, Colors::CYAN, Point(490,0));
 
 	return EXIT_SUCCESS;
 }
 
 void Game::deinit(){
-	gRsrcMgr->unloadText(mainMenu.textId);
+
 }
 
 void Game::draw(){
@@ -49,14 +41,14 @@ void Game::draw(){
 
 	if(isPressTextHidden){
 		//Option Menu
-		gDrawMgr->addDrawCmd(optionPage);
+		optionPage.draw();
 	}else{
 		//Main Menu
-		gDrawMgr->addDrawCmd(mainMenu);
+		mainMenu.draw();
 	}
 }
 
-void Game::handleEvent([[maybe_unused]]const sd::Event& event){
+void Game::handleEvent(const sd::Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}
