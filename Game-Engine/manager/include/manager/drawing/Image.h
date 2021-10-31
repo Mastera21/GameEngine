@@ -27,5 +27,4 @@ private:
 	int32_t _currFrame { 0 };
 	int32_t _maxFrames { 0 };
 };
-
 #endif /* MANAGER_INCLUDE_MANAGER_DRAWING_IMAGE_H_ */

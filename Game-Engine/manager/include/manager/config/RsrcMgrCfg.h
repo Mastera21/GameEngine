@@ -16,5 +16,4 @@ struct RsrcMgrCfg {
 	TextContainerCfg textContainerCfg;
 };
 
-
 #endif /* MANAGER_INCLUDE_MANAGER_CONFIG_RSRCMGRCFG_H_ */
