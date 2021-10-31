@@ -23,5 +23,20 @@ void Hero::draw(){
 	_img.draw();
 }
 void Hero::handleEvent([[maybe_unused]]const sd::Event& event){
+	if(TouchEvent::KEYBOARD_PRESS != event.type){
+		return;
+	}
+	switch(event.key){
+	case Keyboard::KEY_RIGHT:
+		_img.setNextFrame();
+		_img.moveRight(10);
+		break;
+	case Keyboard::KEY_LEFT:
+		_img.setPrevFrame();
+		_img.moveLeft(10);
+		break;
 
+	default:
+		break;
+	}
 }
