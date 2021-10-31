@@ -10,12 +10,18 @@
 
 //Own components headers
 
-Hero::Hero() {
-	// TODO Auto-generated constructor stub
+int32_t Hero::init(int32_t heroRsrcId){
+
+	_img.create(heroRsrcId, Point(400,200));
+
+	return EXIT_SUCCESS;
+}
+void Hero::deinit(){
 
 }
-
-Hero::~Hero() {
-	// TODO Auto-generated destructor stub
+void Hero::draw(){
+	_img.draw();
 }
+void Hero::handleEvent([[maybe_unused]]const sd::Event& event){
 
+}

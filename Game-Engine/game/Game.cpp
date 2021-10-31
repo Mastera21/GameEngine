@@ -15,6 +15,11 @@
 
 int32_t Game::init(const GameCfg cfg){
 
+	if(EXIT_SUCCESS != _hero.init(cfg.runningGrilId)){
+		std::cerr<<"Error, _hero.init() failed.\n";
+		return EXIT_FAILURE;
+	}
+
 	//Images
 	/*layer2Image.create(cfg.layer2Rsrcid);*/
 
@@ -32,7 +37,7 @@ int32_t Game::init(const GameCfg cfg){
 }
 
 void Game::deinit(){
-
+	_hero.deinit();
 }
 
 void Game::draw(){
@@ -42,7 +47,8 @@ void Game::draw(){
 	//----------Main Menu----------
 	mainMenu.draw();
 
-	_mousePos.draw();
+	_hero.draw();
+	//_mousePos.draw();
 }
 
 void Game::handleEvent(const sd::Event& event){
@@ -66,6 +72,7 @@ void Game::handleEvent(const sd::Event& event){
 			break;
 	}
 
+	_hero.handleEvent(event);
 	setMousePosText(event.pos);
 }
 

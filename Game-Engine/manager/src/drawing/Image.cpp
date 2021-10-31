@@ -22,10 +22,13 @@ void Image::create(int32_t rsrcId, const Point& pos){
 		return;
 	}
 
-	const auto rect = gRsrcMgr->getImageFrame(rsrcId);
+	const Frames& frames = gRsrcMgr->getImageFrame(rsrcId);
+	const auto firstFrame = frames.front();
+	_drawParams.frameRect = firstFrame;
+
 	_drawParams.rsrcId = rsrcId;
-	_drawParams.width = rect.w;
-	_drawParams.height = rect.h;
+	_drawParams.width = _drawParams.frameRect.w;
+	_drawParams.height = _drawParams.frameRect.h;
 	_drawParams.pos = pos;
 	_drawParams.widgetType = WidgetType::IMAGE;
 

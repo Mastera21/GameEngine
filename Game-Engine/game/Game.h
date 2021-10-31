@@ -12,6 +12,7 @@
 #include "game/config/GameCfg.h"
 #include "manager/drawing/Image.h"
 #include "manager/drawing/Text.h"
+#include "game/entities/Hero.h"
 #include "sdl/Event.h"
 
 //Forward declarations
@@ -33,8 +34,9 @@ private:
 	Text optionPage;
 	Text _mousePos;
 
-	void setMousePosText(const Point& mousePos);
+	Hero _hero;
 
+	void setMousePosText(const Point& mousePos);
 };
 
 #endif /* GAME_GAME_H_ */

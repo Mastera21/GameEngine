@@ -15,7 +15,8 @@ constexpr auto WINDOW_WIDTH = 1080;//1080
 constexpr auto WINDOW_HEIGHT = 640;//640
 constexpr auto WINDOW_NAME = "GameEngine";
 
-constexpr auto RUNNING_GRIL_IMG_WIDTH = 1536;
+constexpr auto RUNNING_GRIL_FRAMES = 6;
+constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
 constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;
 
 constexpr auto WHEEL_IMAGE_WIDTH_HEIGHT = 695;
@@ -43,14 +44,19 @@ static void populateTextContainerConfig(TextContainerCfg& cfg){
 static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	ImageCfg imageCfg;
 	imageCfg.location = getFilePath("assets/p/sprites/running_girl.png");
-	imageCfg.width = RUNNING_GRIL_IMG_WIDTH;
-	imageCfg.height = RUNNING_GRIL_IMG_HEIGHT;
+	for(auto i = 0; i < RUNNING_GRIL_FRAMES; ++i){
+		//										x				y		w							h
+		imageCfg.frames.emplace_back(i * RUNNING_GRIL_IMG_WIDTH, 0, RUNNING_GRIL_IMG_WIDTH, RUNNING_GRIL_IMG_HEIGHT);
+	}
 	cfg.imageConfigs.emplace(TextureId::RUNNING_GIRL, imageCfg);
+	imageCfg.frames.clear();
 
 	imageCfg.location = getFilePath("assets/p/wheel.png");
-	imageCfg.width = WHEEL_IMAGE_WIDTH_HEIGHT;
-	imageCfg.height = WHEEL_IMAGE_WIDTH_HEIGHT;
+
+	imageCfg.frames.emplace_back(0, 0, WHEEL_IMAGE_WIDTH_HEIGHT, WHEEL_IMAGE_WIDTH_HEIGHT);
+
 	cfg.imageConfigs.emplace(TextureId::WHEEL, imageCfg);
+	imageCfg.frames.clear();
 
 }
 

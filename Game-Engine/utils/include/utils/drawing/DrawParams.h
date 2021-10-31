@@ -7,9 +7,9 @@
 #include <cstdint>
 //Other libraries headers
 
-
 //Own components headers
 #include "utils/drawing/Point.h"
+#include "utils/drawing/Rectangle.h"
 
 //Forward declarations
 
@@ -34,6 +34,8 @@ struct DrawParams {
   //Top left position of texture
   Point pos = Point::UNDEFINED;
 
+  Rectangle frameRect = Rectangle::ZERO;
+
   //Draw dimensions of the texture
   int32_t width = 0;
   int32_t height = 0;
@@ -49,9 +51,6 @@ struct DrawParams {
   WidgetType widgetType = WidgetType::UNKNOWN;
 
   void reset();
-
 };
-
-
 
 #endif /* UTILS_DRAWING_DRAWPARAMS_H_ */

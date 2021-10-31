@@ -6,18 +6,17 @@
 //C++ system headers
 #include <cstring>
 #include <unordered_map>
+#include <vector>
 //Other libraries headers
 
 //Own components headers
-
+#include "utils/drawing/Rectangle.h"
 //Forward declarations
 
 struct ImageCfg {
   std::string location;
-  int32_t width = 0;
-  int32_t height = 0;
+  std::vector<Rectangle> frames;
 };
-
 struct ImageContainerCfg {
   std::unordered_map<int32_t, ImageCfg> imageConfigs;
 };

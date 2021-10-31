@@ -6,6 +6,7 @@ utils/CMakeFiles/utils.dir/src/drawing/Color.cpp.o: ../utils/src/drawing/Color.c
 
 utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: ../utils/include/utils/drawing/Point.h
+utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 utils/CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o: ../utils/src/drawing/DrawParams.cpp
 
 utils/CMakeFiles/utils.dir/src/drawing/Point.cpp.o: ../utils/include/utils/drawing/Point.h

@@ -6,6 +6,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/EngineConfigL
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -32,6 +33,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Applicat
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -77,6 +79,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
@@ -84,13 +87,25 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
 
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../game/entities/Hero.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../sdl/include/sdl/Event.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/input/EventDefines.h
+CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../game/entities/Hero.cpp
+
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h
@@ -100,6 +115,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../application/Application.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../main.cpp

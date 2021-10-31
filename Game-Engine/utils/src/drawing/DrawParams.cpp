@@ -13,6 +13,7 @@
 
 void DrawParams::reset(){
 	pos = Point::UNDEFINED;
+	frameRect = Rectangle::ZERO;
 
 	//Draw dimensions of the texture
 	width = 0;

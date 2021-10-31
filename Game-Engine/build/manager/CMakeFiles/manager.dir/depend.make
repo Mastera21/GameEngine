@@ -36,6 +36,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../sdl/include/sdl/Rend
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../sdl/include/sdl/config/MonitorWindowCfg.h
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../utils/include/utils/drawing/Point.h
+manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../manager/src/drawing/Widget.cpp
 
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h

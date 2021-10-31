@@ -53,6 +53,7 @@ sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/Renderer.cpp
  /usr/include/SDL2/SDL_blendmode.h
  /usr/include/SDL2/SDL_config.h
@@ -124,6 +125,7 @@ sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/Texture.cpp
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
@@ -186,6 +188,7 @@ sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/containers/TextContainer.cpp
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h

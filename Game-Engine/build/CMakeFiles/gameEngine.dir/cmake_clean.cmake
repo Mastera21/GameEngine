@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/engine/Engine.cpp.o"
   "CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o"
   "CMakeFiles/gameEngine.dir/game/Game.cpp.o"
+  "CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o"
   "CMakeFiles/gameEngine.dir/main.cpp.o"
   "gameEngine.pdb"
   "gameEngine"

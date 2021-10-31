@@ -97,6 +97,10 @@ cstring
 -
 unordered_map
 -
+vector
+-
+utils/drawing/Rectangle.h
+../sdl/include/sdl/config/utils/drawing/Rectangle.h
 
 ../sdl/include/sdl/config/MonitorWindowCfg.h
 cstdint
@@ -116,6 +120,8 @@ unordered_map
 cstring
 -
 unordered_map
+-
+vector
 -
 utils/drawing/Rectangle.h
 ../sdl/include/sdl/containers/utils/drawing/Rectangle.h
@@ -143,6 +149,8 @@ cstdint
 -
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
+utils/drawing/Rectangle.h
+../utils/include/utils/drawing/utils/drawing/Rectangle.h
 
 ../utils/include/utils/drawing/Point.h
 cstdint

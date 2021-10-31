@@ -37,6 +37,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o
  ../sdl/include/sdl/config/MonitorWindowCfg.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o
  ../manager/include/manager/config/DrawMgrCfg.h

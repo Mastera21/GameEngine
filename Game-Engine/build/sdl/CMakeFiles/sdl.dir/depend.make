@@ -52,6 +52,7 @@ sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../sdl/include/sdl/Texture.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/Color.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/Point.h
+sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: ../sdl/src/Renderer.cpp
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: /usr/include/SDL2/SDL_blendmode.h
 sdl/CMakeFiles/sdl.dir/src/Renderer.cpp.o: /usr/include/SDL2/SDL_config.h
@@ -123,6 +124,7 @@ sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../sdl/include/sdl/Texture.h
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../utils/include/utils/drawing/Color.h
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../utils/include/utils/drawing/Point.h
+sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: ../sdl/src/Texture.cpp
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: /usr/include/SDL2/SDL.h
 sdl/CMakeFiles/sdl.dir/src/Texture.cpp.o: /usr/include/SDL2/SDL_assert.h
@@ -185,6 +187,7 @@ sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../sdl/include/sdl/co
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../utils/include/utils/drawing/Color.h
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../utils/include/utils/drawing/Point.h
+sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: ../sdl/src/containers/TextContainer.cpp
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: /usr/include/SDL2/SDL.h
 sdl/CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o: /usr/include/SDL2/SDL_assert.h

@@ -11,6 +11,8 @@
 //TODO remove me
 #include "utils/drawing/DrawParams.h"
 
+static const Frames EMPTY_FRAMES{Rectangle::ZERO};
+
 int32_t ImageContainer::init(const ImageContainerCfg& cfg){
 	for(const auto& pair : cfg.imageConfigs){
 		const auto& elem = pair.second;
@@ -40,11 +42,11 @@ SDL_Texture* ImageContainer::getImageTexture(int32_t rsrcId) const{
 	return it->second;
 }
 
-Rectangle ImageContainer::getImageFrame(int32_t rsrcId) const{
+const Frames& ImageContainer::getImageFrame(int32_t rsrcId) const{
 	auto it = _textureFrames.find(rsrcId);
 	if(it == _textureFrames.end()){
-		std::cerr<<"Error, invalid rsrcId: "<<rsrcId<<" requested. Returning  ZERO rectangle\n";
-		return Rectangle::ZERO;
+		std::cerr<<"Error, invalid rsrcId: "<<rsrcId<<" requested. Returning  EMPTY_FRAMES\n";
+		return EMPTY_FRAMES;
 	}
 
 	return it->second;
@@ -61,13 +63,7 @@ int32_t ImageContainer::loadSingleResource(const ImageCfg& resCfg,int32_t rsrcId
 	}
 
 	_textures[rsrcId] = texture;
-
-	Rectangle& rect = _textureFrames[rsrcId];
-
-	rect.x = 0;
-	rect.y = 0;
-	rect.w = resCfg.width;
-	rect.h = resCfg.height;
+	_textureFrames[rsrcId] = resCfg.frames;
 
 	return EXIT_SUCCESS;
 }

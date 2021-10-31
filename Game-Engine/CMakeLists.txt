@@ -38,7 +38,7 @@ add_executable(
 		 ${_BASE_DIR}/application/Application.cpp
 		 
 		 #For common folder
-		  ${_BASE_DIR}/common/CommonDefines.h
+		 ${_BASE_DIR}/common/CommonDefines.h
 
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
@@ -48,9 +48,11 @@ add_executable(
 		 ${_BASE_DIR}/engine/EngineConfigLoader.cpp
 		 
 		 #For game folder
-		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/config/GameCfg.h
+		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
+		 ${_BASE_DIR}/game/entities/Hero.h
+		 ${_BASE_DIR}/game/entities/Hero.cpp
 		 	 
 		${_BASE_DIR}/main.cpp)
 

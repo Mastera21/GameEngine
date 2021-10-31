@@ -41,6 +41,8 @@ manager/drawing/Image.h
 ../game/manager/drawing/Image.h
 manager/drawing/Text.h
 ../game/manager/drawing/Text.h
+game/entities/Hero.h
+../game/game/entities/Hero.h
 sdl/Event.h
 ../game/sdl/Event.h
 
@@ -49,6 +51,14 @@ cstdint
 -
 unordered_map
 -
+
+..//game/entities/Hero.h
+cstdint
+-
+sdl/Event.h
+../game/entities/sdl/Event.h
+manager/drawing/Image.h
+../game/entities/manager/drawing/Image.h
 
 ../manager/include/manager/config/DrawMgrCfg.h
 cstdint
@@ -151,6 +161,10 @@ cstring
 -
 unordered_map
 -
+vector
+-
+utils/drawing/Rectangle.h
+../sdl/include/sdl/config/utils/drawing/Rectangle.h
 
 ../sdl/include/sdl/config/MonitorWindowCfg.h
 cstdint
@@ -170,6 +184,8 @@ unordered_map
 cstring
 -
 unordered_map
+-
+vector
 -
 utils/drawing/Rectangle.h
 ../sdl/include/sdl/containers/utils/drawing/Rectangle.h
@@ -197,6 +213,8 @@ cstdint
 -
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
+utils/drawing/Rectangle.h
+../utils/include/utils/drawing/utils/drawing/Rectangle.h
 
 ../utils/include/utils/drawing/Point.h
 cstdint
@@ -301,8 +319,18 @@ manager/drawing/Image.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Image.h
 manager/drawing/Text.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Text.h
+game/entities/Hero.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/entities/Hero.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/Hero.cpp
+game/entities/Hero.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/game/entities/Hero.h
+string
+-
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 cstdint
