@@ -39,11 +39,12 @@ public:
 	void setBackgroundColor(const Color& color);
 
 private:
-	SDL_Renderer *_sdlRenderer = nullptr;
+	SDL_Renderer* _sdlRenderer = nullptr;
 
 	void drawImage(const DrawParams& drawParams, SDL_Texture *texture);
 	void drawText(const DrawParams& drawParams, SDL_Texture *texture);
 
+	void drawTextureInternal(const DrawParams& drawParams, SDL_Texture *texture);
 };
 
 #endif /* SDL_RENDERER_H_ */

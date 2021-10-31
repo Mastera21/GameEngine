@@ -17,6 +17,13 @@ inline constexpr auto INVALID_RSRC_ID = -1;
 inline constexpr auto FULL_OPACITY = 255;
 inline constexpr auto ZERO_OPACITY = 0;
 
+enum class WidgetFlip : uint8_t {
+    NONE,
+    HORIZONTAL,
+    VERTICAL,
+    HORIZONTAL_AND_VERTICAL
+};
+
 enum class WidgetType : uint8_t {
   IMAGE,
   TEXT,
@@ -33,8 +40,10 @@ enum class BlendMode : uint8_t {
 struct DrawParams {
   //Top left position of texture
   Point pos = Point::UNDEFINED;
-
   Rectangle frameRect = Rectangle::ZERO;
+  WidgetType widgetType = WidgetType::UNKNOWN;
+
+  WidgetFlip fliType = WidgetFlip::NONE;
 
   //Draw dimensions of the texture
   int32_t width = 0;
@@ -47,8 +56,6 @@ struct DrawParams {
 	  int32_t rsrcId = INVALID_RSRC_ID;
 	  int32_t textId;
   };
-
-  WidgetType widgetType = WidgetType::UNKNOWN;
 
   void reset();
 };

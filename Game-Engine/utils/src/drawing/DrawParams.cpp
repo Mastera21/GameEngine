@@ -14,6 +14,8 @@
 void DrawParams::reset(){
 	pos = Point::UNDEFINED;
 	frameRect = Rectangle::ZERO;
+	fliType = WidgetFlip::NONE;
+	widgetType = WidgetType::UNKNOWN;
 
 	//Draw dimensions of the texture
 	width = 0;
@@ -22,6 +24,4 @@ void DrawParams::reset(){
 	opacity = FULL_OPACITY;
 
 	rsrcId = INVALID_RSRC_ID;
-
-	widgetType = WidgetType::UNKNOWN;
 }
