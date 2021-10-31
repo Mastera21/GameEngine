@@ -13,8 +13,8 @@
 //Own components headers
 
 struct GameCfg{
-	int32_t pressKeysRsrcId;
-	int32_t layer2Rsrcid;
+	int32_t wheelId;
+	int32_t runningGrilId;
 	int32_t textFontId;
 
 };

@@ -15,11 +15,10 @@ constexpr auto WINDOW_WIDTH = 1080;//1080
 constexpr auto WINDOW_HEIGHT = 640;//640
 constexpr auto WINDOW_NAME = "GameEngine";
 
-constexpr auto PRESS_KEYS_WIDTH = 640;
-constexpr auto PRESS_KEYS_HEIGHT = 480;
+constexpr auto RUNNING_GRIL_IMG_WIDTH = 1536;
+constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;
 
-constexpr auto LAYER_2_IMAGE_WIDTH = 150;
-constexpr auto LAYER_2_IMAGE_HEIGHT = 150;
+constexpr auto WHEEL_IMAGE_WIDTH_HEIGHT = 695;
 
 constexpr auto MAX_FRAME_RATE = 60;
 }
@@ -43,15 +42,15 @@ static void populateTextContainerConfig(TextContainerCfg& cfg){
 
 static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	ImageCfg imageCfg;
-	imageCfg.location = getFilePath("assets/p/press_keys.png");
-	imageCfg.width = PRESS_KEYS_WIDTH;
-	imageCfg.height = PRESS_KEYS_HEIGHT;
-	cfg.imageConfigs.insert(std::make_pair(TextureId::PRESS_KEYS, imageCfg));
+	imageCfg.location = getFilePath("assets/p/sprites/running_girl.png");
+	imageCfg.width = RUNNING_GRIL_IMG_WIDTH;
+	imageCfg.height = RUNNING_GRIL_IMG_HEIGHT;
+	cfg.imageConfigs.emplace(TextureId::RUNNING_GIRL, imageCfg);
 
-	imageCfg.location = getFilePath("assets/p/layer_2.png");
-	imageCfg.width = LAYER_2_IMAGE_WIDTH;
-	imageCfg.height = LAYER_2_IMAGE_HEIGHT;
-	cfg.imageConfigs.insert(std::make_pair(TextureId::LAYER_2, imageCfg));
+	imageCfg.location = getFilePath("assets/p/wheel.png");
+	imageCfg.width = WHEEL_IMAGE_WIDTH_HEIGHT;
+	imageCfg.height = WHEEL_IMAGE_WIDTH_HEIGHT;
+	cfg.imageConfigs.emplace(TextureId::WHEEL, imageCfg);
 
 }
 
@@ -79,8 +78,9 @@ static void populateMgrHandlerConfig(ManagerHandlerCfg& cfg){
 }
 
 static void populateGameConfig(GameCfg& cfg){
-	cfg.layer2Rsrcid = TextureId::LAYER_2;
-	cfg.pressKeysRsrcId = TextureId::PRESS_KEYS;
+	cfg.runningGrilId = TextureId::RUNNING_GIRL;
+	cfg.wheelId = TextureId::WHEEL;
+
 	cfg.textFontId = FontId::ANGELINE_VINTAGE;
 }
 
