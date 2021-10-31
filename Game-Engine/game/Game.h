@@ -31,8 +31,9 @@ private:
 
 	Text mainMenu;
 	Text optionPage;
+	Text _mousePos;
 
-	bool isPressTextHidden = false;
+	void setMousePosText(const Point& mousePos);
 
 };
 

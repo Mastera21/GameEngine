@@ -16,17 +16,17 @@
 int32_t Game::init(const GameCfg cfg){
 
 	//Images
-	layer2Image.create(cfg.layer2Rsrcid);
-	pressKeyImage.create(cfg.pressKeysRsrcId);
-	pressKeyImage.activateAlphaModulation();
+	/*layer2Image.create(cfg.layer2Rsrcid);*/
 
-	//Menu and Options
-
-	//gRsrcMgr->createText("Menu", Colors::ORANGE, cfg.textFontId, mainMenu.textId, mainMenu.width, mainMenu.height);
-	//gRsrcMgr->createText("Options", Colors::CYAN, cfg.textFontId, optionPage.textId, optionPage.width, optionPage.height);
-												   	   	   //Pos
+	//Menu and Options									   	   	 //Pos
 	mainMenu.create("Menu", cfg.textFontId, Colors::ORANGE, Point(490,0));
 	optionPage.create("Options", cfg.textFontId, Colors::CYAN, Point(490,0));
+
+	optionPage.hide();
+
+	//MousePos
+	_mousePos.create("_", cfg.textFontId, Colors::RED);
+	_mousePos.hide();
 
 	return EXIT_SUCCESS;
 }
@@ -37,19 +37,16 @@ void Game::deinit(){
 
 void Game::draw(){
 
-	//pressKeyImage.draw();
+	//----------Option Menu----------
+	optionPage.draw();
+	//----------Main Menu----------
+	mainMenu.draw();
 
-	if(isPressTextHidden){
-		//Option Menu
-		optionPage.draw();
-	}else{
-		//Main Menu
-		mainMenu.draw();
-	}
+	_mousePos.draw();
 }
 
 void Game::handleEvent(const sd::Event& event){
-	if(TouchEvent::KEYBOARD_PRESS != event.type){
+	if(TouchEvent::KEYBOARD_PRESS != event.type && TouchEvent::TOUCH_RELEASE != event.type){
 		return;
 	}
 
@@ -57,51 +54,26 @@ void Game::handleEvent(const sd::Event& event){
 
 	//Refact keys
 	switch(event.key){
-		case Keyboard::KEY_UP:
-			pressKeyImage.moveUp(-10);
-			break;
-		case Keyboard::KEY_DOWN:
-			pressKeyImage.moveDown(10);
-			break;
-		case Keyboard::KEY_LEFT:
-			pressKeyImage.moveLeft(-10);
-			break;
-		case Keyboard::KEY_RIGHT:
-			pressKeyImage.moveRight(10);
-			break;
-
-		case Keyboard::KEY_Q:
-			pressKeyImage.setWidth(pressKeyImage.getWidth() - 10);
-			break;
-		case Keyboard::KEY_W:
-			pressKeyImage.setHeight(pressKeyImage.getWidth() + 10);
-			break;
-		case Keyboard::KEY_E:
-			pressKeyImage.setHeight(pressKeyImage.getHeight() - 10);
-			break;
-		case Keyboard::KEY_R:
-			pressKeyImage.setHeight(pressKeyImage.getHeight() + 10);
-			break;
-
-		case Keyboard::KEY_T:
-			pressKeyImage.setOpacity(pressKeyImage.getOpacity() - 10);
-			break;
-		case Keyboard::KEY_Y:
-			pressKeyImage.setOpacity(pressKeyImage.getOpacity() + 10);
-			break;
-
-		case Keyboard::KEY_B:
-			//gRsrcMgr->reloadText("DICE", Colors::CYAN, gFontId, helloText.textId, helloText.width, helloText.height);
-			break;
-
 		case Keyboard::KEY_M:
-			isPressTextHidden = true;
+			optionPage.show();
+			mainMenu.hide();
 			break;
 		case Keyboard::KEY_N:
-			isPressTextHidden = false;
+			optionPage.hide();
+			mainMenu.show();
 			break;
 		default:
 			break;
 	}
+
+	setMousePosText(event.pos);
+}
+
+void Game::setMousePosText(const Point& mousePos){
+	_mousePos.show();
+	_mousePos.setPos(mousePos);
+	std::string text = "x: ";
+	text.append(std::to_string(mousePos.x)).append(", y: ").append(std::to_string(mousePos.y));
+	_mousePos.setText(text);
 }
 
