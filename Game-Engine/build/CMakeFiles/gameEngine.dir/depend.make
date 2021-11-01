@@ -7,6 +7,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/config/Engine
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/entities/Hero.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/entities/Wheel.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -34,6 +35,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/entities/Hero.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/entities/Wheel.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -80,6 +82,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/entities/Hero.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/entities/Wheel.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
@@ -102,10 +105,21 @@ CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/drawi
 CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../game/entities/Hero.cpp
 
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../game/entities/Wheel.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../sdl/include/sdl/Event.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/input/EventDefines.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../game/entities/Wheel.cpp
+
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/entities/Hero.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/entities/Wheel.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h

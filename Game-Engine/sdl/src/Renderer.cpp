@@ -102,8 +102,17 @@ void Renderer::drawTextureInternal(const DrawParams& drawParams, SDL_Texture *te
 								   .w = drawParams.width, .h = drawParams.height};
 
 	const SDL_Rect* rect = reinterpret_cast<const SDL_Rect*>(&drawParams.frameRect);
+	//const SDL_Point* center = reinterpret_cast<const SDL_Point*>(&drawParams.rotationCenter);
 
-	const  int32_t err = SDL_RenderCopy(_sdlRenderer, texture, rect, &destRect);
+	const int32_t err = SDL_RenderCopyEx(_sdlRenderer, texture, rect, &destRect,
+										drawParams.rotationAngle,
+
+										//If you want to rotate in the center on the image set nullptr,
+										//or else if you want to rotate around some point set center
+										nullptr,//center or nullptr
+
+										static_cast<SDL_RendererFlip>(drawParams.fliType));
+
 	if(EXIT_SUCCESS != err){
 		std::cerr<<"SDL_RenderCopy() failed for drawParams.rsrcId: "<< drawParams.rsrcId <<". Reason: "<< SDL_GetError() << "\n";
 	}

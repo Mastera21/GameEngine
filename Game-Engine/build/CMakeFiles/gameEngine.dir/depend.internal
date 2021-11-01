@@ -8,6 +8,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
+ ..//game/entities/Wheel.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -35,6 +36,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
+ ..//game/entities/Wheel.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -81,6 +83,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
+ ..//game/entities/Wheel.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
@@ -102,11 +105,22 @@ CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o
  ../utils/include/utils/drawing/Rectangle.h
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/Hero.cpp
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o
+ ..//game/entities/Wheel.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/Wheel.cpp
 CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
+ ..//game/entities/Wheel.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h

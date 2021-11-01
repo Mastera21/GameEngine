@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/Game.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/Hero.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/entities/Wheel.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

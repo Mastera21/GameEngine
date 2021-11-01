@@ -20,6 +20,12 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
+	if(EXIT_SUCCESS != _wheel.init(cfg.wheelId)){
+		std::cerr<<"Error, _wheel.init() failed.\n";
+		return EXIT_FAILURE;
+	}
+
+
 	//Images
 	/*layer2Image.create(cfg.layer2Rsrcid);*/
 
@@ -47,6 +53,7 @@ void Game::draw(){
 	//----------Main Menu----------
 	mainMenu.draw();
 
+	_wheel.draw();
 	_hero.draw();
 	//_mousePos.draw();
 }
@@ -73,6 +80,9 @@ void Game::handleEvent(const sd::Event& event){
 	}
 
 	_hero.handleEvent(event);
+	_wheel.handleEvent(event);
+
+
 	setMousePosText(event.pos);
 }
 

@@ -53,6 +53,8 @@ add_executable(
 		 ${_BASE_DIR}/game/Game.cpp
 		 ${_BASE_DIR}/game/entities/Hero.h
 		 ${_BASE_DIR}/game/entities/Hero.cpp
+		 ${_BASE_DIR}/game/entities/Wheel.h
+		 ${_BASE_DIR}/game/entities/Wheel.cpp
 		 	 
 		${_BASE_DIR}/main.cpp)
 

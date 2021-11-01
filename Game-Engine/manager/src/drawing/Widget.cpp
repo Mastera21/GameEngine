@@ -25,6 +25,10 @@ int32_t Widget::getHeight()const{
 	return _drawParams.height;
 }
 
+double Widget::getRotation() const{
+	return _drawParams.rotationAngle;
+}
+
 void Widget::draw(){
 	if(_isVisible){
 		gDrawMgr->addDrawCmd(_drawParams);
@@ -73,6 +77,26 @@ void Widget::deactivateAlphaModulation(){
 	_isAlphaModulationEnabled = false;
 	gDrawMgr->setWidgetBlendMode(_drawParams, BlendMode::NONE);
 }
+
+void Widget::setFlipType(WidgetFlip flipType){
+	_drawParams.fliType = flipType;
+}
+
+void Widget::setRotation(double angle){
+	_drawParams.rotationAngle = angle;
+}
+
+void Widget::rotateRight(double radius){
+	_drawParams.rotationAngle += radius;
+}
+void Widget::rotateLeft(double radius){
+	_drawParams.rotationAngle -= radius;
+}
+
+void Widget::setRotationCenter(const Point& pos){
+	_drawParams.rotationCenter = pos;
+}
+
 void Widget::show(){
 	_isVisible = true;
 }

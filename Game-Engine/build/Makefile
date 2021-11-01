@@ -297,6 +297,33 @@ game/entities/Hero.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.s
 .PHONY : game/entities/Hero.cpp.s
 
+game/entities/Wheel.o: game/entities/Wheel.cpp.o
+
+.PHONY : game/entities/Wheel.o
+
+# target to build an object file
+game/entities/Wheel.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o
+.PHONY : game/entities/Wheel.cpp.o
+
+game/entities/Wheel.i: game/entities/Wheel.cpp.i
+
+.PHONY : game/entities/Wheel.i
+
+# target to preprocess a source file
+game/entities/Wheel.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.i
+.PHONY : game/entities/Wheel.cpp.i
+
+game/entities/Wheel.s: game/entities/Wheel.cpp.s
+
+.PHONY : game/entities/Wheel.s
+
+# target to generate assembly for a file
+game/entities/Wheel.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.s
+.PHONY : game/entities/Wheel.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -351,6 +378,9 @@ help:
 	@echo "... game/entities/Hero.o"
 	@echo "... game/entities/Hero.i"
 	@echo "... game/entities/Hero.s"
+	@echo "... game/entities/Wheel.o"
+	@echo "... game/entities/Wheel.i"
+	@echo "... game/entities/Wheel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

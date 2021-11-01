@@ -16,9 +16,6 @@ struct GameCfg{
 	int32_t wheelId;
 	int32_t runningGrilId;
 	int32_t textFontId;
-
 };
-
-
 
 #endif /* GAME_CONFIG_GAMECFG_H_ */

@@ -27,15 +27,16 @@ void Hero::handleEvent(const sd::Event& event){
 		return;
 	}
 	switch(event.key){
-	case Keyboard::KEY_RIGHT:
+	case Keyboard::KEY_D:
+		_img.setFlipType(WidgetFlip::NONE);
 		_img.setNextFrame();
 		_img.moveRight(10);
 		break;
-	case Keyboard::KEY_LEFT:
+	case Keyboard::KEY_A:
+		_img.setFlipType(WidgetFlip::HORIZONTAL);
 		_img.setPrevFrame();
 		_img.moveLeft(10);
 		break;
-
 	default:
 		break;
 	}

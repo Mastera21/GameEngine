@@ -13,7 +13,6 @@
 
 struct Widget {
 public:
-	void draw();
 
 	//setters & getters
 	int32_t getOpacity() const;
@@ -22,10 +21,22 @@ public:
 	int32_t getWidth() const;
 	int32_t getHeight()const;
 
+	double getRotation() const;
+
+	void draw();
 	void reset();
+
+	void setFlipType(WidgetFlip flipType);
+	void setRotation(double angle);
+
+	void setRotationCenter(const Point& pos);
+
 	void setPos(const Point& pos);
 	void setPos(int32_t x, int32_t y);
 	void setOpacity(int32_t opacity);
+
+	void rotateRight(double radius);
+	void rotateLeft(double radius);
 
 	void activateAlphaModulation();
 	void deactivateAlphaModulation();

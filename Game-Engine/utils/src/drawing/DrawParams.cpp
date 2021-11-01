@@ -16,10 +16,12 @@ void DrawParams::reset(){
 	frameRect = Rectangle::ZERO;
 	fliType = WidgetFlip::NONE;
 	widgetType = WidgetType::UNKNOWN;
+	rotationCenter = Point::ZERO;
 
 	//Draw dimensions of the texture
 	width = 0;
 	height = 0;
+	rotationAngle = 0.0;
 
 	opacity = FULL_OPACITY;
 

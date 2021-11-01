@@ -13,6 +13,7 @@
 #include "manager/drawing/Image.h"
 #include "manager/drawing/Text.h"
 #include "game/entities/Hero.h"
+#include "game/entities/Wheel.h"
 #include "sdl/Event.h"
 
 //Forward declarations
@@ -35,6 +36,7 @@ private:
 	Text _mousePos;
 
 	Hero _hero;
+	Wheel _wheel;
 
 	void setMousePosText(const Point& mousePos);
 };

@@ -45,9 +45,12 @@ struct DrawParams {
 
   WidgetFlip fliType = WidgetFlip::NONE;
 
+  Point rotationCenter = Point::ZERO;
+
   //Draw dimensions of the texture
   int32_t width = 0;
   int32_t height = 0;
+  double rotationAngle = 0.0;
 
   int32_t opacity = FULL_OPACITY;
 
