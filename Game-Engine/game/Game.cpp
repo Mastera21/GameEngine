@@ -28,9 +28,15 @@ int32_t Game::init(const GameCfg cfg){
 	//Images
 	/*layer2Image.create(cfg.layer2Rsrcid);*/
 
-	//Menu and Options									   	   	 //Pos
+	//----------Menu----------									 //Pos
 	mainMenu.create("Menu", cfg.textFontId, Colors::ORANGE, Point(490,0));
+	play.create("Play", cfg.textFontId, Colors::WHITE, Point(50,180));
+	optionText.create("Options", cfg.textFontId, Colors::WHITE, Point(50,250));
+	quit.create("Quit", cfg.textFontId, Colors::WHITE, Point(50,320));
+
+	//----------options----------
 	optionPage.create("Options", cfg.textFontId, Colors::CYAN, Point(490,0));
+	back.create("Back", cfg.textFontId, Colors::WHITE, Point(50,500));
 
 	buttonOption = false;
 
@@ -49,13 +55,17 @@ void Game::deinit(){
 
 void Game::draw(){
 	//----------Main Menu----------
+	quit.draw();
+	optionText.draw();
+	play.draw();
 	mainMenu.draw();
 
 	//----------Option Menu----------
 	if(buttonOption){
-		optionPage.draw();
 		_wheel.draw();
 		_hero.draw();
+		back.draw();
+		optionPage.draw();
 	}
 
 	//_mousePos.draw();
@@ -70,23 +80,34 @@ void Game::handleEvent(const sd::Event& event){
 
 	//Refact keys
 	switch(event.key){
+
+	//----------Option Menu----------
 		case Keyboard::KEY_M:
 			buttonOption = true;
+			back.show();
 			optionPage.show();
+			quit.hide();
+			optionText.hide();
+			play.hide();
 			mainMenu.hide();
 			break;
+	//----------Main Menu----------
 		case Keyboard::KEY_N:
 			buttonOption = false;
+			back.hide();
 			optionPage.hide();
+			quit.show();
+			optionText.show();
+			play.show();
 			mainMenu.show();
 			break;
 		default:
 			break;
 	}
 
+	//----------Objects----------
 	_hero.handleEvent(event);
 	_wheel.handleEvent(event);
-
 
 	setMousePosText(event.pos);
 }

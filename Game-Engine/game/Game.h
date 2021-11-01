@@ -31,8 +31,16 @@ private:
 	Image pressKeyImage;//first image
 	Image layer2Image;//second image
 
+	//----------Menu----------
 	Text mainMenu;
+	Text play;
+	Text optionText;
+	Text quit;
+
+	//----------Options----------
 	Text optionPage;
+	Text back;
+
 	Text _mousePos;
 
 	Hero _hero;
