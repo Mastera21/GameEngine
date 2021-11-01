@@ -38,6 +38,8 @@ private:
 	Hero _hero;
 	Wheel _wheel;
 
+	bool buttonOption = false;
+
 	void setMousePosText(const Point& mousePos);
 };
 

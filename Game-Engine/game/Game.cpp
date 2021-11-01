@@ -25,13 +25,14 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-
 	//Images
 	/*layer2Image.create(cfg.layer2Rsrcid);*/
 
 	//Menu and Options									   	   	 //Pos
 	mainMenu.create("Menu", cfg.textFontId, Colors::ORANGE, Point(490,0));
 	optionPage.create("Options", cfg.textFontId, Colors::CYAN, Point(490,0));
+
+	buttonOption = false;
 
 	optionPage.hide();
 
@@ -47,14 +48,16 @@ void Game::deinit(){
 }
 
 void Game::draw(){
-
-	//----------Option Menu----------
-	optionPage.draw();
 	//----------Main Menu----------
 	mainMenu.draw();
 
-	_wheel.draw();
-	_hero.draw();
+	//----------Option Menu----------
+	if(buttonOption){
+		optionPage.draw();
+		_wheel.draw();
+		_hero.draw();
+	}
+
 	//_mousePos.draw();
 }
 
@@ -68,10 +71,12 @@ void Game::handleEvent(const sd::Event& event){
 	//Refact keys
 	switch(event.key){
 		case Keyboard::KEY_M:
+			buttonOption = true;
 			optionPage.show();
 			mainMenu.hide();
 			break;
 		case Keyboard::KEY_N:
+			buttonOption = false;
 			optionPage.hide();
 			mainMenu.show();
 			break;

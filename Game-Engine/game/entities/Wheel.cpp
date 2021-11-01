@@ -13,8 +13,8 @@
 int32_t Wheel::init(int32_t wheelRsrcId){
 
 	_imgWheel.create(wheelRsrcId, Point(0,0));
-	_imgWheel.setWidth(200);
-	_imgWheel.setHeight(200);
+	_imgWheel.setWidth(150);
+	_imgWheel.setHeight(150);
 
 	return EXIT_SUCCESS;
 }
