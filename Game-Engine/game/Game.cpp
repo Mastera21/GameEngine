@@ -103,5 +103,7 @@ void Game::handleEvent(const sd::Event& event){
 	//----------Objects----------
 	_hero.handleEvent(event);
 	_wheel.handleEvent(event);
-
+}
+void Game::onButtonPressed(int32_t buttonId) {
+	std::cout<<"button whit ID: "<<buttonId<<" was pressed.\n";
 }

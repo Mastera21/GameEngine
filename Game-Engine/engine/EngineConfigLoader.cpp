@@ -19,6 +19,10 @@ constexpr auto RUNNING_GRIL_FRAMES = 6;
 constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
 constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;
 
+/*constexpr auto Button_GRIL_FRAMES = 6;
+constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
+constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;*/
+
 constexpr auto WHEEL_IMAGE_WIDTH_HEIGHT = 695;
 
 constexpr auto MAX_FRAME_RATE = 60;

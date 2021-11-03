@@ -6,6 +6,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//engine/EngineConfigLoader.h
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
+ ..//game/buttonInterface/ButtonInterface.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
@@ -34,6 +35,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
+ ..//game/buttonInterface/ButtonInterface.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
@@ -81,6 +83,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
+ ..//game/buttonInterface/ButtonInterface.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
@@ -95,6 +98,18 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
+CMakeFiles/gameEngine.dir/game/buttons/WheelButton.cpp.o
+ ..//game/buttonInterface/ButtonInterface.h
+ ..//game/buttons/WheelButton.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/buttons/WheelButton.cpp
 CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o
  ..//game/entities/Hero.h
  ../manager/include/manager/drawing/Image.h
@@ -118,6 +133,7 @@ CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o
 CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h
+ ..//game/buttonInterface/ButtonInterface.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h

@@ -30,6 +30,3 @@ bool ButtonBase::containsEvent(const sd::Event &e){
 	return Image::containsPoint(e.pos);
 }
 
-void ButtonBase::handleEvent([[maybe_unused]]const Event &e){
-
-}

@@ -11,7 +11,6 @@
 #include "manager/drawing/Image.h"
 #include "sdl/Event.h"
 //Forward declarations
-struct Event;
 
 enum ButtonStates {
   UNCLICKED, CLICKED, DISABLED
@@ -22,7 +21,7 @@ public:
 
 	virtual ~ButtonBase() = default;
 
-	virtual void handleEvent(const Event &e) = 0;
+	virtual void handleEvent(const sd::Event &e) = 0;
 
 	virtual void draw();
 

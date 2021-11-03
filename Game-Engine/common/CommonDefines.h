@@ -13,7 +13,7 @@
 //Forward declarations
 namespace TextureId{
 enum ResourseId{
-	 RUNNING_GIRL, WHEEL
+	 RUNNING_GIRL, WHEEL, START_BUTTON, STOP_BUTTON
 };
 }//namespace TextureId
 

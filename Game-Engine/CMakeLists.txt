@@ -55,6 +55,14 @@ add_executable(
 		 ${_BASE_DIR}/game/entities/Hero.cpp
 		 ${_BASE_DIR}/game/entities/Wheel.h
 		 ${_BASE_DIR}/game/entities/Wheel.cpp
+		 
+		 #For buttonInterface folder
+		 ${_BASE_DIR}/game/buttonInterface/ButtonInterface.h
+		 
+		 #For button folder
+		 ${_BASE_DIR}/game/buttons/WheelButton.h
+		 ${_BASE_DIR}/game/buttons/WheelButton.cpp
+		 
 		 	 
 		${_BASE_DIR}/main.cpp)
 

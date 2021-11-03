@@ -270,6 +270,33 @@ game/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/Game.cpp.s
 .PHONY : game/Game.cpp.s
 
+game/buttons/WheelButton.o: game/buttons/WheelButton.cpp.o
+
+.PHONY : game/buttons/WheelButton.o
+
+# target to build an object file
+game/buttons/WheelButton.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/buttons/WheelButton.cpp.o
+.PHONY : game/buttons/WheelButton.cpp.o
+
+game/buttons/WheelButton.i: game/buttons/WheelButton.cpp.i
+
+.PHONY : game/buttons/WheelButton.i
+
+# target to preprocess a source file
+game/buttons/WheelButton.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/buttons/WheelButton.cpp.i
+.PHONY : game/buttons/WheelButton.cpp.i
+
+game/buttons/WheelButton.s: game/buttons/WheelButton.cpp.s
+
+.PHONY : game/buttons/WheelButton.s
+
+# target to generate assembly for a file
+game/buttons/WheelButton.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/buttons/WheelButton.cpp.s
+.PHONY : game/buttons/WheelButton.cpp.s
+
 game/entities/Hero.o: game/entities/Hero.cpp.o
 
 .PHONY : game/entities/Hero.o
@@ -375,6 +402,9 @@ help:
 	@echo "... game/Game.o"
 	@echo "... game/Game.i"
 	@echo "... game/Game.s"
+	@echo "... game/buttons/WheelButton.o"
+	@echo "... game/buttons/WheelButton.i"
+	@echo "... game/buttons/WheelButton.s"
 	@echo "... game/entities/Hero.o"
 	@echo "... game/entities/Hero.i"
 	@echo "... game/entities/Hero.s"
