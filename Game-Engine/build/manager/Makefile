@@ -125,6 +125,33 @@ manager/fast:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/build
 .PHONY : manager/fast
 
+src/buttonBase/ButtonBase.o: src/buttonBase/ButtonBase.cpp.o
+
+.PHONY : src/buttonBase/ButtonBase.o
+
+# target to build an object file
+src/buttonBase/ButtonBase.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o
+.PHONY : src/buttonBase/ButtonBase.cpp.o
+
+src/buttonBase/ButtonBase.i: src/buttonBase/ButtonBase.cpp.i
+
+.PHONY : src/buttonBase/ButtonBase.i
+
+# target to preprocess a source file
+src/buttonBase/ButtonBase.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.i
+.PHONY : src/buttonBase/ButtonBase.cpp.i
+
+src/buttonBase/ButtonBase.s: src/buttonBase/ButtonBase.cpp.s
+
+.PHONY : src/buttonBase/ButtonBase.s
+
+# target to generate assembly for a file
+src/buttonBase/ButtonBase.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.s
+.PHONY : src/buttonBase/ButtonBase.cpp.s
+
 src/drawing/Image.o: src/drawing/Image.cpp.o
 
 .PHONY : src/drawing/Image.o
@@ -296,6 +323,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... manager"
 	@echo "... edit_cache"
+	@echo "... src/buttonBase/ButtonBase.o"
+	@echo "... src/buttonBase/ButtonBase.i"
+	@echo "... src/buttonBase/ButtonBase.s"
 	@echo "... src/drawing/Image.o"
 	@echo "... src/drawing/Image.i"
 	@echo "... src/drawing/Image.s"

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"
   "CMakeFiles/manager.dir/src/drawing/Image.cpp.o"
   "CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
+  "CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
   "libmanager.pdb"
   "libmanager.a"
 )

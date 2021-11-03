@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Text.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"

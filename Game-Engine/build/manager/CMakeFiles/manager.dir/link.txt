@@ -1,2 +1,2 @@
-/usr/bin/ar qc libmanager.a  CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o CMakeFiles/manager.dir/src/drawing/Widget.cpp.o CMakeFiles/manager.dir/src/drawing/Image.cpp.o CMakeFiles/manager.dir/src/drawing/Text.cpp.o
+/usr/bin/ar qc libmanager.a  CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o CMakeFiles/manager.dir/src/drawing/Widget.cpp.o CMakeFiles/manager.dir/src/drawing/Image.cpp.o CMakeFiles/manager.dir/src/drawing/Text.cpp.o CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o
 /usr/bin/ranlib libmanager.a

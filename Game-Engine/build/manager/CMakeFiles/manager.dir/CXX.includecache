@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../manager/include/manager/buttonBase/ButtonBase.h
+
 ../manager/include/manager/config/DrawMgrCfg.h
 cstdint
 -
@@ -161,6 +163,12 @@ cstdint
 -
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp
+manager/buttonBase/ButtonBase.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/manager/buttonBase/ButtonBase.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp
 manager/drawing/Image.h

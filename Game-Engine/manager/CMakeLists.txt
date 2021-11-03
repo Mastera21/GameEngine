@@ -21,6 +21,7 @@ add_library(
 		 ${_INC_DIR}/drawing/Widget.h
 		 ${_INC_DIR}/drawing/Image.h
 		 ${_INC_DIR}/drawing/Text.h
+		 ${_INC_DIR}/buttonBase/ButtonBase.h
 		 
 	
 		 #For src files
@@ -30,6 +31,7 @@ add_library(
 		 ${_SRC_DIR}/drawing/Widget.cpp
 		 ${_SRC_DIR}/drawing/Image.cpp
 		 ${_SRC_DIR}/drawing/Text.cpp
+		 ${_SRC_DIR}/buttonBase/ButtonBase.cpp
 )
 		 
 set_target_cpp_standard(${PROJECT_NAME} 17)
