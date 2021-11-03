@@ -42,10 +42,6 @@ int32_t Game::init(const GameCfg cfg){
 
 	optionPage.hide();
 
-	//MousePos
-	_mousePos.create("_", cfg.textFontId, Colors::RED);
-	_mousePos.hide();
-
 	return EXIT_SUCCESS;
 }
 
@@ -68,7 +64,6 @@ void Game::draw(){
 		optionPage.draw();
 	}
 
-	//_mousePos.draw();
 }
 
 void Game::handleEvent(const sd::Event& event){
@@ -109,14 +104,4 @@ void Game::handleEvent(const sd::Event& event){
 	_hero.handleEvent(event);
 	_wheel.handleEvent(event);
 
-	setMousePosText(event.pos);
 }
-
-void Game::setMousePosText(const Point& mousePos){
-	_mousePos.show();
-	_mousePos.setPos(mousePos);
-	std::string text = "x: ";
-	text.append(std::to_string(mousePos.x)).append(", y: ").append(std::to_string(mousePos.y));
-	_mousePos.setText(text);
-}
-

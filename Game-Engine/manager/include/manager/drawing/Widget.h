@@ -22,6 +22,7 @@ public:
 	int32_t getHeight()const;
 
 	double getRotation() const;
+	bool containsPoint(const Point& pos) const;
 
 	void draw();
 	void reset();

@@ -29,6 +29,11 @@ double Widget::getRotation() const{
 	return _drawParams.rotationAngle;
 }
 
+bool Widget::containsPoint(const Point& pos) const{
+	const Rectangle bound(_drawParams.pos.x, _drawParams.pos.y, _drawParams.width, _drawParams.height);
+	return bound.isPointInside(pos);
+}
+
 void Widget::draw(){
 	if(_isVisible){
 		gDrawMgr->addDrawCmd(_drawParams);

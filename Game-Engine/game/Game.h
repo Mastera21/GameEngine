@@ -41,14 +41,10 @@ private:
 	Text optionPage;
 	Text back;
 
-	Text _mousePos;
-
 	Hero _hero;
 	Wheel _wheel;
 
 	bool buttonOption = false;
-
-	void setMousePosText(const Point& mousePos);
 };
 
 #endif /* GAME_GAME_H_ */

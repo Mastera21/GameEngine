@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../manager/include/manager/buttonBase/ButtonBase.h
+manager/drawing/Image.h
+../manager/include/manager/buttonBase/manager/drawing/Image.h
+sdl/Event.h
+../manager/include/manager/buttonBase/sdl/Event.h
 
 ../manager/include/manager/config/DrawMgrCfg.h
 cstdint
@@ -77,6 +81,14 @@ sdl/containers/ImageContainer.h
 ../manager/include/manager/managers/sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/managers/sdl/containers/TextContainer.h
+
+../sdl/include/sdl/Event.h
+cstdint
+-
+utils/input/EventDefines.h
+../sdl/include/sdl/utils/input/EventDefines.h
+utils/drawing/Point.h
+../sdl/include/sdl/utils/drawing/Point.h
 
 ../sdl/include/sdl/MonitorWindow.h
 cstdint
@@ -164,11 +176,17 @@ cstdint
 utils/drawing/Point.h
 ../utils/include/utils/drawing/utils/drawing/Point.h
 
+../utils/include/utils/input/EventDefines.h
+cstdint
+-
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp
 manager/buttonBase/ButtonBase.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/manager/buttonBase/ButtonBase.h
 iostream
 -
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp
 manager/drawing/Image.h
