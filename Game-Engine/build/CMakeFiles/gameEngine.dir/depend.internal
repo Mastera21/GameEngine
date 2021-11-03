@@ -7,9 +7,11 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/buttonInterface/ButtonInterface.h
+ ..//game/buttons/WheelButton.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -36,9 +38,11 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//engine/config/EngineConfig.h
  ..//game/Game.h
  ..//game/buttonInterface/ButtonInterface.h
+ ..//game/buttons/WheelButton.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -84,9 +88,11 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/buttonInterface/ButtonInterface.h
+ ..//game/buttons/WheelButton.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
@@ -134,9 +140,11 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h
  ..//game/buttonInterface/ButtonInterface.h
+ ..//game/buttons/WheelButton.h
  ..//game/config/GameCfg.h
  ..//game/entities/Hero.h
  ..//game/entities/Wheel.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h

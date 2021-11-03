@@ -23,7 +23,7 @@ int32_t Texture::createSurfaceFormFile(const std::string& filePath, SDL_Surface*
 	outSurface = IMG_Load(filePath.c_str());
 
 	if(outSurface == nullptr){
-		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
+		std::cerr<<"IMG_Load() failed. Reason: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
 	return EXIT_SUCCESS;

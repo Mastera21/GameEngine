@@ -3,7 +3,9 @@
 //C system headers
 
 //C++ system headers
-
+#include <string>
+#include <array>
+#include <iostream>
 //Other libraries headers
 
 //Own components headers
@@ -19,9 +21,9 @@ constexpr auto RUNNING_GRIL_FRAMES = 6;
 constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
 constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;
 
-/*constexpr auto Button_GRIL_FRAMES = 6;
-constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
-constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;*/
+constexpr auto BUTTON_FRAMES = 3;
+constexpr auto BUTTON_WIDTH = 150;
+constexpr auto BUTTON_HEIGHT = 50;
 
 constexpr auto WHEEL_IMAGE_WIDTH_HEIGHT = 695;
 
@@ -54,6 +56,26 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	}
 	cfg.imageConfigs.emplace(TextureId::RUNNING_GIRL, imageCfg);
 	imageCfg.frames.clear();
+
+	constexpr auto buttonsCount = 2;
+	const std::string buttonPaths[buttonsCount] = {
+			"assets/p/buttons/button_start.png",
+			"assets/p/buttons/button_end.png"
+	};
+
+	constexpr int32_t buttonRsrcIds[buttonsCount] = {
+		TextureId::START_BUTTON, TextureId::STOP_BUTTON
+	};
+	for(int32_t i = 0; i < buttonsCount; ++i){
+		imageCfg.location = getFilePath(buttonPaths[i]);
+		for(auto frameId = 0; frameId < BUTTON_FRAMES; ++frameId){
+		//										x				y		w				h
+			imageCfg.frames.emplace_back(frameId * BUTTON_WIDTH, 0, BUTTON_WIDTH, BUTTON_HEIGHT);
+		}
+		cfg.imageConfigs.emplace(buttonRsrcIds[i], imageCfg);
+		imageCfg.frames.clear();
+	}
+
 
 	imageCfg.location = getFilePath("assets/p/wheel.png");
 
@@ -90,6 +112,9 @@ static void populateMgrHandlerConfig(ManagerHandlerCfg& cfg){
 static void populateGameConfig(GameCfg& cfg){
 	cfg.runningGrilId = TextureId::RUNNING_GIRL;
 	cfg.wheelId = TextureId::WHEEL;
+
+	cfg.startButtonRsrcId = TextureId::START_BUTTON;
+	cfg.stopButtonRsrcId = TextureId::STOP_BUTTON;
 
 	cfg.textFontId = FontId::ANGELINE_VINTAGE;
 }

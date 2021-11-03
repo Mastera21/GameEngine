@@ -10,7 +10,7 @@
 //Own components headers
 
 
-int32_t WheelButton::inti(ButtonInterface* gameProxy, int32_t buttonId){
+int32_t WheelButton::init(ButtonInterface* gameProxy, int32_t buttonId){
 	if(gameProxy == nullptr){
 		std::cerr<<"nullptr provided for _gameProxy. ButtonId: " << _buttonId<< "\n";
 		return EXIT_FAILURE;
@@ -22,9 +22,9 @@ int32_t WheelButton::inti(ButtonInterface* gameProxy, int32_t buttonId){
 }
 
 void WheelButton::handleEvent(const sd::Event &e) {
-	if(e.type == TouchEvent::KEYBOARD_PRESS){
+	if(e.type == TouchEvent::TOUCH_PRESS){
 		setFrame(CLICKED);
-	}else if(e.type == TouchEvent::KEYBOARD_RELEASE){
+	}else if(e.type == TouchEvent::TOUCH_RELEASE){
 		setFrame(UNCLICKED);
 	}
 	_gameProxy->onButtonPressed(_buttonId);

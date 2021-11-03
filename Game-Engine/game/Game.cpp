@@ -34,13 +34,30 @@ int32_t Game::init(const GameCfg cfg){
 	optionText.create("Options", cfg.textFontId, Colors::WHITE, Point(50,250));
 	quit.create("Quit", cfg.textFontId, Colors::WHITE, Point(50,320));
 
-	//----------options----------
+	//----------Options----------
 	optionPage.create("Options", cfg.textFontId, Colors::CYAN, Point(490,0));
 	back.create("Back", cfg.textFontId, Colors::WHITE, Point(50,500));
 
 	buttonOption = false;
 
 	optionPage.hide();
+
+	//----------Buttons----------
+	const int32_t buttonRsrcId[WHEEL_BTNS_COUNT] = {
+			cfg.startButtonRsrcId, cfg.stopButtonRsrcId
+	};
+	const Point buttonStartPos[WHEEL_BTNS_COUNT] = {
+			Point(500,300), Point(500,400)
+	};
+
+	for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
+		if(EXIT_SUCCESS !=_wheelButton[i].init(this, i)){
+			std::cerr<<"_wheelButton["<<i<<"] failed.\n";
+			return EXIT_FAILURE;
+		}
+		_wheelButton[i].create(buttonRsrcId[i],buttonStartPos[i]);
+
+	}
 
 	return EXIT_SUCCESS;
 }
@@ -62,6 +79,11 @@ void Game::draw(){
 		_hero.draw();
 		back.draw();
 		optionPage.draw();
+	}
+
+	//----------Buttons----------
+	for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
+		_wheelButton[i].draw();
 	}
 
 }

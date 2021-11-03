@@ -47,6 +47,8 @@ game/entities/Wheel.h
 ../game/game/entities/Wheel.h
 game/buttonInterface/ButtonInterface.h
 ../game/game/buttonInterface/ButtonInterface.h
+game/buttons/WheelButton.h
+../game/game/buttons/WheelButton.h
 sdl/Event.h
 ../game/sdl/Event.h
 
@@ -323,6 +325,12 @@ manager/managers/ManagerHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
 EngineConfigLoader.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
+string
+-
+array
+-
+iostream
+-
 common/CommonDefines.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/common/CommonDefines.h
 
@@ -357,6 +365,8 @@ game/entities/Wheel.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/entities/Wheel.h
 game/buttonInterface/ButtonInterface.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/buttonInterface/ButtonInterface.h
+game/buttons/WheelButton.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/buttons/WheelButton.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 

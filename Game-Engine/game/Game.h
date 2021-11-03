@@ -14,6 +14,7 @@
 #include "game/entities/Hero.h"
 #include "game/entities/Wheel.h"
 #include "game/buttonInterface/ButtonInterface.h"
+#include "game/buttons/WheelButton.h"
 #include "sdl/Event.h"
 
 //Forward declarations
@@ -29,6 +30,8 @@ private:
 	Image pressKeyImage;//first image
 	Image layer2Image;//second image
 
+
+
 	//----------Menu----------
 	Text mainMenu;
 	Text play;
@@ -43,6 +46,13 @@ private:
 	Wheel _wheel;
 
 	bool buttonOption = false;
+
+	enum internals{
+		WHEEL_START_BUTTON_IDX,
+		WHEEL_STOP_BUTTON_IDX,
+		WHEEL_BTNS_COUNT
+	};
+	WheelButton _wheelButton[WHEEL_BTNS_COUNT];
 
 	void onButtonPressed(int32_t buttonId) final;
 };

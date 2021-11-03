@@ -6,9 +6,11 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/EngineConfigL
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/buttonInterface/ButtonInterface.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/buttons/WheelButton.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/entities/Wheel.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/buttonBase/ButtonBase.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -35,9 +37,11 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Applicat
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/buttonInterface/ButtonInterface.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/buttons/WheelButton.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/entities/Wheel.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/buttonBase/ButtonBase.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -83,9 +87,11 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/buttonInterface/ButtonInterface.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/buttons/WheelButton.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/entities/Wheel.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/buttonBase/ButtonBase.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
@@ -133,9 +139,11 @@ CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../game/entities/Wheel.cpp
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/buttonInterface/ButtonInterface.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/buttons/WheelButton.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/entities/Hero.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/entities/Wheel.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/buttonBase/ButtonBase.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h
