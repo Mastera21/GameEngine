@@ -60,7 +60,7 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	constexpr auto buttonsCount = 2;
 	const std::string buttonPaths[buttonsCount] = {
 			"assets/p/buttons/button_start.png",
-			"assets/p/buttons/button_end.png"
+			"assets/p/buttons/button_stop.png"
 	};
 
 	constexpr int32_t buttonRsrcIds[buttonsCount] = {
