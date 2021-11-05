@@ -40,3 +40,30 @@ void Wheel::handleEvent(const sd::Event& event){
 		break;
 	}
 }
+
+void Wheel::startAnim(){
+	if(isActive){
+		std::cerr<<"Wheel anim is already active\n";
+		return;
+	}
+	isActive = true;
+
+
+	std::cerr << "Wheel anim started\n";
+}
+void Wheel::stopAnim(){
+	if(!isActive){
+		std::cerr<<"Wheel anim was not active\n";
+		return;
+	}
+	isActive = false;
+
+	std::cerr << "Wheel anim stoped\n";
+}
+
+void Wheel::process(){
+	while(!isActive){
+		return;
+	}
+	_imgWheel.rotateRight(2);
+}

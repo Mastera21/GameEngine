@@ -19,7 +19,15 @@ public:
 	void draw();
 	void handleEvent(const sd::Event& event);
 
+	void startAnim();
+	void stopAnim();
+
+	void process();
+
 private:
 	Image _imgWheel;
+
+	bool isActive = false;
+
 };
 #endif /* GAME_ENTITIES_WHEEL_H_ */

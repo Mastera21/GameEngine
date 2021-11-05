@@ -93,9 +93,17 @@ void Widget::setRotation(double angle){
 
 void Widget::rotateRight(double radius){
 	_drawParams.rotationAngle += radius;
+
+	while(_drawParams.rotationAngle > FULL_ROTATION){
+		_drawParams.rotationAngle -= FULL_ROTATION;
+	}
 }
 void Widget::rotateLeft(double radius){
 	_drawParams.rotationAngle -= radius;
+
+	while(_drawParams.rotationAngle < 0){
+		_drawParams.rotationAngle += FULL_ROTATION;
+	}
 }
 
 void Widget::setRotationCenter(const Point& pos){

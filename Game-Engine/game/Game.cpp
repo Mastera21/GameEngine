@@ -47,8 +47,9 @@ int32_t Game::init(const GameCfg cfg){
 			cfg.startButtonRsrcId, cfg.stopButtonRsrcId
 	};
 	const Point buttonStartPos[WHEEL_BTNS_COUNT] = {
-			Point(500,300), Point(500,400)
+			Point(500,500), Point(500,560)
 	};
+
 
 	for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
 		if(EXIT_SUCCESS !=_wheelButton[i].init(this, i)){
@@ -58,6 +59,8 @@ int32_t Game::init(const GameCfg cfg){
 		_wheelButton[i].create(buttonRsrcId[i],buttonStartPos[i]);
 
 	}
+
+	_wheelButton[WHEEL_STOP_BUTTON_IDX].unlockInput();
 
 	return EXIT_SUCCESS;
 }
@@ -75,16 +78,17 @@ void Game::draw(){
 
 	//----------Option Menu----------
 	if(buttonOption){
+		//----------Buttons----------
+		for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
+			_wheelButton[i].draw();
+		}
+
 		_wheel.draw();
 		_hero.draw();
 		back.draw();
 		optionPage.draw();
 	}
 
-	//----------Buttons----------
-	for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
-		_wheelButton[i].draw();
-	}
 
 }
 
@@ -122,10 +126,36 @@ void Game::handleEvent(const sd::Event& event){
 			break;
 	}
 
+	for(int32_t i = 0; i < WHEEL_BTNS_COUNT; ++i){
+		if(_wheelButton[i].isInputUnlocked() &&  _wheelButton[i].containsEvent(event)){
+			_wheelButton[i].handleEvent(event);
+			return;
+		}
+	}
+
 	//----------Objects----------
 	_hero.handleEvent(event);
 	_wheel.handleEvent(event);
 }
+
+void Game::process(){
+	_wheel.process();
+}
+
 void Game::onButtonPressed(int32_t buttonId) {
-	std::cout<<"button whit ID: "<<buttonId<<" was pressed.\n";
+	switch(buttonId){
+	case WHEEL_START_BUTTON_IDX:
+		_wheelButton[WHEEL_START_BUTTON_IDX].lockInput();
+		_wheelButton[WHEEL_STOP_BUTTON_IDX].unlockInput();
+		_wheel.startAnim();
+		break;
+	case WHEEL_STOP_BUTTON_IDX:
+		_wheelButton[WHEEL_START_BUTTON_IDX].unlockInput();
+		_wheelButton[WHEEL_STOP_BUTTON_IDX].lockInput();
+		_wheel.stopAnim();
+		break;
+	default:
+		std::cerr<<"Received unsupported buttonId: "<<buttonId<<"\n";
+		break;
+	}
 }

@@ -67,6 +67,9 @@ void Engine::drawFrame(){
 
 }
 bool Engine::processFrame(){
+	_managerHandler.process();
+	_game.process();
+
 	while(_event.pollEvent()){
 		if(_event.checkForExitRequest()){
 			return true;
