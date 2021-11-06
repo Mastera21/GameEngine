@@ -117,6 +117,8 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.stopButtonRsrcId = TextureId::STOP_BUTTON;
 
 	cfg.textFontId = FontId::ANGELINE_VINTAGE;
+
+	cfg.wheelRotateAnimTimerId = TimerId::WHEEL_ROT_ANIM_TIMER_ID;
 }
 
 EngineConfig EngineConfigLoader::loadConfig(){

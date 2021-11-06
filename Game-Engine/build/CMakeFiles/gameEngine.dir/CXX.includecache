@@ -87,6 +87,8 @@ sdl/Event.h
 ../game/entities/sdl/Event.h
 manager/drawing/Image.h
 ../game/entities/manager/drawing/Image.h
+manager/time/TimerClient.h
+../game/entities/manager/time/TimerClient.h
 
 ../manager/include/manager/buttonBase/ButtonBase.h
 manager/drawing/Image.h
@@ -153,6 +155,30 @@ manager/managers/MgrBase.h
 ../manager/include/manager/managers/manager/managers/MgrBase.h
 
 ../manager/include/manager/managers/MgrBase.h
+
+../manager/include/manager/managers/TimerMgr.h
+map
+-
+set
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
+manager/time/TimerData.h
+../manager/include/manager/managers/manager/time/TimerData.h
+utils/time/Time.h
+../manager/include/manager/managers/utils/time/Time.h
+
+../manager/include/manager/time/TimerClient.h
+map
+-
+set
+-
+manager/time/TimerData.h
+../manager/include/manager/time/manager/time/TimerData.h
+
+../manager/include/manager/time/TimerData.h
+cstdint
+-
 
 ../sdl/include/sdl/Event.h
 cstdint
@@ -305,6 +331,8 @@ engine/config/EngineConfig.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/engine/config/EngineConfig.h
 manager/managers/DrawMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/DrawMgr.h
+manager/managers/TimerMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/TimerMgr.h
 utils/time/Time.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/utils/time/Time.h
 utils/thread/ThreadUtils.h

@@ -73,6 +73,8 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
  ../manager/include/manager/managers/RsrcMgr.h
+ ../manager/include/manager/managers/TimerMgr.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/MonitorWindow.h
  ../sdl/include/sdl/Renderer.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -83,6 +85,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/time/Time.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -95,3 +98,17 @@ manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o
+ ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/TimerMgr.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
+ ../utils/include/utils/time/Time.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o
+ ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/TimerMgr.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
+ ../utils/include/utils/time/Time.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp

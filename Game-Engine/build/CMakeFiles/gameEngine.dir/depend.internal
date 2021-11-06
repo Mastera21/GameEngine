@@ -20,6 +20,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/SDLLoader.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -52,6 +54,9 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../manager/include/manager/managers/DrawMgr.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/managers/TimerMgr.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/MonitorWindow.h
  ../sdl/include/sdl/Renderer.h
@@ -96,6 +101,8 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
@@ -130,6 +137,8 @@ CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o
  ..//game/entities/Wheel.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Widget.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
@@ -150,6 +159,8 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h

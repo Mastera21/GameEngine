@@ -13,6 +13,7 @@
 //Own components headers
 #include "engine/config/EngineConfig.h"
 #include "manager/managers/DrawMgr.h"
+#include "manager/managers/TimerMgr.h"
 #include "utils/time/Time.h"
 #include "utils/thread/ThreadUtils.h"
 #include "sdl/Texture.h"
@@ -35,6 +36,7 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
+	gTimerMgr->onInitEnd();
 	return EXIT_SUCCESS;
 }
 
@@ -68,7 +70,6 @@ void Engine::drawFrame(){
 }
 bool Engine::processFrame(){
 	_managerHandler.process();
-	_game.process();
 
 	while(_event.pollEvent()){
 		if(_event.checkForExitRequest()){

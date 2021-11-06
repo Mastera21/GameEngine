@@ -11,6 +11,7 @@
 //Own components headers
 #include "manager/managers/DrawMgr.h"
 #include "manager/managers/RsrcMgr.h"
+#include "manager/managers/TimerMgr.h"
 #include "manager/config/ManagerHandlerCfg.h"
 
 int32_t ManagerHandler::init(const ManagerHandlerCfg& cfg){
@@ -35,8 +36,20 @@ int32_t ManagerHandler::init(const ManagerHandlerCfg& cfg){
 		std::cerr<<"gRsrcMgr->init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
+
+	gTimerMgr = new TimerMgr();
+	if(gTimerMgr == nullptr){
+		std::cerr<<"Error, bad alloc for gTimerMgr\n";
+		return EXIT_FAILURE;
+	}
+
+	if(EXIT_SUCCESS != gTimerMgr->init()){
+		std::cerr<<"gTimerMgr->init() failed" << std::endl;
+		return EXIT_FAILURE;
+	}
 	_managers[DRAW_MGR_IDX] = static_cast<MgrBase*>(gDrawMgr);
 	_managers[RSRC_MGR_IDX] = static_cast<MgrBase*>(gRsrcMgr);
+	_managers[TIMER_MGR_IDX] = static_cast<MgrBase*>(gTimerMgr);
 
 	return EXIT_SUCCESS;
 }
@@ -65,6 +78,10 @@ void  ManagerHandler::nullifyGlobalMgr(int32_t mgr){
 	case RSRC_MGR_IDX:
 		delete gRsrcMgr;
 		gRsrcMgr = nullptr;
+		break;
+	case TIMER_MGR_IDX:
+		delete gTimerMgr;
+		gTimerMgr = nullptr;
 		break;
 	default:
 		std::cerr<<"Received invalid mgr: " << mgr<<"\n";

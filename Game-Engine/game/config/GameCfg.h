@@ -20,6 +20,8 @@ struct GameCfg{
 	int32_t startButtonRsrcId;
 	int32_t stopButtonRsrcId;
 
+	int32_t wheelRotateAnimTimerId;
+
 };
 
 #endif /* GAME_CONFIG_GAMECFG_H_ */

@@ -20,7 +20,7 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _wheel.init(cfg.wheelId)){
+	if(EXIT_SUCCESS != _wheel.init(cfg.wheelId, cfg.wheelRotateAnimTimerId)){
 		std::cerr<<"Error, _wheel.init() failed.\n";
 		return EXIT_FAILURE;
 	}
@@ -136,10 +136,6 @@ void Game::handleEvent(const sd::Event& event){
 	//----------Objects----------
 	_hero.handleEvent(event);
 	_wheel.handleEvent(event);
-}
-
-void Game::process(){
-	_wheel.process();
 }
 
 void Game::onButtonPressed(int32_t buttonId) {

@@ -82,6 +82,30 @@ sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/managers/sdl/containers/TextContainer.h
 
+../manager/include/manager/managers/TimerMgr.h
+map
+-
+set
+-
+manager/managers/MgrBase.h
+../manager/include/manager/managers/manager/managers/MgrBase.h
+manager/time/TimerData.h
+../manager/include/manager/managers/manager/time/TimerData.h
+utils/time/Time.h
+../manager/include/manager/managers/utils/time/Time.h
+
+../manager/include/manager/time/TimerClient.h
+map
+-
+set
+-
+manager/time/TimerData.h
+../manager/include/manager/time/manager/time/TimerData.h
+
+../manager/include/manager/time/TimerData.h
+cstdint
+-
+
 ../sdl/include/sdl/Event.h
 cstdint
 -
@@ -180,6 +204,12 @@ utils/drawing/Point.h
 cstdint
 -
 
+../utils/include/utils/time/Time.h
+cstdint
+-
+chrono
+-
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp
 manager/buttonBase/ButtonBase.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/manager/buttonBase/ButtonBase.h
@@ -231,6 +261,8 @@ manager/managers/DrawMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/DrawMgr.h
 manager/managers/RsrcMgr.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/RsrcMgr.h
+manager/managers/TimerMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/TimerMgr.h
 manager/config/ManagerHandlerCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/ManagerHandlerCfg.h
 
@@ -241,4 +273,20 @@ iostream
 -
 manager/config/RsrcMgrCfg.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/config/RsrcMgrCfg.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp
+manager/managers/TimerMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/managers/TimerMgr.h
+iostream
+-
+manager/time/TimerClient.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/manager/time/TimerClient.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp
+manager/time/TimerClient.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/manager/time/TimerClient.h
+iostream
+-
+manager/managers/TimerMgr.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/manager/managers/TimerMgr.h
 

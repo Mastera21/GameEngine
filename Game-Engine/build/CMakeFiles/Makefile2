@@ -78,7 +78,7 @@ all: CMakeFiles/gameEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 34
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/gameEngine.dir/rule
@@ -123,7 +123,7 @@ utils/preinstall:
 utils/CMakeFiles/utils.dir/all:
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/depend
 	$(MAKE) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=26,27,28,29,30,31,32 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=28,29,30,31,32,33,34 "Built target utils"
 .PHONY : utils/CMakeFiles/utils.dir/all
 
 # Include target in all.
@@ -178,7 +178,7 @@ sdl/preinstall:
 sdl/CMakeFiles/sdl.dir/all: utils/CMakeFiles/utils.dir/all
 	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/depend
 	$(MAKE) -f sdl/CMakeFiles/sdl.dir/build.make sdl/CMakeFiles/sdl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25 "Built target sdl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27 "Built target sdl"
 .PHONY : sdl/CMakeFiles/sdl.dir/all
 
 # Include target in all.
@@ -234,7 +234,7 @@ manager/CMakeFiles/manager.dir/all: utils/CMakeFiles/utils.dir/all
 manager/CMakeFiles/manager.dir/all: sdl/CMakeFiles/sdl.dir/all
 	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/depend
 	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17 "Built target manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19 "Built target manager"
 .PHONY : manager/CMakeFiles/manager.dir/all
 
 # Include target in all.
@@ -244,7 +244,7 @@ all: manager/CMakeFiles/manager.dir/all
 
 # Build rule for subdir invocation for target.
 manager/CMakeFiles/manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 manager/CMakeFiles/manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles 0
 .PHONY : manager/CMakeFiles/manager.dir/rule

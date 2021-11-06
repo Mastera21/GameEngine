@@ -23,4 +23,10 @@ enum FontIdKeys{
 };
 }//namespace FontId
 
+namespace TimerId{
+enum Keys{
+	WHEEL_ROT_ANIM_TIMER_ID
+};
+}//namespace TimerId
+
 #endif /* COMMON_COMMONDEFINES_H_ */

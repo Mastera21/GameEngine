@@ -314,6 +314,60 @@ src/managers/RsrcMgr.cpp.s:
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.s
 .PHONY : src/managers/RsrcMgr.cpp.s
 
+src/managers/TimerMgr.o: src/managers/TimerMgr.cpp.o
+
+.PHONY : src/managers/TimerMgr.o
+
+# target to build an object file
+src/managers/TimerMgr.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o
+.PHONY : src/managers/TimerMgr.cpp.o
+
+src/managers/TimerMgr.i: src/managers/TimerMgr.cpp.i
+
+.PHONY : src/managers/TimerMgr.i
+
+# target to preprocess a source file
+src/managers/TimerMgr.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.i
+.PHONY : src/managers/TimerMgr.cpp.i
+
+src/managers/TimerMgr.s: src/managers/TimerMgr.cpp.s
+
+.PHONY : src/managers/TimerMgr.s
+
+# target to generate assembly for a file
+src/managers/TimerMgr.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.s
+.PHONY : src/managers/TimerMgr.cpp.s
+
+src/time/TimerClient.o: src/time/TimerClient.cpp.o
+
+.PHONY : src/time/TimerClient.o
+
+# target to build an object file
+src/time/TimerClient.cpp.o:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o
+.PHONY : src/time/TimerClient.cpp.o
+
+src/time/TimerClient.i: src/time/TimerClient.cpp.i
+
+.PHONY : src/time/TimerClient.i
+
+# target to preprocess a source file
+src/time/TimerClient.cpp.i:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.i
+.PHONY : src/time/TimerClient.cpp.i
+
+src/time/TimerClient.s: src/time/TimerClient.cpp.s
+
+.PHONY : src/time/TimerClient.s
+
+# target to generate assembly for a file
+src/time/TimerClient.cpp.s:
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build && $(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.s
+.PHONY : src/time/TimerClient.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -344,6 +398,12 @@ help:
 	@echo "... src/managers/RsrcMgr.o"
 	@echo "... src/managers/RsrcMgr.i"
 	@echo "... src/managers/RsrcMgr.s"
+	@echo "... src/managers/TimerMgr.o"
+	@echo "... src/managers/TimerMgr.i"
+	@echo "... src/managers/TimerMgr.s"
+	@echo "... src/time/TimerClient.o"
+	@echo "... src/time/TimerClient.i"
+	@echo "... src/time/TimerClient.s"
 .PHONY : help
 
 

@@ -10,20 +10,31 @@
 
 //Own components headers
 
-int32_t Wheel::init(int32_t wheelRsrcId){
+Wheel::~Wheel(){
+	if(isActiveTimerId(_rotateAnimTimerId)){
+		stopTimer(_rotateAnimTimerId);
+	}
+}
+
+int32_t Wheel::init(int32_t wheelRsrcId, int32_t rotateAnimTimerId){
 
 	_imgWheel.create(wheelRsrcId, Point(0,0));
 	_imgWheel.setWidth(150);
 	_imgWheel.setHeight(150);
 
+	_rotateAnimTimerId = rotateAnimTimerId;
+
 	return EXIT_SUCCESS;
 }
+
 void Wheel::deinit(){
 
 }
+
 void Wheel::draw(){
 	_imgWheel.draw();
 }
+
 void Wheel::handleEvent(const sd::Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
@@ -48,8 +59,7 @@ void Wheel::startAnim(){
 	}
 	isActive = true;
 
-
-	std::cerr << "Wheel anim started\n";
+	startTimer(20, _rotateAnimTimerId, TimerType::PULSE);
 }
 void Wheel::stopAnim(){
 	if(!isActive){
@@ -58,12 +68,19 @@ void Wheel::stopAnim(){
 	}
 	isActive = false;
 
-	std::cerr << "Wheel anim stoped\n";
+	stopTimer(_rotateAnimTimerId);
 }
 
-void Wheel::process(){
-	while(!isActive){
-		return;
+void Wheel::onTimeout(int32_t timerId){
+	if(timerId == _rotateAnimTimerId){
+		processRotAnim();
+	}else{
+		std::cerr<<"Received unsupported timerId: "<<timerId<<"\n";
 	}
+}
+
+void Wheel::processRotAnim(){
 	_imgWheel.rotateRight(2);
 }
+
+

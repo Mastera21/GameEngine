@@ -26,13 +26,9 @@ public:
 	void draw();
 	void handleEvent(const sd::Event& event);
 
-	void process();
-
 private:
 	Image pressKeyImage;//first image
 	Image layer2Image;//second image
-
-
 
 	//----------Menu----------
 	Text mainMenu;

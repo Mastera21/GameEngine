@@ -19,6 +19,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/mana
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/managers/MgrBase.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/time/TimerClient.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/time/TimerData.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/SDLLoader.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -51,6 +53,9 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/drawin
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/DrawMgr.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/MgrBase.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/managers/TimerMgr.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/time/TimerClient.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/time/TimerData.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/MonitorWindow.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../sdl/include/sdl/Renderer.h
@@ -95,6 +100,8 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/buttonBase
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/time/TimerClient.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/time/TimerData.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/DrawParams.h
@@ -129,6 +136,8 @@ CMakeFiles/gameEngine.dir/game/entities/Hero.cpp.o: ../game/entities/Hero.cpp
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../game/entities/Wheel.h
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/time/TimerClient.h
+CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../manager/include/manager/time/TimerData.h
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/entities/Wheel.cpp.o: ../utils/include/utils/drawing/Point.h
@@ -149,6 +158,8 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/managers/MgrBase.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/time/TimerClient.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/time/TimerData.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../sdl/include/sdl/Event.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../utils/include/utils/drawing/DrawParams.h

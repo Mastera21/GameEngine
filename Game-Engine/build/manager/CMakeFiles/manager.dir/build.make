@@ -129,9 +129,33 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides: manag
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
 
 
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: manager/CMakeFiles/manager.dir/flags.make
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/src/managers/TimerMgr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.i"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp > CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.i
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.s"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp -o CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.s
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.requires:
+
+.PHONY : manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.requires
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.provides: manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.requires
+	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.provides.build
+.PHONY : manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.provides
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o
+
+
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: manager/CMakeFiles/manager.dir/flags.make
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o: ../manager/src/drawing/Widget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/drawing/Widget.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp
 
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.i: cmake_force
@@ -155,7 +179,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o.provides.build: manager/
 
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: manager/CMakeFiles/manager.dir/flags.make
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/src/drawing/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/drawing/Image.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp
 
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.i: cmake_force
@@ -179,7 +203,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o.provides.build: manager/C
 
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o: manager/CMakeFiles/manager.dir/flags.make
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o: ../manager/src/drawing/Text.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/drawing/Text.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Text.cpp
 
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.i: cmake_force
@@ -203,7 +227,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o.provides.build: manager/CM
 
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o: manager/CMakeFiles/manager.dir/flags.make
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o: ../manager/src/buttonBase/ButtonBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp
 
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.i: cmake_force
@@ -225,15 +249,41 @@ manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o.provides: manager
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o
 
 
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: manager/CMakeFiles/manager.dir/flags.make
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/src/time/TimerClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/manager.dir/src/time/TimerClient.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager.dir/src/time/TimerClient.cpp.i"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp > CMakeFiles/manager.dir/src/time/TimerClient.cpp.i
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager.dir/src/time/TimerClient.cpp.s"
+	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp -o CMakeFiles/manager.dir/src/time/TimerClient.cpp.s
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.requires:
+
+.PHONY : manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.requires
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.provides: manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.requires
+	$(MAKE) -f manager/CMakeFiles/manager.dir/build.make manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.provides.build
+.PHONY : manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.provides
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.provides.build: manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o
+
+
 # Object files for target manager
 manager_OBJECTS = \
 "CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o" \
 "CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o" \
 "CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o" \
+"CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o" \
 "CMakeFiles/manager.dir/src/drawing/Widget.cpp.o" \
 "CMakeFiles/manager.dir/src/drawing/Image.cpp.o" \
 "CMakeFiles/manager.dir/src/drawing/Text.cpp.o" \
-"CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
+"CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o" \
+"CMakeFiles/manager.dir/src/time/TimerClient.cpp.o"
 
 # External object files for target manager
 manager_EXTERNAL_OBJECTS =
@@ -241,13 +291,15 @@ manager_EXTERNAL_OBJECTS =
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o
+manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o
+manager/libmanager.a: manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/build.make
 manager/libmanager.a: manager/CMakeFiles/manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libmanager.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libmanager.a"
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && $(CMAKE_COMMAND) -P CMakeFiles/manager.dir/cmake_clean_target.cmake
 	cd /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/manager.dir/link.txt --verbose=$(VERBOSE)
 
@@ -259,10 +311,12 @@ manager/CMakeFiles/manager.dir/build: manager/libmanager.a
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o.requires
+manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.o.requires
 manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o.requires
+manager/CMakeFiles/manager.dir/requires: manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o.requires
 
 .PHONY : manager/CMakeFiles/manager.dir/requires
 

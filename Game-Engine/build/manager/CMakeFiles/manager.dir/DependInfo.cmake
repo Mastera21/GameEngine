@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

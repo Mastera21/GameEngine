@@ -72,6 +72,8 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/inc
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/managers/ManagerHandler.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/managers/MgrBase.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/managers/RsrcMgr.h
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/managers/TimerMgr.h
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/include/manager/time/TimerData.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../sdl/include/sdl/MonitorWindow.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../sdl/include/sdl/Renderer.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -82,6 +84,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../sdl/include
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/Point.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../utils/include/utils/time/Time.h
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.o: ../manager/src/managers/ManagerHandler.cpp
 
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -94,4 +97,18 @@ manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../sdl/include/sdl/co
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../utils/include/utils/drawing/Point.h
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.o: ../manager/src/managers/RsrcMgr.cpp
+
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/include/manager/managers/MgrBase.h
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/include/manager/managers/TimerMgr.h
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/include/manager/time/TimerClient.h
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/include/manager/time/TimerData.h
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../utils/include/utils/time/Time.h
+manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o: ../manager/src/managers/TimerMgr.cpp
+
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/include/manager/managers/MgrBase.h
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/include/manager/managers/TimerMgr.h
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/include/manager/time/TimerClient.h
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/include/manager/time/TimerData.h
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../utils/include/utils/time/Time.h
+manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.o: ../manager/src/time/TimerClient.cpp
 
