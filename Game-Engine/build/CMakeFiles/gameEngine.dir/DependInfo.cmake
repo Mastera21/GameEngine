@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/Game.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/BoardUtils.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/main.cpp.o"

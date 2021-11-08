@@ -60,6 +60,8 @@ add_executable(
 		 ${_BASE_DIR}/game/pieces/types/ChessPiece.h
 		 ${_BASE_DIR}/game/pieces/types/ChessPiece.cpp
 		 ${_BASE_DIR}/game/defines/ChessDefines.h
+		 ${_BASE_DIR}/game/pieces/PieceHandler.h
+		 ${_BASE_DIR}/game/pieces/PieceHandler.cpp
 		 	 
 		${_BASE_DIR}/main.cpp)
 

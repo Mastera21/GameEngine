@@ -51,10 +51,3 @@ void ChessPiece::setBoardPos(const BoardPos& pos){
 	_pieceImg.setPos(BoardUtils::getAbsPos(_boardPos));
 }
 
-
-
-
-
-
-
-

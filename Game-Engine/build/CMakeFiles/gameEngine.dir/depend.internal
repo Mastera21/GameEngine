@@ -9,6 +9,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/pieces/PieceHandler.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/config/DrawMgrCfg.h
@@ -39,6 +40,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/pieces/PieceHandler.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/config/DrawMgrCfg.h
@@ -91,6 +93,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/pieces/PieceHandler.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/drawing/Image.h
@@ -112,6 +115,17 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
+ ..//game/defines/ChessDefines.h
+ ..//game/pieces/PieceHandler.h
+ ..//game/pieces/types/ChessPiece.h
+ ..//game/utils/BoardPos.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/pieces/types/ChessPiece.h
@@ -135,6 +149,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/pieces/PieceHandler.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/drawing/Image.h

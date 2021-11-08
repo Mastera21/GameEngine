@@ -43,8 +43,8 @@ manager/drawing/Text.h
 ../game/manager/drawing/Text.h
 game/board/GameBoard.h
 ../game/game/board/GameBoard.h
-game/pieces/types/ChessPiece.h
-../game/game/pieces/types/ChessPiece.h
+game/pieces/PieceHandler.h
+../game/game/pieces/PieceHandler.h
 
 ..//game/board/GameBoard.h
 cstdint
@@ -63,6 +63,18 @@ unordered_map
 ..//game/defines/ChessDefines.h
 cstdint
 -
+
+..//game/pieces/PieceHandler.h
+cstdint
+-
+array
+-
+vector
+-
+game/defines/ChessDefines.h
+../game/pieces/game/defines/ChessDefines.h
+game/pieces/types/ChessPiece.h
+../game/pieces/game/pieces/types/ChessPiece.h
 
 ..//game/pieces/types/ChessPiece.h
 cstdint
@@ -367,6 +379,12 @@ game/defines/ChessDefines.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
 game/board/GameBoard.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/board/GameBoard.h
+iostream
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
+game/pieces/PieceHandler.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandler.h
 iostream
 -
 

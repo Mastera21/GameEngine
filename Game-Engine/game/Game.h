@@ -12,7 +12,7 @@
 #include "manager/drawing/Image.h"
 #include "manager/drawing/Text.h"
 #include "game/board/GameBoard.h"
-#include "game/pieces/types/ChessPiece.h"
+#include "game/pieces/PieceHandler.h"
 
 //Forward declarations
 struct Event;
@@ -26,7 +26,7 @@ public:
 
 private:
 	GameBoard _board;
-	ChessPiece _piece;
+	PieceHandler _pieceHandler;
 };
 
 #endif /* GAME_GAME_H_ */

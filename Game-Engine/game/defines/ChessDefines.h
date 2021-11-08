@@ -11,11 +11,13 @@
 
 //Forward declarations
 
+namespace Defines{
 enum PlayerId {
   WHITE_PLAYER_ID, BLACK_PLAYER_ID,
 
   PLAYERS_COUNT
 };
+}
 
 enum class PieceType : uint8_t {
   KING, QUEEN, BISHOP, KNIGHT, ROOK, PAWN, UNKNOWN
