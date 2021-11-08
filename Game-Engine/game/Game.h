@@ -24,7 +24,7 @@ public:
 	int32_t init(const GameCfg cfg);
 	void deinit();
 	void draw();
-	void handleEvent(const sd::Event& event);
+	void handleEvent(const Event& event);
 
 private:
 	Image pressKeyImage;//first image

@@ -26,7 +26,7 @@ bool ButtonBase::isInputUnlocked() const{
 	return _isInputUnlocked;
 }
 
-bool ButtonBase::containsEvent(const sd::Event &e){
+bool ButtonBase::containsEvent(const Event &e){
 	return Image::containsPoint(e.pos);
 }
 

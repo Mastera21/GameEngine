@@ -22,7 +22,7 @@ void Hero::deinit(){
 void Hero::draw(){
 	_img.draw();
 }
-void Hero::handleEvent(const sd::Event& event){
+void Hero::handleEvent(const Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}

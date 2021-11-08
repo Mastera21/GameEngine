@@ -17,7 +17,7 @@ public:
 	int32_t init(int32_t heroRsrcId);
 	void deinit();
 	void draw();
-	void handleEvent(const sd::Event& event);
+	void handleEvent(const Event& event);
 
 private:
 	Image _img;

@@ -35,7 +35,7 @@ void Wheel::draw(){
 	_imgWheel.draw();
 }
 
-void Wheel::handleEvent(const sd::Event& event){
+void Wheel::handleEvent(const Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type){
 		return;
 	}

@@ -15,8 +15,6 @@
 //Forward declarations
 union SDL_Event;
 
-namespace sd{
-
 class Event {
 public:
   int32_t init();
@@ -39,6 +37,5 @@ private:
   SDL_Event *_sdlEvent = nullptr;
 
 };
-}
 
 #endif /* SDL_EVENT_H_ */

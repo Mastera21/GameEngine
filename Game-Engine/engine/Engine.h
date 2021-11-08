@@ -21,7 +21,7 @@ public:
 	void main();
 
 private:
-	sd::Event _event;
+	Event _event;
 	Game _game;
 	ManagerHandler _managerHandler;
 

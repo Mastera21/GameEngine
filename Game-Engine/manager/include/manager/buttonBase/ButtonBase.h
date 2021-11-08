@@ -21,7 +21,7 @@ public:
 
 	virtual ~ButtonBase() = default;
 
-	virtual void handleEvent(const sd::Event &e) = 0;
+	virtual void handleEvent(const Event &e) = 0;
 
 	virtual void draw();
 
@@ -30,7 +30,7 @@ public:
 
 	bool isInputUnlocked() const;
 
-	bool containsEvent(const sd::Event &e);
+	bool containsEvent(const Event &e);
 
 private:
 

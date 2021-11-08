@@ -18,7 +18,7 @@ class WheelButton : public ButtonBase{
 public:
 	int32_t init(ButtonInterface* gameProxy, int32_t buttonId);
 
-	void handleEvent(const sd::Event &e) final;
+	void handleEvent(const Event &e) final;
 private:
 	ButtonInterface* _gameProxy = nullptr;
 	int32_t _buttonId { 0 };

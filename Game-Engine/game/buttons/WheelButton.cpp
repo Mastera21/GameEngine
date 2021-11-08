@@ -21,7 +21,7 @@ int32_t WheelButton::init(ButtonInterface* gameProxy, int32_t buttonId){
 	return EXIT_SUCCESS;
 }
 
-void WheelButton::handleEvent(const sd::Event &e) {
+void WheelButton::handleEvent(const Event &e) {
 	if(e.type == TouchEvent::TOUCH_PRESS){
 		setFrame(CLICKED);
 	}else if(e.type == TouchEvent::TOUCH_RELEASE){

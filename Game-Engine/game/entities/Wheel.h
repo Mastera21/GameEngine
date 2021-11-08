@@ -21,7 +21,7 @@ public:
 	int32_t init(int32_t wheelRsrcId, int32_t rotateAnimTimerId);
 	void deinit();
 	void draw();
-	void handleEvent(const sd::Event& event);
+	void handleEvent(const Event& event);
 
 	void startAnim();
 	void stopAnim();

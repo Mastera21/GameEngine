@@ -92,7 +92,7 @@ void Game::draw(){
 
 }
 
-void Game::handleEvent(const sd::Event& event){
+void Game::handleEvent(const Event& event){
 	if(TouchEvent::KEYBOARD_PRESS != event.type && TouchEvent::TOUCH_RELEASE != event.type){
 		return;
 	}

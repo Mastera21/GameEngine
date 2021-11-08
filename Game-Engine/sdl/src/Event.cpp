@@ -8,7 +8,7 @@
 
 //Own components headers
 
-int32_t sd::Event::init(){
+int32_t Event::init(){
 	_sdlEvent = new SDL_Event{};
 	memset(_sdlEvent,0,sizeof(SDL_Event));
 	if(_sdlEvent == nullptr){
@@ -18,13 +18,13 @@ int32_t sd::Event::init(){
 
 	return EXIT_SUCCESS;
 }
-void sd::Event::deinit(){
+void Event::deinit(){
 	if(_sdlEvent != nullptr){
 		delete _sdlEvent;
 		_sdlEvent = nullptr;
 	}
 }
-bool sd::Event::pollEvent(){
+bool Event::pollEvent(){
 	if(0 == SDL_PollEvent(_sdlEvent)){
 		//no events currently
 		return false;
@@ -33,11 +33,11 @@ bool sd::Event::pollEvent(){
 	setEventTypeInternal();
 	return true;
 }
-bool sd::Event::checkForExitRequest() const{
+bool Event::checkForExitRequest() const{
 	return (_sdlEvent->type ==  EventType::QUIT) || (type == TouchEvent::KEYBOARD_PRESS && Keyboard::KEY_ESCAPE == key);
 }
 
-void sd::Event::setEventTypeInternal(){
+void Event::setEventTypeInternal(){
 	 switch (_sdlEvent->type) {
 
 	  case EventType::KEYBOARD_PRESS:
