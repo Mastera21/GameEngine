@@ -13,19 +13,18 @@
 
 namespace {
 
-constexpr auto WINDOW_WIDTH = 1080;//1080
-constexpr auto WINDOW_HEIGHT = 640;//640
+constexpr auto WINDOW_WIDTH = 900;//1080
+constexpr auto WINDOW_HEIGHT = 900;//640
 constexpr auto WINDOW_NAME = "GameEngine";
 
-constexpr auto RUNNING_GRIL_FRAMES = 6;
-constexpr auto RUNNING_GRIL_IMG_WIDTH = 256;
-constexpr auto RUNNING_GRIL_IMG_HEIGHT = 220;
+constexpr auto CHESS_PIRCES_FRAMES = 6;
+constexpr auto CHESS_PIECES_WIDTH_HEIGHT = 96;
 
-constexpr auto BUTTON_FRAMES = 3;
-constexpr auto BUTTON_WIDTH = 150;
-constexpr auto BUTTON_HEIGHT = 50;
+constexpr auto CHESS_BOARD_WIDTH_HEIGHT = 900;
 
-constexpr auto WHEEL_IMAGE_WIDTH_HEIGHT = 695;
+constexpr auto TARGET_IMG_WIDTH_HEIGHT = 98;
+
+constexpr auto ANGELINE_VINTAGE_40_FONT_SIZE = 40;
 
 constexpr auto MAX_FRAME_RATE = 60;
 }
@@ -43,45 +42,41 @@ static std::string getFilePath(const std::string relativePath){
 static void populateTextContainerConfig(TextContainerCfg& cfg){
 	FontCfg fontCfg;
 	fontCfg.location = getFilePath("assets/f/AngelineVintage.ttf");
-	fontCfg.fontSize = 50;
+	fontCfg.fontSize = ANGELINE_VINTAGE_40_FONT_SIZE;
 	cfg.fontConfigs.insert(std::make_pair(FontId::ANGELINE_VINTAGE, fontCfg));
 }
 
 static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	ImageCfg imageCfg;
-	imageCfg.location = getFilePath("assets/p/sprites/running_girl.png");
-	for(auto i = 0; i < RUNNING_GRIL_FRAMES; ++i){
-		//										x				y		w							h
-		imageCfg.frames.emplace_back(i * RUNNING_GRIL_IMG_WIDTH, 0, RUNNING_GRIL_IMG_WIDTH, RUNNING_GRIL_IMG_HEIGHT);
-	}
-	cfg.imageConfigs.emplace(TextureId::RUNNING_GIRL, imageCfg);
-	imageCfg.frames.clear();
 
 	constexpr auto buttonsCount = 2;
 	const std::string buttonPaths[buttonsCount] = {
-			"assets/p/buttons/button_start.png",
-			"assets/p/buttons/button_stop.png"
+			"assets/p/whitePieces.png",
+			"assets/p/blackPieces.png"
 	};
 
 	constexpr int32_t buttonRsrcIds[buttonsCount] = {
-		TextureId::START_BUTTON, TextureId::STOP_BUTTON
+		TextureId::WHITE_PIECES, TextureId::BLACK_PIECES
 	};
 	for(int32_t i = 0; i < buttonsCount; ++i){
 		imageCfg.location = getFilePath(buttonPaths[i]);
-		for(auto frameId = 0; frameId < BUTTON_FRAMES; ++frameId){
+		for(auto frameId = 0; frameId < CHESS_PIRCES_FRAMES; ++frameId){
 		//										x				y		w				h
-			imageCfg.frames.emplace_back(frameId * BUTTON_WIDTH, 0, BUTTON_WIDTH, BUTTON_HEIGHT);
+			imageCfg.frames.emplace_back(frameId * CHESS_PIECES_WIDTH_HEIGHT, 0, CHESS_PIECES_WIDTH_HEIGHT, CHESS_PIECES_WIDTH_HEIGHT);
 		}
 		cfg.imageConfigs.emplace(buttonRsrcIds[i], imageCfg);
 		imageCfg.frames.clear();
 	}
 
 
-	imageCfg.location = getFilePath("assets/p/wheel.png");
+	imageCfg.location = getFilePath("assets/p/chessBoard.jpg");
+	imageCfg.frames.emplace_back(0, 0, CHESS_BOARD_WIDTH_HEIGHT, CHESS_BOARD_WIDTH_HEIGHT);
+	cfg.imageConfigs.emplace(TextureId::CHESS_BOARD, imageCfg);
+	imageCfg.frames.clear();
 
-	imageCfg.frames.emplace_back(0, 0, WHEEL_IMAGE_WIDTH_HEIGHT, WHEEL_IMAGE_WIDTH_HEIGHT);
-
-	cfg.imageConfigs.emplace(TextureId::WHEEL, imageCfg);
+	imageCfg.location = getFilePath("assets/p/target.png");
+	imageCfg.frames.emplace_back(0, 0, TARGET_IMG_WIDTH_HEIGHT, TARGET_IMG_WIDTH_HEIGHT);
+	cfg.imageConfigs.emplace(TextureId::TARGET, imageCfg);
 	imageCfg.frames.clear();
 
 }
@@ -110,15 +105,11 @@ static void populateMgrHandlerConfig(ManagerHandlerCfg& cfg){
 }
 
 static void populateGameConfig(GameCfg& cfg){
-	cfg.runningGrilId = TextureId::RUNNING_GIRL;
-	cfg.wheelId = TextureId::WHEEL;
+	cfg.chessBoardRsrcId = TextureId::CHESS_BOARD;
+	cfg.whitePiecesRsrcId = TextureId::WHITE_PIECES;
+	cfg.blackPiecesRsrcId = TextureId::BLACK_PIECES;
+	cfg.targetRsrcId = TextureId::TARGET;
 
-	cfg.startButtonRsrcId = TextureId::START_BUTTON;
-	cfg.stopButtonRsrcId = TextureId::STOP_BUTTON;
-
-	cfg.textFontId = FontId::ANGELINE_VINTAGE;
-
-	cfg.wheelRotateAnimTimerId = TimerId::WHEEL_ROT_ANIM_TIMER_ID;
 }
 
 EngineConfig EngineConfigLoader::loadConfig(){

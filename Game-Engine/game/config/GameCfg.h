@@ -13,15 +13,10 @@
 //Own components headers
 
 struct GameCfg{
-	int32_t wheelId;
-	int32_t runningGrilId;
-	int32_t textFontId;
-
-	int32_t startButtonRsrcId;
-	int32_t stopButtonRsrcId;
-
-	int32_t wheelRotateAnimTimerId;
-
+	int32_t chessBoardRsrcId;
+	int32_t whitePiecesRsrcId;
+	int32_t blackPiecesRsrcId;
+	int32_t targetRsrcId;
 };
 
 #endif /* GAME_CONFIG_GAMECFG_H_ */

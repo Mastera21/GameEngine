@@ -13,7 +13,7 @@
 //Forward declarations
 namespace TextureId{
 enum ResourseId{
-	 RUNNING_GIRL, WHEEL, START_BUTTON, STOP_BUTTON
+	 CHESS_BOARD, TARGET, WHITE_PIECES, BLACK_PIECES
 };
 }//namespace TextureId
 
@@ -25,7 +25,7 @@ enum FontIdKeys{
 
 namespace TimerId{
 enum Keys{
-	WHEEL_ROT_ANIM_TIMER_ID
+	Empty
 };
 }//namespace TimerId
 
