@@ -64,8 +64,8 @@ int32_t PieceHandler::populateWhitePieces([[maybe_unused]]int32_t rsrcId){
 	return EXIT_SUCCESS;
 }
 int32_t PieceHandler::populateBlackPieces([[maybe_unused]]int32_t rsrcId){
-	auto& white = _pieces[Defines::BLACK_PLAYER_ID];
-	white.resize(8);
+	auto& black = _pieces[Defines::BLACK_PLAYER_ID];
+	black.resize(8);
 
 	ChessPieceCfg pieceCfg;
 	pieceCfg.boardPos.row = BLACK_PLAYER_START_PAWN_ROW;
@@ -76,7 +76,7 @@ int32_t PieceHandler::populateBlackPieces([[maybe_unused]]int32_t rsrcId){
 
 	for(auto i = 0; i < PAWNS_COUNT; ++i){
 		pieceCfg.boardPos.col = i;
-		if(EXIT_SUCCESS != white[i].init(pieceCfg)){
+		if(EXIT_SUCCESS != black[i].init(pieceCfg)){
 			std::cerr<<"Error, _piece.init() -> black, failed\n";
 			return EXIT_FAILURE;
 		}
