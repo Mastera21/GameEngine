@@ -5,7 +5,11 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -31,7 +35,11 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Applicat
 
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/DrawMgrCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/ManagerHandlerCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../manager/include/manager/config/RsrcMgrCfg.h
@@ -79,7 +87,11 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Widget.h
@@ -92,11 +104,38 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/input/EventDef
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
 
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.cpp
+
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.cpp
+
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.cpp
 
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../manager/include/manager/drawing/Widget.h

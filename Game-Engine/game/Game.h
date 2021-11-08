@@ -11,9 +11,11 @@
 #include "game/config/GameCfg.h"
 #include "manager/drawing/Image.h"
 #include "manager/drawing/Text.h"
-#include "sdl/Event.h"
+#include "game/board/GameBoard.h"
+#include "game/pieces/types/ChessPiece.h"
 
 //Forward declarations
+struct Event;
 
 class Game {
 public:
@@ -23,7 +25,8 @@ public:
 	void handleEvent(const Event& event);
 
 private:
-
+	GameBoard _board;
+	ChessPiece _piece;
 };
 
 #endif /* GAME_GAME_H_ */

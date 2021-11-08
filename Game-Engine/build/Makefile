@@ -297,6 +297,60 @@ game/board/GameBoard.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.s
 .PHONY : game/board/GameBoard.cpp.s
 
+game/pieces/types/ChessPiece.o: game/pieces/types/ChessPiece.cpp.o
+
+.PHONY : game/pieces/types/ChessPiece.o
+
+# target to build an object file
+game/pieces/types/ChessPiece.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
+.PHONY : game/pieces/types/ChessPiece.cpp.o
+
+game/pieces/types/ChessPiece.i: game/pieces/types/ChessPiece.cpp.i
+
+.PHONY : game/pieces/types/ChessPiece.i
+
+# target to preprocess a source file
+game/pieces/types/ChessPiece.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.i
+.PHONY : game/pieces/types/ChessPiece.cpp.i
+
+game/pieces/types/ChessPiece.s: game/pieces/types/ChessPiece.cpp.s
+
+.PHONY : game/pieces/types/ChessPiece.s
+
+# target to generate assembly for a file
+game/pieces/types/ChessPiece.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.s
+.PHONY : game/pieces/types/ChessPiece.cpp.s
+
+game/utils/BoardUtils.o: game/utils/BoardUtils.cpp.o
+
+.PHONY : game/utils/BoardUtils.o
+
+# target to build an object file
+game/utils/BoardUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o
+.PHONY : game/utils/BoardUtils.cpp.o
+
+game/utils/BoardUtils.i: game/utils/BoardUtils.cpp.i
+
+.PHONY : game/utils/BoardUtils.i
+
+# target to preprocess a source file
+game/utils/BoardUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.i
+.PHONY : game/utils/BoardUtils.cpp.i
+
+game/utils/BoardUtils.s: game/utils/BoardUtils.cpp.s
+
+.PHONY : game/utils/BoardUtils.s
+
+# target to generate assembly for a file
+game/utils/BoardUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.s
+.PHONY : game/utils/BoardUtils.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -351,6 +405,12 @@ help:
 	@echo "... game/board/GameBoard.o"
 	@echo "... game/board/GameBoard.i"
 	@echo "... game/board/GameBoard.s"
+	@echo "... game/pieces/types/ChessPiece.o"
+	@echo "... game/pieces/types/ChessPiece.i"
+	@echo "... game/pieces/types/ChessPiece.s"
+	@echo "... game/utils/BoardUtils.o"
+	@echo "... game/utils/BoardUtils.i"
+	@echo "... game/utils/BoardUtils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

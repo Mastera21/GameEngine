@@ -39,6 +39,7 @@ add_executable(
 		 
 		 #For common folder
 		 ${_BASE_DIR}/common/CommonDefines.h
+		 
 
 		 #For engine folder
 		 ${_BASE_DIR}/engine/Engine.h
@@ -51,9 +52,14 @@ add_executable(
 		 ${_BASE_DIR}/game/config/GameCfg.h
 		 ${_BASE_DIR}/game/board/GameBoard.h
 		 ${_BASE_DIR}/game/board/GameBoard.cpp
+		 ${_BASE_DIR}/game/utils/BoardPos.h
+		 ${_BASE_DIR}/game/utils/BoardUtils.h
+		 ${_BASE_DIR}/game/utils/BoardUtils.cpp
 		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
-		 
+		 ${_BASE_DIR}/game/pieces/types/ChessPiece.h
+		 ${_BASE_DIR}/game/pieces/types/ChessPiece.cpp
+		 ${_BASE_DIR}/game/defines/ChessDefines.h
 		 	 
 		${_BASE_DIR}/main.cpp)
 
