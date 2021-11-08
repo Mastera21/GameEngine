@@ -49,6 +49,8 @@ add_executable(
 		 
 		 #For game folder
 		 ${_BASE_DIR}/game/config/GameCfg.h
+		 ${_BASE_DIR}/game/board/GameBoard.h
+		 ${_BASE_DIR}/game/board/GameBoard.cpp
 		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
 		 

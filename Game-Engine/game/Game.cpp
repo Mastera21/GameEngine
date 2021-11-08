@@ -1,5 +1,5 @@
 
-#include "Game.h"
+#include "game/Game.h"
 
 //C system headers
 

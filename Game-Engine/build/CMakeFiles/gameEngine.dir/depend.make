@@ -78,6 +78,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../utils/include/util
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.cpp
 CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfigLoader.h
 
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../manager/include/manager/drawing/Text.h
@@ -89,7 +90,9 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Point.
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
-CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
+
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.cpp
 
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h

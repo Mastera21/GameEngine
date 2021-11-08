@@ -79,6 +79,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o
+ ..//game/Game.h
  ..//game/config/GameCfg.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
@@ -90,7 +91,9 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ../utils/include/utils/drawing/Rectangle.h
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
- /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
+ ..//game/board/GameBoard.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
 CMakeFiles/gameEngine.dir/main.cpp.o
  ..//engine/Engine.h
  ..//game/Game.h

@@ -44,6 +44,10 @@ manager/drawing/Text.h
 sdl/Event.h
 ../game/sdl/Event.h
 
+..//game/board/GameBoard.h
+cstdint
+-
+
 ..//game/config/GameCfg.h
 cstdint
 -
@@ -313,8 +317,8 @@ engine/config/EngineConfig.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/engine/config/EngineConfig.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
-Game.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
+game/Game.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/Game.h
 string
 -
 iostream
@@ -324,17 +328,11 @@ sdl/Event.h
 utils/drawing/Color.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/drawing/Color.h
 
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.h
-cstdint
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
+game/board/GameBoard.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/board/GameBoard.h
+iostream
 -
-game/config/GameCfg.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/game/config/GameCfg.h
-manager/drawing/Image.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Image.h
-manager/drawing/Text.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/manager/drawing/Text.h
-sdl/Event.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 cstdint
