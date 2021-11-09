@@ -53,6 +53,8 @@ game/config/GameCfg.h
 ../game/board/game/config/GameCfg.h
 manager/drawing/Image.h
 ../game/board/manager/drawing/Image.h
+game/proxies/GameBoardInterface.h
+../game/board/game/proxies/GameBoardInterface.h
 
 ..//game/config/GameCfg.h
 cstdint
@@ -85,6 +87,10 @@ game/defines/ChessDefines.h
 ../game/pieces/types/game/defines/ChessDefines.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
+
+..//game/proxies/GameBoardInterface.h
+cstdint
+-
 
 ..//game/utils/BoardPos.h
 cstdint
@@ -381,6 +387,8 @@ game/board/GameBoard.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/board/GameBoard.h
 iostream
 -
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h
@@ -391,6 +399,8 @@ sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/sdl/Event.h
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/utils/BoardUtils.h
+game/proxies/GameBoardInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/proxies/GameBoardInterface.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h

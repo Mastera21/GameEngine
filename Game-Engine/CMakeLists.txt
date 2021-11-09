@@ -62,6 +62,8 @@ add_executable(
 		 ${_BASE_DIR}/game/defines/ChessDefines.h
 		 ${_BASE_DIR}/game/pieces/PieceHandler.h
 		 ${_BASE_DIR}/game/pieces/PieceHandler.cpp
+		 ${_BASE_DIR}/game/proxies/GameBoardInterface.h
+		 
 		 	 
 		${_BASE_DIR}/main.cpp)
 

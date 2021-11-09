@@ -10,6 +10,7 @@
 //Own components headers
 #include "sdl/Event.h"
 #include "game/utils/BoardUtils.h"
+#include "game/proxies/GameBoardInterface.h"
 
 namespace {
 constexpr auto STARTING_PIECES_COUNT = 16;
@@ -19,7 +20,13 @@ constexpr auto WHITE_PLAYER_START_PAWN_ROW = 6;
 constexpr auto BLACK_PLAYER_START_PAWN_ROW = 1;
 };
 
-int32_t PieceHandler::init(int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId){
+int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId){
+
+	if(gameBoardInterface == nullptr){
+		std::cerr<<"Error, gameBoardInterface is nullptr in PieceHandler.cpp\n";
+		return EXIT_FAILURE;
+	}
+	_gameBoardInterface = gameBoardInterface;
 
 	if(EXIT_SUCCESS != populateWhitePieces(whitePiecesRsrcId)){
 		std::cerr<<"Error, populateWhitePieces() failed.\n";
@@ -51,10 +58,11 @@ void PieceHandler::handlePieceGrabbedEvent(const Event& event){
 		return;
 	}
 	_isPieceGrabbed = false;
+
 	const BoardPos boardPos = BoardUtils::getBoardPos(event.pos);
 	_pieces[_selectedPiecePlayerId][_selectedPieceId].setBoardPos(boardPos);
 
-	std::cout<<"Piece is released\n";
+	_gameBoardInterface->onPieceUngrabbed();
 }
 void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 	if(event.type != TouchEvent::TOUCH_RELEASE){
@@ -69,7 +77,7 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 				_selectedPieceId = relativePieceid;
 				_selectedPiecePlayerId = currPlayerid;
 				_isPieceGrabbed = true;
-				std::cout<<"Piece is grabbed\n";
+				_gameBoardInterface->onPieceGrabbed(BoardUtils::getBoardPos(event.pos));
 				return;
 			}
 			++relativePieceid;

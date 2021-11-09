@@ -17,12 +17,12 @@
 
 int32_t Game::init(const GameCfg cfg){
 
-	if(EXIT_SUCCESS != _board.init(cfg.chessBoardRsrcId)){
+	if(EXIT_SUCCESS != _board.init(cfg.chessBoardRsrcId, cfg.targetRsrcId)){
 		std::cerr<<"_board.init() failed.\n";
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _pieceHandler.init(cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId)){
+	if(EXIT_SUCCESS != _pieceHandler.init(&_board, cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId)){
 		std::cerr<<"_pieceHandler.init() failed.\n";
 		return EXIT_FAILURE;
 	}

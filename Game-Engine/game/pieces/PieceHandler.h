@@ -14,15 +14,18 @@
 #include "game/pieces/types/ChessPiece.h"
 //Forward declarations
 struct Event;
+struct GameBoardInterface;
 
 class PieceHandler {
 public:
-	int32_t init(int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId);
+	int32_t init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId);
 	void draw();
 	void handleEvent(const Event& event);
 
 private:
 	using PlayerPieces = std::vector<ChessPiece>;
+
+	GameBoardInterface* _gameBoardInterface = nullptr;
 
 	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 	int32_t _selectedPieceId = 0;
