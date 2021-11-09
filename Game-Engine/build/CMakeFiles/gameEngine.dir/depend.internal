@@ -21,6 +21,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/SDLLoader.h
  ../sdl/include/sdl/config/ImageContainerCfg.h
@@ -55,6 +57,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
  ../manager/include/manager/managers/TimerMgr.h
+ ../manager/include/manager/time/TimerClient.h
  ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../sdl/include/sdl/MonitorWindow.h
@@ -102,6 +105,8 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h
@@ -117,6 +122,8 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  ..//game/utils/BoardUtils.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Widget.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
@@ -170,6 +177,8 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ../manager/include/manager/drawing/Widget.h
  ../manager/include/manager/managers/ManagerHandler.h
  ../manager/include/manager/managers/MgrBase.h
+ ../manager/include/manager/time/TimerClient.h
+ ../manager/include/manager/time/TimerData.h
  ../sdl/include/sdl/Event.h
  ../utils/include/utils/drawing/Color.h
  ../utils/include/utils/drawing/DrawParams.h

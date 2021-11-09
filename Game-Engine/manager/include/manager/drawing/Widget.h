@@ -23,6 +23,7 @@ public:
 
 	double getRotation() const;
 	bool containsPoint(const Point& pos) const;
+	bool isVisible() const;
 
 	void draw();
 	void reset();

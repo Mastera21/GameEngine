@@ -33,6 +33,9 @@ bool Widget::containsPoint(const Point& pos) const{
 	const Rectangle bound(_drawParams.pos.x, _drawParams.pos.y, _drawParams.width, _drawParams.height);
 	return bound.isPointInside(pos);
 }
+bool Widget::isVisible() const{
+	return _isVisible;
+}
 
 void Widget::draw(){
 	if(_isVisible){

@@ -17,6 +17,7 @@ struct GameCfg{
 	int32_t whitePiecesRsrcId;
 	int32_t blackPiecesRsrcId;
 	int32_t targetRsrcId;
+	int32_t blinkTargetId;
 };
 
 #endif /* GAME_CONFIG_GAMECFG_H_ */

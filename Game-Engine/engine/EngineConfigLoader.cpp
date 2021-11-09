@@ -109,6 +109,7 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.whitePiecesRsrcId = TextureId::WHITE_PIECES;
 	cfg.blackPiecesRsrcId = TextureId::BLACK_PIECES;
 	cfg.targetRsrcId = TextureId::TARGET;
+	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 
 }
 

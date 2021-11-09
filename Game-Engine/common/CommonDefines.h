@@ -25,7 +25,7 @@ enum FontIdKeys{
 
 namespace TimerId{
 enum Keys{
-	Empty
+	BLINK_TARGET_TIMER_ID
 };
 }//namespace TimerId
 

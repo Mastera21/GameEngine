@@ -55,6 +55,8 @@ manager/drawing/Image.h
 ../game/board/manager/drawing/Image.h
 game/proxies/GameBoardInterface.h
 ../game/board/game/proxies/GameBoardInterface.h
+manager/time/TimerClient.h
+../game/board/manager/time/TimerClient.h
 
 ..//game/config/GameCfg.h
 cstdint
@@ -175,6 +177,14 @@ manager/time/TimerData.h
 ../manager/include/manager/managers/manager/time/TimerData.h
 utils/time/Time.h
 ../manager/include/manager/managers/utils/time/Time.h
+
+../manager/include/manager/time/TimerClient.h
+map
+-
+set
+-
+manager/time/TimerData.h
+../manager/include/manager/time/manager/time/TimerData.h
 
 ../manager/include/manager/time/TimerData.h
 cstdint
