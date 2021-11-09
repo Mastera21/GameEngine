@@ -19,6 +19,8 @@ game/Game.h
 ../engine/game/Game.h
 manager/managers/ManagerHandler.h
 ../engine/manager/managers/ManagerHandler.h
+manager/debug/Console.h
+../engine/manager/debug/Console.h
 
 ..//engine/EngineConfigLoader.h
 engine/config/EngineConfig.h
@@ -125,6 +127,12 @@ sdl/containers/ImageContainer.h
 ../manager/include/manager/config/sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/config/sdl/containers/TextContainer.h
+
+../manager/include/manager/debug/Console.h
+cstdint
+-
+manager/drawing/Text.h
+../manager/include/manager/debug/manager/drawing/Text.h
 
 ../manager/include/manager/drawing/Image.h
 cstdint
@@ -359,6 +367,8 @@ game/Game.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/game/Game.h
 manager/managers/ManagerHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/managers/ManagerHandler.h
+manager/debug/Console.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/manager/debug/Console.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp
 EngineConfigLoader.h

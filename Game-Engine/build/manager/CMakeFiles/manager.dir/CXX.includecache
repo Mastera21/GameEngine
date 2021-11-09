@@ -32,6 +32,12 @@ sdl/containers/ImageContainer.h
 sdl/containers/TextContainer.h
 ../manager/include/manager/config/sdl/containers/TextContainer.h
 
+../manager/include/manager/debug/Console.h
+cstdint
+-
+manager/drawing/Text.h
+../manager/include/manager/debug/manager/drawing/Text.h
+
 ../manager/include/manager/drawing/Image.h
 cstdint
 -
@@ -217,6 +223,16 @@ iostream
 -
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/buttonBase/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/debug/Console.cpp
+manager/debug/Console.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/debug/manager/debug/Console.h
+iostream
+-
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/debug/sdl/Event.h
+utils/drawing/Color.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/debug/utils/drawing/Color.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/manager/src/drawing/Image.cpp
 manager/drawing/Image.h

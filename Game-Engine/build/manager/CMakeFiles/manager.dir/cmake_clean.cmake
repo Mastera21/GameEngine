@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/manager.dir/src/drawing/Text.cpp.o"
   "CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o"
   "CMakeFiles/manager.dir/src/time/TimerClient.cpp.o"
+  "CMakeFiles/manager.dir/src/debug/Console.cpp.o"
   "libmanager.pdb"
   "libmanager.a"
 )

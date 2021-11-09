@@ -11,6 +11,17 @@ manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o: ../utils/include
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o: ../utils/include/utils/input/EventDefines.h
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.o: ../manager/src/buttonBase/ButtonBase.cpp
 
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../manager/include/manager/debug/Console.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../manager/include/manager/drawing/Text.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../manager/include/manager/drawing/Widget.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../sdl/include/sdl/Event.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../utils/include/utils/drawing/Color.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../utils/include/utils/drawing/Point.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../utils/include/utils/input/EventDefines.h
+manager/CMakeFiles/manager.dir/src/debug/Console.cpp.o: ../manager/src/debug/Console.cpp
+
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/drawing/Image.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/drawing/Widget.h
 manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.o: ../manager/include/manager/managers/MgrBase.h

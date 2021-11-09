@@ -19,6 +19,7 @@ add_library(
 		 ${_INC_DIR}/managers/RsrcMgr.h
 		 ${_INC_DIR}/managers/ManagerHandler.h
 		 ${_INC_DIR}/managers/TimerMgr.h
+		 ${_INC_DIR}/debug/Console.h
 		 ${_INC_DIR}/drawing/Widget.h
 		 ${_INC_DIR}/drawing/Image.h
 		 ${_INC_DIR}/drawing/Text.h
@@ -37,6 +38,7 @@ add_library(
 		 ${_SRC_DIR}/drawing/Text.cpp
 		 ${_SRC_DIR}/buttonBase/ButtonBase.cpp
 		 ${_SRC_DIR}/time/TimerClient.cpp
+		 ${_SRC_DIR}/debug/Console.cpp
 )
 		 
 set_target_cpp_standard(${PROJECT_NAME} 17)

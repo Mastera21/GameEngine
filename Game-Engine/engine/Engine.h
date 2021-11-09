@@ -10,6 +10,7 @@
 #include "sdl/Event.h"
 #include "game/Game.h"
 #include "manager/managers/ManagerHandler.h"
+#include "manager/debug/Console.h"
 
 //Forward declarations
 struct EngineConfig;
@@ -24,6 +25,7 @@ private:
 	Event _event;
 	Game _game;
 	ManagerHandler _managerHandler;
+	Console _consol;
 
 	void drawFrame();
 	bool processFrame();

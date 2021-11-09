@@ -27,6 +27,8 @@ public:
 	bool isActiveTimerId(int32_t timerId) const;
 	void onInitEnd();
 
+	size_t getActiveTimersCount() const;
+
 private:
 	Time _elapsedTime;
 	std::map<int32_t, TimerData> _timerMap;

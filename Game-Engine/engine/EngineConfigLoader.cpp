@@ -117,5 +117,6 @@ EngineConfig EngineConfigLoader::loadConfig(){
 	EngineConfig cfg;
 	populateMgrHandlerConfig(cfg.managerHandlerCfg);
 	populateGameConfig(cfg.gameCfg);
+	cfg.gameCfg.fpsId = FontId::ANGELINE_VINTAGE;
 	return cfg;
 }

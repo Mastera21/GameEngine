@@ -25,8 +25,12 @@ int32_t DrawMgr::init(const DrawMgrCfg& cfg){
 		std::cerr<<"_render.init() failed" << std::endl;
 		return EXIT_FAILURE;
 	}
-
+	_maxFrames = cfg.maxFrameRate;
 	return EXIT_SUCCESS;
+}
+
+int64_t DrawMgr::getMaxFrams() const{
+	return _maxFrames;
 }
 
 void DrawMgr::deinit(){

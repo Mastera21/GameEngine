@@ -36,6 +36,11 @@ int32_t Engine::init(const EngineConfig& cfg){
 		return EXIT_FAILURE;
 	}
 
+	if(EXIT_SUCCESS != _consol.init(cfg.managerHandlerCfg.drawMgrCfg.maxFrameRate, cfg.gameCfg.fpsId)){
+		std::cerr<<"_consol.init() failed" << std::endl;
+		return EXIT_FAILURE;
+	}
+
 	gTimerMgr->onInitEnd();
 	return EXIT_SUCCESS;
 }
@@ -55,8 +60,12 @@ void Engine::main(){
 		if(wantToExit){
 			break;
 		}
+		const auto elapstTime = time.getElapsed().toMicroseconds();
+		if(_consol.isActive()){
+			_consol.update(elapstTime, gTimerMgr->getActiveTimersCount());
+		}
 
-		limitFPS(time.getElapsed().toMicroseconds());
+		limitFPS(elapstTime);
 	}
 }
 
@@ -64,9 +73,11 @@ void Engine::drawFrame(){
 	gDrawMgr->clearScreen();
 
 	_game.draw();
+	if(_consol.isActive()){
+		_consol.draw();
+	}
 
 	gDrawMgr->finishFrame();
-
 }
 bool Engine::processFrame(){
 	_managerHandler.process();
@@ -83,11 +94,11 @@ bool Engine::processFrame(){
 }
 void Engine::handleEvent(){
 	_game.handleEvent(_event);
+	_consol.handleEvent(_event);
 }
 void Engine::limitFPS(int64_t elapsedTimeMicroSeconds){
-	constexpr auto maxFrames = 60;
 	constexpr auto microSecondsInASecond = 1000000;
-	constexpr auto microSecondsPerFrame = microSecondsInASecond / maxFrames;
+	const auto microSecondsPerFrame = microSecondsInASecond / gDrawMgr->getMaxFrams();
 	const int64_t sleepDurationMicroSeconds = microSecondsPerFrame - elapsedTimeMicroSeconds;
 	if(sleepDurationMicroSeconds > 0){
 		Threading::sleepFor(sleepDurationMicroSeconds);

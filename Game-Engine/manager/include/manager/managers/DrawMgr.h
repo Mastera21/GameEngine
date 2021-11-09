@@ -24,6 +24,7 @@ public:
 	DrawMgr& operator=(DrawMgr&& other) = delete;
 
 	int32_t init(const DrawMgrCfg& cfg);
+	int64_t getMaxFrams() const;
 
 	void deinit() final;
 	void process() final;

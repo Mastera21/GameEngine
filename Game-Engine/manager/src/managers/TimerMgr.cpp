@@ -46,6 +46,10 @@ void TimerMgr::startTimer(int32_t timerId, const TimerData& data){
 	_timerMap.emplace(timerId, data);
 }
 
+size_t TimerMgr::getActiveTimersCount() const{
+	return _timerMap.size();
+}
+
 void TimerMgr::stopTimer(int32_t timerId){
 	if(!isActiveTimerId(timerId)){
 		std::cerr<< "Error, trying to stop an non existing timer with Id: "<< timerId <<"\n";
