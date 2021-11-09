@@ -11,6 +11,10 @@
 
 void TimerClient::startTimer(int64_t interval, int32_t timerId, TimerType timerType){
 
+	if(!gTimerMgr){
+		return;
+	}
+
 	constexpr auto minTimerInterval = 20;//ms
 
 	if(interval < minTimerInterval){
@@ -23,6 +27,10 @@ void TimerClient::startTimer(int64_t interval, int32_t timerId, TimerType timerT
 	gTimerMgr->startTimer(timerId, data);
 }
 void TimerClient::stopTimer(int32_t timerId){
+	if(!gTimerMgr){
+		return;
+	}
+
 	gTimerMgr->stopTimer(timerId);
 }
 bool TimerClient::isActiveTimerId(int32_t timerId) const{

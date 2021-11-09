@@ -19,6 +19,8 @@ int32_t TimerMgr::init(){
 }
 
 void TimerMgr::process(){
+	removeTimersInternal();
+
 	const int64_t msElapsed = _elapsedTime.getElapsed().toMilliseconds();
 
 	for (auto it = _timerMap.begin(); it != _timerMap.end(); ++it) {
