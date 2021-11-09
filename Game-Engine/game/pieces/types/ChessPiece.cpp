@@ -10,6 +10,7 @@
 
 //Own components headers
 #include "game/utils/BoardUtils.h"
+#include "sdl/Event.h"
 
 int32_t ChessPiece::init(const ChessPieceCfg& cfg){
 	if(cfg.pieceType == PieceType::UNKNOWN){
@@ -35,8 +36,8 @@ void ChessPiece::draw(){
 	_pieceImg.draw();
 }
 
-void ChessPiece::handleEvent([[maybe_unused]]const Event& event){
-
+bool ChessPiece::selectFigure(const Event& event) const{
+	return _pieceImg.containsPoint(event.pos);
 }
 BoardPos ChessPiece::getBoardPos() const{
 	return _boardPos;

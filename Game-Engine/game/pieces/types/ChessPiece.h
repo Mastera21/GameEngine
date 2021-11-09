@@ -26,7 +26,7 @@ class ChessPiece {
 public:
 	int32_t init(const ChessPieceCfg& cfg);
 	void draw();
-	void handleEvent(const Event& event);
+	bool selectFigure(const Event& event) const;
 
 	BoardPos getBoardPos() const;
 	void setBoardPos(const BoardPos& pos);

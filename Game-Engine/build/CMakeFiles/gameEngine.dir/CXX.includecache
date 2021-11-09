@@ -387,6 +387,10 @@ game/pieces/PieceHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandler.h
 iostream
 -
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/sdl/Event.h
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h
@@ -397,6 +401,8 @@ iostream
 -
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/BoardUtils.cpp
 game/utils/BoardUtils.h

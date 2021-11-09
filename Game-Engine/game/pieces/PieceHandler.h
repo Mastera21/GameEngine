@@ -22,7 +22,6 @@ public:
 	void handleEvent(const Event& event);
 
 private:
-
 	using PlayerPieces = std::vector<ChessPiece>;
 
 	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
@@ -32,6 +31,9 @@ private:
 
 	int32_t populateWhitePieces(int32_t rsrcId);
 	int32_t populateBlackPieces(int32_t rsrcId);
+
+	void handlePieceGrabbedEvent(const Event& event);
+	void handlePieceUngrabbedEvent(const Event& event);
 };
 
 #endif /* GAME_PIECES_PIECEHANDLER_H_ */
