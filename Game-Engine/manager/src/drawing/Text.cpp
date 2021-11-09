@@ -45,6 +45,9 @@ void Text::destroy(){
 	}
 	_isCreated = false;
 	_isDestroyed = true;
+
+	gRsrcMgr->unloadText(_drawParams.textId);
+
 	Widget::reset();
 }
 void Text::setText(const std::string& text){
