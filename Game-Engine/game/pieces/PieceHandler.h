@@ -19,12 +19,11 @@ struct GameBoardInterface;
 
 class PieceHandler {
 public:
-	int32_t init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId);
+	int32_t init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId);
 	void draw();
 	void handleEvent(const Event& event);
 
 private:
-	using PlayerPieces = std::vector<ChessPiece>;
 	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 
 	GameBoardInterface* _gameBoardInterface = nullptr;

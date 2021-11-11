@@ -116,6 +116,8 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.targetRsrcId = TextureId::TARGET;
 	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 	cfg.moveTailId = TextureId::MOVE_TAIL;
+	cfg.unfinishedPieceFontId = FontId::ANGELINE_VINTAGE;
+
 }
 
 EngineConfig EngineConfigLoader::loadConfig(){

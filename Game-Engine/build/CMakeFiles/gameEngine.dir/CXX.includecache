@@ -91,8 +91,8 @@ array
 -
 vector
 -
-game/defines/ChessDefines.h
-../game/pieces/game/defines/ChessDefines.h
+memory
+-
 game/pieces/types/ChessPiece.h
 ../game/pieces/game/pieces/types/ChessPiece.h
 
@@ -105,6 +105,14 @@ game/defines/ChessDefines.h
 ../game/pieces/types/game/defines/ChessDefines.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
+
+..//game/pieces/types/UnfinishedPiece.h
+cstdint
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+manager/drawing/Text.h
+../game/pieces/types/manager/drawing/Text.h
 
 ..//game/proxies/GameBoardInterface.h
 cstdint
@@ -441,6 +449,8 @@ game/pieces/PieceHandlerPopulator.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandlerPopulator.h
 iostream
 -
+game/pieces/types/UnfinishedPiece.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/UnfinishedPiece.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h
@@ -453,6 +463,14 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/UnfinishedPiece.cpp
+game/pieces/types/UnfinishedPiece.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/UnfinishedPiece.h
+iostream
+-
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/utils/BoardUtils.cpp
 game/utils/BoardUtils.h

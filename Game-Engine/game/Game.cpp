@@ -22,7 +22,7 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _pieceHandler.init(&_board, cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId)){
+	if(EXIT_SUCCESS != _pieceHandler.init(&_board, cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId, cfg.unfinishedPieceFontId)){
 		std::cerr<<"_pieceHandler.init() failed.\n";
 		return EXIT_FAILURE;
 	}

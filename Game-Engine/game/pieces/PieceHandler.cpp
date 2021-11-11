@@ -12,7 +12,7 @@
 #include "game/utils/BoardUtils.h"
 #include "game/proxies/GameBoardInterface.h"
 
-int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId){
+int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId){
 
 	if(gameBoardInterface == nullptr){
 		std::cerr<<"Error, gameBoardInterface is nullptr in PieceHandler.cpp\n";
@@ -20,7 +20,7 @@ int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t white
 	}
 	_gameBoardInterface = gameBoardInterface;
 
-	if(EXIT_SUCCESS != PieceHandlerPopulator::init(whitePiecesRsrcId, blackPiecesRsrcId, _pieces)){
+	if(EXIT_SUCCESS != PieceHandlerPopulator::init(whitePiecesRsrcId, blackPiecesRsrcId, unfinishedPieceFontId, _pieces)){
 		std::cerr<<"Error, PieceHandlerPopulator::init -> PieceHandler.cpp\n";
 		return EXIT_FAILURE;
 	}
@@ -30,7 +30,7 @@ int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t white
 void PieceHandler::draw(){
 	for(auto& i : _pieces){
 		for(auto& piece : i){
-			piece.draw();
+			piece->draw();
 		}
 	}
 }
@@ -48,7 +48,7 @@ void PieceHandler::handlePieceGrabbedEvent(const Event& event){
 	_isPieceGrabbed = false;
 
 	const BoardPos boardPos = BoardUtils::getBoardPos(event.pos);
-	_pieces[_selectedPiecePlayerId][_selectedPieceId].setBoardPos(boardPos);
+	_pieces[_selectedPiecePlayerId][_selectedPieceId]->setBoardPos(boardPos);
 
 	_gameBoardInterface->onPieceUngrabbed();
 }
@@ -61,7 +61,7 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 	for(const auto& i : _pieces){
 		int32_t relativePieceid = 0;
 		for(const auto& piece : i){
-			if(piece.selectFigure(event)){
+			if(piece->selectFigure(event)){
 				_selectedPieceId = relativePieceid;
 				_selectedPiecePlayerId = currPlayerid;
 				_isPieceGrabbed = true;

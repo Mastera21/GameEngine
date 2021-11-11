@@ -152,9 +152,12 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/pieces/PieceHa
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/UnfinishedPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../manager/include/manager/drawing/Text.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/Color.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/Rectangle.h
@@ -172,6 +175,20 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/u
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.cpp
+
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/UnfinishedPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../manager/include/manager/drawing/Text.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/include/utils/drawing/Color.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/UnfinishedPiece.cpp
 
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.h

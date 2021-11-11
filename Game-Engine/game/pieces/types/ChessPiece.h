@@ -17,6 +17,8 @@ struct ChessPieceCfg{
 	int32_t playerId {};
 	int32_t rsrcId = INVALID_RSRC_ID;
 	PieceType pieceType = PieceType::UNKNOWN;
+
+	int32_t unfinishedPieceFontId;
 };
 
 //Forward declarations
@@ -24,16 +26,20 @@ struct Event;
 
 class ChessPiece {
 public:
-	int32_t init(const ChessPieceCfg& cfg);
-	void draw();
+
+    virtual ~ChessPiece() = default;
+
+	virtual int32_t init(const ChessPieceCfg& cfg);
+	virtual void draw();
+	virtual void setBoardPos(const BoardPos& pos);
+
 	bool selectFigure(const Event& event) const;
 
 	BoardPos getBoardPos() const;
-	void setBoardPos(const BoardPos& pos);
 
 	int32_t getPlayerId() const;
 
-private:
+protected:
 	Image _pieceImg;
 	BoardPos _boardPos;
 	int32_t _playerId;
