@@ -5,6 +5,7 @@
 
 //C++ system headers
 #include <cstdint>
+
 //Other libraries headers
 
 //Own components headers
@@ -16,6 +17,18 @@ enum PlayerId {
   WHITE_PLAYER_ID, BLACK_PLAYER_ID,
 
   PLAYERS_COUNT
+};
+
+enum Direction {
+  UP_LEFT,
+  UP,
+  UP_RIGHT,
+  RIGHT,
+  DOWN_RIGHT,
+  DOWN,
+  DOWN_LEFT,
+  LEFT,
+  DIRECTION_COUNT
 };
 }
 

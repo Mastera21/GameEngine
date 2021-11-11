@@ -70,6 +70,16 @@ unordered_map
 cstdint
 -
 
+..//game/defines/ChessStructs.h
+cstdint
+-
+vector
+-
+game/defines/ChessDefines.h
+../game/defines/game/defines/ChessDefines.h
+game/utils/BoardPos.h
+../game/defines/game/utils/BoardPos.h
+
 ..//game/interfaces/GameBoardInterface.h
 cstdint
 -
@@ -93,25 +103,29 @@ cstdint
 -
 array
 -
-vector
--
-memory
--
 game/pieces/types/ChessPiece.h
 ../game/pieces/game/pieces/types/ChessPiece.h
 
 ..//game/pieces/types/ChessPiece.h
 cstdint
 -
-game/utils/BoardPos.h
-../game/pieces/types/game/utils/BoardPos.h
+vector
+-
+memory
+-
 game/defines/ChessDefines.h
 ../game/pieces/types/game/defines/ChessDefines.h
+game/defines/ChessStructs.h
+../game/pieces/types/game/defines/ChessStructs.h
+game/utils/BoardPos.h
+../game/pieces/types/game/utils/BoardPos.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
 
 ..//game/pieces/types/UnfinishedPiece.h
 cstdint
+-
+vector
 -
 game/pieces/types/ChessPiece.h
 ../game/pieces/types/game/pieces/types/ChessPiece.h

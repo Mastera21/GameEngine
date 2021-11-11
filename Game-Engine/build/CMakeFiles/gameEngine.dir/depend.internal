@@ -9,6 +9,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
@@ -45,6 +46,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
@@ -102,6 +104,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
@@ -135,6 +138,7 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
@@ -151,6 +155,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/pieces/types/UnfinishedPiece.h
@@ -165,6 +170,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ..//game/utils/BoardUtils.h
@@ -178,6 +184,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/pieces/types/UnfinishedPiece.h
  ..//game/utils/BoardPos.h
@@ -202,6 +209,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h

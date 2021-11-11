@@ -8,6 +8,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/pieces/PieceHandler.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/pieces/PieceHandlerPopulator.h
@@ -44,6 +45,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/pieces/PieceHandler.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/pieces/PieceHandlerPopulator.h
@@ -101,6 +103,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/pieces/PieceHandler.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/pieces/PieceHandlerPopulator.h
@@ -134,6 +137,7 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/dra
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/pieces/PieceHandler.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/pieces/PieceHandlerPopulator.h
@@ -150,6 +154,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../utils/include/utils
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/pieces/PieceHandler.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/UnfinishedPiece.h
@@ -164,6 +169,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/incl
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/utils/BoardUtils.h
@@ -177,6 +183,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/u
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/UnfinishedPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/utils/BoardPos.h
@@ -201,6 +208,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/pieces/PieceHandler.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/pieces/PieceHandlerPopulator.h

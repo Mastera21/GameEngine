@@ -24,7 +24,7 @@ public:
 	void handleEvent(const Event& event);
 
 private:
-	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
+	std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 
 	GameBoardInterface* _gameBoardInterface = nullptr;
 

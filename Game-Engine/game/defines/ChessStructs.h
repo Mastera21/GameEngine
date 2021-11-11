@@ -8,8 +8,8 @@
 //Other libraries headers
 
 //Own components headers
-#include "game/utils/BoardPos.h"
 #include "game/defines/ChessDefines.h"
+#include "game/utils/BoardPos.h"
 //Forward declarations
 
 struct TileData {

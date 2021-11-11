@@ -5,11 +5,14 @@
 
 //C++ system headers
 #include <cstdint>
+#include <vector>
+#include <memory>
 //Other libraries headers
 
 //Own components headers
-#include "game/utils/BoardPos.h"
 #include "game/defines/ChessDefines.h"
+#include "game/defines/ChessStructs.h"
+#include "game/utils/BoardPos.h"
 #include "manager/drawing/Image.h"
 
 struct ChessPieceCfg{
@@ -26,12 +29,15 @@ struct Event;
 
 class ChessPiece {
 public:
+	using PlayerPieces = std::vector<std::unique_ptr<ChessPiece>>;
 
     virtual ~ChessPiece() = default;
 
 	virtual int32_t init(const ChessPieceCfg& cfg);
 	virtual void draw();
 	virtual void setBoardPos(const BoardPos& pos);
+	virtual std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const = 0;
+
 
 	bool selectFigure(const Event& event) const;
 

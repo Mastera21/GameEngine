@@ -30,3 +30,7 @@ void UnfinishedPiece::setBoardPos(const BoardPos& pos) {
 	const auto pieceAbsPos = BoardUtils::getAbsPos(_boardPos);
 	_notReadyText.setPos(pieceAbsPos);
 }
+
+std::vector<TileData> UnfinishedPiece::getMoveTiles([[maybe_unused]]const std::array<PlayerPieces, Defines::PLAYERS_COUNT>& activePieces) const {
+	 return std::vector<TileData> { };
+}

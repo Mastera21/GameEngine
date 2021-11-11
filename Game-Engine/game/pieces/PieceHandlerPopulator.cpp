@@ -16,7 +16,7 @@ constexpr auto PAWNS_COUNT = 8;
 constexpr auto WHITE_PLAYER_START_PAWN_ROW = 6;
 constexpr auto BLACK_PLAYER_START_PAWN_ROW = 1;
 
-int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, PlayerPieces& white){
+int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, ChessPiece::PlayerPieces& white){
 	white.reserve(STARTING_PIECES_COUNT);
 
 	for(auto i = 0; i < STARTING_PIECES_COUNT; ++i){
@@ -55,7 +55,7 @@ int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Playe
 	}
 	return EXIT_SUCCESS;
 }
-int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, PlayerPieces& black){
+int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, ChessPiece::PlayerPieces& black){
 	black.reserve(STARTING_PIECES_COUNT);
 
 	for(auto i = 0; i < STARTING_PIECES_COUNT; ++i){
@@ -97,7 +97,7 @@ int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Playe
 }
 
 int32_t PieceHandlerPopulator::init(int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId,
-									std::array<PlayerPieces,Defines::PLAYERS_COUNT>& outPieces){
+									std::array<ChessPiece::PlayerPieces,Defines::PLAYERS_COUNT>& outPieces){
 	auto& white = outPieces[Defines::WHITE_PLAYER_ID];
 	if(EXIT_SUCCESS != populateWhitePieces(whitePiecesRsrcId, unfinishedPieceFontId, white)){
 		std::cerr<<"Error, populateWhitePieces() failed.\n";

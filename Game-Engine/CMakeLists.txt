@@ -55,18 +55,19 @@ add_executable(
 		 ${_BASE_DIR}/game/utils/BoardPos.h
 		 ${_BASE_DIR}/game/utils/BoardUtils.h
 		 ${_BASE_DIR}/game/utils/BoardUtils.cpp
-		 ${_BASE_DIR}/game/Game.h
-		 ${_BASE_DIR}/game/Game.cpp
 		 ${_BASE_DIR}/game/pieces/types/ChessPiece.h
 		 ${_BASE_DIR}/game/pieces/types/ChessPiece.cpp
 		 ${_BASE_DIR}/game/pieces/types/UnfinishedPiece.h
 		 ${_BASE_DIR}/game/pieces/types/UnfinishedPiece.cpp
 		 ${_BASE_DIR}/game/defines/ChessDefines.h
+		 ${_BASE_DIR}/game/defines/ChessStructs.h
 		 ${_BASE_DIR}/game/pieces/PieceHandler.h
 		 ${_BASE_DIR}/game/pieces/PieceHandler.cpp
 		 ${_BASE_DIR}/game/pieces/PieceHandlerPopulator.h
 		 ${_BASE_DIR}/game/pieces/PieceHandlerPopulator.cpp
 		 ${_BASE_DIR}/game/interfaces/GameBoardInterface.h
+		 ${_BASE_DIR}/game/Game.h
+		 ${_BASE_DIR}/game/Game.cpp
 		 
 		 	 
 		${_BASE_DIR}/main.cpp)

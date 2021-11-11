@@ -5,7 +5,7 @@
 
 //C++ system headers
 #include <cstdint>
-
+#include <vector>
 //Other libraries headers
 
 //Own components headers
@@ -18,6 +18,9 @@ public:
 	int32_t init(const ChessPieceCfg& cfg) final;
 	void draw() final;
 	void setBoardPos(const BoardPos& pos) final;
+
+	std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT>& activePieces) const final;
+
 private:
 	Text _notReadyText;
 };
