@@ -6,12 +6,13 @@
 
 //C++ system headers
 #include <cstdint>
+
+#include "game/interfaces/GameBoardInterface.h"
 //Other libraries headers
 
 //Own components headers
 #include "game/config/GameCfg.h"
 #include "manager/drawing/Image.h"
-#include "game/proxies/GameBoardInterface.h"
 #include "manager/time/TimerClient.h"
 //Forward declarations
 

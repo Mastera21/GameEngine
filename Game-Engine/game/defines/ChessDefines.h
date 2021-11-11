@@ -19,6 +19,10 @@ enum PlayerId {
 };
 }
 
+enum class TileType : uint8_t {
+  MOVE, GUARD, TAKE
+};
+
 enum class PieceType : uint8_t {
   KING, QUEEN, BISHOP, KNIGHT, ROOK, PAWN, UNKNOWN
 };

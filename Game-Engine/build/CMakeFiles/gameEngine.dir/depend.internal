@@ -9,10 +9,10 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
- ..//game/proxies/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
@@ -45,10 +45,10 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
- ..//game/proxies/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
@@ -102,10 +102,10 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
- ..//game/proxies/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
@@ -122,7 +122,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
- ..//game/proxies/GameBoardInterface.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ..//game/utils/BoardUtils.h
  ../manager/include/manager/drawing/Image.h
@@ -135,10 +135,10 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
- ..//game/proxies/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ..//game/utils/BoardUtils.h
  ../manager/include/manager/drawing/Image.h
@@ -202,10 +202,10 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/board/GameBoard.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameBoardInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
- ..//game/proxies/GameBoardInterface.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/debug/Console.h
  ../manager/include/manager/drawing/Image.h

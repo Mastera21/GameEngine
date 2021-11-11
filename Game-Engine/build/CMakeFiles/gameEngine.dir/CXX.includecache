@@ -51,12 +51,12 @@ game/pieces/PieceHandler.h
 ..//game/board/GameBoard.h
 cstdint
 -
+game/interfaces/GameBoardInterface.h
+../game/board/game/interfaces/GameBoardInterface.h
 game/config/GameCfg.h
 ../game/board/game/config/GameCfg.h
 manager/drawing/Image.h
 ../game/board/manager/drawing/Image.h
-game/proxies/GameBoardInterface.h
-../game/board/game/proxies/GameBoardInterface.h
 manager/time/TimerClient.h
 ../game/board/manager/time/TimerClient.h
 
@@ -67,6 +67,10 @@ unordered_map
 -
 
 ..//game/defines/ChessDefines.h
+cstdint
+-
+
+..//game/interfaces/GameBoardInterface.h
 cstdint
 -
 
@@ -113,10 +117,6 @@ game/pieces/types/ChessPiece.h
 ../game/pieces/types/game/pieces/types/ChessPiece.h
 manager/drawing/Text.h
 ../game/pieces/types/manager/drawing/Text.h
-
-..//game/proxies/GameBoardInterface.h
-cstdint
--
 
 ..//game/utils/BoardPos.h
 cstdint
@@ -437,12 +437,12 @@ game/pieces/PieceHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandler.h
 iostream
 -
+game/interfaces/GameBoardInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/interfaces/GameBoardInterface.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/sdl/Event.h
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/utils/BoardUtils.h
-game/proxies/GameBoardInterface.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/proxies/GameBoardInterface.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp
 game/pieces/PieceHandlerPopulator.h

@@ -5,12 +5,12 @@
 //C++ system headers
 #include <iostream>
 
+#include "game/interfaces/GameBoardInterface.h"
 //Other libraries headers
 
 //Own components headers
 #include "sdl/Event.h"
 #include "game/utils/BoardUtils.h"
-#include "game/proxies/GameBoardInterface.h"
 
 int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId){
 
