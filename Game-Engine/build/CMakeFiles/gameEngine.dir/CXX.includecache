@@ -143,6 +143,8 @@ game/utils/BoardPos.h
 ../game/utils/game/utils/BoardPos.h
 utils/drawing/Point.h
 ../game/utils/utils/drawing/Point.h
+game/pieces/types/ChessPiece.h
+../game/utils/game/pieces/types/ChessPiece.h
 
 ../manager/include/manager/config/DrawMgrCfg.h
 cstdint

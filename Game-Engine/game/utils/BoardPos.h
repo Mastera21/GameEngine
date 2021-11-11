@@ -15,6 +15,10 @@ struct BoardPos{
 	BoardPos() = default;
 	BoardPos(int32_t inputRow, int32_t inputCol) : row(inputRow), col(inputCol){}
 
+	bool operator==(const BoardPos& other) const {
+		return row == other.row && col == other.col;
+	}
+
 	int32_t row = 0;
 	int32_t col = 0;
 };

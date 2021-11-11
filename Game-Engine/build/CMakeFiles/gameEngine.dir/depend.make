@@ -124,7 +124,10 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
 
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/config/GameCfg.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/interfaces/GameBoardInterface.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/utils/BoardUtils.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../manager/include/manager/drawing/Image.h
@@ -197,8 +200,14 @@ CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/incl
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/UnfinishedPiece.cpp
 
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/defines/ChessStructs.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../utils/include/utils/drawing/DrawParams.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.cpp
