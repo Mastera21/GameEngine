@@ -122,6 +122,12 @@ game/utils/BoardPos.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
 
+..//game/pieces/types/Rook.h
+cstdint
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+
 ..//game/pieces/types/UnfinishedPiece.h
 cstdint
 -
@@ -479,6 +485,14 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Rook.cpp
+game/pieces/types/Rook.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/Rook.h
+string
+-
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/UnfinishedPiece.cpp
 game/pieces/types/UnfinishedPiece.h

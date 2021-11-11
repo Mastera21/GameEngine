@@ -185,6 +185,18 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/u
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/pieces/types/ChessPiece.cpp
 
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/defines/ChessStructs.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/pieces/types/Rook.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/pieces/types/Rook.cpp
+
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o: ../game/pieces/types/ChessPiece.h
