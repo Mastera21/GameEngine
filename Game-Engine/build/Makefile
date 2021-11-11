@@ -324,6 +324,33 @@ game/pieces/PieceHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.s
 .PHONY : game/pieces/PieceHandler.cpp.s
 
+game/pieces/PieceHandlerPopulator.o: game/pieces/PieceHandlerPopulator.cpp.o
+
+.PHONY : game/pieces/PieceHandlerPopulator.o
+
+# target to build an object file
+game/pieces/PieceHandlerPopulator.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
+.PHONY : game/pieces/PieceHandlerPopulator.cpp.o
+
+game/pieces/PieceHandlerPopulator.i: game/pieces/PieceHandlerPopulator.cpp.i
+
+.PHONY : game/pieces/PieceHandlerPopulator.i
+
+# target to preprocess a source file
+game/pieces/PieceHandlerPopulator.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.i
+.PHONY : game/pieces/PieceHandlerPopulator.cpp.i
+
+game/pieces/PieceHandlerPopulator.s: game/pieces/PieceHandlerPopulator.cpp.s
+
+.PHONY : game/pieces/PieceHandlerPopulator.s
+
+# target to generate assembly for a file
+game/pieces/PieceHandlerPopulator.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.s
+.PHONY : game/pieces/PieceHandlerPopulator.cpp.s
+
 game/pieces/types/ChessPiece.o: game/pieces/types/ChessPiece.cpp.o
 
 .PHONY : game/pieces/types/ChessPiece.o
@@ -435,6 +462,9 @@ help:
 	@echo "... game/pieces/PieceHandler.o"
 	@echo "... game/pieces/PieceHandler.i"
 	@echo "... game/pieces/PieceHandler.s"
+	@echo "... game/pieces/PieceHandlerPopulator.o"
+	@echo "... game/pieces/PieceHandlerPopulator.i"
+	@echo "... game/pieces/PieceHandlerPopulator.s"
 	@echo "... game/pieces/types/ChessPiece.o"
 	@echo "... game/pieces/types/ChessPiece.i"
 	@echo "... game/pieces/types/ChessPiece.s"

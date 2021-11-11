@@ -12,14 +12,6 @@
 #include "game/utils/BoardUtils.h"
 #include "game/proxies/GameBoardInterface.h"
 
-namespace {
-constexpr auto STARTING_PIECES_COUNT = 16;
-constexpr auto PAWNS_COUNT = 8;
-
-constexpr auto WHITE_PLAYER_START_PAWN_ROW = 6;
-constexpr auto BLACK_PLAYER_START_PAWN_ROW = 1;
-};
-
 int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId){
 
 	if(gameBoardInterface == nullptr){
@@ -28,15 +20,11 @@ int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t white
 	}
 	_gameBoardInterface = gameBoardInterface;
 
-	if(EXIT_SUCCESS != populateWhitePieces(whitePiecesRsrcId)){
-		std::cerr<<"Error, populateWhitePieces() failed.\n";
+	if(EXIT_SUCCESS != PieceHandlerPopulator::init(whitePiecesRsrcId, blackPiecesRsrcId, _pieces)){
+		std::cerr<<"Error, PieceHandlerPopulator::init -> PieceHandler.cpp\n";
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != populateBlackPieces(blackPiecesRsrcId)){
-		std::cerr<<"Error, populateBlackPieces() failed.\n";
-		return EXIT_FAILURE;
-	}
 	return EXIT_SUCCESS;
 }
 void PieceHandler::draw(){
@@ -85,74 +73,3 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 		++currPlayerid;
 	}
 }
-int32_t PieceHandler::populateWhitePieces(int32_t rsrcId){
-	auto& white = _pieces[Defines::WHITE_PLAYER_ID];
-	white.resize(STARTING_PIECES_COUNT);
-
-	ChessPieceCfg pieceCfg;
-	pieceCfg.boardPos.row = WHITE_PLAYER_START_PAWN_ROW;
-	pieceCfg.playerId = Defines::WHITE_PLAYER_ID;
-	pieceCfg.rsrcId = rsrcId;
-	pieceCfg.pieceType = PieceType::PAWN;
-
-	for(auto i = 0; i < PAWNS_COUNT; ++i){
-		pieceCfg.boardPos.col = i;
-		if(EXIT_SUCCESS != white[i].init(pieceCfg)){
-			std::cerr<<"Error, _piece.init() -> white, failed\n";
-			return EXIT_FAILURE;
-		}
-	}
-
-	constexpr auto nonPawnCount = PAWNS_COUNT;
-	constexpr PieceType nonPownTypes[nonPawnCount] = {
-		PieceType::ROOK, PieceType::KNIGHT, PieceType::BISHOP, PieceType::QUEEN,
-		PieceType::KING, PieceType::BISHOP, PieceType::KNIGHT, PieceType::ROOK
-	};
-
-	pieceCfg.boardPos.row = WHITE_PLAYER_START_PAWN_ROW + 1;
-	for(auto i = nonPawnCount; i < STARTING_PIECES_COUNT; ++i){
-		pieceCfg.boardPos.col = i - nonPawnCount;
-		pieceCfg.pieceType = nonPownTypes[i - nonPawnCount];
-		if(EXIT_SUCCESS != white[i].init(pieceCfg)){
-			std::cerr<<"Error, _piece.init() -> white, failed\n";
-			return EXIT_FAILURE;
-		}
-	}
-	return EXIT_SUCCESS;
-}
-int32_t PieceHandler::populateBlackPieces(int32_t rsrcId){
-	auto& black = _pieces[Defines::BLACK_PLAYER_ID];
-	black.resize(STARTING_PIECES_COUNT);
-
-	ChessPieceCfg pieceCfg;
-	pieceCfg.boardPos.row = BLACK_PLAYER_START_PAWN_ROW;
-	pieceCfg.playerId = Defines::BLACK_PLAYER_ID;
-	pieceCfg.rsrcId = rsrcId;
-	pieceCfg.pieceType = PieceType::PAWN;
-
-	for(auto i = 0; i < PAWNS_COUNT; ++i){
-		pieceCfg.boardPos.col = i;
-		if(EXIT_SUCCESS != black[i].init(pieceCfg)){
-			std::cerr<<"Error, _piece.init() -> black, failed\n";
-			return EXIT_FAILURE;
-		}
-	}
-
-	constexpr auto nonPawnCount = PAWNS_COUNT;
-	constexpr PieceType nonPownTypes[nonPawnCount] = {
-			PieceType::ROOK, PieceType::KNIGHT, PieceType::BISHOP, PieceType::QUEEN,
-			PieceType::KING, PieceType::BISHOP, PieceType::KNIGHT, PieceType::ROOK
-	};
-
-	pieceCfg.boardPos.row = BLACK_PLAYER_START_PAWN_ROW - 1;
-	for(auto i = nonPawnCount; i < STARTING_PIECES_COUNT; ++i){
-		pieceCfg.boardPos.col = i - nonPawnCount;
-		pieceCfg.pieceType = nonPownTypes[i - nonPawnCount];
-		if(EXIT_SUCCESS != black[i].init(pieceCfg)){
-			std::cerr<<"Error, _piece.init() -> black, failed\n";
-			return EXIT_FAILURE;
-		}
-	}
-	return EXIT_SUCCESS;
-}
-

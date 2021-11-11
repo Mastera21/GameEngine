@@ -12,6 +12,7 @@
 //Own components headers
 #include "game/defines/ChessDefines.h"
 #include "game/pieces/types/ChessPiece.h"
+#include "game/pieces/PieceHandlerPopulator.h"
 //Forward declarations
 struct Event;
 struct GameBoardInterface;
@@ -24,16 +25,13 @@ public:
 
 private:
 	using PlayerPieces = std::vector<ChessPiece>;
+	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 
 	GameBoardInterface* _gameBoardInterface = nullptr;
 
-	std::array<PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 	int32_t _selectedPieceId = 0;
 	int32_t _selectedPiecePlayerId = 0;
 	bool _isPieceGrabbed = false;
-
-	int32_t populateWhitePieces(int32_t rsrcId);
-	int32_t populateBlackPieces(int32_t rsrcId);
 
 	void handlePieceGrabbedEvent(const Event& event);
 	void handlePieceUngrabbedEvent(const Event& event);

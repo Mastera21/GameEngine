@@ -81,6 +81,20 @@ game/defines/ChessDefines.h
 ../game/pieces/game/defines/ChessDefines.h
 game/pieces/types/ChessPiece.h
 ../game/pieces/game/pieces/types/ChessPiece.h
+game/pieces/PieceHandlerPopulator.h
+../game/pieces/game/pieces/PieceHandlerPopulator.h
+
+..//game/pieces/PieceHandlerPopulator.h
+cstdint
+-
+array
+-
+vector
+-
+game/defines/ChessDefines.h
+../game/pieces/game/defines/ChessDefines.h
+game/pieces/types/ChessPiece.h
+../game/pieces/game/pieces/types/ChessPiece.h
 
 ..//game/pieces/types/ChessPiece.h
 cstdint
@@ -421,6 +435,12 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/utils/BoardUtils.h
 game/proxies/GameBoardInterface.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/proxies/GameBoardInterface.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp
+game/pieces/PieceHandlerPopulator.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandlerPopulator.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h
