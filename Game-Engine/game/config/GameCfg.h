@@ -19,6 +19,7 @@ struct GameCfg{
 	int32_t targetRsrcId;
 	int32_t blinkTargetId;
 	int32_t fpsId;
+	int32_t moveTailId;
 };
 
 #endif /* GAME_CONFIG_GAMECFG_H_ */

@@ -24,6 +24,8 @@ constexpr auto CHESS_BOARD_WIDTH_HEIGHT = 900;
 
 constexpr auto TARGET_IMG_WIDTH_HEIGHT = 98;
 
+constexpr auto MOVE_TAIL_IMG_WIDTH_HEIGHT = 98;
+
 constexpr auto ANGELINE_VINTAGE_40_FONT_SIZE = 40;
 
 constexpr auto MAX_FRAME_RATE = 60;
@@ -68,7 +70,6 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 		imageCfg.frames.clear();
 	}
 
-
 	imageCfg.location = getFilePath("assets/p/chessBoard.jpg");
 	imageCfg.frames.emplace_back(0, 0, CHESS_BOARD_WIDTH_HEIGHT, CHESS_BOARD_WIDTH_HEIGHT);
 	cfg.imageConfigs.emplace(TextureId::CHESS_BOARD, imageCfg);
@@ -79,6 +80,10 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	cfg.imageConfigs.emplace(TextureId::TARGET, imageCfg);
 	imageCfg.frames.clear();
 
+	imageCfg.location = getFilePath("assets/p/moveTiles.png");
+	imageCfg.frames.emplace_back(0, 0, MOVE_TAIL_IMG_WIDTH_HEIGHT, MOVE_TAIL_IMG_WIDTH_HEIGHT);
+	cfg.imageConfigs.emplace(TextureId::MOVE_TAIL, imageCfg);
+	imageCfg.frames.clear();
 }
 
 static void populateMonitorConfig(MonitorWindowCofg& cfg){
@@ -110,7 +115,7 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.blackPiecesRsrcId = TextureId::BLACK_PIECES;
 	cfg.targetRsrcId = TextureId::TARGET;
 	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
-
+	cfg.moveTailId = TextureId::MOVE_TAIL;
 }
 
 EngineConfig EngineConfigLoader::loadConfig(){
