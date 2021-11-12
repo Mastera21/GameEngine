@@ -139,6 +139,9 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/dra
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.cpp
 
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/board/MoveSelector.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/board/MoveSelector.cpp
+
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/interfaces/GameBoardInterface.h

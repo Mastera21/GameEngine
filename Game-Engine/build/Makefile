@@ -297,6 +297,33 @@ game/board/GameBoard.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.s
 .PHONY : game/board/GameBoard.cpp.s
 
+game/board/MoveSelector.o: game/board/MoveSelector.cpp.o
+
+.PHONY : game/board/MoveSelector.o
+
+# target to build an object file
+game/board/MoveSelector.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o
+.PHONY : game/board/MoveSelector.cpp.o
+
+game/board/MoveSelector.i: game/board/MoveSelector.cpp.i
+
+.PHONY : game/board/MoveSelector.i
+
+# target to preprocess a source file
+game/board/MoveSelector.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.i
+.PHONY : game/board/MoveSelector.cpp.i
+
+game/board/MoveSelector.s: game/board/MoveSelector.cpp.s
+
+.PHONY : game/board/MoveSelector.s
+
+# target to generate assembly for a file
+game/board/MoveSelector.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.s
+.PHONY : game/board/MoveSelector.cpp.s
+
 game/pieces/PieceHandler.o: game/pieces/PieceHandler.cpp.o
 
 .PHONY : game/pieces/PieceHandler.o
@@ -513,6 +540,9 @@ help:
 	@echo "... game/board/GameBoard.o"
 	@echo "... game/board/GameBoard.i"
 	@echo "... game/board/GameBoard.s"
+	@echo "... game/board/MoveSelector.o"
+	@echo "... game/board/MoveSelector.i"
+	@echo "... game/board/MoveSelector.s"
 	@echo "... game/pieces/PieceHandler.o"
 	@echo "... game/pieces/PieceHandler.i"
 	@echo "... game/pieces/PieceHandler.s"

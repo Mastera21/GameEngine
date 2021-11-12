@@ -52,6 +52,8 @@ add_executable(
 		 ${_BASE_DIR}/game/config/GameCfg.h
 		 ${_BASE_DIR}/game/board/GameBoard.h
 		 ${_BASE_DIR}/game/board/GameBoard.cpp
+		 ${_BASE_DIR}/game/board/MoveSelector.h
+		 ${_BASE_DIR}/game/board/MoveSelector.cpp
 		 ${_BASE_DIR}/game/utils/BoardPos.h
 		 ${_BASE_DIR}/game/utils/BoardUtils.h
 		 ${_BASE_DIR}/game/utils/BoardUtils.cpp

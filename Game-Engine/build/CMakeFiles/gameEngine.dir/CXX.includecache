@@ -51,14 +51,18 @@ game/pieces/PieceHandler.h
 ..//game/board/GameBoard.h
 cstdint
 -
-game/interfaces/GameBoardInterface.h
-../game/board/game/interfaces/GameBoardInterface.h
 game/config/GameCfg.h
 ../game/board/game/config/GameCfg.h
 manager/drawing/Image.h
 ../game/board/manager/drawing/Image.h
 manager/time/TimerClient.h
 ../game/board/manager/time/TimerClient.h
+game/interfaces/GameBoardInterface.h
+../game/board/game/interfaces/GameBoardInterface.h
+
+..//game/board/MoveSelector.h
+cstdint
+-
 
 ..//game/config/GameCfg.h
 cstdint
@@ -459,6 +463,12 @@ iostream
 -
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/utils/BoardUtils.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp
+game/board/MoveSelector.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/board/MoveSelector.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h

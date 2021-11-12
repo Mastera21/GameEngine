@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/Game.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o"
