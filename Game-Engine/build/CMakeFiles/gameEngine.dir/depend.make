@@ -160,6 +160,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defin
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Rook.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/UnfinishedPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/utils/BoardPos.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../manager/include/manager/drawing/Image.h
@@ -190,6 +191,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/defines/ChessStr
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/pieces/types/Rook.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/utils/BoardUtils.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../manager/include/manager/drawing/Image.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../manager/include/manager/drawing/Widget.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../utils/include/utils/drawing/DrawParams.h

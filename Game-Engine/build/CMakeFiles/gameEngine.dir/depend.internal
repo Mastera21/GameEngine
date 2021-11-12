@@ -161,6 +161,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  ..//game/defines/ChessStructs.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
+ ..//game/pieces/types/Rook.h
  ..//game/pieces/types/UnfinishedPiece.h
  ..//game/utils/BoardPos.h
  ../manager/include/manager/drawing/Image.h
@@ -191,6 +192,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o
  ..//game/pieces/types/ChessPiece.h
  ..//game/pieces/types/Rook.h
  ..//game/utils/BoardPos.h
+ ..//game/utils/BoardUtils.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Widget.h
  ../utils/include/utils/drawing/DrawParams.h

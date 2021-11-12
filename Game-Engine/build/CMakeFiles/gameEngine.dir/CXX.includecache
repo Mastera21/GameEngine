@@ -83,6 +83,10 @@ game/utils/BoardPos.h
 ..//game/interfaces/GameBoardInterface.h
 cstdint
 -
+vector
+-
+game/defines/ChessStructs.h
+../game/interfaces/game/defines/ChessStructs.h
 
 ..//game/pieces/PieceHandler.h
 cstdint
@@ -124,6 +128,8 @@ manager/drawing/Image.h
 
 ..//game/pieces/types/Rook.h
 cstdint
+-
+vector
 -
 game/pieces/types/ChessPiece.h
 ../game/pieces/types/game/pieces/types/ChessPiece.h
@@ -473,6 +479,8 @@ iostream
 -
 game/pieces/types/UnfinishedPiece.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/UnfinishedPiece.h
+game/pieces/types/Rook.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Rook.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h
@@ -493,6 +501,8 @@ string
 -
 iostream
 -
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/UnfinishedPiece.cpp
 game/pieces/types/UnfinishedPiece.h
