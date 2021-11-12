@@ -9,6 +9,8 @@
 
 //Own components headers
 #include "game/pieces/types/UnfinishedPiece.h"
+#include "game/pieces/types/Rook.h"
+
 namespace{
 constexpr auto STARTING_PIECES_COUNT = 16;
 constexpr auto PAWNS_COUNT = 8;
@@ -16,12 +18,28 @@ constexpr auto PAWNS_COUNT = 8;
 constexpr auto WHITE_PLAYER_START_PAWN_ROW = 6;
 constexpr auto BLACK_PLAYER_START_PAWN_ROW = 1;
 
+std::unique_ptr<ChessPiece> createPiece(PieceType type){
+	switch(type){
+	case PieceType::ROOK:
+		return std::make_unique<Rook>();
+		break;
+	case PieceType::KING:
+	case PieceType::QUEEN:
+	case PieceType::BISHOP:
+	case PieceType::KNIGHT:
+	case PieceType::PAWN:
+		return std::make_unique<UnfinishedPiece>();
+		break;
+	default:
+		std::cerr<<"Error, received invalid PieceType: "<< static_cast<int32_t>(type) <<"\n";
+		break;
+	}
+
+	return nullptr;
+}
+
 int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, ChessPiece::PlayerPieces& white){
 	white.reserve(STARTING_PIECES_COUNT);
-
-	for(auto i = 0; i < STARTING_PIECES_COUNT; ++i){
-		white.push_back(std::make_unique<UnfinishedPiece>());
-	}
 
 	ChessPieceCfg pieceCfg;
 	pieceCfg.boardPos.row = WHITE_PLAYER_START_PAWN_ROW;
@@ -31,6 +49,8 @@ int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Chess
 	pieceCfg.unfinishedPieceFontId = unfinishedPieceFontId;
 
 	for(auto i = 0; i < PAWNS_COUNT; ++i){
+		white.push_back(createPiece(pieceCfg.pieceType));
+
 		pieceCfg.boardPos.col = i;
 		if(EXIT_SUCCESS != white[i]->init(pieceCfg)){
 			std::cerr<<"Error, _piece.init() -> white, failed\n";
@@ -48,6 +68,8 @@ int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Chess
 	for(auto i = nonPawnCount; i < STARTING_PIECES_COUNT; ++i){
 		pieceCfg.boardPos.col = i - nonPawnCount;
 		pieceCfg.pieceType = nonPownTypes[i - nonPawnCount];
+
+		white.push_back(createPiece(pieceCfg.pieceType));
 		if(EXIT_SUCCESS != white[i]->init(pieceCfg)){
 			std::cerr<<"Error, _piece.init() -> white, failed\n";
 			return EXIT_FAILURE;
@@ -58,10 +80,6 @@ int32_t populateWhitePieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Chess
 int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, ChessPiece::PlayerPieces& black){
 	black.reserve(STARTING_PIECES_COUNT);
 
-	for(auto i = 0; i < STARTING_PIECES_COUNT; ++i){
-		black.push_back(std::make_unique<UnfinishedPiece>());
-	}
-
 	ChessPieceCfg pieceCfg;
 	pieceCfg.boardPos.row = BLACK_PLAYER_START_PAWN_ROW;
 	pieceCfg.playerId = Defines::BLACK_PLAYER_ID;
@@ -70,6 +88,8 @@ int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Chess
 	pieceCfg.unfinishedPieceFontId = unfinishedPieceFontId;
 
 	for(auto i = 0; i < PAWNS_COUNT; ++i){
+		black.push_back(createPiece(pieceCfg.pieceType));
+
 		pieceCfg.boardPos.col = i;
 		if(EXIT_SUCCESS != black[i]->init(pieceCfg)){
 			std::cerr<<"Error, _piece.init() -> black, failed\n";
@@ -87,6 +107,8 @@ int32_t populateBlackPieces(int32_t rsrcId, int32_t unfinishedPieceFontId, Chess
 	for(auto i = nonPawnCount; i < STARTING_PIECES_COUNT; ++i){
 		pieceCfg.boardPos.col = i - nonPawnCount;
 		pieceCfg.pieceType = nonPownTypes[i - nonPawnCount];
+
+		black.push_back(createPiece(pieceCfg.pieceType));
 		if(EXIT_SUCCESS != black[i]->init(pieceCfg)){
 			std::cerr<<"Error, _piece.init() -> black, failed\n";
 			return EXIT_FAILURE;

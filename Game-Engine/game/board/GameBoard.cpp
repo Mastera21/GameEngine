@@ -23,18 +23,31 @@ void GameBoard::draw(){
 	_targetImg.draw();
 }
 
-void GameBoard::onPieceGrabbed(const BoardPos& boardPos) {
+void GameBoard::onPieceGrabbed(const BoardPos& boardPos, const std::vector<TileData>& moveTiles) {
 	_targetImg.show();
 	_targetImg.setPos(BoardUtils::getAbsPos(boardPos));
+	_currMoveTiles = moveTiles;
 
 	startTimer(800,_blinkTimerId, TimerType::PULSE);
 }
 void GameBoard::onPieceUngrabbed() {
 	_targetImg.hide();
+	_currMoveTiles.clear();
 
 	if(isActiveTimerId(_blinkTimerId)){
 		stopTimer(_blinkTimerId);
 	}
+}
+
+bool GameBoard::isMoveAllowed(const BoardPos &pos) const {
+	for(const auto& i : _currMoveTiles){
+		if(i.boardPos == pos){
+			if(i.tileType == TileType::MOVE || i.tileType == TileType::TAKE){
+				return true;
+			}
+		}
+	}
+	return false;
 }
 void GameBoard::onTimeout(int32_t timerId) {
 	if(_blinkTimerId == timerId){

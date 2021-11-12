@@ -34,17 +34,27 @@ std::vector<MoveDirection> Rook::getBoardMoves() const {
 
 std::vector<TileData> Rook::getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const{
 	std::vector<TileData> moveTiles;
-
 	const std::vector<MoveDirection> boardMoves = getBoardMoves();
-
-	  //...
+	const auto opponentId = BoardUtils::getOpponentId(_playerId);
 
 	for (const auto& moveDir : boardMoves) {
-	  if (moveDir.empty()) {
-	    continue;
-	  }
-	  	  //TODO
-	    //…
+		if (moveDir.empty()) {
+			continue;
+		}
+
+	  	for(const auto& boardPos : moveDir){
+	  		const TileType tileType = BoardUtils::getTileType(boardPos, activePieces[_playerId], activePieces[opponentId]);
+
+	  		if(TileType::MOVE != tileType){
+	  			break;
+	  		}
+
+	  		TileData tileData;
+	  		tileData.boardPos = boardPos;
+	  		tileData.tileType = tileType;
+
+	  		moveTiles.push_back(tileData);
+	  	}
 	}
 	return moveTiles;
 }

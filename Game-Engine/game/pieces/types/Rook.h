@@ -14,7 +14,7 @@
 
 class Rook : public ChessPiece{
 public:
-	virtual std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
+	std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
 private:
 	std::vector<MoveDirection> getBoardMoves() const;
 };

@@ -65,7 +65,9 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 				_selectedPieceId = relativePieceid;
 				_selectedPiecePlayerId = currPlayerid;
 				_isPieceGrabbed = true;
-				_gameBoardInterface->onPieceGrabbed(BoardUtils::getBoardPos(event.pos));
+
+				const auto moveTile = _pieces[_selectedPiecePlayerId][_selectedPieceId]->getMoveTiles(_pieces);
+				_gameBoardInterface->onPieceGrabbed(BoardUtils::getBoardPos(event.pos), moveTile);
 				return;
 			}
 			++relativePieceid;

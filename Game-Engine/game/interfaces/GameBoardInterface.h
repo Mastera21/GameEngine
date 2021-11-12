@@ -5,9 +5,11 @@
 
 //C++ system headers
 #include <cstdint>
+#include <vector>
 //Other libraries headers
 
 //Own components headers
+#include "game/defines/ChessStructs.h"
 
 //Forward declarations
 struct BoardPos;
@@ -16,8 +18,9 @@ class GameBoardInterface{
 public:
 	virtual ~GameBoardInterface() = default;
 
-	virtual void onPieceGrabbed(const BoardPos& boardPos) = 0;
+	virtual void onPieceGrabbed(const BoardPos& boardPos, const std::vector<TileData>& moveTiles) = 0;
 	virtual void onPieceUngrabbed() = 0;
+	virtual bool isMoveAllowed(const BoardPos &pos) const = 0;
 };
 
 #endif /* GAME_INTERFACES_GAMEBOARDINTERFACE_H_ */
