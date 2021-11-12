@@ -10,7 +10,7 @@
 //Own components headers
 #include "game/utils/BoardUtils.h"
 
-int32_t GameBoard::init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t blinkTimerId, int32_t moveSelectorId){
+int32_t GameBoard::init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveSelectorId, int32_t blinkTimerId){
 	_boardImg.create(boardRsrcId);
 	_targetImg.create(targetRsrcId);
 	_targetImg.hide();
