@@ -19,7 +19,7 @@
 
 class GameBoard : public GameBoardInterface, public TimerClient {
 public:
-	int32_t init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t blinkTimerId, int32_t moveSelectorId);
+	int32_t init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveSelectorId, int32_t blinkTimerId);
 	void draw();
 
 private:

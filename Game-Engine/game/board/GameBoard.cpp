@@ -15,12 +15,10 @@ int32_t GameBoard::init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveS
 	_targetImg.create(targetRsrcId);
 	_targetImg.hide();
 
-
 	if(EXIT_SUCCESS != _moveSelector.init(moveSelectorId)){
 		std::cerr<<"Error, _moveSelector.init() failed. \n";
 		return EXIT_FAILURE;
 	}
-
 
 	_blinkTimerId = blinkTimerId;
 	return EXIT_SUCCESS;
