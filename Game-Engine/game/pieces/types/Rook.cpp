@@ -45,15 +45,13 @@ std::vector<TileData> Rook::getMoveTiles(const std::array<PlayerPieces, Defines:
 	  	for(const auto& boardPos : moveDir){
 	  		const TileType tileType = BoardUtils::getTileType(boardPos, activePieces[_playerId], activePieces[opponentId]);
 
-	  		if(TileType::MOVE != tileType){
-	  			break;
-	  		}
-
 	  		TileData tileData;
 	  		tileData.boardPos = boardPos;
 	  		tileData.tileType = tileType;
-
 	  		moveTiles.push_back(tileData);
+	  		if(TileType::MOVE != tileType){
+	  			break;
+	  		}
 	  	}
 	}
 	return moveTiles;
