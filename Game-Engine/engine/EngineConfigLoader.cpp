@@ -24,6 +24,7 @@ constexpr auto CHESS_BOARD_WIDTH_HEIGHT = 900;
 
 constexpr auto TARGET_IMG_WIDTH_HEIGHT = 98;
 
+constexpr auto TAIL_FRAMES = 3;
 constexpr auto MOVE_TAIL_IMG_WIDTH_HEIGHT = 98;
 
 constexpr auto ANGELINE_VINTAGE_40_FONT_SIZE = 40;
@@ -81,7 +82,9 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	imageCfg.frames.clear();
 
 	imageCfg.location = getFilePath("assets/p/moveTiles.png");
-	imageCfg.frames.emplace_back(0, 0, MOVE_TAIL_IMG_WIDTH_HEIGHT, MOVE_TAIL_IMG_WIDTH_HEIGHT);
+	for(auto frameId = 0; frameId < TAIL_FRAMES; ++frameId){
+		imageCfg.frames.emplace_back(frameId * MOVE_TAIL_IMG_WIDTH_HEIGHT, 0, MOVE_TAIL_IMG_WIDTH_HEIGHT, MOVE_TAIL_IMG_WIDTH_HEIGHT);
+	}
 	cfg.imageConfigs.emplace(TextureId::MOVE_TAIL, imageCfg);
 	imageCfg.frames.clear();
 }

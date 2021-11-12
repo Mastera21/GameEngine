@@ -45,9 +45,14 @@ void PieceHandler::handlePieceGrabbedEvent(const Event& event){
 	if(!BoardUtils::isInsideBoard(event.pos)){
 		return;
 	}
-	_isPieceGrabbed = false;
 
+	_isPieceGrabbed = false;
 	const BoardPos boardPos = BoardUtils::getBoardPos(event.pos);
+	//!!!!!!!!!
+	/*if(!_gameBoardInterface->isMoveAllowed(boardPos)){
+		return;
+	}*/
+
 	_pieces[_selectedPiecePlayerId][_selectedPieceId]->setBoardPos(boardPos);
 
 	_gameBoardInterface->onPieceUngrabbed();

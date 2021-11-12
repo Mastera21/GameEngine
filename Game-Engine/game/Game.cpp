@@ -17,7 +17,7 @@
 
 int32_t Game::init(const GameCfg cfg){
 
-	if(EXIT_SUCCESS != _board.init(cfg.chessBoardRsrcId, cfg.targetRsrcId, cfg.blinkTargetId)){
+	if(EXIT_SUCCESS != _board.init(cfg.chessBoardRsrcId, cfg.targetRsrcId, cfg.blinkTargetId, cfg.moveTailId)){
 		std::cerr<<"_board.init() failed.\n";
 		return EXIT_FAILURE;
 	}

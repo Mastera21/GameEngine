@@ -51,18 +51,26 @@ game/pieces/PieceHandler.h
 ..//game/board/GameBoard.h
 cstdint
 -
-game/config/GameCfg.h
-../game/board/game/config/GameCfg.h
 manager/drawing/Image.h
 ../game/board/manager/drawing/Image.h
 manager/time/TimerClient.h
 ../game/board/manager/time/TimerClient.h
+game/config/GameCfg.h
+../game/board/game/config/GameCfg.h
+game/board/MoveSelector.h
+../game/board/game/board/MoveSelector.h
 game/interfaces/GameBoardInterface.h
 ../game/board/game/interfaces/GameBoardInterface.h
 
 ..//game/board/MoveSelector.h
 cstdint
 -
+array
+-
+game/defines/ChessStructs.h
+../game/board/game/defines/ChessStructs.h
+manager/drawing/Image.h
+../game/board/manager/drawing/Image.h
 
 ..//game/config/GameCfg.h
 cstdint
@@ -469,6 +477,8 @@ game/board/MoveSelector.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/board/MoveSelector.h
 iostream
 -
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h

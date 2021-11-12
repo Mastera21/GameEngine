@@ -6,6 +6,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/EngineConfigL
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/board/MoveSelector.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessStructs.h
@@ -43,6 +44,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../application/Applicat
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../engine/config/EngineConfig.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/board/MoveSelector.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessStructs.h
@@ -101,6 +103,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o: ../engine/EngineConfi
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/board/MoveSelector.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessStructs.h
@@ -123,6 +126,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../utils/include/utils/input/EventDef
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
 
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/MoveSelector.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/defines/ChessStructs.h
@@ -140,6 +144,16 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../utils/include/utils/dra
 CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o: ../game/board/GameBoard.cpp
 
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/board/MoveSelector.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/defines/ChessStructs.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/board/MoveSelector.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessDefines.h
@@ -232,6 +246,7 @@ CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o: ../game/utils/BoardUtils.
 CMakeFiles/gameEngine.dir/main.cpp.o: ../engine/Engine.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/Game.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/board/GameBoard.h
+CMakeFiles/gameEngine.dir/main.cpp.o: ../game/board/MoveSelector.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/config/GameCfg.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessStructs.h

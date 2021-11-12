@@ -10,21 +10,24 @@
 //Other libraries headers
 
 //Own components headers
-#include "game/config/GameCfg.h"
 #include "manager/drawing/Image.h"
 #include "manager/time/TimerClient.h"
+#include "game/config/GameCfg.h"
+#include "game/board/MoveSelector.h"
 #include "game/interfaces/GameBoardInterface.h"
 //Forward declarations
 
 class GameBoard : public GameBoardInterface, public TimerClient {
 public:
-	int32_t init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t blinkTimerId);
+	int32_t init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t blinkTimerId, int32_t moveSelectorId);
 	void draw();
 
 private:
 	Image _boardImg;
 	Image _targetImg;
 	int32_t _blinkTimerId;
+
+	MoveSelector _moveSelector;
 
 	std::vector<TileData> _currMoveTiles;
 
