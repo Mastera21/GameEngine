@@ -32,6 +32,7 @@ private:
 	int32_t _selectedPiecePlayerId = 0;
 	bool _isPieceGrabbed = false;
 
+	void doMovePiece(const BoardPos& boardPos);
 	void handlePieceGrabbedEvent(const Event& event);
 	void handlePieceUngrabbedEvent(const Event& event);
 };

@@ -52,9 +52,7 @@ void PieceHandler::handlePieceGrabbedEvent(const Event& event){
 		return;
 	}
 
-	_pieces[_selectedPiecePlayerId][_selectedPieceId]->setBoardPos(boardPos);
-
-	_gameBoardInterface->onPieceUngrabbed();
+	doMovePiece(boardPos);
 }
 void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 	if(event.type != TouchEvent::TOUCH_RELEASE){
@@ -78,4 +76,15 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 		}
 		++currPlayerid;
 	}
+}
+
+void PieceHandler::doMovePiece(const BoardPos& boardPos){
+	_pieces[_selectedPiecePlayerId][_selectedPieceId]->setBoardPos(boardPos);
+	const auto opponrntId = BoardUtils::getOpponentId(_pieces[_selectedPiecePlayerId][_selectedPieceId]->getPlayerId());
+	int32_t collisionIndex = -1;
+	if(BoardUtils::doCollideWithPiece(boardPos, _pieces[opponrntId], collisionIndex)){
+		_pieces[opponrntId].erase(_pieces[opponrntId].begin() + collisionIndex);
+	}
+
+	_gameBoardInterface->onPieceUngrabbed();
 }
