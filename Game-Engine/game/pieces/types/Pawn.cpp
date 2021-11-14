@@ -98,7 +98,7 @@ std::vector<TileData> Pawn::getBlackMoveTiles(const std::array<ChessPiece::Playe
 	moveTile.reserve(boardMoves.size());
 	const int32_t opponentId = BoardUtils::getOpponentId(_playerId);
 
-	std::unordered_map<Defines::Direction, MoveDirection>::const_iterator it = boardMoves.find(Defines::UP);
+	std::unordered_map<Defines::Direction, MoveDirection>::const_iterator it = boardMoves.find(Defines::DOWN);
 	if(it != boardMoves.end()){
 		for(const auto& pos : it->second){
 			const auto tileType = BoardUtils::getTileType(pos, activePieces[_playerId], activePieces[opponentId]);
@@ -118,7 +118,7 @@ std::vector<TileData> Pawn::getBlackMoveTiles(const std::array<ChessPiece::Playe
 	//Take piece
 	constexpr auto diagonalMovesCount = 2;
 	const std::array<Defines::Direction, diagonalMovesCount> diagonalMoves {
-			Defines::UP_LEFT, Defines::UP_RIGHT
+			Defines::DOWN_LEFT, Defines::DOWN_RIGHT
 	};
 
 	for(const Defines::Direction move : diagonalMoves){
@@ -144,22 +144,22 @@ std::unordered_map<Defines::Direction, MoveDirection> Pawn::getBlackBoardMoves()
 	std::unordered_map<Defines::Direction, MoveDirection> boardMoves(allowedCount);
 
 	BoardPos futurePos;
-	futurePos = BoardUtils::getAdjacentPos(Defines::UP_LEFT, _boardPos);
+	futurePos = BoardUtils::getAdjacentPos(Defines::DOWN_LEFT, _boardPos);
 	if(BoardUtils::isInsideBoard(futurePos)){
-		boardMoves[Defines::UP_LEFT].emplace_back(futurePos);
+		boardMoves[Defines::DOWN_LEFT].emplace_back(futurePos);
 	}
 
-	futurePos = BoardUtils::getAdjacentPos(Defines::UP_RIGHT, _boardPos);
+	futurePos = BoardUtils::getAdjacentPos(Defines::DOWN_RIGHT, _boardPos);
 	if(BoardUtils::isInsideBoard(futurePos)){
-		boardMoves[Defines::UP_RIGHT].emplace_back(futurePos);
+		boardMoves[Defines::DOWN_RIGHT].emplace_back(futurePos);
 	}
 
-	futurePos = BoardUtils::getAdjacentPos(Defines::UP, _boardPos);
-	boardMoves[Defines::UP].emplace_back(futurePos);
+	futurePos = BoardUtils::getAdjacentPos(Defines::DOWN, _boardPos);
+	boardMoves[Defines::DOWN].emplace_back(futurePos);
 
-	if(Defines::WHITE_PLAYER_START_PAWN_ROW == _boardPos.row){
-		futurePos = BoardUtils::getAdjacentPos(Defines::UP, futurePos);
-		boardMoves[Defines::UP].emplace_back(futurePos);
+	if(Defines::BLACK_PLAYER_START_PAWN_ROW == _boardPos.row){
+		futurePos = BoardUtils::getAdjacentPos(Defines::DOWN, futurePos);
+		boardMoves[Defines::DOWN].emplace_back(futurePos);
 	}
 
 	return boardMoves;
