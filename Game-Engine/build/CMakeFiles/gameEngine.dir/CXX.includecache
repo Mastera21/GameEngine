@@ -103,6 +103,8 @@ cstdint
 ..//game/interfaces/GameInterface.h
 cstdint
 -
+game/defines/ChessDefines.h
+../game/interfaces/game/defines/ChessDefines.h
 
 ..//game/logic/GameLogic.h
 cstdint

@@ -93,7 +93,7 @@ std::unordered_map<Defines::Direction, MoveDirection> Pawn::getWhiteBoardMoves()
 }
 
 std::vector<TileData> Pawn::getBlackMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const{
-	const std::unordered_map<Defines::Direction, MoveDirection> boardMoves = getWhiteBoardMoves();
+	const std::unordered_map<Defines::Direction, MoveDirection> boardMoves = getBlackBoardMoves();
 	std::vector<TileData> moveTile;
 	moveTile.reserve(boardMoves.size());
 	const int32_t opponentId = BoardUtils::getOpponentId(_playerId);
