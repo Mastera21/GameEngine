@@ -324,6 +324,33 @@ game/board/MoveSelector.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.s
 .PHONY : game/board/MoveSelector.cpp.s
 
+game/logic/GameLogic.o: game/logic/GameLogic.cpp.o
+
+.PHONY : game/logic/GameLogic.o
+
+# target to build an object file
+game/logic/GameLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
+.PHONY : game/logic/GameLogic.cpp.o
+
+game/logic/GameLogic.i: game/logic/GameLogic.cpp.i
+
+.PHONY : game/logic/GameLogic.i
+
+# target to preprocess a source file
+game/logic/GameLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.i
+.PHONY : game/logic/GameLogic.cpp.i
+
+game/logic/GameLogic.s: game/logic/GameLogic.cpp.s
+
+.PHONY : game/logic/GameLogic.s
+
+# target to generate assembly for a file
+game/logic/GameLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.s
+.PHONY : game/logic/GameLogic.cpp.s
+
 game/pieces/PieceHandler.o: game/pieces/PieceHandler.cpp.o
 
 .PHONY : game/pieces/PieceHandler.o
@@ -570,6 +597,9 @@ help:
 	@echo "... game/board/MoveSelector.o"
 	@echo "... game/board/MoveSelector.i"
 	@echo "... game/board/MoveSelector.s"
+	@echo "... game/logic/GameLogic.o"
+	@echo "... game/logic/GameLogic.i"
+	@echo "... game/logic/GameLogic.s"
 	@echo "... game/pieces/PieceHandler.o"
 	@echo "... game/pieces/PieceHandler.i"
 	@echo "... game/pieces/PieceHandler.s"

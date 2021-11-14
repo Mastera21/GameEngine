@@ -100,6 +100,10 @@ vector
 game/defines/ChessStructs.h
 ../game/interfaces/game/defines/ChessStructs.h
 
+..//game/logic/GameLogic.h
+cstdint
+-
+
 ..//game/pieces/PieceHandler.h
 cstdint
 -
@@ -489,6 +493,14 @@ iostream
 -
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/game/utils/BoardUtils.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
+game/logic/GameLogic.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/game/logic/GameLogic.h
+string
+-
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h

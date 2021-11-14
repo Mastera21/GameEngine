@@ -156,6 +156,9 @@ CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp
+CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
+ ..//game/logic/GameLogic.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
