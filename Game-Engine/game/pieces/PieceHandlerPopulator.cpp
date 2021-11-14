@@ -10,7 +10,7 @@
 //Own components headers
 #include "game/pieces/types/UnfinishedPiece.h"
 #include "game/pieces/types/Rook.h"
-//#include "game/pieces/types/Pawn.h"
+#include "game/pieces/types/Pawn.h"
 
 namespace{
 constexpr auto STARTING_PIECES_COUNT = 16;
@@ -24,11 +24,13 @@ std::unique_ptr<ChessPiece> createPiece(PieceType type){
 	case PieceType::ROOK:
 		return std::make_unique<Rook>();
 		break;
+	case PieceType::PAWN:
+		return std::make_unique<Pawn>();
+		break;
 	case PieceType::KING:
 	case PieceType::QUEEN:
 	case PieceType::BISHOP:
 	case PieceType::KNIGHT:
-	case PieceType::PAWN:
 		return std::make_unique<UnfinishedPiece>();
 		break;
 	default:

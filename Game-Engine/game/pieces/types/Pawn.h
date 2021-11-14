@@ -6,6 +6,7 @@
 //C++ system headers
 #include <cstdint>
 #include <vector>
+#include <unordered_map>
 //Other libraries headers
 #include "game/pieces/types/ChessPiece.h"
 //Own components headers
@@ -14,9 +15,13 @@
 
 class Pawn : public ChessPiece{
 public:
-	std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
+	std::vector<TileData> getMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
 private:
-	std::vector<MoveDirection> getBoardMoves() const;
+	std::vector<TileData> getWhiteMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const;
+	std::vector<TileData> getBlackMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const;
+
+	std::unordered_map<Defines::Direction, MoveDirection> getWhiteBoardMoves() const;
+	std::unordered_map<Defines::Direction, MoveDirection> getBlackBoardMoves() const;
 };
 
 #endif /* GAME_PIECES_TYPES_PAWN_H_ */
