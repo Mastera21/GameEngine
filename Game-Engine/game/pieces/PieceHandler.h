@@ -16,10 +16,11 @@
 //Forward declarations
 struct Event;
 struct GameBoardInterface;
+class GameInterface;
 
 class PieceHandler {
 public:
-	int32_t init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId);
+	int32_t init(GameBoardInterface* gameBoardInterface, GameInterface* gameInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId);
 	void draw();
 	void handleEvent(const Event& event);
 
@@ -27,6 +28,7 @@ private:
 	std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
 
 	GameBoardInterface* _gameBoardInterface = nullptr;
+	GameInterface* _gameInterface = nullptr;
 
 	int32_t _selectedPieceId = 0;
 	int32_t _selectedPiecePlayerId = 0;

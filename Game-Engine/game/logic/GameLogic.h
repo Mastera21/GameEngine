@@ -11,12 +11,14 @@
 
 //Forward declarations
 
-class GameLogic {
+class GameLogic{
 public:
+	GameLogic();
 
-
+	int32_t getActivePlayerId() const;
+	void finishTurn();
 
 private:
-  int32_t activePlayerId;
+	int32_t _activePlayerId;
 };
 #endif /* GAME_LOGIC_GAMELOGIC_H_ */

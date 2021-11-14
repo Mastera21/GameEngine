@@ -47,6 +47,10 @@ game/board/GameBoard.h
 ../game/game/board/GameBoard.h
 game/pieces/PieceHandler.h
 ../game/game/pieces/PieceHandler.h
+game/logic/GameLogic.h
+../game/game/logic/GameLogic.h
+game/interfaces/GameInterface.h
+../game/game/interfaces/GameInterface.h
 
 ..//game/board/GameBoard.h
 cstdint
@@ -95,10 +99,10 @@ game/utils/BoardPos.h
 ..//game/interfaces/GameBoardInterface.h
 cstdint
 -
-vector
+
+..//game/interfaces/GameInterface.h
+cstdint
 -
-game/defines/ChessStructs.h
-../game/interfaces/game/defines/ChessStructs.h
 
 ..//game/logic/GameLogic.h
 cstdint
@@ -501,18 +505,22 @@ string
 -
 iostream
 -
+game/defines/ChessDefines.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/game/defines/ChessDefines.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/PieceHandler.h
 iostream
 -
-game/interfaces/GameBoardInterface.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/interfaces/GameBoardInterface.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/sdl/Event.h
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/utils/BoardUtils.h
+game/interfaces/GameInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/interfaces/GameInterface.h
+game/interfaces/GameBoardInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/interfaces/GameBoardInterface.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp
 game/pieces/PieceHandlerPopulator.h

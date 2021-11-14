@@ -13,11 +13,13 @@
 #include "manager/drawing/Text.h"
 #include "game/board/GameBoard.h"
 #include "game/pieces/PieceHandler.h"
+#include "game/logic/GameLogic.h"
+#include "game/interfaces/GameInterface.h"
 
 //Forward declarations
 struct Event;
 
-class Game {
+class Game : public GameInterface{
 public:
 	int32_t init(const GameCfg cfg);
 	void deinit();
@@ -27,6 +29,10 @@ public:
 private:
 	GameBoard _board;
 	PieceHandler _pieceHandler;
+	GameLogic _gameLogic;
+
+	void finishTurn() final;
+	void onPawnPromotion(PieceType pieceType) final;
 };
 
 #endif /* GAME_GAME_H_ */

@@ -5,11 +5,9 @@
 
 //C++ system headers
 #include <cstdint>
-#include <vector>
 //Other libraries headers
 
 //Own components headers
-#include "game/defines/ChessStructs.h"
 
 //Forward declarations
 struct BoardPos;

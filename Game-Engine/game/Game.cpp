@@ -22,7 +22,7 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _pieceHandler.init(&_board, cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId, cfg.unfinishedPieceFontId)){
+	if(EXIT_SUCCESS != _pieceHandler.init(&_board, this, cfg.whitePiecesRsrcId, cfg.blackPiecesRsrcId, cfg.unfinishedPieceFontId)){
 		std::cerr<<"_pieceHandler.init() failed.\n";
 		return EXIT_FAILURE;
 	}
@@ -41,4 +41,12 @@ void Game::draw(){
 
 void Game::handleEvent(const Event& event){
 	_pieceHandler.handleEvent(event);
+}
+void Game::finishTurn(){
+	_gameLogic.finishTurn();
+
+	std::cout<<"current player: "<<_gameLogic.getActivePlayerId()<<"\n";
+}
+void Game::onPawnPromotion(PieceType pieceType) {
+	std::cout<<"Received piecePromotion with PieceType: "<<static_cast<int32_t>(pieceType)<<"n";
 }

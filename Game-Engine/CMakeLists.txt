@@ -74,6 +74,7 @@ add_executable(
 		 ${_BASE_DIR}/game/pieces/PieceHandlerPopulator.h
 		 ${_BASE_DIR}/game/pieces/PieceHandlerPopulator.cpp
 		 ${_BASE_DIR}/game/interfaces/GameBoardInterface.h
+		 ${_BASE_DIR}/game/interfaces/GameInterface.h
 		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
 		 

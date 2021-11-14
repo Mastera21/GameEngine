@@ -12,6 +12,8 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/interfaces/GameInterface.h
+ ..//game/logic/GameLogic.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
@@ -50,6 +52,8 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/interfaces/GameInterface.h
+ ..//game/logic/GameLogic.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
@@ -109,6 +113,8 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/interfaces/GameInterface.h
+ ..//game/logic/GameLogic.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
@@ -157,12 +163,14 @@ CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
+ ..//game/defines/ChessDefines.h
  ..//game/logic/GameLogic.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/interfaces/GameInterface.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
@@ -269,6 +277,8 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/interfaces/GameInterface.h
+ ..//game/logic/GameLogic.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h

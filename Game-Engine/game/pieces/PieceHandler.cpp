@@ -5,20 +5,27 @@
 //C++ system headers
 #include <iostream>
 
-#include "game/interfaces/GameBoardInterface.h"
 //Other libraries headers
 
 //Own components headers
 #include "sdl/Event.h"
 #include "game/utils/BoardUtils.h"
+#include "game/interfaces/GameInterface.h"
+#include "game/interfaces/GameBoardInterface.h"
 
-int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId){
+int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, GameInterface* gameInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId){
 
 	if(gameBoardInterface == nullptr){
 		std::cerr<<"Error, gameBoardInterface is nullptr in PieceHandler.cpp\n";
 		return EXIT_FAILURE;
 	}
 	_gameBoardInterface = gameBoardInterface;
+
+	if(gameInterface == nullptr){
+		std::cerr<<"Error, gameInterface is nullptr in PieceHandler.cpp\n";
+		return EXIT_FAILURE;
+	}
+	_gameInterface = gameInterface;
 
 	if(EXIT_SUCCESS != PieceHandlerPopulator::init(whitePiecesRsrcId, blackPiecesRsrcId, unfinishedPieceFontId, _pieces)){
 		std::cerr<<"Error, PieceHandlerPopulator::init -> PieceHandler.cpp\n";
@@ -89,4 +96,5 @@ void PieceHandler::doMovePiece(const BoardPos& boardPos){
 	}
 
 	_gameBoardInterface->onPieceUngrabbed();
+	_gameInterface->finishTurn();
 }
