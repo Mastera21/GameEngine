@@ -13,7 +13,7 @@
 //Forward declarations
 namespace TextureId{
 enum ResourseId{
-	 CHESS_BOARD, TARGET, WHITE_PIECES, BLACK_PIECES, MOVE_TAIL
+	 CHESS_BOARD, TARGET, WHITE_PIECES, BLACK_PIECES, MOVE_TAIL, PROMOTION_BUTTON
 };
 }//namespace TextureId
 

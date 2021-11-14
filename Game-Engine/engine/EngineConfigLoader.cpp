@@ -27,6 +27,9 @@ constexpr auto TARGET_IMG_WIDTH_HEIGHT = 98;
 constexpr auto TAIL_FRAMES = 3;
 constexpr auto MOVE_TAIL_IMG_WIDTH_HEIGHT = 98;
 
+constexpr auto PIECE_PROMOTION_BUTTON_FRAMES = 2;
+constexpr auto PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT = 104;
+
 constexpr auto ANGELINE_VINTAGE_40_FONT_SIZE = 40;
 
 constexpr auto MAX_FRAME_RATE = 60;
@@ -87,6 +90,13 @@ static void populateImageContainerConfig(ImageContainerCfg& cfg){
 	}
 	cfg.imageConfigs.emplace(TextureId::MOVE_TAIL, imageCfg);
 	imageCfg.frames.clear();
+
+	imageCfg.location = getFilePath("assets/p/piecePromoteButtonBgr.png");
+	for(auto frameId = 0; frameId < PIECE_PROMOTION_BUTTON_FRAMES; ++frameId){
+		imageCfg.frames.emplace_back(frameId * PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT, 0, PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT, PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT);
+	}
+	cfg.imageConfigs.emplace(TextureId::PROMOTION_BUTTON, imageCfg);
+	imageCfg.frames.clear();
 }
 
 static void populateMonitorConfig(MonitorWindowCofg& cfg){
@@ -117,8 +127,8 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.whitePiecesRsrcId = TextureId::WHITE_PIECES;
 	cfg.blackPiecesRsrcId = TextureId::BLACK_PIECES;
 	cfg.targetRsrcId = TextureId::TARGET;
-	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 	cfg.moveTailId = TextureId::MOVE_TAIL;
+	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 	cfg.unfinishedPieceFontId = FontId::ANGELINE_VINTAGE;
 
 }
