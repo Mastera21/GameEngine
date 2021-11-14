@@ -10,6 +10,7 @@
 //Own components headers
 #include "game/pieces/types/UnfinishedPiece.h"
 #include "game/pieces/types/Rook.h"
+//#include "game/pieces/types/Pawn.h"
 
 namespace{
 constexpr auto STARTING_PIECES_COUNT = 16;
@@ -34,7 +35,6 @@ std::unique_ptr<ChessPiece> createPiece(PieceType type){
 		std::cerr<<"Error, received invalid PieceType: "<< static_cast<int32_t>(type) <<"\n";
 		break;
 	}
-
 	return nullptr;
 }
 
