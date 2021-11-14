@@ -514,6 +514,22 @@ game/utils/BoardUtils.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
 
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp
+Pawn.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.h
+string
+-
+iostream
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.h
+cstdint
+-
+vector
+-
+game/pieces/types/ChessPiece.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/ChessPiece.h
+
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Rook.cpp
 game/pieces/types/Rook.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/Rook.h

@@ -203,6 +203,18 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
  ../utils/include/utils/drawing/Rectangle.h
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
+CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o
+ ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
+ ..//game/pieces/types/ChessPiece.h
+ ..//game/utils/BoardPos.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h

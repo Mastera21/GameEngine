@@ -405,6 +405,33 @@ game/pieces/types/ChessPiece.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.s
 .PHONY : game/pieces/types/ChessPiece.cpp.s
 
+game/pieces/types/Pawn.o: game/pieces/types/Pawn.cpp.o
+
+.PHONY : game/pieces/types/Pawn.o
+
+# target to build an object file
+game/pieces/types/Pawn.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o
+.PHONY : game/pieces/types/Pawn.cpp.o
+
+game/pieces/types/Pawn.i: game/pieces/types/Pawn.cpp.i
+
+.PHONY : game/pieces/types/Pawn.i
+
+# target to preprocess a source file
+game/pieces/types/Pawn.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.i
+.PHONY : game/pieces/types/Pawn.cpp.i
+
+game/pieces/types/Pawn.s: game/pieces/types/Pawn.cpp.s
+
+.PHONY : game/pieces/types/Pawn.s
+
+# target to generate assembly for a file
+game/pieces/types/Pawn.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.s
+.PHONY : game/pieces/types/Pawn.cpp.s
+
 game/pieces/types/Rook.o: game/pieces/types/Rook.cpp.o
 
 .PHONY : game/pieces/types/Rook.o
@@ -552,6 +579,9 @@ help:
 	@echo "... game/pieces/types/ChessPiece.o"
 	@echo "... game/pieces/types/ChessPiece.i"
 	@echo "... game/pieces/types/ChessPiece.s"
+	@echo "... game/pieces/types/Pawn.o"
+	@echo "... game/pieces/types/Pawn.i"
+	@echo "... game/pieces/types/Pawn.s"
 	@echo "... game/pieces/types/Rook.o"
 	@echo "... game/pieces/types/Rook.i"
 	@echo "... game/pieces/types/Rook.s"
