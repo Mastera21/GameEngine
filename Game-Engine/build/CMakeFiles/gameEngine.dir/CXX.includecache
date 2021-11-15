@@ -110,6 +110,10 @@ game/defines/ChessDefines.h
 cstdint
 -
 
+..//game/panels/PiecePromotionPanel.h
+cstdint
+-
+
 ..//game/pieces/PieceHandler.h
 cstdint
 -
@@ -509,6 +513,12 @@ iostream
 -
 game/defines/ChessDefines.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/game/defines/ChessDefines.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
+game/panels/PiecePromotionPanel.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/game/panels/PiecePromotionPanel.h
+iostream
+-
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h

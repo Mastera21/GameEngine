@@ -351,6 +351,33 @@ game/logic/GameLogic.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.s
 .PHONY : game/logic/GameLogic.cpp.s
 
+game/panels/PiecePromotionPanel.o: game/panels/PiecePromotionPanel.cpp.o
+
+.PHONY : game/panels/PiecePromotionPanel.o
+
+# target to build an object file
+game/panels/PiecePromotionPanel.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
+.PHONY : game/panels/PiecePromotionPanel.cpp.o
+
+game/panels/PiecePromotionPanel.i: game/panels/PiecePromotionPanel.cpp.i
+
+.PHONY : game/panels/PiecePromotionPanel.i
+
+# target to preprocess a source file
+game/panels/PiecePromotionPanel.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.i
+.PHONY : game/panels/PiecePromotionPanel.cpp.i
+
+game/panels/PiecePromotionPanel.s: game/panels/PiecePromotionPanel.cpp.s
+
+.PHONY : game/panels/PiecePromotionPanel.s
+
+# target to generate assembly for a file
+game/panels/PiecePromotionPanel.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.s
+.PHONY : game/panels/PiecePromotionPanel.cpp.s
+
 game/pieces/PieceHandler.o: game/pieces/PieceHandler.cpp.o
 
 .PHONY : game/pieces/PieceHandler.o
@@ -600,6 +627,9 @@ help:
 	@echo "... game/logic/GameLogic.o"
 	@echo "... game/logic/GameLogic.i"
 	@echo "... game/logic/GameLogic.s"
+	@echo "... game/panels/PiecePromotionPanel.o"
+	@echo "... game/panels/PiecePromotionPanel.i"
+	@echo "... game/panels/PiecePromotionPanel.s"
 	@echo "... game/pieces/PieceHandler.o"
 	@echo "... game/pieces/PieceHandler.i"
 	@echo "... game/pieces/PieceHandler.s"

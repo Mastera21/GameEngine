@@ -166,6 +166,9 @@ CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/logic/GameLogic.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
+ ..//game/panels/PiecePromotionPanel.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
