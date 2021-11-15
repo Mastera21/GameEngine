@@ -378,6 +378,33 @@ game/panels/PiecePromotionPanel.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.s
 .PHONY : game/panels/PiecePromotionPanel.cpp.s
 
+game/panels/buttons/PiecePromotionButton.o: game/panels/buttons/PiecePromotionButton.cpp.o
+
+.PHONY : game/panels/buttons/PiecePromotionButton.o
+
+# target to build an object file
+game/panels/buttons/PiecePromotionButton.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o
+.PHONY : game/panels/buttons/PiecePromotionButton.cpp.o
+
+game/panels/buttons/PiecePromotionButton.i: game/panels/buttons/PiecePromotionButton.cpp.i
+
+.PHONY : game/panels/buttons/PiecePromotionButton.i
+
+# target to preprocess a source file
+game/panels/buttons/PiecePromotionButton.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.i
+.PHONY : game/panels/buttons/PiecePromotionButton.cpp.i
+
+game/panels/buttons/PiecePromotionButton.s: game/panels/buttons/PiecePromotionButton.cpp.s
+
+.PHONY : game/panels/buttons/PiecePromotionButton.s
+
+# target to generate assembly for a file
+game/panels/buttons/PiecePromotionButton.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.s
+.PHONY : game/panels/buttons/PiecePromotionButton.cpp.s
+
 game/pieces/PieceHandler.o: game/pieces/PieceHandler.cpp.o
 
 .PHONY : game/pieces/PieceHandler.o
@@ -630,6 +657,9 @@ help:
 	@echo "... game/panels/PiecePromotionPanel.o"
 	@echo "... game/panels/PiecePromotionPanel.i"
 	@echo "... game/panels/PiecePromotionPanel.s"
+	@echo "... game/panels/buttons/PiecePromotionButton.o"
+	@echo "... game/panels/buttons/PiecePromotionButton.i"
+	@echo "... game/panels/buttons/PiecePromotionButton.s"
 	@echo "... game/pieces/PieceHandler.o"
 	@echo "... game/pieces/PieceHandler.i"
 	@echo "... game/pieces/PieceHandler.s"

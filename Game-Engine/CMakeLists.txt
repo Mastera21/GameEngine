@@ -77,6 +77,9 @@ add_executable(
 		 ${_BASE_DIR}/game/interfaces/GameInterface.h
 		 ${_BASE_DIR}/game/panels/PiecePromotionPanel.h
 		 ${_BASE_DIR}/game/panels/PiecePromotionPanel.cpp
+		 ${_BASE_DIR}/game/panels/buttons/PiecePromotionButton.h
+		 ${_BASE_DIR}/game/panels/buttons/PiecePromotionButton.cpp
+		 ${_BASE_DIR}/game/panels/config/PiecePromotionPanelCfg.h
 		 ${_BASE_DIR}/game/Game.h
 		 ${_BASE_DIR}/game/Game.cpp
 		 

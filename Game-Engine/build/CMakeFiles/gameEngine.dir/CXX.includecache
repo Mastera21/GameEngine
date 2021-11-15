@@ -113,6 +113,24 @@ cstdint
 ..//game/panels/PiecePromotionPanel.h
 cstdint
 -
+array
+-
+game/interfaces/GameInterface.h
+../game/panels/game/interfaces/GameInterface.h
+game/panels/buttons/PiecePromotionButton.h
+../game/panels/game/panels/buttons/PiecePromotionButton.h
+game/panels/config/PiecePromotionPanelCfg.h
+../game/panels/game/panels/config/PiecePromotionPanelCfg.h
+sdl/Event.h
+../game/panels/sdl/Event.h
+
+..//game/panels/buttons/PiecePromotionButton.h
+cstdint
+-
+
+..//game/panels/config/PiecePromotionPanelCfg.h
+cstdint
+-
 
 ..//game/pieces/PieceHandler.h
 cstdint
@@ -517,6 +535,12 @@ game/defines/ChessDefines.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
 game/panels/PiecePromotionPanel.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/game/panels/PiecePromotionPanel.h
+iostream
+-
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp
+game/panels/buttons/PiecePromotionButton.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/game/panels/buttons/PiecePromotionButton.h
 iostream
 -
 

@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o"
   "CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o"
+  "CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o"
   "CMakeFiles/gameEngine.dir/game/Game.cpp.o"
   "CMakeFiles/gameEngine.dir/main.cpp.o"
   "gameEngine.pdb"

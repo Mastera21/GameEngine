@@ -167,8 +167,18 @@ CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
  ..//game/logic/GameLogic.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
+ ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameInterface.h
  ..//game/panels/PiecePromotionPanel.h
+ ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
+ ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
+CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o
+ ..//game/panels/buttons/PiecePromotionButton.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h

@@ -166,8 +166,18 @@ CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/defines/ChessDefin
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.cpp
 
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/panels/PiecePromotionPanel.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/panels/config/PiecePromotionPanelCfg.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../sdl/include/sdl/Event.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../utils/include/utils/input/EventDefines.h
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/panels/PiecePromotionPanel.cpp
+
+CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
+CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o: ../game/panels/buttons/PiecePromotionButton.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/defines/ChessStructs.h
