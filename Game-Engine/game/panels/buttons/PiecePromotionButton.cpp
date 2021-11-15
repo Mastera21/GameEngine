@@ -11,15 +11,15 @@
 //Own components headers
 
 int32_t PiecePromotionButton::init([[maybe_unused]]const PiecePromotionButtonCfg &cfg){
-
+	//TODO
 	return EXIT_SUCCESS;
 }
 void PiecePromotionButton::draw() {
-	//_bgrImg.draw();
+	//TODO
 }
 void PiecePromotionButton::handleEvent([[maybe_unused]]const Event& e) {
-	//_bgrImg.setPos(e.pos);
+	//TODO
 }
 void PiecePromotionButton::activate([[maybe_unused]]int32_t activePlayerId){
-	//_bgrImg.create(activePlayerId, Point(20,20));
+	//TODO
 }
