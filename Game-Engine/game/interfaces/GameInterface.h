@@ -16,6 +16,8 @@ public:
 	virtual ~GameInterface() = default;
 	virtual void finishTurn() = 0;
 	virtual void onPawnPromotion() = 0;
+	virtual void promotePiece(PieceType pieceType) = 0;
+
 };
 
 #endif /* GAME_INTERFACES_GAMEINTERFACE_H_ */

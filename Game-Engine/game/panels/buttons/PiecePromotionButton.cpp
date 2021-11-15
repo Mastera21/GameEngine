@@ -9,17 +9,35 @@
 //Other libraries headers
 
 //Own components headers
+#include "sdl/Event.h"
 
-int32_t PiecePromotionButton::init([[maybe_unused]]const PiecePromotionButtonCfg &cfg){
-	//TODO
+int32_t PiecePromotionButton::init(const PiecePromotionButtonCfg &cfg){
+	_cfg = cfg;
+	_bgrImg.create(cfg.buttonBgrRsrcId, cfg.bgrPos);
+
 	return EXIT_SUCCESS;
 }
 void PiecePromotionButton::draw() {
-	//TODO
+	_bgrImg.draw();
+	ButtonBase::draw();
 }
-void PiecePromotionButton::handleEvent([[maybe_unused]]const Event& e) {
-	//TODO
+void PiecePromotionButton::handleEvent(const Event& e) {
+	if(e.type == TouchEvent::TOUCH_PRESS){
+		setFrame(CLICKED);
+	}else if(e.type == TouchEvent::TOUCH_RELEASE){
+		setFrame(UNCLICKED);
+		_cfg.onBtnClicked(_cfg.pieceType);
+	}
 }
-void PiecePromotionButton::activate([[maybe_unused]]int32_t activePlayerId){
-	//TODO
+void PiecePromotionButton::activate(int32_t activePlayerId){
+	const auto rsrcId = (activePlayerId == Defines::WHITE_PLAYER_ID) ? _cfg.buttonWhitePieceRsrcId : _cfg.buttonBlackPieceRsrcId;
+
+	const int32_t X_Y_DELTA = (_bgrImg.getWidth() - _cfg.width) / 2;
+	const Point btnPos = Point(_bgrImg.getX() + X_Y_DELTA, _bgrImg.getY() + X_Y_DELTA);
+
+	if(isCreated()){
+		ButtonBase::destroy();
+	}
+	ButtonBase::create(rsrcId, btnPos);
+	setFrame(static_cast<int32_t>(_cfg.pieceType));
 }

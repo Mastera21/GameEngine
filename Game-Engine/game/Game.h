@@ -35,6 +35,7 @@ private:
 
 	void finishTurn() final;
 	void onPawnPromotion() final;
+	void promotePiece(PieceType pieceType) final;
 };
 
 #endif /* GAME_GAME_H_ */

@@ -28,5 +28,7 @@ private:
 	std::array<PiecePromotionButton, BUTTONS_COUNT> _promotionBtns;
 	GameInterface* _gameInterface = nullptr;
 	bool _isActive = false;
+
+	void onButtonClicked(PieceType pieceType);
 };
 #endif /* GAME_PANELS_PIECEPROMOTIONPANEL_H_ */
