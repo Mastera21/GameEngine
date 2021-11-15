@@ -27,7 +27,7 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _piecePromotionPanel.init(cfg.piecePromotionPanelCfg)){
+	if(EXIT_SUCCESS != _piecePromotionPanel.init(cfg.piecePromotionPanelCfg, this)){
 		std::cerr<<"_piecePromotionPanel.init() failed.\n";
 		return EXIT_FAILURE;
 	}
