@@ -32,7 +32,7 @@ public:
 
 	bool isInputUnlocked() const;
 
-	bool containsEvent(const Event &e);
+	bool containsEvent(const Event &e) ;
 
 private:
 

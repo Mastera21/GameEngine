@@ -569,6 +569,8 @@ game/panels/buttons/PiecePromotionButton.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/game/panels/buttons/PiecePromotionButton.h
 iostream
 -
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp
 game/pieces/PieceHandler.h

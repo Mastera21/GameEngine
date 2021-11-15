@@ -25,8 +25,10 @@ public:
 	int32_t getY() const;
 
 	double getRotation() const;
+
 	bool containsPoint(const Point& pos) const;
 	bool isVisible() const;
+	bool isCreated() const;
 
 	void draw();
 	void reset();

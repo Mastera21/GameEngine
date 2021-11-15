@@ -44,6 +44,9 @@ bool Widget::containsPoint(const Point& pos) const{
 bool Widget::isVisible() const{
 	return _isVisible;
 }
+bool Widget::isCreated() const{
+	return _isCreated;
+}
 
 void Widget::draw(){
 	if(_isVisible){
