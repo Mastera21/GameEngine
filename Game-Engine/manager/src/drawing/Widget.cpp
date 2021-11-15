@@ -25,6 +25,13 @@ int32_t Widget::getHeight()const{
 	return _drawParams.height;
 }
 
+int32_t Widget::getX() const{
+	return _drawParams.pos.x;
+}
+int32_t Widget::getY() const{
+	return _drawParams.pos.y;
+}
+
 double Widget::getRotation() const{
 	return _drawParams.rotationAngle;
 }
@@ -33,6 +40,7 @@ bool Widget::containsPoint(const Point& pos) const{
 	const Rectangle bound(_drawParams.pos.x, _drawParams.pos.y, _drawParams.width, _drawParams.height);
 	return bound.isPointInside(pos);
 }
+
 bool Widget::isVisible() const{
 	return _isVisible;
 }

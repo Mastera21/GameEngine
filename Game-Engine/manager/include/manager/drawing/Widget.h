@@ -21,6 +21,9 @@ public:
 	int32_t getWidth() const;
 	int32_t getHeight()const;
 
+	int32_t getX() const;
+	int32_t getY() const;
+
 	double getRotation() const;
 	bool containsPoint(const Point& pos) const;
 	bool isVisible() const;
