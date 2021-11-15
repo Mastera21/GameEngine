@@ -8,13 +8,19 @@
 //Other libraries headers
 
 //Own components headers
-
+#include "game/panels/config/PiecePromotionButtonCfg.h"
+#include "sdl/Event.h"
+#include "manager/drawing/Image.h"
 //Forward declarations
 
 class PiecePromotionButton {
 public:
-	PiecePromotionButton();
-	virtual ~PiecePromotionButton();
+	int32_t init(const PiecePromotionButtonCfg& cfg);
+	void draw();
+	void handleEvent(const Event& e);
+	void activate(int32_t activePlayerId);
+private:
+	Image _bgrImg;
+	PiecePromotionButtonCfg _cfg;
 };
-
 #endif /* GAME_PANELS_BUTTONS_PIECEPROMOTIONBUTTON_H_ */
