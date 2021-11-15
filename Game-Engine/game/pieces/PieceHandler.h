@@ -23,6 +23,7 @@ public:
 	int32_t init(GameBoardInterface* gameBoardInterface, GameInterface* gameInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId);
 	void draw();
 	void handleEvent(const Event& event);
+	void setCurrPlayerId(int32_t currPlayerId);
 
 private:
 	std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
@@ -31,7 +32,7 @@ private:
 	GameInterface* _gameInterface = nullptr;
 
 	int32_t _selectedPieceId = 0;
-	int32_t _selectedPiecePlayerId = 0;
+	int32_t _currPlayerId = 0;
 	bool _isPieceGrabbed = false;
 
 	void doMovePiece(const BoardPos& boardPos);

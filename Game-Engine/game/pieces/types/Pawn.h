@@ -12,9 +12,13 @@
 //Own components headers
 
 //Forward declarations
+class GameInterface;
 
 class Pawn : public ChessPiece{
 public:
+	Pawn(GameInterface* gameInterface);
+
+	void setBoardPos(const BoardPos& pos) final;
 	std::vector<TileData> getMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
 private:
 	std::vector<TileData> getWhiteMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const;
@@ -22,6 +26,7 @@ private:
 
 	std::unordered_map<Defines::Direction, MoveDirection> getWhiteBoardMoves() const;
 	std::unordered_map<Defines::Direction, MoveDirection> getBlackBoardMoves() const;
-};
 
+	GameInterface* _gameInterface = nullptr;
+};
 #endif /* GAME_PIECES_TYPES_PAWN_H_ */

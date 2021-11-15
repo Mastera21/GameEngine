@@ -27,7 +27,7 @@ int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, GameInterface
 	}
 	_gameInterface = gameInterface;
 
-	if(EXIT_SUCCESS != PieceHandlerPopulator::init(whitePiecesRsrcId, blackPiecesRsrcId, unfinishedPieceFontId, _pieces)){
+	if(EXIT_SUCCESS != PieceHandlerPopulator::init(_gameInterface, whitePiecesRsrcId, blackPiecesRsrcId, unfinishedPieceFontId, _pieces)){
 		std::cerr<<"Error, PieceHandlerPopulator::init -> PieceHandler.cpp\n";
 		return EXIT_FAILURE;
 	}
@@ -43,6 +43,9 @@ void PieceHandler::draw(){
 }
 void PieceHandler::handleEvent(const Event& event){
 	_isPieceGrabbed ? handlePieceGrabbedEvent(event) : handlePieceUngrabbedEvent(event);
+}
+void PieceHandler::setCurrPlayerId(int32_t currPlayerId){
+	_currPlayerId = currPlayerId;
 }
 void PieceHandler::handlePieceGrabbedEvent(const Event& event){
 	if(event.type != TouchEvent::TOUCH_RELEASE){
@@ -67,29 +70,22 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 	if(event.type != TouchEvent::TOUCH_RELEASE){
 		return;
 	}
+	int32_t relativePieceid = 0;
+	for(const auto& piece : _pieces[_currPlayerId]){
+		if(piece->selectFigure(event)){
+			_selectedPieceId = relativePieceid;
+			_isPieceGrabbed = true;
 
-	int32_t currPlayerid = Defines::WHITE_PLAYER_ID;
-	for(const auto& i : _pieces){
-		int32_t relativePieceid = 0;
-		for(const auto& piece : i){
-			if(piece->selectFigure(event)){
-				_selectedPieceId = relativePieceid;
-				_selectedPiecePlayerId = currPlayerid;
-				_isPieceGrabbed = true;
-
-				const auto moveTile = _pieces[_selectedPiecePlayerId][_selectedPieceId]->getMoveTiles(_pieces);
-				_gameBoardInterface->onPieceGrabbed(BoardUtils::getBoardPos(event.pos), moveTile);
-				return;
-			}
-			++relativePieceid;
+			const auto moveTile = _pieces[_currPlayerId][_selectedPieceId]->getMoveTiles(_pieces);
+			_gameBoardInterface->onPieceGrabbed(BoardUtils::getBoardPos(event.pos), moveTile);
+			return;
 		}
-		++currPlayerid;
+		++relativePieceid;
 	}
 }
-
 void PieceHandler::doMovePiece(const BoardPos& boardPos){
-	_pieces[_selectedPiecePlayerId][_selectedPieceId]->setBoardPos(boardPos);
-	const auto opponrntId = BoardUtils::getOpponentId(_pieces[_selectedPiecePlayerId][_selectedPieceId]->getPlayerId());
+	_pieces[_currPlayerId][_selectedPieceId]->setBoardPos(boardPos);
+	const auto opponrntId = BoardUtils::getOpponentId(_pieces[_currPlayerId][_selectedPieceId]->getPlayerId());
 	int32_t collisionIndex = -1;
 	if(BoardUtils::doCollideWithPiece(boardPos, _pieces[opponrntId], collisionIndex)){
 		_pieces[opponrntId].erase(_pieces[opponrntId].begin() + collisionIndex);

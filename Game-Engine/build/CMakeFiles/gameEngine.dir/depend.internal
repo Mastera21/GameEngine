@@ -218,6 +218,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
 CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
+ ..//game/interfaces/GameInterface.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/pieces/types/Pawn.h
  ..//game/utils/BoardPos.h

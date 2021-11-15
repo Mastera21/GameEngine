@@ -32,7 +32,7 @@ private:
 	GameLogic _gameLogic;
 
 	void finishTurn() final;
-	void onPawnPromotion(PieceType pieceType) final;
+	void onPawnPromotion() final;
 };
 
 #endif /* GAME_GAME_H_ */

@@ -559,6 +559,8 @@ unordered_map
 -
 game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
+game/interfaces/GameInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/interfaces/GameInterface.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Rook.cpp
 game/pieces/types/Rook.h

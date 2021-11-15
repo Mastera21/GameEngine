@@ -29,11 +29,9 @@ int32_t Game::init(const GameCfg cfg){
 
 	return EXIT_SUCCESS;
 }
-
 void Game::deinit(){
 
 }
-
 void Game::draw(){
 	_board.draw();
 	_pieceHandler.draw();
@@ -44,9 +42,8 @@ void Game::handleEvent(const Event& event){
 }
 void Game::finishTurn(){
 	_gameLogic.finishTurn();
-
-	std::cout<<"current player: "<<_gameLogic.getActivePlayerId()<<"\n";
+	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
 }
-void Game::onPawnPromotion(PieceType pieceType) {
-	std::cout<<"Received piecePromotion with PieceType: "<<static_cast<int32_t>(pieceType)<<"n";
+void Game::onPawnPromotion() {
+	std::cout<<"Received piecePromotion from playerId: "<<_gameLogic.getActivePlayerId()<<"\n";
 }

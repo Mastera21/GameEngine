@@ -11,6 +11,9 @@
 
 //Own components headers
 #include "game/utils/BoardUtils.h"
+#include "game/interfaces/GameInterface.h"
+
+Pawn::Pawn(GameInterface* gameInterface) : _gameInterface(gameInterface){}
 
 std::vector<TileData> Pawn::getMoveTiles(const std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const {
 	if(Defines::WHITE_PLAYER_ID == _playerId){
@@ -161,6 +164,23 @@ std::unordered_map<Defines::Direction, MoveDirection> Pawn::getBlackBoardMoves()
 		futurePos = BoardUtils::getAdjacentPos(Defines::DOWN, futurePos);
 		boardMoves[Defines::DOWN].emplace_back(futurePos);
 	}
-
 	return boardMoves;
 }
+
+void Pawn::setBoardPos(const BoardPos& pos) {
+	ChessPiece::setBoardPos(pos);
+
+	if(_playerId == Defines::WHITE_PLAYER_ID){
+		if(Defines::WHITE_PLAYER_START_END_ROW == _boardPos.row){
+			_gameInterface->onPawnPromotion();
+		}
+	}else {
+		if(Defines::BLACK_PLAYER_START_END_ROW == _boardPos.row){
+			_gameInterface->onPawnPromotion();
+		}
+	}
+}
+
+
+
+
