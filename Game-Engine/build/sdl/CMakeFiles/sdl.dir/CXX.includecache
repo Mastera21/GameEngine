@@ -187,8 +187,6 @@ iostream
 -
 sdl/Texture.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/containers/sdl/Texture.h
-utils/drawing/DrawParams.h
-/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/containers/utils/drawing/DrawParams.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/sdl/src/containers/TextContainer.cpp
 sdl/containers/TextContainer.h
