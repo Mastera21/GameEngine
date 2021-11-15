@@ -15,6 +15,7 @@
 #include "game/pieces/PieceHandler.h"
 #include "game/logic/GameLogic.h"
 #include "game/interfaces/GameInterface.h"
+#include "game/panels/PiecePromotionPanel.h"
 
 //Forward declarations
 struct Event;
@@ -30,6 +31,7 @@ private:
 	GameBoard _board;
 	PieceHandler _pieceHandler;
 	GameLogic _gameLogic;
+	PiecePromotionPanel _piecePromotionPanel;
 
 	void finishTurn() final;
 	void onPawnPromotion() final;

@@ -115,14 +115,10 @@ cstdint
 -
 array
 -
-game/interfaces/GameInterface.h
-../game/panels/game/interfaces/GameInterface.h
 game/panels/buttons/PiecePromotionButton.h
 ../game/panels/game/panels/buttons/PiecePromotionButton.h
 game/panels/config/PiecePromotionPanelCfg.h
 ../game/panels/game/panels/config/PiecePromotionPanelCfg.h
-sdl/Event.h
-../game/panels/sdl/Event.h
 
 ..//game/panels/buttons/PiecePromotionButton.h
 cstdint
@@ -537,6 +533,10 @@ game/panels/PiecePromotionPanel.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/game/panels/PiecePromotionPanel.h
 iostream
 -
+game/interfaces/GameInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/game/interfaces/GameInterface.h
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp
 game/panels/buttons/PiecePromotionButton.h
