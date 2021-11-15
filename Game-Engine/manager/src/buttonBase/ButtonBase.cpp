@@ -17,9 +17,15 @@ void ButtonBase::lockInput(){
 	_isInputUnlocked = false;
 	Image::setFrame(DISABLED);
 }
+
 void ButtonBase::unlockInput(){
 	_isInputUnlocked = true;
 	Image::setFrame(UNCLICKED);
+}
+
+void ButtonBase::destroy(){
+	_isInputUnlocked = false;
+	Image::destroy();
 }
 
 bool ButtonBase::isInputUnlocked() const{
@@ -29,4 +35,3 @@ bool ButtonBase::isInputUnlocked() const{
 bool ButtonBase::containsEvent(const Event &e){
 	return Image::containsPoint(e.pos);
 }
-

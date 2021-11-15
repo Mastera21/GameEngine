@@ -25,6 +25,8 @@ public:
 
 	virtual void draw();
 
+	void destroy();
+
 	void lockInput();
 	void unlockInput();
 
