@@ -131,6 +131,16 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 	cfg.unfinishedPieceFontId = FontId::ANGELINE_VINTAGE;
 
+	auto& panelCfg = cfg.piecePromotionPanelCfg;
+	panelCfg.whitePiecesRsrcId = TextureId::WHITE_PIECES;
+	panelCfg.blackPiecesRsrcId = TextureId::BLACK_PIECES;
+	panelCfg.buttonBgrRsrcId = TextureId::PROMOTION_BUTTON;
+	panelCfg.gameBoardWidth = CHESS_BOARD_WIDTH_HEIGHT;
+	panelCfg.gameBoatdHeight = CHESS_BOARD_WIDTH_HEIGHT;
+	panelCfg.buttonBgrWidth = PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT;
+	panelCfg.buttonBgrHeight = PIECE_PROMOTION_BUTTON_IMG_WIDTH_HEIGHT;
+	panelCfg.buttonWidth = CHESS_PIECES_WIDTH_HEIGHT;
+	panelCfg.buttonHeight = CHESS_PIECES_WIDTH_HEIGHT;
 }
 
 EngineConfig EngineConfigLoader::loadConfig(){
