@@ -14,10 +14,15 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/interfaces/GameBoardInterface.h
  ..//game/interfaces/GameInterface.h
  ..//game/logic/GameLogic.h
+ ..//game/panels/PiecePromotionPanel.h
+ ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -54,10 +59,15 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/interfaces/GameBoardInterface.h
  ..//game/interfaces/GameInterface.h
  ..//game/logic/GameLogic.h
+ ..//game/panels/PiecePromotionPanel.h
+ ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -93,6 +103,7 @@ CMakeFiles/gameEngine.dir/engine/EngineConfigLoader.cpp.o
  ..//common/CommonDefines.h
  ..//engine/config/EngineConfig.h
  ..//game/config/GameCfg.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ../manager/include/manager/config/DrawMgrCfg.h
  ../manager/include/manager/config/ManagerHandlerCfg.h
  ../manager/include/manager/config/RsrcMgrCfg.h
@@ -115,10 +126,15 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/interfaces/GameBoardInterface.h
  ..//game/interfaces/GameInterface.h
  ..//game/logic/GameLogic.h
+ ..//game/panels/PiecePromotionPanel.h
+ ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h
  ../manager/include/manager/drawing/Widget.h
@@ -138,6 +154,7 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/interfaces/GameBoardInterface.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
  ..//game/utils/BoardUtils.h
@@ -171,13 +188,29 @@ CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
  ..//game/interfaces/GameInterface.h
  ..//game/panels/PiecePromotionPanel.h
  ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
  ..//game/panels/config/PiecePromotionPanelCfg.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
  ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/DrawParams.h
  ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
 CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o
+ ..//game/defines/ChessDefines.h
  ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
  ..//game/defines/ChessDefines.h
@@ -293,10 +326,15 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/interfaces/GameBoardInterface.h
  ..//game/interfaces/GameInterface.h
  ..//game/logic/GameLogic.h
+ ..//game/panels/PiecePromotionPanel.h
+ ..//game/panels/buttons/PiecePromotionButton.h
+ ..//game/panels/config/PiecePromotionButtonCfg.h
+ ..//game/panels/config/PiecePromotionPanelCfg.h
  ..//game/pieces/PieceHandler.h
  ..//game/pieces/PieceHandlerPopulator.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/utils/BoardPos.h
+ ../manager/include/manager/buttonBase/ButtonBase.h
  ../manager/include/manager/debug/Console.h
  ../manager/include/manager/drawing/Image.h
  ../manager/include/manager/drawing/Text.h

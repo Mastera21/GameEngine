@@ -9,15 +9,14 @@
 
 //Own components headers
 #include "game/panels/config/PiecePromotionButtonCfg.h"
-#include "sdl/Event.h"
-#include "manager/drawing/Image.h"
+#include "manager/buttonBase/ButtonBase.h"
 //Forward declarations
 
-class PiecePromotionButton {
+class PiecePromotionButton : public ButtonBase {
 public:
 	int32_t init(const PiecePromotionButtonCfg& cfg);
-	void draw();
-	void handleEvent(const Event& e);
+	void draw() final;
+	void handleEvent(const Event& e) final;
 	void activate(int32_t activePlayerId);
 private:
 	Image _bgrImg;

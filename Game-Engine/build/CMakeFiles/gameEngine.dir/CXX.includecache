@@ -51,6 +51,8 @@ game/logic/GameLogic.h
 ../game/game/logic/GameLogic.h
 game/interfaces/GameInterface.h
 ../game/game/interfaces/GameInterface.h
+game/panels/PiecePromotionPanel.h
+../game/game/panels/PiecePromotionPanel.h
 
 ..//game/board/GameBoard.h
 cstdint
@@ -81,6 +83,8 @@ cstdint
 -
 unordered_map
 -
+game/panels/config/PiecePromotionPanelCfg.h
+../game/config/game/panels/config/PiecePromotionPanelCfg.h
 
 ..//game/defines/ChessDefines.h
 cstdint
@@ -123,6 +127,22 @@ game/panels/config/PiecePromotionPanelCfg.h
 ..//game/panels/buttons/PiecePromotionButton.h
 cstdint
 -
+game/panels/config/PiecePromotionButtonCfg.h
+../game/panels/buttons/game/panels/config/PiecePromotionButtonCfg.h
+manager/buttonBase/ButtonBase.h
+../game/panels/buttons/manager/buttonBase/ButtonBase.h
+
+..//game/panels/config/PiecePromotionButtonCfg.h
+cstdint
+-
+iostream
+-
+functional
+-
+game/defines/ChessDefines.h
+../game/panels/config/game/defines/ChessDefines.h
+utils/drawing/Point.h
+../game/panels/config/utils/drawing/Point.h
 
 ..//game/panels/config/PiecePromotionPanelCfg.h
 cstdint
@@ -207,6 +227,12 @@ utils/drawing/Point.h
 ../game/utils/utils/drawing/Point.h
 game/pieces/types/ChessPiece.h
 ../game/utils/game/pieces/types/ChessPiece.h
+
+../manager/include/manager/buttonBase/ButtonBase.h
+manager/drawing/Image.h
+../manager/include/manager/buttonBase/manager/drawing/Image.h
+sdl/Event.h
+../manager/include/manager/buttonBase/sdl/Event.h
 
 ../manager/include/manager/config/DrawMgrCfg.h
 cstdint

@@ -24,6 +24,6 @@ struct PiecePromotionButtonCfg{
 	int32_t bgrHeight = 0;
 	int32_t width = 0;
 	int32_t height = 0;
-	PieceType pieceType;
+	PieceType pieceType = PieceType::UNKNOWN;
 };
 #endif /* GAME_PANELS_CONFIG_PIECEPROMOTIONBUTTONCFG_H_ */

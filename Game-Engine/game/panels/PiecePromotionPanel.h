@@ -16,7 +16,7 @@ class Event;
 
 class PiecePromotionPanel {
 public:
-	int32_t init(const PiecePromotionPanelCfg& cfg);
+	int32_t init(const PiecePromotionPanelCfg& cfg, GameInterface* gameInterface);
 	void handleEvent(const Event& e);
 	void draw();
 	void activate(int32_t playerId);

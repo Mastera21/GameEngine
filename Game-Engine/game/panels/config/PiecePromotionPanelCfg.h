@@ -10,10 +10,8 @@
 //Own components headers
 
 //Forward declarations
-class GameInterface;
 
 struct PiecePromotionPanelCfg{
-	GameInterface* gameInterface = nullptr;
 	int32_t whitePiecesRsrcId = 0;
 	int32_t blackPiecesRsrcId = 0;
 	int32_t buttonBgrRsrcId = 0;
