@@ -179,6 +179,9 @@ CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../utils/include/utils/
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o: ../game/board/MoveSelector.cpp
 
+CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o: ../game/board/boardAnim/GameBoardAnim.h
+CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o: ../game/board/boardAnim/GameBoardAnim.cpp
+
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.cpp

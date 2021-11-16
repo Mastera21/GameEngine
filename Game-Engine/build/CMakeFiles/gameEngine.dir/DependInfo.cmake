@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/Game.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/GameBoard.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/boardAnim/GameBoardAnim.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o"
