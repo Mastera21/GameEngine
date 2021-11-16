@@ -51,4 +51,7 @@ void ChessPiece::setBoardPos(const BoardPos& pos){
 	_boardPos = pos;
 	_pieceImg.setPos(BoardUtils::getAbsPos(_boardPos));
 }
+void ChessPiece::setWidgetFlip(WidgetFlip flipType){
+	_pieceImg.setFlipType(flipType);
+}
 

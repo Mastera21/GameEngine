@@ -68,3 +68,6 @@ void Game::onBoardAnimFinished(){
 	_gameLogic.finishTurn();
 	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
 }
+void Game::setWidgetFlip([[maybe_unused]]WidgetFlip flipType) {
+	//_pieceHandler.setWidgetFlip(flipType);
+}

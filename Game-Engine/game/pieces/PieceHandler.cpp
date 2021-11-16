@@ -99,3 +99,10 @@ void PieceHandler::doMovePiece(const BoardPos& boardPos){
 	_gameBoardInterface->onPieceUngrabbed();
 	_gameInterface->finishTurn();
 }
+void PieceHandler::setWidgetFlip(WidgetFlip flipType){
+	for(auto& playerpieces : _pieces){
+		for(auto& pieces : playerpieces){
+			pieces->setWidgetFlip(flipType);
+		}
+	}
+}

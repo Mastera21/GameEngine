@@ -38,12 +38,11 @@ public:
 	virtual void setBoardPos(const BoardPos& pos);
 	virtual std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const = 0;
 
+	BoardPos getBoardPos() const;
+	int32_t getPlayerId() const;
 
 	bool selectFigure(const Event& event) const;
-
-	BoardPos getBoardPos() const;
-
-	int32_t getPlayerId() const;
+	void setWidgetFlip(WidgetFlip flipType);
 
 protected:
 	Image _pieceImg;

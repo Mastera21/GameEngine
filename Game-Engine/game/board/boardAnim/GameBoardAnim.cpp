@@ -35,5 +35,7 @@ void GameBoardAnim::startAnim(int32_t playerId){
 		_targetFlipType = WidgetFlip::NONE;
 	}
 	_boardImg->setFlipType(_targetFlipType);
+	_gameInterface->setWidgetFlip(_targetFlipType);
+
 	_gameInterface->onBoardAnimFinished();
 }
