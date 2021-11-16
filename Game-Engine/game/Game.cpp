@@ -53,6 +53,7 @@ void Game::handleEvent(const Event& event){
 
 void Game::promotePiece(PieceType pieceType){
 	std::cout<<"Received piecePromotion for pieceType: "<<static_cast<int32_t>(pieceType)<<"\n";
+	_pieceHandler.piecePromotion(pieceType);
 }
 
 void Game::finishTurn(){

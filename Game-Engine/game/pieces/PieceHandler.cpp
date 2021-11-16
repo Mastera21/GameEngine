@@ -41,6 +41,11 @@ void PieceHandler::draw(){
 		}
 	}
 }
+
+void PieceHandler::piecePromotion(PieceType pieceType){
+	//TODO
+}
+
 void PieceHandler::handleEvent(const Event& event){
 	_isPieceGrabbed ? handlePieceGrabbedEvent(event) : handlePieceUngrabbedEvent(event);
 }
