@@ -42,7 +42,7 @@ void PieceHandler::draw(){
 	}
 }
 
-void PieceHandler::piecePromotion(PieceType pieceType){
+void PieceHandler::piecePromotion([[maybe_unused]]PieceType pieceType){
 	//TODO
 }
 
