@@ -22,10 +22,7 @@ void PiecePromotionButton::draw() {
 	ButtonBase::draw();
 }
 void PiecePromotionButton::handleEvent(const Event& e) {
-	if(e.type == TouchEvent::TOUCH_PRESS){
-		setFrame(CLICKED);
-	}else if(e.type == TouchEvent::TOUCH_RELEASE){
-		setFrame(UNCLICKED);
+	if(e.type == TouchEvent::TOUCH_RELEASE){
 		_cfg.onBtnClicked(_cfg.pieceType);
 	}
 }
