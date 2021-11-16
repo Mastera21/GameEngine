@@ -41,11 +41,10 @@ void PieceHandler::draw(){
 		}
 	}
 }
-
 void PieceHandler::piecePromotion([[maybe_unused]]PieceType pieceType){
 	//TODO
+	std::cout<<"Received piecePromotion for pieceType: "<<static_cast<int32_t>(pieceType)<<"\n";
 }
-
 void PieceHandler::handleEvent(const Event& event){
 	_isPieceGrabbed ? handlePieceGrabbedEvent(event) : handlePieceUngrabbedEvent(event);
 }
@@ -90,10 +89,10 @@ void PieceHandler::handlePieceUngrabbedEvent(const Event& event){
 }
 void PieceHandler::doMovePiece(const BoardPos& boardPos){
 	_pieces[_currPlayerId][_selectedPieceId]->setBoardPos(boardPos);
-	const auto opponrntId = BoardUtils::getOpponentId(_pieces[_currPlayerId][_selectedPieceId]->getPlayerId());
+	const auto opponentId = BoardUtils::getOpponentId(_pieces[_currPlayerId][_selectedPieceId]->getPlayerId());
 	int32_t collisionIndex = -1;
-	if(BoardUtils::doCollideWithPiece(boardPos, _pieces[opponrntId], collisionIndex)){
-		_pieces[opponrntId].erase(_pieces[opponrntId].begin() + collisionIndex);
+	if(BoardUtils::doCollideWithPiece(boardPos, _pieces[opponentId], collisionIndex)){
+		_pieces[opponentId].erase(_pieces[opponentId].begin() + collisionIndex);
 	}
 
 	_gameBoardInterface->onPieceUngrabbed();
