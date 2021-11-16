@@ -8,6 +8,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ..//game/Game.h
  ..//game/board/GameBoard.h
  ..//game/board/MoveSelector.h
+ ..//game/board/boardAnim/GameBoardAnim.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
@@ -53,6 +54,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ..//game/Game.h
  ..//game/board/GameBoard.h
  ..//game/board/MoveSelector.h
+ ..//game/board/boardAnim/GameBoardAnim.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
@@ -120,6 +122,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ..//game/Game.h
  ..//game/board/GameBoard.h
  ..//game/board/MoveSelector.h
+ ..//game/board/boardAnim/GameBoardAnim.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
@@ -181,6 +184,13 @@ CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/MoveSelector.cpp
 CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o
  ..//game/board/boardAnim/GameBoardAnim.h
+ ..//game/defines/ChessDefines.h
+ ..//game/interfaces/GameInterface.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/boardAnim/GameBoardAnim.cpp
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
  ..//game/defines/ChessDefines.h
@@ -323,6 +333,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ..//game/Game.h
  ..//game/board/GameBoard.h
  ..//game/board/MoveSelector.h
+ ..//game/board/boardAnim/GameBoardAnim.h
  ..//game/config/GameCfg.h
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h

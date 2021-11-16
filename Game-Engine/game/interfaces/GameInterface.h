@@ -17,6 +17,7 @@ public:
 	virtual void finishTurn() = 0;
 	virtual void onPawnPromotion() = 0;
 	virtual void promotePiece(PieceType pieceType) = 0;
+	virtual void onBoardAnimFinished() = 0;
 
 };
 

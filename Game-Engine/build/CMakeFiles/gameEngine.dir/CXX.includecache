@@ -45,6 +45,8 @@ manager/drawing/Text.h
 ../game/manager/drawing/Text.h
 game/board/GameBoard.h
 ../game/game/board/GameBoard.h
+game/board/boardAnim/GameBoardAnim.h
+../game/game/board/boardAnim/GameBoardAnim.h
 game/pieces/PieceHandler.h
 ../game/game/pieces/PieceHandler.h
 game/logic/GameLogic.h
@@ -81,6 +83,8 @@ manager/drawing/Image.h
 ..//game/board/boardAnim/GameBoardAnim.h
 cstdint
 -
+manager/drawing/Image.h
+../game/board/boardAnim/manager/drawing/Image.h
 
 ..//game/config/GameCfg.h
 cstdint
@@ -553,6 +557,8 @@ game/board/boardAnim/GameBoardAnim.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/boardAnim/game/board/boardAnim/GameBoardAnim.h
 iostream
 -
+game/interfaces/GameInterface.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/board/boardAnim/game/interfaces/GameInterface.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
 game/logic/GameLogic.h

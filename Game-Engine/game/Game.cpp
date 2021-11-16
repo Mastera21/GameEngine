@@ -32,6 +32,11 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
+	if(EXIT_SUCCESS != _gameBoardAnim.init(this, &_board.getBoardImg())){
+		std::cerr<<"_piecePromotionPanel.init() failed.\n";
+		return EXIT_FAILURE;
+	}
+
 	return EXIT_SUCCESS;
 }
 void Game::deinit(){
@@ -42,7 +47,6 @@ void Game::draw(){
 	_pieceHandler.draw();
 	_piecePromotionPanel.draw();
 }
-
 void Game::handleEvent(const Event& event){
 	if(_piecePromotionPanel.isActive()){
 		_piecePromotionPanel.handleEvent(event);
@@ -50,16 +54,17 @@ void Game::handleEvent(const Event& event){
 	}
 	_pieceHandler.handleEvent(event);
 }
-
 void Game::promotePiece(PieceType pieceType){
 	std::cout<<"Received piecePromotion for pieceType: "<<static_cast<int32_t>(pieceType)<<"\n";
 	_pieceHandler.piecePromotion(pieceType);
 }
-
 void Game::finishTurn(){
-	_gameLogic.finishTurn();
-	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
+	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
 }
 void Game::onPawnPromotion() {
 	_piecePromotionPanel.activate(_gameLogic.getActivePlayerId());
+}
+void Game::onBoardAnimFinished(){
+	_gameLogic.finishTurn();
+	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
 }

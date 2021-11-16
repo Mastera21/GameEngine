@@ -29,6 +29,9 @@ void GameBoard::draw(){
 	_moveSelector.draw();
 }
 
+Image& GameBoard::getBoardImg(){
+	return _boardImg;
+}
 void GameBoard::onPieceGrabbed(const BoardPos& boardPos, const std::vector<TileData>& moveTiles) {
 	_targetImg.show();
 	_targetImg.setPos(BoardUtils::getAbsPos(boardPos));
@@ -47,7 +50,6 @@ void GameBoard::onPieceUngrabbed() {
 		stopTimer(_blinkTimerId);
 	}
 }
-
 bool GameBoard::isMoveAllowed(const BoardPos &pos) const {
 	for(const auto& i : _currMoveTiles){
 		if(i.boardPos == pos){
