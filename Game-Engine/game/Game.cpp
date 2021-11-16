@@ -37,6 +37,11 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
+	if(EXIT_SUCCESS != _inputInverter.init(cfg.piecePromotionPanelCfg.gameBoardWidth, cfg.piecePromotionPanelCfg.gameBoardWidth)){
+		std::cerr<<"_piecePromotionPanel.init() failed.\n";
+		return EXIT_FAILURE;
+	}
+
 	return EXIT_SUCCESS;
 }
 void Game::deinit(){
@@ -47,7 +52,8 @@ void Game::draw(){
 	_pieceHandler.draw();
 	_piecePromotionPanel.draw();
 }
-void Game::handleEvent(const Event& event){
+void Game::handleEvent(Event& event){
+	_inputInverter.invertEvent(event);
 	if(_piecePromotionPanel.isActive()){
 		_piecePromotionPanel.handleEvent(event);
 		return;
@@ -70,4 +76,5 @@ void Game::onBoardAnimFinished(){
 }
 void Game::setWidgetFlip([[maybe_unused]]WidgetFlip flipType) {
 	//_pieceHandler.setWidgetFlip(flipType);
+	_inputInverter.setBoardFlipType(flipType);
 }

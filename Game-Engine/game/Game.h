@@ -17,6 +17,7 @@
 #include "game/logic/GameLogic.h"
 #include "game/interfaces/GameInterface.h"
 #include "game/panels/PiecePromotionPanel.h"
+#include "game/logic/InputInverter.h"
 
 //Forward declarations
 struct Event;
@@ -26,7 +27,7 @@ public:
 	int32_t init(const GameCfg cfg);
 	void deinit();
 	void draw();
-	void handleEvent(const Event& event);
+	void handleEvent(Event& event);
 
 private:
 	GameBoard _board;
@@ -34,6 +35,7 @@ private:
 	GameLogic _gameLogic;
 	PiecePromotionPanel _piecePromotionPanel;
 	GameBoardAnim _gameBoardAnim;
+	InputInverter _inputInverter;
 
 	void finishTurn() final;
 	void onPawnPromotion() final;

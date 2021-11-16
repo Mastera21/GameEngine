@@ -55,6 +55,8 @@ game/interfaces/GameInterface.h
 ../game/game/interfaces/GameInterface.h
 game/panels/PiecePromotionPanel.h
 ../game/game/panels/PiecePromotionPanel.h
+game/logic/InputInverter.h
+../game/game/logic/InputInverter.h
 
 ..//game/board/GameBoard.h
 cstdint
@@ -125,6 +127,8 @@ cstdint
 ..//game/logic/InputInverter.h
 cstdint
 -
+utils/drawing/DrawParams.h
+../game/logic/utils/drawing/DrawParams.h
 
 ..//game/panels/PiecePromotionPanel.h
 cstdint
@@ -581,6 +585,8 @@ string
 -
 iostream
 -
+sdl/Event.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/sdl/Event.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp
 game/panels/PiecePromotionPanel.h
