@@ -30,9 +30,10 @@ int32_t GameBoardAnim::init(GameInterface* gameInterface, Image* boardImg){
 }
 void GameBoardAnim::startAnim(int32_t playerId){
 	if(Defines::WHITE_PLAYER_ID == playerId){
-		_boardImg->setRotation(FULL_ROTATION / 2);
+		_targetFlipType = WidgetFlip::HORIZONTAL_AND_VERTICAL;
 	}else{
-		_boardImg->setRotation(0);
+		_targetFlipType = WidgetFlip::NONE;
 	}
+	_boardImg->setFlipType(_targetFlipType);
 	_gameInterface->onBoardAnimFinished();
 }
