@@ -37,7 +37,7 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
-	if(EXIT_SUCCESS != _inputInverter.init(cfg.piecePromotionPanelCfg.gameBoardWidth, cfg.piecePromotionPanelCfg.gameBoardWidth)){
+	if(EXIT_SUCCESS != _inputInverter.init(cfg.piecePromotionPanelCfg.gameBoardWidth, cfg.piecePromotionPanelCfg.gameBoatdHeight)){
 		std::cerr<<"_piecePromotionPanel.init() failed.\n";
 		return EXIT_FAILURE;
 	}
