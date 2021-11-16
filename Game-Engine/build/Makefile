@@ -378,6 +378,33 @@ game/logic/GameLogic.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.s
 .PHONY : game/logic/GameLogic.cpp.s
 
+game/logic/InputInverter.o: game/logic/InputInverter.cpp.o
+
+.PHONY : game/logic/InputInverter.o
+
+# target to build an object file
+game/logic/InputInverter.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o
+.PHONY : game/logic/InputInverter.cpp.o
+
+game/logic/InputInverter.i: game/logic/InputInverter.cpp.i
+
+.PHONY : game/logic/InputInverter.i
+
+# target to preprocess a source file
+game/logic/InputInverter.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.i
+.PHONY : game/logic/InputInverter.cpp.i
+
+game/logic/InputInverter.s: game/logic/InputInverter.cpp.s
+
+.PHONY : game/logic/InputInverter.s
+
+# target to generate assembly for a file
+game/logic/InputInverter.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.s
+.PHONY : game/logic/InputInverter.cpp.s
+
 game/panels/PiecePromotionPanel.o: game/panels/PiecePromotionPanel.cpp.o
 
 .PHONY : game/panels/PiecePromotionPanel.o
@@ -684,6 +711,9 @@ help:
 	@echo "... game/logic/GameLogic.o"
 	@echo "... game/logic/GameLogic.i"
 	@echo "... game/logic/GameLogic.s"
+	@echo "... game/logic/InputInverter.o"
+	@echo "... game/logic/InputInverter.i"
+	@echo "... game/logic/InputInverter.s"
 	@echo "... game/panels/PiecePromotionPanel.o"
 	@echo "... game/panels/PiecePromotionPanel.i"
 	@echo "... game/panels/PiecePromotionPanel.s"

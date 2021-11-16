@@ -59,6 +59,8 @@ add_executable(
 		 ${_BASE_DIR}/game/utils/BoardPos.h
 		 ${_BASE_DIR}/game/logic/GameLogic.h
 		 ${_BASE_DIR}/game/logic/GameLogic.cpp
+		 ${_BASE_DIR}/game/logic/InputInverter.h
+		 ${_BASE_DIR}/game/logic/InputInverter.cpp
 		 ${_BASE_DIR}/game/utils/BoardUtils.h
 		 ${_BASE_DIR}/game/utils/BoardUtils.cpp
 		 ${_BASE_DIR}/game/pieces/types/ChessPiece.h

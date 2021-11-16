@@ -196,6 +196,9 @@ CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/defines/ChessDefin
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.cpp
 
+CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../game/logic/InputInverter.h
+CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../game/logic/InputInverter.cpp
+
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/panels/PiecePromotionPanel.h
