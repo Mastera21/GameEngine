@@ -24,16 +24,18 @@ std::vector<TileData> Knight::getWhiteMoveTiles(const std::array<ChessPiece::Pla
 	moveTile.reserve(boardMoves.size());
 	const int32_t opponentId = BoardUtils::getOpponentId(_playerId);
 
-	std::unordered_map<Defines::Direction, MoveDirection>::const_iterator it = boardMoves.find(Defines::UP);
+	std::unordered_map<Defines::Direction, MoveDirection>::const_iterator it = boardMoves.begin();
 	if(it != boardMoves.end()){
-		for(const auto& pos : it->second){
-			const auto tileType = BoardUtils::getTileType(pos, activePieces[_playerId], activePieces[opponentId]);
+		if(it->first == Defines::UP || it->first == Defines::DOWN || it->first == Defines::LEFT || it->first == Defines::RIGHT){
+			for(const auto& pos : it->second){
+				const auto tileType = BoardUtils::getTileType(pos, activePieces[_playerId], activePieces[opponentId]);
 
-			TileData tileData;
-			tileData.boardPos = pos;
-			tileData.tileType = tileType;
+				TileData tileData;
+				tileData.boardPos = pos;
+				tileData.tileType = tileType;
 
-			moveTile.push_back(tileData);
+				moveTile.push_back(tileData);
+			}
 		}
 	}
 
@@ -66,6 +68,7 @@ std::unordered_map<Defines::Direction, MoveDirection> Knight::getWhiteBoardMoves
 	std::unordered_map<Defines::Direction, MoveDirection> boardMoves(allowedCount);
 
 	BoardPos futurePos;
+	//up
 	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row - 1 , _boardPos.col - 1));
 	if(BoardUtils::isInsideBoard(futurePos)){
 		boardMoves[Defines::UP].emplace_back(futurePos);
@@ -75,11 +78,35 @@ std::unordered_map<Defines::Direction, MoveDirection> Knight::getWhiteBoardMoves
 		boardMoves[Defines::UP].emplace_back(futurePos);
 	}
 
+	//right
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row, _boardPos.col + 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+			boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 2, _boardPos.col + 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
 
-	//TODO
+	//left
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row , _boardPos.col - 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+			boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 2, _boardPos.col - 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
 
-
-
+	//bottom
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 3, _boardPos.col + 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+				boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 3, _boardPos.col - 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
 	return boardMoves;
 }
 
@@ -88,12 +115,16 @@ std::vector<TileData> Knight::getBlackMoveTiles([[maybe_unused]]const std::array
 	std::vector<TileData> moveTile;
 	moveTile.reserve(boardMoves.size());
 
+	//TODO
+
 	return moveTile;
 }
 
 std::unordered_map<Defines::Direction, MoveDirection> Knight::getBlackBoardMoves() const{
 	constexpr auto allowedCount = 3;
 	std::unordered_map<Defines::Direction, MoveDirection> boardMoves(allowedCount);
+
+	//TODO
 
 	return boardMoves;
 }

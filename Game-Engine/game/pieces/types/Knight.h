@@ -22,6 +22,9 @@ private:
 
 	std::unordered_map<Defines::Direction, MoveDirection> getWhiteBoardMoves() const;
 	std::unordered_map<Defines::Direction, MoveDirection> getBlackBoardMoves() const;
+
+	void upDir(BoardPos& futurePos, std::unordered_map<Defines::Direction, MoveDirection>& boardMoves) const;
+	void rightDir(BoardPos futurePos, std::unordered_map<Defines::Direction, MoveDirection> boardMoves) const;
 };
 
 #endif /* GAME_PIECES_TYPES_KNIGHT_H_ */
