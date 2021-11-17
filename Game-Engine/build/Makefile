@@ -513,6 +513,33 @@ game/pieces/PieceHandlerPopulator.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.s
 .PHONY : game/pieces/PieceHandlerPopulator.cpp.s
 
+game/pieces/types/Bishop.o: game/pieces/types/Bishop.cpp.o
+
+.PHONY : game/pieces/types/Bishop.o
+
+# target to build an object file
+game/pieces/types/Bishop.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o
+.PHONY : game/pieces/types/Bishop.cpp.o
+
+game/pieces/types/Bishop.i: game/pieces/types/Bishop.cpp.i
+
+.PHONY : game/pieces/types/Bishop.i
+
+# target to preprocess a source file
+game/pieces/types/Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.i
+.PHONY : game/pieces/types/Bishop.cpp.i
+
+game/pieces/types/Bishop.s: game/pieces/types/Bishop.cpp.s
+
+.PHONY : game/pieces/types/Bishop.s
+
+# target to generate assembly for a file
+game/pieces/types/Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.s
+.PHONY : game/pieces/types/Bishop.cpp.s
+
 game/pieces/types/ChessPiece.o: game/pieces/types/ChessPiece.cpp.o
 
 .PHONY : game/pieces/types/ChessPiece.o
@@ -726,6 +753,9 @@ help:
 	@echo "... game/pieces/PieceHandlerPopulator.o"
 	@echo "... game/pieces/PieceHandlerPopulator.i"
 	@echo "... game/pieces/PieceHandlerPopulator.s"
+	@echo "... game/pieces/types/Bishop.o"
+	@echo "... game/pieces/types/Bishop.i"
+	@echo "... game/pieces/types/Bishop.s"
 	@echo "... game/pieces/types/ChessPiece.o"
 	@echo "... game/pieces/types/ChessPiece.i"
 	@echo "... game/pieces/types/ChessPiece.s"

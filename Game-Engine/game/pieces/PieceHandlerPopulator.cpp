@@ -11,6 +11,7 @@
 #include "game/pieces/types/UnfinishedPiece.h"
 #include "game/pieces/types/Rook.h"
 #include "game/pieces/types/Pawn.h"
+#include "game/pieces/types/Bishop.h"
 
 namespace{
 constexpr auto STARTING_PIECES_COUNT = 16;
@@ -27,9 +28,11 @@ std::unique_ptr<ChessPiece> createPiece(PieceType type, GameInterface* gameInter
 	case PieceType::PAWN:
 		return std::make_unique<Pawn>(gameInterface);
 		break;
+	case PieceType::BISHOP:
+		return std::make_unique<Bishop>();
+		break;
 	case PieceType::KING:
 	case PieceType::QUEEN:
-	case PieceType::BISHOP:
 	case PieceType::KNIGHT:
 		return std::make_unique<UnfinishedPiece>();
 		break;

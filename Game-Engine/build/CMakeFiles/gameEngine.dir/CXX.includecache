@@ -186,6 +186,14 @@ array
 game/pieces/types/ChessPiece.h
 ../game/pieces/game/pieces/types/ChessPiece.h
 
+..//game/pieces/types/Bishop.h
+cstdint
+-
+vector
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+
 ..//game/pieces/types/ChessPiece.h
 cstdint
 -
@@ -631,6 +639,18 @@ game/pieces/types/Rook.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Rook.h
 game/pieces/types/Pawn.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Pawn.h
+game/pieces/types/Bishop.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Bishop.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp
+game/pieces/types/Bishop.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/Bishop.h
+string
+-
+iostream
+-
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp
 game/pieces/types/ChessPiece.h

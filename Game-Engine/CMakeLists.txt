@@ -69,6 +69,8 @@ add_executable(
 		 ${_BASE_DIR}/game/pieces/types/UnfinishedPiece.cpp
 		 ${_BASE_DIR}/game/pieces/types/Rook.h
 		 ${_BASE_DIR}/game/pieces/types/Rook.cpp
+		 ${_BASE_DIR}/game/pieces/types/Bishop.h
+		 ${_BASE_DIR}/game/pieces/types/Bishop.cpp
 		 ${_BASE_DIR}/game/pieces/types/Pawn.h
 		 ${_BASE_DIR}/game/pieces/types/Pawn.cpp
 		 ${_BASE_DIR}/game/defines/ChessDefines.h

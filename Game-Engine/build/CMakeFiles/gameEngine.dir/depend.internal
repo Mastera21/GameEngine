@@ -258,6 +258,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h
  ..//game/pieces/PieceHandlerPopulator.h
+ ..//game/pieces/types/Bishop.h
  ..//game/pieces/types/ChessPiece.h
  ..//game/pieces/types/Pawn.h
  ..//game/pieces/types/Rook.h
@@ -271,6 +272,19 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o
+ ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
+ ..//game/pieces/types/Bishop.h
+ ..//game/pieces/types/ChessPiece.h
+ ..//game/utils/BoardPos.h
+ ..//game/utils/BoardUtils.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h

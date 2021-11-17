@@ -257,6 +257,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o: ../game/pieces/PieceHa
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Bishop.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/ChessPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Pawn.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Rook.h
@@ -270,6 +271,19 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/incl
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/PieceHandlerPopulator.cpp
+
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/defines/ChessStructs.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/pieces/types/Bishop.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o: ../game/pieces/types/Bishop.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o: ../game/defines/ChessStructs.h
