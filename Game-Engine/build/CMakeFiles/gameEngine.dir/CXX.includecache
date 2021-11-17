@@ -210,6 +210,16 @@ game/utils/BoardPos.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
 
+..//game/pieces/types/Knight.h
+cstdint
+-
+vector
+-
+unordered_map
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+
 ..//game/pieces/types/Pawn.h
 cstdint
 -
@@ -641,6 +651,8 @@ game/pieces/types/Pawn.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Pawn.h
 game/pieces/types/Bishop.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Bishop.h
+game/pieces/types/Knight.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Knight.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp
 game/pieces/types/Bishop.h
@@ -663,6 +675,16 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Knight.cpp
+game/pieces/types/Knight.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/Knight.h
+string
+-
+iostream
+-
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp
 game/pieces/types/Pawn.h
