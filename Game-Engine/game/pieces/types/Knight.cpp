@@ -114,8 +114,44 @@ std::vector<TileData> Knight::getBlackMoveTiles([[maybe_unused]]const std::array
 	const std::unordered_map<Defines::Direction, MoveDirection> boardMoves = getBlackBoardMoves();
 	std::vector<TileData> moveTile;
 	moveTile.reserve(boardMoves.size());
+	const int32_t opponentId = BoardUtils::getOpponentId(_playerId);
 
-	//TODO
+	std::unordered_map<Defines::Direction, MoveDirection>::const_iterator it = boardMoves.find(Defines::UP);
+	if(it != boardMoves.end()){
+		if(it->first == Defines::UP || it->first == Defines::DOWN || it->first == Defines::LEFT || it->first == Defines::RIGHT){
+			for(const auto& pos : it->second){
+				const auto tileType = BoardUtils::getTileType(pos, activePieces[_playerId], activePieces[opponentId]);
+
+				TileData tileData;
+				tileData.boardPos = pos;
+				tileData.tileType = tileType;
+
+				moveTile.push_back(tileData);
+			}
+		}
+	}
+
+	//Take piece
+	constexpr auto diagonalMovesCount = 2;
+	const std::array<Defines::Direction, diagonalMovesCount> diagonalMoves {
+		Defines::UP_LEFT, Defines::UP_RIGHT
+	};
+
+	for(const Defines::Direction move : diagonalMoves){
+		it = boardMoves.find(move);
+		if(it != boardMoves.end()){
+			for(const auto& pos : it->second){
+				const auto tileType = BoardUtils::getTileType(pos, activePieces[_playerId], activePieces[opponentId]);
+				if(TileType::MOVE != tileType){
+					TileData tileData;
+					tileData.boardPos = pos;
+					tileData.tileType = tileType;
+
+					moveTile.push_back(tileData);
+				}
+			}
+		}
+	}
 
 	return moveTile;
 }
@@ -124,7 +160,45 @@ std::unordered_map<Defines::Direction, MoveDirection> Knight::getBlackBoardMoves
 	constexpr auto allowedCount = 3;
 	std::unordered_map<Defines::Direction, MoveDirection> boardMoves(allowedCount);
 
-	//TODO
+	BoardPos futurePos;
+	//up
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row - 1 , _boardPos.col - 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row - 1, _boardPos.col + 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
 
+	//right
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row, _boardPos.col + 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 2, _boardPos.col + 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+
+	//left
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row , _boardPos.col - 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 2, _boardPos.col - 2));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+
+	//bottom
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 3, _boardPos.col + 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
+	futurePos = BoardUtils::getAdjacentPos(Defines::UP, BoardPos(_boardPos.row + 3, _boardPos.col - 1));
+	if(BoardUtils::isInsideBoard(futurePos)){
+		boardMoves[Defines::UP].emplace_back(futurePos);
+	}
 	return boardMoves;
 }
