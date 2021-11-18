@@ -663,6 +663,8 @@ game/pieces/types/Bishop.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Bishop.h
 game/pieces/types/Knight.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Knight.h
+game/pieces/types/King.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/King.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp
 game/pieces/types/Bishop.h

@@ -13,12 +13,10 @@
 
 //Forward declarations
 
-
-class King {
+class King : public ChessPiece{
 public:
-
+	std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const final;
 private:
-
+	std::vector<MoveDirection> getBoardMoves() const;
 };
-
 #endif /* GAME_PIECES_TYPES_KING_H_ */
