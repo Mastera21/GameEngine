@@ -210,6 +210,16 @@ game/utils/BoardPos.h
 manager/drawing/Image.h
 ../game/pieces/types/manager/drawing/Image.h
 
+..//game/pieces/types/King.h
+cstdint
+-
+vector
+-
+unordered_map
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+
 ..//game/pieces/types/Knight.h
 cstdint
 -
@@ -675,6 +685,18 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 sdl/Event.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/sdl/Event.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/King.cpp
+game/pieces/types/King.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/King.h
+string
+-
+iostream
+-
+unordered_map
+-
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Knight.cpp
 game/pieces/types/Knight.h

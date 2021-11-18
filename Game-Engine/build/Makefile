@@ -567,6 +567,33 @@ game/pieces/types/ChessPiece.cpp.s:
 	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.s
 .PHONY : game/pieces/types/ChessPiece.cpp.s
 
+game/pieces/types/King.o: game/pieces/types/King.cpp.o
+
+.PHONY : game/pieces/types/King.o
+
+# target to build an object file
+game/pieces/types/King.cpp.o:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/King.cpp.o
+.PHONY : game/pieces/types/King.cpp.o
+
+game/pieces/types/King.i: game/pieces/types/King.cpp.i
+
+.PHONY : game/pieces/types/King.i
+
+# target to preprocess a source file
+game/pieces/types/King.cpp.i:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/King.cpp.i
+.PHONY : game/pieces/types/King.cpp.i
+
+game/pieces/types/King.s: game/pieces/types/King.cpp.s
+
+.PHONY : game/pieces/types/King.s
+
+# target to generate assembly for a file
+game/pieces/types/King.cpp.s:
+	$(MAKE) -f CMakeFiles/gameEngine.dir/build.make CMakeFiles/gameEngine.dir/game/pieces/types/King.cpp.s
+.PHONY : game/pieces/types/King.cpp.s
+
 game/pieces/types/Knight.o: game/pieces/types/Knight.cpp.o
 
 .PHONY : game/pieces/types/Knight.o
@@ -786,6 +813,9 @@ help:
 	@echo "... game/pieces/types/ChessPiece.o"
 	@echo "... game/pieces/types/ChessPiece.i"
 	@echo "... game/pieces/types/ChessPiece.s"
+	@echo "... game/pieces/types/King.o"
+	@echo "... game/pieces/types/King.i"
+	@echo "... game/pieces/types/King.s"
 	@echo "... game/pieces/types/Knight.o"
 	@echo "... game/pieces/types/Knight.i"
 	@echo "... game/pieces/types/Knight.s"

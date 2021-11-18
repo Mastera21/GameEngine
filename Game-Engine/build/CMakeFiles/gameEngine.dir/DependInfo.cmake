@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o"
+  "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/King.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/King.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Knight.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/Knight.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o"
   "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Rook.cpp" "/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o"
