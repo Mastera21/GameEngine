@@ -262,6 +262,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/piece
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/King.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Knight.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Pawn.h
+CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Queen.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/Rook.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/pieces/types/UnfinishedPiece.h
 CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o: ../game/utils/BoardPos.h
@@ -340,6 +341,19 @@ CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o: ../utils/include/utils/d
 CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o: ../utils/include/utils/drawing/Point.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o: ../utils/include/utils/drawing/Rectangle.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o: ../game/pieces/types/Pawn.cpp
+
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/defines/ChessDefines.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/defines/ChessStructs.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/pieces/types/ChessPiece.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/pieces/types/Queen.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/utils/BoardPos.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/utils/BoardUtils.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../manager/include/manager/drawing/Image.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../manager/include/manager/drawing/Widget.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../utils/include/utils/drawing/DrawParams.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../utils/include/utils/drawing/Point.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../utils/include/utils/drawing/Rectangle.h
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o: ../game/pieces/types/Queen.cpp
 
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o: ../game/defines/ChessStructs.h

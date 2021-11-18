@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/King.cpp.o"
+  "CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/Bishop.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/Knight.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o"

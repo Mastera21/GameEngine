@@ -263,6 +263,7 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
  ..//game/pieces/types/King.h
  ..//game/pieces/types/Knight.h
  ..//game/pieces/types/Pawn.h
+ ..//game/pieces/types/Queen.h
  ..//game/pieces/types/Rook.h
  ..//game/pieces/types/UnfinishedPiece.h
  ..//game/utils/BoardPos.h
@@ -341,6 +342,19 @@ CMakeFiles/gameEngine.dir/game/pieces/types/Pawn.cpp.o
  ../utils/include/utils/drawing/Point.h
  ../utils/include/utils/drawing/Rectangle.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp
+CMakeFiles/gameEngine.dir/game/pieces/types/Queen.cpp.o
+ ..//game/defines/ChessDefines.h
+ ..//game/defines/ChessStructs.h
+ ..//game/pieces/types/ChessPiece.h
+ ..//game/pieces/types/Queen.h
+ ..//game/utils/BoardPos.h
+ ..//game/utils/BoardUtils.h
+ ../manager/include/manager/drawing/Image.h
+ ../manager/include/manager/drawing/Widget.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Queen.cpp
 CMakeFiles/gameEngine.dir/game/pieces/types/Rook.cpp.o
  ..//game/defines/ChessDefines.h
  ..//game/defines/ChessStructs.h

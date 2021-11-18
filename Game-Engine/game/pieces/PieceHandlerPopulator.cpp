@@ -14,6 +14,7 @@
 #include "game/pieces/types/Bishop.h"
 #include "game/pieces/types/Knight.h"
 #include "game/pieces/types/King.h"
+#include "game/pieces/types/Queen.h"
 
 namespace{
 constexpr auto STARTING_PIECES_COUNT = 16;
@@ -40,12 +41,14 @@ std::unique_ptr<ChessPiece> createPiece(PieceType type, GameInterface* gameInter
 		return std::make_unique<King>();
 		break;
 	case PieceType::QUEEN:
-		return std::make_unique<UnfinishedPiece>();
+		return std::make_unique<Queen>();
 		break;
 	default:
 		std::cerr<<"Error, received invalid PieceType: "<< static_cast<int32_t>(type) <<"\n";
 		break;
 	}
+	//return this for undo pieces -> return std::make_unique<UnfinishedPiece>();
+
 	return nullptr;
 }
 

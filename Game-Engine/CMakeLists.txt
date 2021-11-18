@@ -71,6 +71,8 @@ add_executable(
 		 ${_BASE_DIR}/game/pieces/types/Rook.cpp
 		 ${_BASE_DIR}/game/pieces/types/King.h
 		 ${_BASE_DIR}/game/pieces/types/King.cpp
+		 ${_BASE_DIR}/game/pieces/types/Queen.h
+		 ${_BASE_DIR}/game/pieces/types/Queen.cpp
 		 ${_BASE_DIR}/game/pieces/types/Bishop.h
 		 ${_BASE_DIR}/game/pieces/types/Bishop.cpp
 		 ${_BASE_DIR}/game/pieces/types/Knight.h

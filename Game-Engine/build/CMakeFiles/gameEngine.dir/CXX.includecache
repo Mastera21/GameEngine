@@ -240,6 +240,16 @@ unordered_map
 game/pieces/types/ChessPiece.h
 ../game/pieces/types/game/pieces/types/ChessPiece.h
 
+..//game/pieces/types/Queen.h
+cstdint
+-
+vector
+-
+unordered_map
+-
+game/pieces/types/ChessPiece.h
+../game/pieces/types/game/pieces/types/ChessPiece.h
+
 ..//game/pieces/types/Rook.h
 cstdint
 -
@@ -665,6 +675,8 @@ game/pieces/types/Knight.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Knight.h
 game/pieces/types/King.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/King.h
+game/pieces/types/Queen.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/game/pieces/types/Queen.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp
 game/pieces/types/Bishop.h
@@ -723,6 +735,18 @@ game/utils/BoardUtils.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 game/interfaces/GameInterface.h
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/interfaces/GameInterface.h
+
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Queen.cpp
+game/pieces/types/Queen.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/pieces/types/Queen.h
+string
+-
+iostream
+-
+unordered_map
+-
+game/utils/BoardUtils.h
+/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/game/utils/BoardUtils.h
 
 /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/pieces/types/Rook.cpp
 game/pieces/types/Rook.h
