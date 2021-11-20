@@ -12,7 +12,7 @@
 class Event;
 
 enum DebugTextId {
-	FPS_TEXT_IDX, ACTIVE_TIMER_IDX, DEBUG_TEXTS_COUNT
+	FPS_TEXT_IDX, ACTIVE_TIMER_IDX, ACTIVE_WIDGETS_IDX ,DEBUG_TEXTS_COUNT
 };
 
 class Console {
@@ -20,6 +20,7 @@ public:
 	int32_t init(int64_t maxFrame, int32_t fontId);
 	void handleEvent(const Event& e);
 	void update(int64_t elapsedMicroseconds, size_t activeTimers);
+	void updateActiveWidgets(int32_t activeWidgets);
 	void draw();
 	bool isActive() const;
 
@@ -29,5 +30,4 @@ private:
 	int32_t _updateCounter = 0; //used for skipping turns
 	bool _isActive = false;
 };
-
 #endif /* MANAGER_INCLUDE_MANAGER_DEBUG_CONSOLE_H_ */

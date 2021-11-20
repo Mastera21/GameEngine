@@ -15,7 +15,7 @@
 struct SDL_Renderer;
 struct SDL_Texture;
 struct SDL_Window;
-struct Color;
+class Color;
 
 class Renderer {
 public:
@@ -38,6 +38,8 @@ public:
 
 	void setBackgroundColor(const Color& color);
 
+	int32_t getActiveWidgets() const;
+
 private:
 	SDL_Renderer* _sdlRenderer = nullptr;
 
@@ -45,6 +47,8 @@ private:
 	void drawText(const DrawParams& drawParams, SDL_Texture *texture);
 
 	void drawTextureInternal(const DrawParams& drawParams, SDL_Texture *texture);
+
+	int32_t _activeWidgets = 0;
 };
 
 #endif /* SDL_RENDERER_H_ */

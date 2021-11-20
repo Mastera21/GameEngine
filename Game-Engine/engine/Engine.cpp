@@ -18,7 +18,6 @@
 #include "utils/thread/ThreadUtils.h"
 #include "sdl/Texture.h"
 
-
 int32_t Engine::init(const EngineConfig& cfg){
 
 	if(EXIT_SUCCESS != _managerHandler.init(cfg.managerHandlerCfg)){
@@ -74,6 +73,7 @@ void Engine::drawFrame(){
 
 	_game.draw();
 	if(_consol.isActive()){
+		_consol.updateActiveWidgets(gDrawMgr->getActiveWidgets());
 		_consol.draw();
 	}
 

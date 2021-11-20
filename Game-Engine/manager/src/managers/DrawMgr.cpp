@@ -32,6 +32,9 @@ int32_t DrawMgr::init(const DrawMgrCfg& cfg){
 int64_t DrawMgr::getMaxFrams() const{
 	return _maxFrames;
 }
+int32_t DrawMgr::getActiveWidgets() const{
+	return _render.getActiveWidgets();
+}
 
 void DrawMgr::deinit(){
 	_render.deinit();
