@@ -14,7 +14,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/defines/ChessSt
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/logic/GameLogic.h
-CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/logic/InputInverter.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/panels/PiecePromotionPanel.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
 CMakeFiles/gameEngine.dir/application/Application.cpp.o: ../game/panels/config/PiecePromotionButtonCfg.h
@@ -61,7 +60,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/logic/GameLogic.h
-CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/logic/InputInverter.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/panels/PiecePromotionPanel.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
 CMakeFiles/gameEngine.dir/engine/Engine.cpp.o: ../game/panels/config/PiecePromotionButtonCfg.h
@@ -130,7 +128,6 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/logic/GameLogic.h
-CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/logic/InputInverter.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/panels/PiecePromotionPanel.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/panels/config/PiecePromotionButtonCfg.h
@@ -198,14 +195,6 @@ CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o: ../game/boar
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.h
 CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o: ../game/logic/GameLogic.cpp
-
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../game/logic/InputInverter.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../sdl/include/sdl/Event.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../utils/include/utils/drawing/DrawParams.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../utils/include/utils/drawing/Point.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../utils/include/utils/drawing/Rectangle.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../utils/include/utils/input/EventDefines.h
-CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o: ../game/logic/InputInverter.cpp
 
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/defines/ChessDefines.h
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o: ../game/interfaces/GameInterface.h
@@ -406,7 +395,6 @@ CMakeFiles/gameEngine.dir/main.cpp.o: ../game/defines/ChessStructs.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/interfaces/GameBoardInterface.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/interfaces/GameInterface.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/logic/GameLogic.h
-CMakeFiles/gameEngine.dir/main.cpp.o: ../game/logic/InputInverter.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/panels/PiecePromotionPanel.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/panels/buttons/PiecePromotionButton.h
 CMakeFiles/gameEngine.dir/main.cpp.o: ../game/panels/config/PiecePromotionButtonCfg.h

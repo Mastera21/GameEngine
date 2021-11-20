@@ -6,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.o"
   "CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.o"
   "CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o"
-  "CMakeFiles/gameEngine.dir/game/logic/InputInverter.cpp.o"
   "CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.o"
   "CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.o"

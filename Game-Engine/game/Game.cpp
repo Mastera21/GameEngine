@@ -36,11 +36,7 @@ int32_t Game::init(const GameCfg cfg){
 		std::cerr<<"_piecePromotionPanel.init() failed.\n";
 		return EXIT_FAILURE;
 	}
-
-	if(EXIT_SUCCESS != _inputInverter.init(cfg.piecePromotionPanelCfg.gameBoardWidth, cfg.piecePromotionPanelCfg.gameBoatdHeight)){
-		std::cerr<<"_piecePromotionPanel.init() failed.\n";
-		return EXIT_FAILURE;
-	}
+	std::cout<<"White player is on turn\n";
 
 	return EXIT_SUCCESS;
 }
@@ -53,7 +49,6 @@ void Game::draw(){
 	_piecePromotionPanel.draw();
 }
 void Game::handleEvent(Event& event){
-	_inputInverter.invertEvent(event);
 	if(_piecePromotionPanel.isActive()){
 		_piecePromotionPanel.handleEvent(event);
 		return;
@@ -65,6 +60,11 @@ void Game::promotePiece(PieceType pieceType){
 }
 void Game::finishTurn(){
 	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
+	if(Defines::WHITE_PLAYER_ID == _gameLogic.getActivePlayerId()){
+		std::cout<<"White player is on turn\n";
+	}else{
+		std::cout<<"Black player is on turn\n";
+	}
 }
 void Game::onPawnPromotion() {
 	_piecePromotionPanel.activate(_gameLogic.getActivePlayerId());
@@ -75,5 +75,4 @@ void Game::onBoardAnimFinished(){
 }
 void Game::setWidgetFlip([[maybe_unused]]WidgetFlip flipType) {
 	//_pieceHandler.setWidgetFlip(flipType);
-	_inputInverter.setBoardFlipType(flipType);
 }
