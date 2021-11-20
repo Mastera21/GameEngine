@@ -18,7 +18,5 @@ public:
 	virtual void onPawnPromotion() = 0;
 	virtual void promotePiece(PieceType pieceType) = 0;
 	virtual void onBoardAnimFinished() = 0;
-	virtual void setWidgetFlip(WidgetFlip flipType) = 0;
 };
-
 #endif /* GAME_INTERFACES_GAMEINTERFACE_H_ */

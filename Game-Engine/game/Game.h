@@ -39,7 +39,6 @@ private:
 	void onPawnPromotion() final;
 	void promotePiece(PieceType pieceType) final;
 	void onBoardAnimFinished() final;
-	void setWidgetFlip(WidgetFlip flipType) final;
 };
 
 #endif /* GAME_GAME_H_ */

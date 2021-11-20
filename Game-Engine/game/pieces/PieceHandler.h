@@ -25,7 +25,6 @@ public:
 	void handleEvent(const Event& event);
 	void setCurrPlayerId(int32_t currPlayerId);
 	void piecePromotion(PieceType pieceType);
-	void setWidgetFlip(WidgetFlip flipType);
 
 private:
 	std::array<ChessPiece::PlayerPieces, Defines::PLAYERS_COUNT> _pieces;
