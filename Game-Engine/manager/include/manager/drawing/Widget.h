@@ -13,7 +13,6 @@
 
 struct Widget {
 public:
-
 	//setters & getters
 	int32_t getOpacity() const;
 	Point getPos() const;
@@ -24,6 +23,7 @@ public:
 	int32_t getX() const;
 	int32_t getY() const;
 
+	int32_t getRsrcId() const;
 	double getRotation() const;
 
 	bool containsPoint(const Point& pos) const;

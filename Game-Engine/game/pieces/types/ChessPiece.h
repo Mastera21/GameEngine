@@ -40,6 +40,7 @@ public:
 
 	BoardPos getBoardPos() const;
 	int32_t getPlayerId() const;
+	int32_t getRsrcId() const;
 
 	bool selectFigure(const Event& event) const;
 	void setWidgetFlip(WidgetFlip flipType);

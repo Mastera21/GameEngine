@@ -57,6 +57,8 @@ void Game::handleEvent(Event& event){
 }
 void Game::promotePiece(PieceType pieceType){
 	_pieceHandler.piecePromotion(pieceType);
+	_isPromotionActive = false;
+	onBoardAnimFinished();
 }
 void Game::finishTurn(){
 	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
@@ -67,9 +69,13 @@ void Game::finishTurn(){
 	}
 }
 void Game::onPawnPromotion() {
+	_isPromotionActive = true;
 	_piecePromotionPanel.activate(_gameLogic.getActivePlayerId());
 }
 void Game::onBoardAnimFinished(){
+	if(_isPromotionActive){
+		return;
+	}
 	_gameLogic.finishTurn();
 	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
 }

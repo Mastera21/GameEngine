@@ -41,9 +41,21 @@ void PieceHandler::draw(){
 		}
 	}
 }
-void PieceHandler::piecePromotion([[maybe_unused]]PieceType pieceType){
-	//TODO
-	std::cout<<"Received piecePromotion for pieceType: "<<static_cast<int32_t>(pieceType)<<"\n";
+void PieceHandler::piecePromotion(PieceType pieceType){
+	const auto boardPos = _pieces[_currPlayerId][_selectedPieceId]->getBoardPos();
+	const auto piecePlayerId = _pieces[_currPlayerId][_selectedPieceId]->getPlayerId();
+	const auto pieceRsrcId = _pieces[_currPlayerId][_selectedPieceId]->getRsrcId();
+	_pieces[_currPlayerId][_selectedPieceId].reset();
+
+	ChessPieceCfg pieceCfg;
+	pieceCfg.boardPos = boardPos;
+	pieceCfg.playerId = piecePlayerId;
+	pieceCfg.rsrcId = pieceRsrcId;
+	pieceCfg.pieceType = pieceType;
+	pieceCfg.unfinishedPieceFontId = 0;
+
+	_pieces[_currPlayerId][_selectedPieceId] = PieceHandlerPopulator::createPiece(pieceType, _gameInterface);
+	_pieces[_currPlayerId][_selectedPieceId]->init(pieceCfg);
 }
 void PieceHandler::handleEvent(const Event& event){
 	_isPieceGrabbed ? handlePieceGrabbedEvent(event) : handlePieceUngrabbedEvent(event);

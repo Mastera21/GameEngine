@@ -32,6 +32,10 @@ int32_t Widget::getY() const{
 	return _drawParams.pos.y;
 }
 
+int32_t Widget::getRsrcId() const{
+	return _drawParams.rsrcId;
+}
+
 double Widget::getRotation() const{
 	return _drawParams.rotationAngle;
 }

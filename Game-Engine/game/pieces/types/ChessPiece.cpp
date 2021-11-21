@@ -47,6 +47,10 @@ int32_t ChessPiece::getPlayerId() const{
 	return _playerId;
 }
 
+int32_t ChessPiece::getRsrcId() const{
+	return _pieceImg.getRsrcId();
+}
+
 void ChessPiece::setBoardPos(const BoardPos& pos){
 	_boardPos = pos;
 	_pieceImg.setPos(BoardUtils::getAbsPos(_boardPos));

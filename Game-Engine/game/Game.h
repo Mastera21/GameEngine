@@ -39,6 +39,8 @@ private:
 	void onPawnPromotion() final;
 	void promotePiece(PieceType pieceType) final;
 	void onBoardAnimFinished() final;
+
+	bool _isPromotionActive = false;
 };
 
 #endif /* GAME_GAME_H_ */

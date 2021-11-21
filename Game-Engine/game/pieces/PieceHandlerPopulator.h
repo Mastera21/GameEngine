@@ -17,6 +17,8 @@ public:
 	PieceHandlerPopulator() = delete;
 	~PieceHandlerPopulator() = default;
 
+	static std::unique_ptr<ChessPiece> createPiece(PieceType type, GameInterface* gameInterface);
+
 	static int32_t init(
 			GameInterface* gameInterface,
 			int32_t whitePiecesRsrcId,
