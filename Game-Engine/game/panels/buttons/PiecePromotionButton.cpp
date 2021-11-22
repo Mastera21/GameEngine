@@ -32,9 +32,6 @@ void PiecePromotionButton::activate(int32_t activePlayerId){
 	const int32_t X_Y_DELTA = (_bgrImg.getWidth() - _cfg.width) / 2;
 	const Point btnPos = Point(_bgrImg.getX() + X_Y_DELTA, _bgrImg.getY() + X_Y_DELTA);
 
-	if(isCreated()){
-		ButtonBase::destroy();
-	}
 	ButtonBase::create(rsrcId, btnPos);
 	setFrame(static_cast<int32_t>(_cfg.pieceType));
 }

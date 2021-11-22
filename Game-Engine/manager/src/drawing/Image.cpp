@@ -17,10 +17,10 @@ Image::~Image(){
 }
 
 void Image::create(int32_t rsrcId, const Point& pos){
-	if(_isCreated){
-		std::cerr<<"Error, image with rsrcId: "<<rsrcId<<"was already created.\n";
+	/*if(_isCreated){
+		std::cerr<<"Error, image with rsrcId: "<<rsrcId<<" was already created.\n";
 		return;
-	}
+	}*/
 
 	const Frames& frames = gRsrcMgr->getImageFrame(rsrcId);
 	_maxFrames = static_cast<int32_t>(frames.size());
