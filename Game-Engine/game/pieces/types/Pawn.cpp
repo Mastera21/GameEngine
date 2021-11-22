@@ -84,10 +84,8 @@ std::unordered_map<Defines::Direction, MoveDirection> Pawn::getWhiteBoardMoves()
 		boardMoves[Defines::UP_RIGHT].emplace_back(futurePos);
 	}
 
-	if(BoardUtils::isInsideBoard(futurePos)){
 	futurePos = BoardUtils::getAdjacentPos(Defines::UP, _boardPos);
 	boardMoves[Defines::UP].emplace_back(futurePos);
-	}
 
 	if(Defines::WHITE_PLAYER_START_PAWN_ROW == _boardPos.row){
 		futurePos = BoardUtils::getAdjacentPos(Defines::UP, futurePos);
