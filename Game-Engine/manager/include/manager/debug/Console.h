@@ -9,6 +9,8 @@
 //Other libraries headers
 #include "manager/drawing/Text.h"
 //Own components headers
+
+//Forward declarations
 class Event;
 
 enum DebugTextId {

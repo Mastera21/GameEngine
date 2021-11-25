@@ -130,6 +130,7 @@ static void populateGameConfig(GameCfg& cfg){
 	cfg.moveTailId = TextureId::MOVE_TAIL;
 	cfg.blinkTargetId = TimerId::BLINK_TARGET_TIMER_ID;
 	cfg.unfinishedPieceFontId = FontId::ANGELINE_VINTAGE;
+	cfg.textId = FontId::ANGELINE_VINTAGE;
 
 	auto& panelCfg = cfg.piecePromotionPanelCfg;
 	panelCfg.whitePiecesRsrcId = TextureId::WHITE_PIECES;
