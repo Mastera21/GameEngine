@@ -317,9 +317,22 @@ CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp -o CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.s
 
+CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o: CMakeFiles/gameEngine.dir/flags.make
+CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o: ../game/movesPlayersId/MovePlayersId.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/movesPlayersId/MovePlayersId.cpp
+
+CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/movesPlayersId/MovePlayersId.cpp > CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.i
+
+CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/movesPlayersId/MovePlayersId.cpp -o CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.s
+
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: CMakeFiles/gameEngine.dir/flags.make
 CMakeFiles/gameEngine.dir/game/Game.cpp.o: ../game/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/gameEngine.dir/game/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/gameEngine.dir/game/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/game/Game.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/Game.cpp
 
 CMakeFiles/gameEngine.dir/game/Game.cpp.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.s: cmake_force
 
 CMakeFiles/gameEngine.dir/main.cpp.o: CMakeFiles/gameEngine.dir/flags.make
 CMakeFiles/gameEngine.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/gameEngine.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/gameEngine.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameEngine.dir/main.cpp.o -c /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/main.cpp
 
 CMakeFiles/gameEngine.dir/main.cpp.i: cmake_force
@@ -365,6 +378,7 @@ gameEngine_OBJECTS = \
 "CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o" \
 "CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o" \
 "CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o" \
+"CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o" \
 "CMakeFiles/gameEngine.dir/game/Game.cpp.o" \
 "CMakeFiles/gameEngine.dir/main.cpp.o"
 
@@ -391,6 +405,7 @@ gameEngine: CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/pieces/PieceHandlerPopulator.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.o
+gameEngine: CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/game/Game.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/main.cpp.o
 gameEngine: CMakeFiles/gameEngine.dir/build.make
@@ -403,7 +418,7 @@ gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 gameEngine: /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so
 gameEngine: CMakeFiles/gameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable gameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable gameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

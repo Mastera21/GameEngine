@@ -15,6 +15,7 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.o
  ../game/interfaces/GameBoardInterface.h
  ../game/interfaces/GameInterface.h
  ../game/logic/GameLogic.h
+ ../game/movesPlayersId/MovePlayersId.h
  ../game/panels/PiecePromotionPanel.h
  ../game/panels/buttons/PiecePromotionButton.h
  ../game/panels/config/PiecePromotionButtonCfg.h
@@ -61,6 +62,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.o
  ../game/interfaces/GameBoardInterface.h
  ../game/interfaces/GameInterface.h
  ../game/logic/GameLogic.h
+ ../game/movesPlayersId/MovePlayersId.h
  ../game/panels/PiecePromotionPanel.h
  ../game/panels/buttons/PiecePromotionButton.h
  ../game/panels/config/PiecePromotionButtonCfg.h
@@ -129,6 +131,7 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.o
  ../game/interfaces/GameBoardInterface.h
  ../game/interfaces/GameInterface.h
  ../game/logic/GameLogic.h
+ ../game/movesPlayersId/MovePlayersId.h
  ../game/panels/PiecePromotionPanel.h
  ../game/panels/buttons/PiecePromotionButton.h
  ../game/panels/config/PiecePromotionButtonCfg.h
@@ -196,6 +199,19 @@ CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.o
  ../game/defines/ChessDefines.h
  ../game/logic/GameLogic.h
  /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/logic/GameLogic.cpp
+CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.o
+ ../game/config/GameCfg.h
+ ../game/movesPlayersId/MovePlayersId.h
+ ../game/panels/config/PiecePromotionPanelCfg.h
+ ../manager/include/manager/drawing/Text.h
+ ../manager/include/manager/drawing/Widget.h
+ ../sdl/include/sdl/Event.h
+ ../utils/include/utils/drawing/Color.h
+ ../utils/include/utils/drawing/DrawParams.h
+ ../utils/include/utils/drawing/Point.h
+ ../utils/include/utils/drawing/Rectangle.h
+ ../utils/include/utils/input/EventDefines.h
+ /home/svetoslav/Documents/GitHub/GameEngine/Game-Engine/game/movesPlayersId/MovePlayersId.cpp
 CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.o
  ../game/defines/ChessDefines.h
  ../game/interfaces/GameInterface.h
@@ -396,6 +412,7 @@ CMakeFiles/gameEngine.dir/main.cpp.o
  ../game/interfaces/GameBoardInterface.h
  ../game/interfaces/GameInterface.h
  ../game/logic/GameLogic.h
+ ../game/movesPlayersId/MovePlayersId.h
  ../game/panels/PiecePromotionPanel.h
  ../game/panels/buttons/PiecePromotionButton.h
  ../game/panels/config/PiecePromotionButtonCfg.h
