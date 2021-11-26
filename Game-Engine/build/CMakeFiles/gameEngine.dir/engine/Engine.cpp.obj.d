@@ -185,6 +185,7 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_heap.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\uniform_int_dist.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/buttonBase/ButtonBase.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/game/movesPlayersId/MovePlayersId.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/managers/ManagerHandler.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/managers/MgrBase.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/debug/Console.h \

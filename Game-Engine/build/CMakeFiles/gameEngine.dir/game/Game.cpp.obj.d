@@ -183,4 +183,5 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\uniform_int_dist.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/buttonBase/ButtonBase.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/sdl/include/sdl/Event.h \
- C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/input/EventDefines.h
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/input/EventDefines.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/game/movesPlayersId/MovePlayersId.h
