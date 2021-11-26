@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsdl.a  CMakeFiles/sdl.dir/src/Event.cpp.o CMakeFiles/sdl.dir/src/MonitorWindow.cpp.o CMakeFiles/sdl.dir/src/SDLLoader.cpp.o CMakeFiles/sdl.dir/src/Texture.cpp.o CMakeFiles/sdl.dir/src/Renderer.cpp.o CMakeFiles/sdl.dir/src/containers/ImageContainer.cpp.o CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.o
-/usr/bin/ranlib libsdl.a
+C:\MinGW\bin\ar.exe qc libsdl.a CMakeFiles/sdl.dir/src/Event.cpp.obj CMakeFiles/sdl.dir/src/MonitorWindow.cpp.obj CMakeFiles/sdl.dir/src/SDLLoader.cpp.obj CMakeFiles/sdl.dir/src/Texture.cpp.obj CMakeFiles/sdl.dir/src/Renderer.cpp.obj CMakeFiles/sdl.dir/src/containers/ImageContainer.cpp.obj CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.obj
+C:\MinGW\bin\ranlib.exe libsdl.a

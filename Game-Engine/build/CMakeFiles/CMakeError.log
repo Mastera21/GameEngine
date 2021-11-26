@@ -56,3 +56,22 @@ make: *** [Makefile:121: cmTC_df600/fast] Error 2
 
 
 
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8fabc/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8fabc.dir\build.make CMakeFiles/cmTC_8fabc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8fabc.dir/CheckIncludeFile.cxx.obj
+C:\MinGW\bin\g++.exe    -o CMakeFiles\cmTC_8fabc.dir\CheckIncludeFile.cxx.obj -c "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx:1:10: fatal error: pthread.h: No such file or directory
+    1 | #include <pthread.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles\cmTC_8fabc.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_8fabc.dir/CheckIncludeFile.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_8fabc.dir/CheckIncludeFile.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8fabc/fast' failed
+mingw32-make.exe: *** [cmTC_8fabc/fast] Error 2
+
+
+

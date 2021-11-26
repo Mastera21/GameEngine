@@ -1,2 +1,2 @@
-/usr/bin/ar qc libutils.a  CMakeFiles/utils.dir/src/drawing/Point.cpp.o CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.o CMakeFiles/utils.dir/src/drawing/Color.cpp.o CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.o CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.o CMakeFiles/utils.dir/src/time/Time.cpp.o
-/usr/bin/ranlib libutils.a
+C:\MinGW\bin\ar.exe qc libutils.a CMakeFiles/utils.dir/src/drawing/Point.cpp.obj CMakeFiles/utils.dir/src/drawing/Rectangle.cpp.obj CMakeFiles/utils.dir/src/drawing/Color.cpp.obj CMakeFiles/utils.dir/src/drawing/DrawParams.cpp.obj CMakeFiles/utils.dir/src/thread/ThreadUtils.cpp.obj CMakeFiles/utils.dir/src/time/Time.cpp.obj
+C:\MinGW\bin\ranlib.exe libutils.a
