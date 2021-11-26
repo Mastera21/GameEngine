@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/MinGW/bin/mingw32-g++.exe"
 		},
 		{
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a"
+			"value" : "mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "SDL2_MIXER_INCLUDE_DIR",

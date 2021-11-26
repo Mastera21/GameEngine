@@ -359,6 +359,30 @@ game/logic/GameLogic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gameEngine.dir\build.make CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.s
 .PHONY : game/logic/GameLogic.cpp.s
 
+game/movesPlayersId/MovePlayersId.obj: game/movesPlayersId/MovePlayersId.cpp.obj
+.PHONY : game/movesPlayersId/MovePlayersId.obj
+
+# target to build an object file
+game/movesPlayersId/MovePlayersId.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gameEngine.dir\build.make CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.obj
+.PHONY : game/movesPlayersId/MovePlayersId.cpp.obj
+
+game/movesPlayersId/MovePlayersId.i: game/movesPlayersId/MovePlayersId.cpp.i
+.PHONY : game/movesPlayersId/MovePlayersId.i
+
+# target to preprocess a source file
+game/movesPlayersId/MovePlayersId.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gameEngine.dir\build.make CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.i
+.PHONY : game/movesPlayersId/MovePlayersId.cpp.i
+
+game/movesPlayersId/MovePlayersId.s: game/movesPlayersId/MovePlayersId.cpp.s
+.PHONY : game/movesPlayersId/MovePlayersId.s
+
+# target to generate assembly for a file
+game/movesPlayersId/MovePlayersId.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gameEngine.dir\build.make CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.s
+.PHONY : game/movesPlayersId/MovePlayersId.cpp.s
+
 game/panels/PiecePromotionPanel.obj: game/panels/PiecePromotionPanel.cpp.obj
 .PHONY : game/panels/PiecePromotionPanel.obj
 
@@ -731,6 +755,9 @@ help:
 	@echo ... game/logic/GameLogic.obj
 	@echo ... game/logic/GameLogic.i
 	@echo ... game/logic/GameLogic.s
+	@echo ... game/movesPlayersId/MovePlayersId.obj
+	@echo ... game/movesPlayersId/MovePlayersId.i
+	@echo ... game/movesPlayersId/MovePlayersId.s
 	@echo ... game/panels/PiecePromotionPanel.obj
 	@echo ... game/panels/PiecePromotionPanel.i
 	@echo ... game/panels/PiecePromotionPanel.s

@@ -26,8 +26,8 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/MinGW/bin/mingw32-g++.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=C:/MinGW/bin/mingw32-g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -437,7 +437,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_SDL2_TTF:INTERNAL=[D:/MinGW_dev_libs/lib/libSDL2_tt
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 SDL2_IMAGE_LIBRARY_TEMP:INTERNAL=D:/MinGW_dev_libs/lib/libSDL2_image.dll.a
-SDL2_LIBRARY_TEMP:INTERNAL=mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a
+SDL2_LIBRARY_TEMP:INTERNAL=mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a
 SDL2_MIXER_LIBRARY_TEMP:INTERNAL=D:/MinGW_dev_libs/lib/libSDL2_mixer.dll.a
 SDL2_TTF_LIBRARY_TEMP:INTERNAL=D:/MinGW_dev_libs/lib/libSDL2_ttf.dll.a
 

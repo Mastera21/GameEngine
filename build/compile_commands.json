@@ -101,6 +101,11 @@
 },
 {
   "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\movesPlayersId\\MovePlayersId.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\movesPlayersId\\MovePlayersId.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/movesPlayersId/MovePlayersId.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
   "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\Game.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\Game.cpp\"",
   "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/Game.cpp"
 },
