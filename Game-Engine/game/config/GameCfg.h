@@ -21,5 +21,6 @@ struct GameCfg{
 	int32_t fpsId;
 	int32_t unfinishedPieceFontId;
 	int32_t moveTailId;
+	int32_t textId;
 };
 #endif /* GAME_CONFIG_GAMECFG_H_ */

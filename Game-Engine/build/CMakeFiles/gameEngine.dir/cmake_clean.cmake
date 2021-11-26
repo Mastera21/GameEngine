@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gameEngine.dir/game/board/boardAnim/GameBoardAnim.cpp.obj.d"
   "CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.obj"
   "CMakeFiles/gameEngine.dir/game/logic/GameLogic.cpp.obj.d"
+  "CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.obj"
+  "CMakeFiles/gameEngine.dir/game/movesPlayersId/MovePlayersId.cpp.obj.d"
   "CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.obj"
   "CMakeFiles/gameEngine.dir/game/panels/PiecePromotionPanel.cpp.obj.d"
   "CMakeFiles/gameEngine.dir/game/panels/buttons/PiecePromotionButton.cpp.obj"

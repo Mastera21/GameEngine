@@ -35,7 +35,11 @@ int32_t Game::init(const GameCfg cfg){
 		std::cerr<<"_piecePromotionPanel.init() failed.\n";
 		return EXIT_FAILURE;
 	}
-	std::cout<<"White player is on turn\n";
+
+	if(EXIT_SUCCESS != _movePlayersId.init(cfg.textId)){
+		std::cerr<<"_movePlayersId.init() failed.\n";
+		return EXIT_FAILURE;
+	}
 
 	return EXIT_SUCCESS;
 }
@@ -46,6 +50,7 @@ void Game::draw(){
 	_board.draw();
 	_pieceHandler.draw();
 	_piecePromotionPanel.draw();
+	_movePlayersId.draw();
 }
 void Game::handleEvent(Event& event){
 	if(_piecePromotionPanel.isActive()){
@@ -62,9 +67,10 @@ void Game::promotePiece(PieceType pieceType){
 void Game::finishTurn(){
 	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
 	if(Defines::WHITE_PLAYER_ID == _gameLogic.getActivePlayerId()){
-		std::cout<<"White player is on turn\n";
+		_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
 	}else{
-		std::cout<<"Black player is on turn\n";
+		std::cout<<std::endl;
+		_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
 	}
 }
 void Game::onPawnPromotion() {
