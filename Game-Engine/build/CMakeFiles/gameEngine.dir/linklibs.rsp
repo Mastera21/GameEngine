@@ -1,1 +1,0 @@
- manager/libmanager.a sdl/libsdl.a utils/libutils.a -lmingw32 D:/MinGW_dev_libs/lib/libSDL2main.a D:/MinGW_dev_libs/lib/libSDL2.dll.a D:/MinGW_dev_libs/lib/libSDL2_image.dll.a D:/MinGW_dev_libs/lib/libSDL2_ttf.dll.a D:/MinGW_dev_libs/lib/libSDL2_mixer.dll.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

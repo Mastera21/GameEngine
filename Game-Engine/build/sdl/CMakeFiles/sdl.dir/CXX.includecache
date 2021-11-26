@@ -245,6 +245,8 @@ SDL_render.h
 /usr/include/SDL2/SDL_render.h
 SDL_rwops.h
 /usr/include/SDL2/SDL_rwops.h
+SDL_sensor.h
+/usr/include/SDL2/SDL_sensor.h
 SDL_shape.h
 /usr/include/SDL2/SDL_shape.h
 SDL_system.h
@@ -279,6 +281,8 @@ SDL_platform.h
 /usr/include/SDL2/SDL_platform.h
 begin_code.h
 /usr/include/SDL2/begin_code.h
+sys/cpuinline.h
+-
 mbarrier.h
 -
 close_code.h
@@ -317,8 +321,8 @@ close_code.h
 /usr/include/SDL2/close_code.h
 
 /usr/include/SDL2/SDL_config.h
-SDL_platform.h
-/usr/include/SDL2/SDL_platform.h
+SDL2/_real_SDL_config.h
+-
 
 /usr/include/SDL2/SDL_cpuinfo.h
 SDL_stdinc.h
@@ -328,6 +332,16 @@ intrin.h
 intrin.h
 -
 altivec.h
+-
+arm_neon.h
+-
+armintr.h
+-
+arm_neon.h
+-
+armintr.h
+-
+arm_neon.h
 -
 mm3dnow.h
 -
@@ -636,6 +650,16 @@ close_code.h
 SDL_stdinc.h
 /usr/include/SDL2/SDL_stdinc.h
 
+/usr/include/SDL2/SDL_sensor.h
+SDL_stdinc.h
+/usr/include/SDL2/SDL_stdinc.h
+SDL_error.h
+/usr/include/SDL2/SDL_error.h
+begin_code.h
+/usr/include/SDL2/begin_code.h
+close_code.h
+/usr/include/SDL2/close_code.h
+
 /usr/include/SDL2/SDL_shape.h
 SDL_stdinc.h
 /usr/include/SDL2/SDL_stdinc.h
@@ -691,10 +715,6 @@ math.h
 -
 float.h
 -
-sal.h
--
-begin_code.h
-/usr/include/SDL2/begin_code.h
 alloca.h
 -
 malloc.h
@@ -705,6 +725,10 @@ malloc.h
 -
 stdlib.h
 -
+sal.h
+-
+begin_code.h
+/usr/include/SDL2/begin_code.h
 close_code.h
 /usr/include/SDL2/close_code.h
 
