@@ -1,0 +1,3 @@
+C:\cmake-3.22.0\bin\cmake.exe -E rm -f CMakeFiles\gameEngine.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\gameEngine.dir/objects.a @CMakeFiles\gameEngine.dir\objects1.rsp
+C:\MinGW\bin\mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\gameEngine.dir/objects.a -Wl,--no-whole-archive -o gameEngine.exe -Wl,--out-implib,libgameEngine.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\gameEngine.dir\linklibs.rsp

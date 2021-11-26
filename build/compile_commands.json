@@ -1,0 +1,227 @@
+[
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\application\\Application.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\application\\Application.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/application/Application.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\engine\\Engine.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\engine\\Engine.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/engine/Engine.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\engine\\EngineConfigLoader.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\engine\\EngineConfigLoader.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/engine/EngineConfigLoader.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\board\\GameBoard.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\board\\GameBoard.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/GameBoard.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\board\\MoveSelector.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\board\\MoveSelector.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\board\\boardAnim\\GameBoardAnim.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\board\\boardAnim\\GameBoardAnim.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/boardAnim/GameBoardAnim.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\logic\\GameLogic.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\logic\\GameLogic.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/logic/GameLogic.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\utils\\BoardUtils.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\utils\\BoardUtils.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardUtils.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\ChessPiece.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\ChessPiece.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/ChessPiece.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\UnfinishedPiece.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\UnfinishedPiece.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/UnfinishedPiece.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\Rook.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\Rook.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/Rook.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\King.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\King.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/King.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\Queen.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\Queen.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/Queen.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\Bishop.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\Bishop.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/Bishop.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\Knight.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\Knight.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/Knight.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\types\\Pawn.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\types\\Pawn.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/types/Pawn.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\PieceHandler.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\PieceHandler.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/PieceHandler.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\pieces\\PieceHandlerPopulator.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\pieces\\PieceHandlerPopulator.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/pieces/PieceHandlerPopulator.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\panels\\PiecePromotionPanel.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\panels\\PiecePromotionPanel.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/panels/PiecePromotionPanel.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\panels\\buttons\\PiecePromotionButton.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\panels\\buttons\\PiecePromotionButton.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/panels/buttons/PiecePromotionButton.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\game\\Game.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\game\\Game.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/Game.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/gameEngine.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\gameEngine.dir\\main.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\main.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/main.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\drawing\\Point.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\drawing\\Point.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/drawing/Point.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\drawing\\Rectangle.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\drawing\\Rectangle.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/drawing/Rectangle.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\drawing\\Color.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\drawing\\Color.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/drawing/Color.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\drawing\\DrawParams.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\drawing\\DrawParams.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/drawing/DrawParams.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\thread\\ThreadUtils.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\thread\\ThreadUtils.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/thread/ThreadUtils.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/utils",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\utils.dir\\src\\time\\Time.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\utils\\src\\time\\Time.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/src/time/Time.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\Event.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\Event.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/Event.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\MonitorWindow.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\MonitorWindow.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/MonitorWindow.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\SDLLoader.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\SDLLoader.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/SDLLoader.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\Texture.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\Texture.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/Texture.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\Renderer.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\Renderer.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/Renderer.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\containers\\ImageContainer.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\containers\\ImageContainer.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/containers/ImageContainer.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\containers\\TextContainer.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\containers\\TextContainer.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/containers/TextContainer.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\managers\\DrawMgr.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\managers\\DrawMgr.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\managers\\RsrcMgr.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\managers\\RsrcMgr.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/RsrcMgr.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\managers\\ManagerHandler.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\managers\\ManagerHandler.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/ManagerHandler.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\managers\\TimerMgr.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\managers\\TimerMgr.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/TimerMgr.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\drawing\\Widget.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\drawing\\Widget.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/drawing/Widget.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\drawing\\Image.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\drawing\\Image.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/drawing/Image.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\drawing\\Text.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\drawing\\Text.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/drawing/Text.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\buttonBase\\ButtonBase.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\buttonBase\\ButtonBase.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\time\\TimerClient.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\time\\TimerClient.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp"
+},
+{
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\debug\\Console.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\debug\\Console.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/debug/Console.cpp"
+}
+]

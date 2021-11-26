@@ -1,0 +1,12 @@
+C:/Users/user/GitHub Repositorys/GameEngine/build/CMakeFiles/gameEngine.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/CMakeFiles/edit_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/CMakeFiles/rebuild_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/utils/CMakeFiles/utils.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/utils/CMakeFiles/edit_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/utils/CMakeFiles/rebuild_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/sdl/CMakeFiles/sdl.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/sdl/CMakeFiles/edit_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/sdl/CMakeFiles/rebuild_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/manager/CMakeFiles/manager.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/manager/CMakeFiles/edit_cache.dir
+C:/Users/user/GitHub Repositorys/GameEngine/build/manager/CMakeFiles/rebuild_cache.dir
