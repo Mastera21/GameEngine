@@ -68,10 +68,9 @@ void Game::finishTurn(){
 	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
 	if(Defines::WHITE_PLAYER_ID == _gameLogic.getActivePlayerId()){
 		_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
-	}else{
-		std::cout<<std::endl;
-		_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
 	}
+	_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
+	
 }
 void Game::onPawnPromotion() {
 	_isPromotionActive = true;
