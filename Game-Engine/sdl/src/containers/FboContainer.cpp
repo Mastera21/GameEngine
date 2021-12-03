@@ -20,26 +20,55 @@ int32_t FboContainer::init(){
 }
 
 void FboContainer::deinit(){
-    //TODO
+    for(auto& texture : _textures){
+		if(texture){
+			Texture::freeTexture(texture);
+		}
+	}
 }
 
-void FboContainer::createFbo([[maybe_unused]]int32_t fboWidth, [[maybe_unused]]int32_t fboHeight, [[maybe_unused]]int32_t &outFboId){
-    //TODO
+void FboContainer::createFbo(int32_t fboWidth, int32_t fboHeight, int32_t &outFboId){
+    SDL_Texture* textTexture = nullptr;
+	if(EXIT_SUCCESS != Texture::createEmptyTexture(fboWidth, fboHeight, textTexture)){
+		std::cerr<<"Texture::createTextFromText() failed: \n";
+		return;
+	}
+
+	occupyFreeSlotIndex(outFboId, textTexture);
 }
 
-void FboContainer::unloadFbo([[maybe_unused]]int32_t fboId){
-    //TODO
+void FboContainer::unloadFbo(int32_t fboId){
+    if(0 > fboId || fboId >= static_cast<int32_t>(_textures.size())){
+		std::cerr<<"Error, trying to unload non-existing fboId: "<< fboId <<"\n";
+		return;
+	}
+	freeSlotIndex(fboId);
 }
 
-SDL_Texture* FboContainer::getFboTexture([[maybe_unused]]int32_t fboId) const{
-    //TODO
-    return nullptr;
+SDL_Texture* FboContainer::getFboTexture(int32_t fboId) const{
+    if(0 > fboId || fboId >= static_cast<int32_t>(_textures.size())){
+		std::cerr<<"Error, trying to get non-existing fboId: "<< fboId <<"\n";
+		return nullptr;
+	}
+
+	return _textures[fboId];
 }
 
-void FboContainer::occupyFreeSlotIndex([[maybe_unused]]int32_t& outIdx, [[maybe_unused]]SDL_Texture* texture){
-    //TODO
+void FboContainer::occupyFreeSlotIndex(int32_t& outIdx, SDL_Texture* texture){
+    const int32_t size = static_cast<int32_t>(_textures.size());
+
+	for(int32_t i = 0; i < size; ++i){
+		if(_textures[i] == nullptr){//Free index found
+			outIdx = i;
+			_textures[i] = texture;
+			return;
+		}
+	}
+
+	_textures.push_back(texture);
+	outIdx = size;
 }
 
-void FboContainer::freeSlotIndex([[maybe_unused]]int32_t index){
-    //TODO
+void FboContainer::freeSlotIndex(int32_t index){
+    Texture::freeTexture(_textures[index]);
 }

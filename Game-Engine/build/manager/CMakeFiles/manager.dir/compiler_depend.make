@@ -392,7 +392,8 @@ manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.obj: ../manager/src/drawing
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../sdl/include/sdl/config/ImageContainerCfg.h \
   ../sdl/include/sdl/containers/TextContainer.h \
-  ../sdl/include/sdl/config/TextContainerCfg.h
+  ../sdl/include/sdl/config/TextContainerCfg.h \
+  ../sdl/include/sdl/containers/FboContainer.h
 
 manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.obj: ../manager/src/drawing/Text.cpp \
   ../manager/include/manager/drawing/Text.h \
@@ -541,7 +542,8 @@ manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.obj: ../manager/src/drawing/
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../sdl/include/sdl/config/ImageContainerCfg.h \
   ../sdl/include/sdl/containers/TextContainer.h \
-  ../sdl/include/sdl/config/TextContainerCfg.h
+  ../sdl/include/sdl/config/TextContainerCfg.h \
+  ../sdl/include/sdl/containers/FboContainer.h
 
 manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj: ../manager/src/drawing/Widget.cpp \
   ../manager/include/manager/drawing/Widget.h \
@@ -825,7 +827,8 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj: ../manager/src/mana
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/erase_if.h \
   ../sdl/include/sdl/config/ImageContainerCfg.h \
   ../sdl/include/sdl/containers/TextContainer.h \
-  ../sdl/include/sdl/config/TextContainerCfg.h
+  ../sdl/include/sdl/config/TextContainerCfg.h \
+  ../sdl/include/sdl/containers/FboContainer.h
 
 manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.obj: ../manager/src/managers/ManagerHandler.cpp \
   ../manager/include/manager/managers/ManagerHandler.h \
@@ -978,6 +981,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.obj: ../manager/s
   ../sdl/include/sdl/config/ImageContainerCfg.h \
   ../sdl/include/sdl/containers/TextContainer.h \
   ../sdl/include/sdl/config/TextContainerCfg.h \
+  ../sdl/include/sdl/containers/FboContainer.h \
   ../manager/include/manager/managers/TimerMgr.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_tree.h \
@@ -1119,6 +1123,7 @@ manager/CMakeFiles/manager.dir/src/managers/RsrcMgr.cpp.obj: ../manager/src/mana
   ../sdl/include/sdl/config/ImageContainerCfg.h \
   ../sdl/include/sdl/containers/TextContainer.h \
   ../sdl/include/sdl/config/TextContainerCfg.h \
+  ../sdl/include/sdl/containers/FboContainer.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/iostream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ostream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ios \
@@ -1493,6 +1498,8 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/stddef.h:
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ext/numeric_traits.h:
 
 ../manager/include/manager/drawing/Widget.h:
+
+../sdl/include/sdl/containers/FboContainer.h:
 
 ../utils/include/utils/drawing/DrawParams.h:
 

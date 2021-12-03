@@ -20,7 +20,4 @@ struct FontCfg {
 struct TextContainerCfg {
   std::unordered_map<int32_t, FontCfg> fontConfigs;
 };
-
-
-
 #endif /* SDL_CONFIG_TEXTCONTAINERCFG_H_ */

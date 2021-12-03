@@ -12,11 +12,12 @@
 #include "manager/managers/MgrBase.h"
 #include "sdl/containers/ImageContainer.h"
 #include "sdl/containers/TextContainer.h"
+#include "sdl/containers/FboContainer.h"
 
 //Forward declarations
 struct RsrcMgrCfg;
 
-class RsrcMgr: public MgrBase, public ImageContainer, public TextContainer{
+class RsrcMgr : public MgrBase, public ImageContainer, public TextContainer, public FboContainer {
 public:
 	RsrcMgr() = default;
 
