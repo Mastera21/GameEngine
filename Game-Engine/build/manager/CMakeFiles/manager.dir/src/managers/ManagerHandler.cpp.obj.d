@@ -122,6 +122,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/DrawParams.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Rectangle.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Color.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/managers/RsrcMgr.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/sdl/include/sdl/containers/ImageContainer.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\cstring \

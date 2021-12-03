@@ -35,6 +35,8 @@ public:
 							int32_t &outTextWidth,
 							int32_t &outTextHeight);
 
+	static int32_t createEmptyTexture(int32_t width, int32_t height, SDL_Texture*& outTexture);						
+
 	static int32_t setBlendModeTexture(SDL_Texture *texture, BlendMode blendMode);
 
 	static int32_t setAlphaTexture(SDL_Texture *texture, int32_t alpha);
@@ -44,6 +46,11 @@ public:
 	static void freeTexture(SDL_Texture*& outTexture);
 
 	static void setRenderer(SDL_Renderer* renderer);
-};
 
+	static int32_t clearCurrentRendererTarget(const Color& color);
+
+	static int32_t setRendererTarget(SDL_Texture* target);
+
+	static int32_t resetRendererTarget();
+};
 #endif /* SDL_TEXTURE_H_ */

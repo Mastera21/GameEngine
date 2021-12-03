@@ -672,7 +672,8 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj: ../manager/src/drawin
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
+  ../utils/include/utils/drawing/Color.h
 
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj: ../manager/src/managers/DrawMgr.cpp \
   ../manager/include/manager/managers/DrawMgr.h \
@@ -780,6 +781,7 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj: ../manager/src/mana
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../utils/include/utils/drawing/DrawParams.h \
   ../utils/include/utils/drawing/Rectangle.h \
+  ../utils/include/utils/drawing/Color.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/iostream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ostream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ios \
@@ -955,6 +957,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.obj: ../manager/s
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../utils/include/utils/drawing/DrawParams.h \
   ../utils/include/utils/drawing/Rectangle.h \
+  ../utils/include/utils/drawing/Color.h \
   ../manager/include/manager/managers/RsrcMgr.h \
   ../sdl/include/sdl/containers/ImageContainer.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/cstring \

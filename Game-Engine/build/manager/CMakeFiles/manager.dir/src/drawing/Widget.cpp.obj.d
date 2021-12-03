@@ -121,4 +121,5 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_relops.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Color.h

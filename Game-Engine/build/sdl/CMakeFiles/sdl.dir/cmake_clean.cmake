@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sdl.dir/src/SDLLoader.cpp.obj.d"
   "CMakeFiles/sdl.dir/src/Texture.cpp.obj"
   "CMakeFiles/sdl.dir/src/Texture.cpp.obj.d"
+  "CMakeFiles/sdl.dir/src/containers/FboContainer.cpp.obj"
+  "CMakeFiles/sdl.dir/src/containers/FboContainer.cpp.obj.d"
   "CMakeFiles/sdl.dir/src/containers/ImageContainer.cpp.obj"
   "CMakeFiles/sdl.dir/src/containers/ImageContainer.cpp.obj.d"
   "CMakeFiles/sdl.dir/src/containers/TextContainer.cpp.obj"

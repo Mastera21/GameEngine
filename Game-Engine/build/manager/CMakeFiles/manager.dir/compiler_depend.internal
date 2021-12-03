@@ -678,6 +678,7 @@ manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
 
 manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp
@@ -786,6 +787,7 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/DrawParams.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/iostream
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ostream
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ios
@@ -962,6 +964,7 @@ manager/CMakeFiles/manager.dir/src/managers/ManagerHandler.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/DrawParams.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/managers/RsrcMgr.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/include/sdl/containers/ImageContainer.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/cstring

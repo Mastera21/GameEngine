@@ -18,7 +18,6 @@
 //Own components headers
 static SDL_Renderer* gRenderer = nullptr;
 
-
 int32_t Texture::createSurfaceFormFile(const std::string& filePath, SDL_Surface*& outSurface){
 	outSurface = IMG_Load(filePath.c_str());
 
@@ -85,6 +84,16 @@ int32_t Texture::createTextFromText(const std::string& text, const Color &color,
 	return EXIT_SUCCESS;
 }
 
+int32_t Texture::createEmptyTexture(int32_t width, int32_t height, SDL_Texture*& outTexture){
+	outTexture =  SDL_CreateTexture(gRenderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, width, height);
+
+	if(outTexture == nullptr){
+		std::cerr<<"createEmptyTexture() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}
+
 void Texture::freeSurface(SDL_Surface*& outSurface){
 	if(outSurface != nullptr){
 		SDL_FreeSurface(outSurface);
@@ -120,6 +129,35 @@ int32_t Texture::setAlphaTexture(SDL_Texture *texture, int32_t alpha){
 
 	if(EXIT_SUCCESS != SDL_SetTextureAlphaMod(texture, static_cast<uint8_t>(alpha))){
 		std::cerr<<"SDL_SetTextureAlphaMod failed: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}
+
+int32_t Texture::clearCurrentRendererTarget(const Color& color){
+	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(gRenderer, color.rgba.r, color.rgba.g, color.rgba.b, color.rgba.a)){
+		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	
+	if(EXIT_SUCCESS != SDL_RenderClear(gRenderer)){
+		std::cerr<<"SDL_RenderClear() failed. Reason: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}
+
+int32_t Texture::setRendererTarget(SDL_Texture* target){
+	if(EXIT_SUCCESS != SDL_SetRenderTarget(gRenderer, target)){
+		std::cerr<<"SDL_SetRenderTarget failed: "<< SDL_GetError() << "\n";
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}
+
+int32_t Texture::resetRendererTarget(){
+	if(EXIT_SUCCESS != SDL_SetRenderTarget(gRenderer, nullptr)){
+		std::cerr<<"SDL_SetRenderTarget failed: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
 	return EXIT_SUCCESS;

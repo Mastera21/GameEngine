@@ -98,6 +98,7 @@ manager/CMakeFiles/manager.dir/src/managers/DrawMgr.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\vector.tcc \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/DrawParams.h \
  C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Rectangle.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Color.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\ios \

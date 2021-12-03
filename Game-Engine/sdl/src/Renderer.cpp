@@ -22,15 +22,15 @@ int32_t Renderer::init(SDL_Window* window){
 	}
 
 	constexpr auto unspecifiedDriverId = -1;
-	_sdlRenderer = SDL_CreateRenderer(window, unspecifiedDriverId, SDL_RENDERER_ACCELERATED);
+	_sdlRenderer = SDL_CreateRenderer(window, unspecifiedDriverId, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 
 	if(_sdlRenderer == nullptr){
 		std::cerr<<"SDL_CreateRenderer() failed. Reason: "<< SDL_GetError() << "\n";
 		return EXIT_FAILURE;
 	}
 
-	//Background colors
-	setBackgroundColor(Colors::BLACK);
+	//Background color
+	setBackgroundColor(_clearColor);
 
 	Texture::setRenderer(_sdlRenderer);
 
@@ -44,15 +44,20 @@ void Renderer::deinit(){
 }
 void Renderer::setBackgroundColor(const Color& color){
 	if(EXIT_SUCCESS != SDL_SetRenderDrawColor(_sdlRenderer,color.rgba.r,color.rgba.g,color.rgba.b,color.rgba.a)){
-			std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
+		std::cerr<<"SDL_SetRenderDrawColor() failed. Reason: "<< SDL_GetError() << "\n";
 	}
 }
 void Renderer::clearScreen(){
-	if(EXIT_SUCCESS != SDL_RenderClear(_sdlRenderer)){
-		std::cerr<<"SDL_RenderClear(_sdlRenderer) failed. Reason: "<< SDL_GetError() << "\n";
-	}
+	Texture::clearCurrentRendererTarget(_clearColor);
 }
 void Renderer::finishFrame(){
+	if(!_isRendererLocked){
+		std::cerr<<"WARNING, Renderer was unlocked. Self-locking locking renderer. Some FBO (Framebuffer) will be in a broke state.\n";
+		_isRendererLocked = true;
+		resetRendererTarget();
+		return;
+	}
+
 	SDL_RenderPresent(_sdlRenderer);
 	_activeWidgets = 0;
 }
@@ -77,6 +82,15 @@ void Renderer::setWidgetOpacity(SDL_Texture* texture, int32_t opacity){
 	 if(EXIT_SUCCESS != Texture::setAlphaTexture(texture, opacity)){
 		 std::cerr<<"setAlphaTexture(texture, opacity) failed: \n";
 	 }
+}
+int32_t Renderer::clearCurrentRendererTarget(const Color& color){
+	return Texture::clearCurrentRendererTarget(color);
+}
+int32_t Renderer::setRendererTarget(SDL_Texture* target){
+	return Texture::setRendererTarget(target);
+}
+int32_t Renderer::resetRendererTarget(){
+	return Texture::resetRendererTarget();
 }
 void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture){
 	if(FULL_OPACITY == drawParams.opacity){
@@ -117,4 +131,20 @@ void Renderer::drawTextureInternal(const DrawParams& drawParams, SDL_Texture *te
 }
 int32_t Renderer::getActiveWidgets() const {
 	return _activeWidgets;
+}
+int32_t Renderer::lockRenderer(){
+	if(_isRendererLocked){
+		std::cerr<<"Error, isRendererLocked was already locked.\n";
+		return EXIT_FAILURE;
+	}
+	_isRendererLocked = true;
+	return EXIT_SUCCESS;
+}
+int32_t Renderer::unlockRenderer(){
+	if(!_isRendererLocked){
+		std::cerr<<"Error, isRendererLocked was not locked in the firs place.\n";
+		return EXIT_FAILURE;
+	}
+	_isRendererLocked = false;
+	return EXIT_SUCCESS;
 }

@@ -249,6 +249,30 @@ src/Texture.cpp.s:
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\GAME-E~1\build && $(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
 
+src/containers/FboContainer.obj: src/containers/FboContainer.cpp.obj
+.PHONY : src/containers/FboContainer.obj
+
+# target to build an object file
+src/containers/FboContainer.cpp.obj:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\GAME-E~1\build && $(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/src/containers/FboContainer.cpp.obj
+.PHONY : src/containers/FboContainer.cpp.obj
+
+src/containers/FboContainer.i: src/containers/FboContainer.cpp.i
+.PHONY : src/containers/FboContainer.i
+
+# target to preprocess a source file
+src/containers/FboContainer.cpp.i:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\GAME-E~1\build && $(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/src/containers/FboContainer.cpp.i
+.PHONY : src/containers/FboContainer.cpp.i
+
+src/containers/FboContainer.s: src/containers/FboContainer.cpp.s
+.PHONY : src/containers/FboContainer.s
+
+# target to generate assembly for a file
+src/containers/FboContainer.cpp.s:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\GAME-E~1\build && $(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/src/containers/FboContainer.cpp.s
+.PHONY : src/containers/FboContainer.cpp.s
+
 src/containers/ImageContainer.obj: src/containers/ImageContainer.cpp.obj
 .PHONY : src/containers/ImageContainer.obj
 
@@ -321,6 +345,9 @@ help:
 	@echo ... src/Texture.obj
 	@echo ... src/Texture.i
 	@echo ... src/Texture.s
+	@echo ... src/containers/FboContainer.obj
+	@echo ... src/containers/FboContainer.i
+	@echo ... src/containers/FboContainer.s
 	@echo ... src/containers/ImageContainer.obj
 	@echo ... src/containers/ImageContainer.i
 	@echo ... src/containers/ImageContainer.s

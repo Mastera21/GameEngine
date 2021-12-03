@@ -180,6 +180,11 @@
   "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/containers/TextContainer.cpp"
 },
 {
+  "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/sdl",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/sdl.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\sdl.dir\\src\\containers\\FboContainer.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\sdl\\src\\containers\\FboContainer.cpp\"",
+  "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/src/containers/FboContainer.cpp"
+},
+{
   "directory": "C:/Users/user/GitHub Repositorys/GameEngine/build/manager",
   "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/manager.dir/includes_CXX.rsp -g -Wall -Wextra -Werror -Wundef -Wuninitialized -Wreorder -Wshadow -Wpointer-arith -Wcast-align -Wcast-qual -Wconversion -Wunused-parameter -Wlogical-op -Wdouble-promotion -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wnull-dereference -std=c++17 -o CMakeFiles\\manager.dir\\src\\managers\\DrawMgr.cpp.obj -c \"C:\\Users\\user\\GitHub Repositorys\\GameEngine\\Game-Engine\\manager\\src\\managers\\DrawMgr.cpp\"",
   "file": "C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/src/managers/DrawMgr.cpp"

@@ -32,6 +32,7 @@ int32_t DrawMgr::init(const DrawMgrCfg& cfg){
 int64_t DrawMgr::getMaxFrams() const{
 	return _maxFrames;
 }
+
 int32_t DrawMgr::getActiveWidgets() const{
 	return _render.getActiveWidgets();
 }
@@ -40,6 +41,7 @@ void DrawMgr::deinit(){
 	_render.deinit();
 	_window.deinit();
 }
+
 void DrawMgr::process(){
 
 }
@@ -75,6 +77,7 @@ void DrawMgr::setWidgetBlendMode(const DrawParams& drawParams, BlendMode blendMo
 	SDL_Texture* texture = getTextureinternal(drawParams);
 	_render.setWidgetBlendMode(texture, blendMode);
 }
+
 void DrawMgr::setWidgetOpacity(const DrawParams& drawParams, int32_t opacity){
 	if(drawParams.widgetType == WidgetType::IMAGE){
 		return;
@@ -82,5 +85,25 @@ void DrawMgr::setWidgetOpacity(const DrawParams& drawParams, int32_t opacity){
 
 	SDL_Texture* texture = getTextureinternal(drawParams);
 	_render.setWidgetOpacity(texture, opacity);
+}
+
+int32_t DrawMgr::clearCurrentRendererTarget(const Color& color){
+	return _render.clearCurrentRendererTarget(color);
+}
+
+int32_t DrawMgr::setRendererTarget(SDL_Texture* target){
+	return _render.setRendererTarget(target);
+}
+
+int32_t DrawMgr::resetRendererTarget(){
+	return _render.resetRendererTarget();
+}
+
+int32_t DrawMgr::lockRenderer(){
+	return _render.lockRenderer();
+}
+
+int32_t DrawMgr::unlockRenderer(){
+	return _render.unlockRenderer();
 }
 

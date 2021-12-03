@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a"
+			"value" : "mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;mingw32;D:/MinGW_dev_libs/lib/libSDL2main.a;D:/MinGW_dev_libs/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "SDL2_MIXER_INCLUDE_DIR",
