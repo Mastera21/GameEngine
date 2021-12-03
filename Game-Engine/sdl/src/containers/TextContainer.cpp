@@ -31,7 +31,13 @@ int32_t TextContainer::init(const TextContainerCfg& cfg){
 
 void TextContainer::deinit(){
 	for(auto& pair : _fonts){
-		 TTF_CloseFont(pair.second);
+		TTF_CloseFont(pair.second);
+	}
+
+	for(auto& texture : _textures){
+		if(texture){
+			Texture::freeTexture(texture);
+		}
 	}
 }
 
