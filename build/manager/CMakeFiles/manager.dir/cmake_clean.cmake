@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj.d"
   "CMakeFiles/manager.dir/src/debug/Console.cpp.obj"
   "CMakeFiles/manager.dir/src/debug/Console.cpp.obj.d"
+  "CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj"
+  "CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj.d"
   "CMakeFiles/manager.dir/src/drawing/Image.cpp.obj"
   "CMakeFiles/manager.dir/src/drawing/Image.cpp.obj.d"
   "CMakeFiles/manager.dir/src/drawing/Text.cpp.obj"

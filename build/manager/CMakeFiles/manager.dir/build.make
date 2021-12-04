@@ -173,11 +173,26 @@ manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager.dir/src/drawing/Text.cpp.s"
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\drawing\Text.cpp" -o CMakeFiles\manager.dir\src\drawing\Text.cpp.s
 
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj: manager/CMakeFiles/manager.dir/flags.make
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj: manager/CMakeFiles/manager.dir/includes_CXX.rsp
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj: C:/Users/user/GitHub\ Repositorys/GameEngine/Game-Engine/manager/src/drawing/Fbo.cpp
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj: manager/CMakeFiles/manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj"
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj -MF CMakeFiles\manager.dir\src\drawing\Fbo.cpp.obj.d -o CMakeFiles\manager.dir\src\drawing\Fbo.cpp.obj -c "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\drawing\Fbo.cpp"
+
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/manager.dir/src/drawing/Fbo.cpp.i"
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\drawing\Fbo.cpp" > CMakeFiles\manager.dir\src\drawing\Fbo.cpp.i
+
+manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/manager.dir/src/drawing/Fbo.cpp.s"
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\drawing\Fbo.cpp" -o CMakeFiles\manager.dir\src\drawing\Fbo.cpp.s
+
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj: manager/CMakeFiles/manager.dir/flags.make
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj: manager/CMakeFiles/manager.dir/includes_CXX.rsp
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj: C:/Users/user/GitHub\ Repositorys/GameEngine/Game-Engine/manager/src/buttonBase/ButtonBase.cpp
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj: manager/CMakeFiles/manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj"
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj -MF CMakeFiles\manager.dir\src\buttonBase\ButtonBase.cpp.obj.d -o CMakeFiles\manager.dir\src\buttonBase\ButtonBase.cpp.obj -c "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\buttonBase\ButtonBase.cpp"
 
 manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.i: cmake_force
@@ -192,7 +207,7 @@ manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj: manager/CMakeFiles/
 manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj: manager/CMakeFiles/manager.dir/includes_CXX.rsp
 manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj: C:/Users/user/GitHub\ Repositorys/GameEngine/Game-Engine/manager/src/time/TimerClient.cpp
 manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj: manager/CMakeFiles/manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj"
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj -MF CMakeFiles\manager.dir\src\time\TimerClient.cpp.obj.d -o CMakeFiles\manager.dir\src\time\TimerClient.cpp.obj -c "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\time\TimerClient.cpp"
 
 manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.i: cmake_force
@@ -207,7 +222,7 @@ manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj: manager/CMakeFiles/man
 manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj: manager/CMakeFiles/manager.dir/includes_CXX.rsp
 manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj: C:/Users/user/GitHub\ Repositorys/GameEngine/Game-Engine/manager/src/debug/Console.cpp
 manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj: manager/CMakeFiles/manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj"
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj -MF CMakeFiles\manager.dir\src\debug\Console.cpp.obj.d -o CMakeFiles\manager.dir\src\debug\Console.cpp.obj -c "C:\Users\user\GitHub Repositorys\GameEngine\Game-Engine\manager\src\debug\Console.cpp"
 
 manager/CMakeFiles/manager.dir/src/debug/Console.cpp.i: cmake_force
@@ -227,6 +242,7 @@ manager_OBJECTS = \
 "CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj" \
 "CMakeFiles/manager.dir/src/drawing/Image.cpp.obj" \
 "CMakeFiles/manager.dir/src/drawing/Text.cpp.obj" \
+"CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj" \
 "CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj" \
 "CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj" \
 "CMakeFiles/manager.dir/src/debug/Console.cpp.obj"
@@ -241,12 +257,13 @@ manager/libmanager.a: manager/CMakeFiles/manager.dir/src/managers/TimerMgr.cpp.o
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Widget.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Image.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Text.cpp.obj
+manager/libmanager.a: manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/buttonBase/ButtonBase.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/time/TimerClient.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/src/debug/Console.cpp.obj
 manager/libmanager.a: manager/CMakeFiles/manager.dir/build.make
 manager/libmanager.a: manager/CMakeFiles/manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libmanager.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libmanager.a"
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && $(CMAKE_COMMAND) -P CMakeFiles\manager.dir\cmake_clean_target.cmake
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build\manager && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\manager.dir\link.txt --verbose=$(VERBOSE)
 

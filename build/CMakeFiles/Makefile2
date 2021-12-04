@@ -140,7 +140,7 @@ CMakeFiles/gameEngine.dir/all: manager/CMakeFiles/manager.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gameEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 51
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gameEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 0
 .PHONY : CMakeFiles/gameEngine.dir/rule
@@ -161,7 +161,7 @@ CMakeFiles/gameEngine.dir/clean:
 utils/CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f utils\CMakeFiles\utils.dir\build.make utils/CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f utils\CMakeFiles\utils.dir\build.make utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=45,46,47,48,49,50,51 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=46,47,48,49,50,51,52 "Built target utils"
 .PHONY : utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,7 +187,7 @@ utils/CMakeFiles/utils.dir/clean:
 sdl/CMakeFiles/sdl.dir/all: utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/depend
 	$(MAKE) $(MAKESILENT) -f sdl\CMakeFiles\sdl.dir\build.make sdl/CMakeFiles/sdl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=36,37,38,39,40,41,42,43,44 "Built target sdl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=37,38,39,40,41,42,43,44,45 "Built target sdl"
 .PHONY : sdl/CMakeFiles/sdl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -214,12 +214,12 @@ manager/CMakeFiles/manager.dir/all: utils/CMakeFiles/utils.dir/all
 manager/CMakeFiles/manager.dir/all: sdl/CMakeFiles/sdl.dir/all
 	$(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=25,26,27,28,29,30,31,32,33,34,35 "Built target manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" --progress-num=25,26,27,28,29,30,31,32,33,34,35,36 "Built target manager"
 .PHONY : manager/CMakeFiles/manager.dir/all
 
 # Build rule for subdir invocation for target.
 manager/CMakeFiles/manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 27
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 manager/CMakeFiles/manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\user\GitHub Repositorys\GameEngine\build\CMakeFiles" 0
 .PHONY : manager/CMakeFiles/manager.dir/rule

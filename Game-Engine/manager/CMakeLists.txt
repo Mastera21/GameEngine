@@ -23,11 +23,12 @@ add_library(
 		 ${_INC_DIR}/drawing/Widget.h
 		 ${_INC_DIR}/drawing/Image.h
 		 ${_INC_DIR}/drawing/Text.h
+		 ${_INC_DIR}/drawing/Fbo.h
 		 ${_INC_DIR}/buttonBase/ButtonBase.h
 		 ${_INC_DIR}/time/TimerClient.h
 		 ${_INC_DIR}/time/TimerData.h
 		 
-	
+		 
 		 #For src files
 		 ${_SRC_DIR}/managers/DrawMgr.cpp
 		 ${_SRC_DIR}/managers/RsrcMgr.cpp
@@ -36,6 +37,7 @@ add_library(
 		 ${_SRC_DIR}/drawing/Widget.cpp
 		 ${_SRC_DIR}/drawing/Image.cpp
 		 ${_SRC_DIR}/drawing/Text.cpp
+		 ${_SRC_DIR}/drawing/Fbo.cpp
 		 ${_SRC_DIR}/buttonBase/ButtonBase.cpp
 		 ${_SRC_DIR}/time/TimerClient.cpp
 		 ${_SRC_DIR}/debug/Console.cpp

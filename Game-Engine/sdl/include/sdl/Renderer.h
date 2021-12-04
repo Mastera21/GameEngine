@@ -52,8 +52,6 @@ private:
 	Color _clearColor = Colors::BLACK;
 
 	void drawImage(const DrawParams& drawParams, SDL_Texture *texture);
-	void drawText(const DrawParams& drawParams, SDL_Texture *texture);
-
 	void drawTextureInternal(const DrawParams& drawParams, SDL_Texture *texture);
 
 	int32_t _activeWidgets = 0;

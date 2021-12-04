@@ -64,8 +64,8 @@ void Renderer::finishFrame(){
 void Renderer::renderTexture(SDL_Texture* texture, const DrawParams& drawParams){
 	if(WidgetType::IMAGE == drawParams.widgetType){
 		drawImage(drawParams, texture);
-	}else if(WidgetType::TEXT == drawParams.widgetType){
-		drawText(drawParams, texture);
+	}else if(WidgetType::TEXT == drawParams.widgetType || WidgetType::FBO == drawParams.widgetType){
+		drawTextureInternal(drawParams, texture);
 	}else{
 		std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(drawParams.widgetType)
 				 <<" for rsrcId: "<<drawParams.rsrcId<<"\n";
@@ -105,9 +105,6 @@ void Renderer::drawImage(const DrawParams& drawParams, SDL_Texture* texture){
 			std::cerr<<"Texture::setAlphaTexture() failed for drawParams.rsrcId: "<< drawParams.rsrcId << "\n";
 		}
 	}
-}
-void Renderer::drawText(const DrawParams& drawParams, SDL_Texture* texture){
-	drawTextureInternal(drawParams, texture);
 }
 void Renderer::drawTextureInternal(const DrawParams& drawParams, SDL_Texture *texture){
 	const SDL_Rect destRect = {.x = drawParams.pos.x, .y = drawParams.pos.y,

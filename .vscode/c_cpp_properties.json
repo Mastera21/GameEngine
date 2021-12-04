@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Game-Engine/sdl/include",
-                "${workspaceFolder}/Game-Engine/sdl/include"
+                "${workspaceFolder}/Game-Engine/sdl/include",
+                "${workspaceFolder}/Game-Engine/manager/include"
             ],
             "defines": [
                 "_DEBUG",

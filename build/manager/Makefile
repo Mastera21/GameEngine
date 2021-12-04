@@ -177,6 +177,30 @@ src/debug/Console.cpp.s:
 	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build && $(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/src/debug/Console.cpp.s
 .PHONY : src/debug/Console.cpp.s
 
+src/drawing/Fbo.obj: src/drawing/Fbo.cpp.obj
+.PHONY : src/drawing/Fbo.obj
+
+# target to build an object file
+src/drawing/Fbo.cpp.obj:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build && $(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.obj
+.PHONY : src/drawing/Fbo.cpp.obj
+
+src/drawing/Fbo.i: src/drawing/Fbo.cpp.i
+.PHONY : src/drawing/Fbo.i
+
+# target to preprocess a source file
+src/drawing/Fbo.cpp.i:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build && $(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.i
+.PHONY : src/drawing/Fbo.cpp.i
+
+src/drawing/Fbo.s: src/drawing/Fbo.cpp.s
+.PHONY : src/drawing/Fbo.s
+
+# target to generate assembly for a file
+src/drawing/Fbo.cpp.s:
+	cd /d C:\Users\user\GITHUB~1\GAMEEN~1\build && $(MAKE) $(MAKESILENT) -f manager\CMakeFiles\manager.dir\build.make manager/CMakeFiles/manager.dir/src/drawing/Fbo.cpp.s
+.PHONY : src/drawing/Fbo.cpp.s
+
 src/drawing/Image.obj: src/drawing/Image.cpp.obj
 .PHONY : src/drawing/Image.obj
 
@@ -384,6 +408,9 @@ help:
 	@echo ... src/debug/Console.obj
 	@echo ... src/debug/Console.i
 	@echo ... src/debug/Console.s
+	@echo ... src/drawing/Fbo.obj
+	@echo ... src/drawing/Fbo.i
+	@echo ... src/drawing/Fbo.s
 	@echo ... src/drawing/Image.obj
 	@echo ... src/drawing/Image.i
 	@echo ... src/drawing/Image.s

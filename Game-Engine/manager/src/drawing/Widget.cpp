@@ -28,6 +28,7 @@ int32_t Widget::getHeight()const{
 int32_t Widget::getX() const{
 	return _drawParams.pos.x;
 }
+
 int32_t Widget::getY() const{
 	return _drawParams.pos.y;
 }
@@ -38,6 +39,10 @@ int32_t Widget::getRsrcId() const{
 
 double Widget::getRotation() const{
 	return _drawParams.rotationAngle;
+}
+
+DrawParams Widget::getDrawParams() const{
+	return _drawParams;
 }
 
 bool Widget::containsPoint(const Point& pos) const{

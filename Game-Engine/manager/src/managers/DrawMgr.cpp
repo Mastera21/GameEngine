@@ -62,14 +62,15 @@ void DrawMgr::addDrawCmd(const DrawParams& drawParams){
 SDL_Texture* DrawMgr::getTextureinternal(const DrawParams& drawParams) const{
 	//This is for images.
 	if(WidgetType::IMAGE == drawParams.widgetType){
-		return gRsrcMgr->getImageTexture(drawParams.textId);
+		return gRsrcMgr->getImageTexture(drawParams.rsrcId);
 	}else if(WidgetType::TEXT == drawParams.widgetType){
 		return gRsrcMgr->getTextTexture(drawParams.textId);
+	}else if(WidgetType::FBO == drawParams.widgetType){
+		return gRsrcMgr->getFboTexture(drawParams.fboId);
 	}else{
 		std::cerr<<"Error, received unsupported WidgetType: "<<static_cast<int32_t>(drawParams.widgetType)
 				<<" for rsrcId: "<<drawParams.textId<<"\n";
 	}
-
 	return nullptr;
 }
 
@@ -91,8 +92,9 @@ int32_t DrawMgr::clearCurrentRendererTarget(const Color& color){
 	return _render.clearCurrentRendererTarget(color);
 }
 
-int32_t DrawMgr::setRendererTarget(SDL_Texture* target){
-	return _render.setRendererTarget(target);
+int32_t DrawMgr::setRendererTarget(int32_t fboId){
+	SDL_Texture* fboTexture = gRsrcMgr->getFboTexture(fboId);
+	return _render.setRendererTarget(fboTexture);
 }
 
 int32_t DrawMgr::resetRendererTarget(){

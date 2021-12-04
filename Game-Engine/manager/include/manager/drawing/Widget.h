@@ -26,6 +26,8 @@ public:
 	int32_t getRsrcId() const;
 	double getRotation() const;
 
+	DrawParams getDrawParams() const;
+
 	bool containsPoint(const Point& pos) const;
 	bool isVisible() const;
 	bool isCreated() const;

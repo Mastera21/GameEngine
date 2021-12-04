@@ -40,7 +40,7 @@ public:
 	void setWidgetOpacity(const DrawParams& drawParams, int32_t opacity);
 	
 	int32_t clearCurrentRendererTarget(const Color& color);
-	int32_t setRendererTarget(SDL_Texture* target);
+	int32_t setRendererTarget(int32_t fboId);
 	int32_t resetRendererTarget();
 
 	int32_t lockRenderer();

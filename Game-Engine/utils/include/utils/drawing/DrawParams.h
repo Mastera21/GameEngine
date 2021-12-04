@@ -28,6 +28,7 @@ enum class WidgetFlip : uint8_t {
 enum class WidgetType : uint8_t {
   IMAGE,
   TEXT,
+  FBO,
   UNKNOWN
 };
 
@@ -59,6 +60,7 @@ struct DrawParams {
   union {
 	  int32_t rsrcId = INVALID_RSRC_ID;
 	  int32_t textId;
+    int32_t fboId;
   };
 
   void reset();
