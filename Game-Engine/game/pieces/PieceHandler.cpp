@@ -9,6 +9,7 @@
 
 //Own components headers
 #include "sdl/Event.h"
+#include "manager/drawing/Fbo.h"
 #include "game/utils/BoardUtils.h"
 #include "game/interfaces/GameInterface.h"
 #include "game/interfaces/GameBoardInterface.h"
@@ -33,6 +34,13 @@ int32_t PieceHandler::init(GameBoardInterface* gameBoardInterface, GameInterface
 	}
 
 	return EXIT_SUCCESS;
+}
+void PieceHandler::drawOnFbo(FBO& fbo) const{
+	for(auto& i : _pieces){
+		for(auto& piece : i){
+			piece->drawOnFbo(fbo);
+		}
+	}
 }
 void PieceHandler::draw(){
 	for(auto& i : _pieces){

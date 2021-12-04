@@ -17,10 +17,12 @@
 struct Event;
 struct GameBoardInterface;
 class GameInterface;
+class FBO;
 
 class PieceHandler {
 public:
 	int32_t init(GameBoardInterface* gameBoardInterface, GameInterface* gameInterface, int32_t whitePiecesRsrcId, int32_t blackPiecesRsrcId, int32_t unfinishedPieceFontId);
+	void drawOnFbo(FBO& fbo) const;
 	void draw();
 	void handleEvent(const Event& event);
 	void setCurrPlayerId(int32_t currPlayerId);

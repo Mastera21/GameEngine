@@ -122,6 +122,13 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Text.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/GameBoard.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerClient.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map
@@ -134,12 +141,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerData.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessStructs.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessDefines.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardPos.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameBoardInterface.h
@@ -334,6 +335,13 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Text.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/GameBoard.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerClient.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map
@@ -346,12 +354,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerData.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessStructs.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessDefines.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardPos.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameBoardInterface.h
@@ -707,6 +709,13 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Text.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/GameBoard.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerClient.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map
@@ -719,12 +728,6 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerData.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessStructs.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessDefines.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardPos.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameBoardInterface.h
@@ -959,6 +962,8 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/backward/auto_ptr.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/glue_memory_defs.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/execution_defs.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
 
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.cpp
@@ -1963,6 +1968,8 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/include/sdl/Event.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/input/EventDefines.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardUtils.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameInterface.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameBoardInterface.h
@@ -2443,6 +2450,8 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/istream
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardUtils.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/sdl/include/sdl/Event.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/input/EventDefines.h
 
@@ -3404,6 +3413,7 @@ CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.obj
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/istream
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardUtils.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
 
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardUtils.cpp
@@ -3679,6 +3689,13 @@ CMakeFiles/gameEngine.dir/main.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Rectangle.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Text.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/utils/include/utils/drawing/Color.h
+ C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/drawing/Fbo.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/GameBoard.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerClient.h
  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map
@@ -3691,12 +3708,6 @@ CMakeFiles/gameEngine.dir/main.cpp.obj
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/manager/include/manager/time/TimerData.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/board/MoveSelector.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessStructs.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h
- C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/defines/ChessDefines.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/utils/BoardPos.h
  C:/Users/user/GitHub Repositorys/GameEngine/Game-Engine/game/interfaces/GameBoardInterface.h

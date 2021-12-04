@@ -17,7 +17,7 @@ class FBO : public Widget{
 public:
     ~FBO();
 
-    void create(int32_t width, int32_t height, const Point &pos, const Color &clearColor);
+    void create(int32_t width, int32_t height, const Point& pos, const Color& clearColor);
     void destroy();
     void unlock();
     void lock();

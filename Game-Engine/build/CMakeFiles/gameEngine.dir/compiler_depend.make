@@ -121,6 +121,13 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.obj: ../application/Applic
   ../utils/include/utils/drawing/Rectangle.h \
   ../manager/include/manager/drawing/Text.h \
   ../utils/include/utils/drawing/Color.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/board/GameBoard.h \
   ../manager/include/manager/time/TimerClient.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map \
@@ -133,12 +140,6 @@ CMakeFiles/gameEngine.dir/application/Application.cpp.obj: ../application/Applic
   ../manager/include/manager/time/TimerData.h \
   ../game/board/MoveSelector.h \
   ../game/defines/ChessStructs.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/defines/ChessDefines.h \
   ../game/utils/BoardPos.h \
   ../game/interfaces/GameBoardInterface.h \
@@ -332,6 +333,13 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.obj: ../engine/Engine.cpp \
   ../utils/include/utils/drawing/Rectangle.h \
   ../manager/include/manager/drawing/Text.h \
   ../utils/include/utils/drawing/Color.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/board/GameBoard.h \
   ../manager/include/manager/time/TimerClient.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map \
@@ -344,12 +352,6 @@ CMakeFiles/gameEngine.dir/engine/Engine.cpp.obj: ../engine/Engine.cpp \
   ../manager/include/manager/time/TimerData.h \
   ../game/board/MoveSelector.h \
   ../game/defines/ChessStructs.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/defines/ChessDefines.h \
   ../game/utils/BoardPos.h \
   ../game/interfaces/GameBoardInterface.h \
@@ -703,6 +705,13 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.obj: ../game/Game.cpp \
   ../utils/include/utils/drawing/Rectangle.h \
   ../manager/include/manager/drawing/Text.h \
   ../utils/include/utils/drawing/Color.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/board/GameBoard.h \
   ../manager/include/manager/time/TimerClient.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map \
@@ -715,12 +724,6 @@ CMakeFiles/gameEngine.dir/game/Game.cpp.obj: ../game/Game.cpp \
   ../manager/include/manager/time/TimerData.h \
   ../game/board/MoveSelector.h \
   ../game/defines/ChessStructs.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/defines/ChessDefines.h \
   ../game/utils/BoardPos.h \
   ../game/interfaces/GameBoardInterface.h \
@@ -953,7 +956,9 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.obj: ../game/board/GameBoard.
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/atomic_lockfree_defines.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/backward/auto_ptr.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/glue_memory_defs.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/execution_defs.h
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/execution_defs.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  ../utils/include/utils/drawing/Color.h
 
 CMakeFiles/gameEngine.dir/game/board/MoveSelector.cpp.obj: ../game/board/MoveSelector.cpp \
   ../game/board/MoveSelector.h \
@@ -1951,6 +1956,8 @@ CMakeFiles/gameEngine.dir/game/pieces/PieceHandler.cpp.obj: ../game/pieces/Piece
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc \
   ../sdl/include/sdl/Event.h \
   ../utils/include/utils/input/EventDefines.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  ../utils/include/utils/drawing/Color.h \
   ../game/utils/BoardUtils.h \
   ../game/interfaces/GameInterface.h \
   ../game/interfaces/GameBoardInterface.h
@@ -2428,6 +2435,8 @@ CMakeFiles/gameEngine.dir/game/pieces/types/ChessPiece.cpp.obj: ../game/pieces/t
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/istream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc \
   ../game/utils/BoardUtils.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  ../utils/include/utils/drawing/Color.h \
   ../sdl/include/sdl/Event.h \
   ../utils/include/utils/input/EventDefines.h
 
@@ -3382,7 +3391,8 @@ CMakeFiles/gameEngine.dir/game/pieces/types/UnfinishedPiece.cpp.obj: ../game/pie
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/ostream.tcc \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/istream \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/istream.tcc \
-  ../game/utils/BoardUtils.h
+  ../game/utils/BoardUtils.h \
+  ../manager/include/manager/drawing/Fbo.h
 
 CMakeFiles/gameEngine.dir/game/utils/BoardUtils.cpp.obj: ../game/utils/BoardUtils.cpp \
   ../game/utils/BoardUtils.h \
@@ -3656,6 +3666,13 @@ CMakeFiles/gameEngine.dir/main.cpp.obj: ../main.cpp \
   ../utils/include/utils/drawing/Rectangle.h \
   ../manager/include/manager/drawing/Text.h \
   ../utils/include/utils/drawing/Color.h \
+  ../manager/include/manager/drawing/Fbo.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/board/GameBoard.h \
   ../manager/include/manager/time/TimerClient.h \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/map \
@@ -3668,12 +3685,6 @@ CMakeFiles/gameEngine.dir/main.cpp.obj: ../main.cpp \
   ../manager/include/manager/time/TimerData.h \
   ../game/board/MoveSelector.h \
   ../game/defines/ChessStructs.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h \
-  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/vector.tcc \
   ../game/defines/ChessDefines.h \
   ../game/utils/BoardPos.h \
   ../game/interfaces/GameBoardInterface.h \
@@ -4030,6 +4041,20 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/backward/auto_ptr.h:
 
 ../utils/include/utils/drawing/Color.h:
 
+../manager/include/manager/drawing/Fbo.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/glue_memory_defs.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h:
+
 ../game/board/GameBoard.h:
 
 ../manager/include/manager/time/TimerClient.h:
@@ -4055,18 +4080,6 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/parse_numbers.h:
 ../game/board/MoveSelector.h:
 
 ../game/defines/ChessStructs.h:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/vector:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_construct.h:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_uninitialized.h:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/pstl/glue_memory_defs.h:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_vector.h:
-
-C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_bvector.h:
 
 ../sdl/include/sdl/containers/ImageContainer.h:
 

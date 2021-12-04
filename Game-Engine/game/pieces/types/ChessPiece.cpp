@@ -10,6 +10,7 @@
 
 //Own components headers
 #include "game/utils/BoardUtils.h"
+#include "manager/drawing/Fbo.h"
 #include "sdl/Event.h"
 
 int32_t ChessPiece::init(const ChessPieceCfg& cfg){
@@ -31,7 +32,9 @@ int32_t ChessPiece::init(const ChessPieceCfg& cfg){
 
 	return EXIT_SUCCESS;
 }
-
+void ChessPiece::drawOnFbo(FBO& fbo){
+	fbo.addWidget(_pieceImg);
+}
 void ChessPiece::draw(){
 	_pieceImg.draw();
 }

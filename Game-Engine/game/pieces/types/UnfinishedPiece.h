@@ -12,10 +12,12 @@
 #include "game/pieces/types/ChessPiece.h"
 #include "manager/drawing/Text.h"
 //Forward declarations
+class FBO;
 
 class UnfinishedPiece: public ChessPiece {
 public:
 	int32_t init(const ChessPieceCfg& cfg) final;
+	void drawOnFbo(FBO& fbo) final;
 	void draw() final;
 	void setBoardPos(const BoardPos& pos) final;
 
@@ -24,5 +26,4 @@ public:
 private:
 	Text _notReadyText;
 };
-
 #endif /* GAME_PIECES_TYPES_UNFINISHEDPIECE_H_ */

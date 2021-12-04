@@ -9,6 +9,7 @@
 
 //Own components headers
 #include "game/utils/BoardUtils.h"
+#include "manager/drawing/FBO.h"
 
 int32_t GameBoard::init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveSelectorId, int32_t blinkTimerId){
 	_boardImg.create(boardRsrcId);
@@ -23,12 +24,14 @@ int32_t GameBoard::init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveS
 	_blinkTimerId = blinkTimerId;
 	return EXIT_SUCCESS;
 }
+void GameBoard::drawGameBoardFbo(FBO& fbo) const{
+	fbo.addWidget(_boardImg);
+}
 void GameBoard::draw(){
-	_boardImg.draw();
+	//_boardImg.draw();
 	_targetImg.draw();
 	_moveSelector.draw();
 }
-
 Image& GameBoard::getBoardImg(){
 	return _boardImg;
 }

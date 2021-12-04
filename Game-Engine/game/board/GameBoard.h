@@ -16,10 +16,12 @@
 #include "game/board/MoveSelector.h"
 #include "game/interfaces/GameBoardInterface.h"
 //Forward declarations
+class FBO;
 
 class GameBoard : public GameBoardInterface, public TimerClient {
 public:
 	int32_t init(int32_t boardRsrcId, int32_t targetRsrcId, int32_t moveSelectorId, int32_t blinkTimerId);
+	void drawGameBoardFbo(FBO& fbo) const;
 	void draw();
 
 	Image& getBoardImg();

@@ -164,4 +164,6 @@ CMakeFiles/gameEngine.dir/game/board/GameBoard.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\atomic_lockfree_defines.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\backward\auto_ptr.h \
  c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\pstl\glue_memory_defs.h \
- c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\pstl\execution_defs.h
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\pstl\execution_defs.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/manager/include/manager/drawing/FBO.h \
+ C:/Users/user/GITHUB~1/GAMEEN~1/GAME-E~1/utils/include/utils/drawing/Color.h

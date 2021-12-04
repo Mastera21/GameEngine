@@ -41,14 +41,19 @@ int32_t Game::init(const GameCfg cfg){
 		return EXIT_FAILURE;
 	}
 
+	_gameFbo.create(cfg.piecePromotionPanelCfg.gameBoardWidth, cfg.piecePromotionPanelCfg.gameBoatdHeight, Point::ZERO, Colors::FULL_TRANSPARENT);
+	_gameFbo.activateAlphaModulation();
+	regenerateGameFbo();
+
 	return EXIT_SUCCESS;
 }
 void Game::deinit(){
 
 }
 void Game::draw(){
+	_gameFbo.draw();
+	//_pieceHandler.draw();
 	_board.draw();
-	_pieceHandler.draw();
 	_piecePromotionPanel.draw();
 	_movePlayersId.draw();
 }
@@ -65,6 +70,7 @@ void Game::promotePiece(PieceType pieceType){
 	onBoardAnimFinished();
 }
 void Game::finishTurn(){
+	regenerateGameFbo();
 	_gameBoardAnim.startAnim(_gameLogic.getActivePlayerId());
 	if(Defines::WHITE_PLAYER_ID == _gameLogic.getActivePlayerId()){
 		_movePlayersId.updatePlayerText(_gameLogic.getActivePlayerId());
@@ -73,6 +79,7 @@ void Game::finishTurn(){
 	
 }
 void Game::onPawnPromotion() {
+	regenerateGameFbo();
 	_isPromotionActive = true;
 	_piecePromotionPanel.activate(_gameLogic.getActivePlayerId());
 }
@@ -82,4 +89,16 @@ void Game::onBoardAnimFinished(){
 	}
 	_gameLogic.finishTurn();
 	_pieceHandler.setCurrPlayerId(_gameLogic.getActivePlayerId());
+	regenerateGameFbo();
 }
+void Game::regenerateGameFbo() {
+  _gameFbo.unlock();
+  _gameFbo.reset();
+
+  _board.drawGameBoardFbo(_gameFbo);
+  _pieceHandler.drawOnFbo(_gameFbo);
+
+  _gameFbo.update();
+  _gameFbo.lock();
+}
+

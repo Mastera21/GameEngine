@@ -26,6 +26,7 @@ struct ChessPieceCfg{
 
 //Forward declarations
 struct Event;
+class FBO;
 
 class ChessPiece {
 public:
@@ -34,6 +35,7 @@ public:
     virtual ~ChessPiece() = default;
 
 	virtual int32_t init(const ChessPieceCfg& cfg);
+	virtual void drawOnFbo(FBO& fbo);
 	virtual void draw();
 	virtual void setBoardPos(const BoardPos& pos);
 	virtual std::vector<TileData> getMoveTiles(const std::array<PlayerPieces, Defines::PLAYERS_COUNT> &activePieces) const = 0;

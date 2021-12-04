@@ -67,7 +67,6 @@ void Engine::main(){
 		limitFPS(elapstTime);
 	}
 }
-
 void Engine::drawFrame(){
 	gDrawMgr->clearScreen();
 
