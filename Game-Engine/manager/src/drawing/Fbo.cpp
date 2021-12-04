@@ -78,6 +78,7 @@ void FBO::lock(){
 }
 void FBO::reset(){
     gDrawMgr->clearCurrentRendererTarget(_clearColor);
+    _storedItems.clear();
 }
 void FBO::addWidget(const Widget &widget){
     if(!widget.isCreated()){
