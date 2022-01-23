@@ -13,7 +13,7 @@
 # Using tools:
 -C++17.\
 -SDL2 lib.\
--cmake version 3.5.1.\
+-cmake version 3.5.1.
 
 
 
