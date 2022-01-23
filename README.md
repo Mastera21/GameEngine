@@ -8,7 +8,7 @@
 -In this course we build game engine using SDL2 and CMake and we make chess game.
 
 # Run project:
--Open Game-Engine file ** -> ** build ** -> ** gameEngine.exe.
+-Open Game-Engine file -> build -> gameEngine.exe.
 
 # Using tools:
 -C++17.\
