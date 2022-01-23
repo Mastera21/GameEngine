@@ -4,7 +4,7 @@
 -Developed on Linux ubuntu 20.04.3.
 -Porject is running on all operation systems.
 
-#Description:
+# Description:
 -In this course we build game engine using SDL2 and CMake and we make chess game.
 
 # Run project:
