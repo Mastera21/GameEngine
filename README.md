@@ -1,7 +1,7 @@
 # GameEngine
 -This is project for Applications Development with C++ - October-2021.
 
--Developed on Linux ubuntu 20.04.3.
+-Developed on Linux ubuntu 20.04.3.\
 -Porject is running on all operation systems.
 
 # Description:
